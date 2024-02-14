@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+
+	font-family: 'Nunito', sans-serif;
+	line-height: 150%;
+
+	margin: 0;
+	padding: 0;
+
+	min-height: 100vh;
+
+	background-color: #fefdff;
+
+	--header-height: 100px;
+	--footer-height: 332px;
+
+}
+
+.container {
+	width: 100%;
+	max-width: 1440px;
+}
+
+.header {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+	height: var(--header-height);
+}
+
+.logo {
+	display: inline;
+	margin: 16px 0 16px 120px;
+}
+
+.nav {
+	font-size: 20px;
+}
+
+.nav-link {
+	margin: 35px 32px 35px 0;
+
+	text-decoration: none;
+	color: #15343A;
+}
+
+.authentication {
+	margin-right: 120px;
+}
+
+.login {
+	display: inline;
+	text-align: center;
+	margin: 38px 16px;
+
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration-line: underline;
+	color: #15343A;
+}
+
+.btn {
+	display: inline;	
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+
+	width: 180px;
+	height: 56px;
+
+	margin: 18px 0 18px 0;
+	padding: 16px;
+
+	font-family: Nunito;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+
+	border-radius: var(--components, 8px);
+	border: 2px solid var(--brand-purple-400---main, #6444F4);
+	
+	background-color: #fefdff;
+
+	cursor: pointer;
+}
+
+.button-link {
+	text-decoration: none;
+}
+
+.content {
+	min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.hero-image {
+	position: relative;
+
+	height: 760px;
+
+  /* background-image: url("./images/hero-image.svg"); */
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.quiz {
+	position: absolute;
+	margin-left: 504px;
+	margin-top: 326px;
+}
+
+.choose-pdf {
+	position: absolute;
+	top: -206px;
+	left: 349px;
+}
+
+.you-tube {
+	position: absolute;
+	top: 170px;
+	left: 120px;
+}
+
+.vector {
+	position: absolute;
+	top: 285px;
+	right: 490px;
+}
+
+.hero-text {
+	margin-left: 120px;
+	margin-top: 88px;
+	
+	width: 879px;
+	height: 174px;
+
+	font-size: 64px;
+	font-weight: 800;
+	line-height: normal;
+}
+
+.text {
+	width: 331px;
+	height: 90px;
+
+	margin-left: 120px;
+	margin-top: 32px;
+
+	color: #15343A;
+
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.hero-btn {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 282px;
+	height: 56px;
+	margin: 40px 0 0 120px;
+	gap: 8px;
+
+	font-family: Nunito;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	border: none;
+	border-radius: 8px;
+
+	background: #6444F4;
+	color: #FEFDFF;
+
+	cursor: pointer;
+}
+
+.splash {
+	position: absolute;
+	top: -28px;
+	left: -32px;
+}
+
+.how-hearify-works-page {
+	margin-top: 176px;
+}
+
+.how-hearify-works-vector {
+	position: relative;
+
+	height: 70px;
+
+	/* background-image: url(./images/how-hearify-works.svg); */
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.how-hearify-works-text {
+	font-size: 40px;
+	font-weight: 700;
+
+	color: #15343A;
+	text-align: center;
+	align-items: center;
+	line-height: 1.5;
+}
+
+.how-hearify-works-background {
+	/* background-image: url(./images/bg.svg); */
+	background-position: center;
+}
+
+.how-hearify-works-cards {
+	border-radius: 20px;
+
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.13) 68.53%);
+	backdrop-filter: blur(22.885459899902344px);
+}
+
+.how-hearify-works-cards-top {
+	display: flex;
+
+	padding-top: 64px;
+	margin: 0 222px 24px 222px;
+
+	height: 473px;
+}
+
+.how-hearify-works-card-top-left {
+	height: 100%;
+	width: 486px;
+
+	margin-right: 24px;
+}
+
+.how-hearify-works-card-top-right {
+	height: 100%;
+	width: 486px;
+}
+
+.how-hearify-works-cards-bottom {
+	display: flex;
+
+	margin: 0 120px;
+	padding-bottom: 134px;
+
+	height: 446px;
+}
+
+.how-hearify-works-card-bottom-left {
+	height: 100%;
+	width: 468px;
+}
+
+
+.how-hearify-works-card-bottom-center {
+	height: 100%;
+	width: 338px;
+
+	margin: 0 24px;
+}
+
+.how-hearify-works-card-bottom-right {
+	height: 100%;
+	width: 346px;
+}
+
+.card-header {
+	margin: 32px 0 24px 32px;
+
+	font-size: 28px;
+	font-weight: 700;
+	color: #4E30D2;
+}
+
+.card-text {
+	margin: 0 0 24px 32px;
+
+	font-size: 16px;
+	color: #15343A;
+}
+
+.card-1-text {
+	margin-right: 140px;
+}
+
+.card-2-text {
+	margin-right: 150px;
+}
+
+.card-3-text {
+	margin-right: 120px;
+}
+
+.card-image {
+	position: relative;
+	
+	margin-left: 32px;
+}
+
+.card-image-apload-you-tube-file {
+	position: absolute;
+	top: 132px;
+	right: 0;
+}
+
+.card-image-generate {
+	margin-top: -12px;
+}
+
+.faq {
+	height: 1136px;
+}
+
+.faq-vector {
+	/* background-image: url(./images/FAQ-vector.svg); */
+}
+
+.faq-background {
+	margin-top: 50px;
+	background-position: center;
+	height: 1093px;
+
+	/* background-image: url(./images/FAQ-bg.svg); */
+}
+
+.pricing {
+	margin-left: 20px;
+
+	position: relative;
+}
+
+.pricing-btn {
+	position: absolute;
+	top: 573px;
+	left: 459px;
+}
+
+.footer {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: var(--footer-height);
+
+  line-height: 1;
+
+	background-color: #FEFDFF;
+}
+
+.footer-nav {
+  display: inline;
+
+  margin-left: 120px;
+
+  font-size: 20px;
+}
+
+.footer-logo {
+  position: relative;
+  display: inline;
+
+  margin-right: 182px;
+}
+
+.terms {
+  position: absolute;
+  left: -100px;
+  top: 86px;
+
+  width: 384px;
+
+  text-align: center;
+
+  font-size: 16px;
+  color: #94A3B8;
+}
+
+.terms-link {
+	text-decoration: none;
+
+	color: #94A3B8;
+}
+
+.contacts {
+	position: relative;
+
+  margin-right: 104px;
+}
+
+.social-network {
+  margin: 0 16px;
+
+  text-decoration: none;
+}
+
+.email {
+  position: absolute;
+  top: 50px; 
+  right: 0px;
+
+  margin-right: 16px;
+
+  text-align: right;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #15343A;
+  text-decoration: none;
+}
+
+
+.blog-name{
+	font-size: 40px;
+	width: 1440px;
+	text-align: center;
+
+}
+.blog-box-container{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+}

@@ -1,0 +1,19 @@
+.blog-view {
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	margin-bottom: 10px;
+    margin-left: 120px;
+}
+
+.btn-view{
+
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    margin-left: 10px;
+    background-color: white;
+    border: none;
+}

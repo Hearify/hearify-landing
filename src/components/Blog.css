@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.blog-box {
+	display: flex;
+	max-width: 1200px;
+	height: 294px;
+	margin-bottom: 75px;
+	flex-direction: row;
+	border-color: #6444F4;
+	border-width: medium;
+	background-color: #6444F4;
+	border-radius: 30px;
+}
+.blog-box-img {
+	display: flex;
+	margin-top: 32px;
+	margin-left: 32px;
+	width: 454;
+	height: 230px;
+	margin-right: 32px;
+	
+}
+.img{ 
+	border-radius: 10px;
+}
+
+.blog-box-button {
+
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 122px;
+	height: 36px;
+	gap: 8px;
+
+	font-family: Nunito;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	border-radius: 10px;
+	border-width: 2px;
+	border-color: #6444F4;
+
+	background: white;
+
+	color: #FEFDFF;
+
+	cursor: pointer;
+	
+}
+.blog-box-button p {
+	color: #6444F4;
+	
+}
+
+.blog-box-text-under {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 84px;
+	padding-right: 32px;
+}
+.blog-box-text-info{
+	display: flex;
+	flex-direction: column;
+	margin-top: 32px;
+}
+
+.blog-box-text-dateAt {
+	display: flex;
+	align-items: end;
+	margin-bottom: 10px;
+}
+
+.blog-box-text-topic {
+	font-size: 20px;
+}
+
+.blog-box-text-description {
+	font-size: 16px;
+	padding-top: 15px;
+}
+
+#chevron_right {
+	width: 24px;
+	color: #15343A;
+}
