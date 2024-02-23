@@ -1,10 +1,10 @@
 import React from 'react'
-import Blog from './Blog.js'
 import ViewButtonSort from "./ViewButtonSort"
 import { Helmet } from 'react-helmet'
-import '../components/Blog.css'
+import Blog2 from './Blog2.js'
+import { useState } from 'react'
 
-function Content({ handleShow }) {
+function Content2({ handleShow }) {
     return (
         <div>
             <Helmet>
@@ -17,18 +17,17 @@ function Content({ handleShow }) {
                 <div>
                     <ViewButtonSort handleShow={handleShow} />
                 </div>
-                <div className="blog-box-container">
-                    <Blog />
-                    <Blog />
-                    <Blog />
-
-
-
+                <div className="blog-box-container2">
+                    <Blog2 />
+                    <Blog2 />
+                    <Blog2 />
+                    <Blog2 />
+                    <Blog2 />
+                    <Blog2 />
                 </div>
-
             </div>
         </div>
     )
 }
 
-export default Content
+export default Content2

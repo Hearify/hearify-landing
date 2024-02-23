@@ -1,34 +1,34 @@
 import React from 'react'
 import flower from '../images/flower.png'
-import '../components/Blog.css'
-import ViewButtonSort from "./ViewButtonSort"
+import '../components/Blog2.css'
 
-function Blog() {
+function Blog2() {
     return (
-            <div class="blog-box3">
-                <div class="blog-box-img3">
-                    <img className='img3' src={flower} alt="blog-image" />
-                    <a href="#" class="blog-img-link">
+        <div>
+            <div class="blog-box2">
+                <div class="blog-box-img2">
+                    <img className='img2' src={flower} alt="blog-image" />
+                    <a href="#" class="blog-img-link2">
                     </a>
                 </div>
-                <div class="blog-box-text-info3">
-                    <div class="blog-box-text-top">
-                        <div class="blog-box-text-topic3">
+                <div class="blog-box-text-info2">
+                    <div class="blog-box-text-top2">
+                        <div class="blog-box-text-topic2">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         </div>
-                        <div class="blog-box-text-description3">
+                        <div class="blog-box-text-description2">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos cumque aliquam, magnam
                             quisquam perspiciatis animi autem! Nobis ducimus nostrum neque magnam porro voluptatum
                             deleniti, iusto dolorem repellendus itaque, ullam rem.
                         </div>
                     </div>
-                    <div class="blog-box-text-under3">
-                        <div class="blog-box-text-dateAt3">
+                    <div class="blog-box-text-under2">
+                        <div class="blog-box-text-dateAt2">
                             Today, 18:30
                         </div>
-                        <button class="blog-box-button3">
+                        <button class="blog-box-button2">
                             <p>READ MORE</p>
-                            <svg id="chevron_right3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg id="chevron_right2" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -37,7 +37,8 @@ function Blog() {
                     </div>
                 </div>
             </div>
+        </div>
     )
 }
 
-export default Blog
+export default Blog2

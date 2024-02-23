@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./viewButtonSort.css"
 
-function ViewButtonSort() {
+
+
+function ViewButtonSort(props) {
+    console.log(typeof props.handleShow); 
     return (
         <div class="blog-view">
-            <button className="btn-view">
+            <button onClick={() => props.handleShow(true)} className="btn-view">
                 <svg color='#6444F4' width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -12,7 +15,7 @@ function ViewButtonSort() {
                 </svg>
             </button>
 
-            <button className='btn-view'>
+            <button onClick={() => props.handleShow(false)} className='btn-view'>
                 <svg id="sec-svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"

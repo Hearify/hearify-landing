@@ -3,6 +3,7 @@ import logo_logo from '../images/logo.svg'
 import linkedin_logo from '../images/mdi_linkedin.svg'
 import instagram_logo from '../images/streamline_instagram-solid.svg'
 import facebook_logo from '../images/brandico_facebook-rect.svg'
+import "./style.css"
 
 function Footer() {
     return (
@@ -28,15 +29,15 @@ function Footer() {
                 </div>
 
                 <div className="contacts">
-                    { <a href="https://www.instagram.com/hearify.tech?igsh=dWxoNXdoMnZoanJp" className="social-network">
+                    {<a href="https://www.instagram.com/hearify.tech?igsh=dWxoNXdoMnZoanJp" className="social-network">
                         <img alt='instagram_logo' loading="lazy" src={instagram_logo} />
-                    </a> }
-                    { <a href="https://www.linkedin.com/company/hearify/" className="social-network">
+                    </a>}
+                    {<a href="https://www.linkedin.com/company/hearify/" className="social-network">
                         <img alt='linkedin_logo' loading="lazy" src={linkedin_logo} />
-                    </a> }
-                    { <a href="https://www.facebook.com/profile.php?id=61552644703836" className="social-network">
+                    </a>}
+                    {<a href="https://www.facebook.com/profile.php?id=61552644703836" className="social-network">
                         <img alt='facebook_logo' loading="lazy" src={facebook_logo} />
-                    </a> }
+                    </a>}
                     <div>
                         <a className="email" href="mailto:hearify.tech@gmail.com">
                             hearify.tech@gmail.com

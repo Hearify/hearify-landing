@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-.blog-box {
+.blog-box3 {
 	display: flex;
 	max-width: 1200px;
 	height: 294px;
@@ -11,20 +11,30 @@
 	background-color: #6444F4;
 	border-radius: 30px;
 }
-.blog-box-img {
+
+
+
+/*@media (max-width: 1200px) {
+	.blog-box3 {
+		width: 800px;
+	}
+}*/
+
+.blog-box-img3 {
 	display: flex;
 	margin-top: 32px;
 	margin-left: 32px;
 	width: 454;
 	height: 230px;
 	margin-right: 32px;
-	
+
 }
-.img{ 
+
+.img3 {
 	border-radius: 10px;
 }
 
-.blog-box-button {
+.blog-box-button3 {
 
 	position: relative;
 	display: flex;
@@ -49,42 +59,66 @@
 	color: #FEFDFF;
 
 	cursor: pointer;
-	
-}
-.blog-box-button p {
-	color: #6444F4;
-	
+
 }
 
-.blog-box-text-under {
+.blog-box-button3 p {
+	color: #6444F4;
+
+}
+
+.blog-box-text-under3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-top: 84px;
+	padding-top: 85px;
 	padding-right: 32px;
 }
-.blog-box-text-info{
+
+.blog-box-text-info3 {
 	display: flex;
 	flex-direction: column;
 	margin-top: 32px;
 }
 
-.blog-box-text-dateAt {
+.blog-box-text-dateAt3 {
 	display: flex;
 	align-items: end;
 	margin-bottom: 10px;
 }
 
-.blog-box-text-topic {
+.blog-box-text-topic3 {
 	font-size: 20px;
 }
 
-.blog-box-text-description {
+.blog-box-text-description3 {
+	margin-right: 30px;
 	font-size: 16px;
 	padding-top: 15px;
 }
 
-#chevron_right {
+#chevron_right3 {
 	width: 24px;
 	color: #15343A;
+}
+
+@media (max-width: 1245px) {
+	.blog-box3 {
+		width: 1000px;
+	}
+
+	.blog-box-text-under3{
+		padding-top: 70px;
+	}
+}
+
+@media (max-width: 1080px) {
+	.blog-box3 {
+		width: 800px;
+	}
+
+	.blog-box-text-under3{
+		padding-top: 0px;
+	}
+
 }
