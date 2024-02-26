@@ -347,7 +347,7 @@ body {
 	left: 459px;
 }
 
-.footer  {
+.footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -367,7 +367,7 @@ body {
 	font-size: 20px;
 }
 
-.footer-logo{
+.footer-logo {
 	position: relative;
 	display: inline;
 
@@ -445,7 +445,7 @@ body {
 	flex-direction: column;
 }
 
-.nav-bar{
+.nav-bar {
 	width: 40px;
 	height: 40px;
 	color: #15343A;
@@ -454,23 +454,24 @@ body {
 	background-color: white;
 }
 
-@media (max-width: 860px) {
-	
 
-	.email{
-		top:auto;
+
+@media (max-width: 860px) {
+
+	.email {
+		top: auto;
 		right: 185px;
 		bottom: -120%;
 	}
 
-	.footer-nav{
+	.footer-nav {
 		display: flex;
 		justify-content: space-between;
 		margin: -50px 0px 0px 0px;
 		width: 725px;
 	}
 
-	.contacts{
+	.contacts {
 		display: flex;
 		margin: 0px;
 		position: relative;
@@ -479,12 +480,12 @@ body {
 		margin-top: -295px;
 	}
 
-	.terms{
+	.terms {
 		left: 60px;
 		display: none;
 	}
 
-	.footer-logo{
+	.footer-logo {
 		display: flex;
 		justify-content: start;
 		margin: 0px;
@@ -493,44 +494,62 @@ body {
 		padding-left: 2px;
 	}
 
-	.footer{
+	.footer {
 		display: grid;
-		
+
 	}
 
-	.header{
+	.header {
 		display: flex;
 		flex-direction: row;
 	}
-	.nav-bar{
-		position:absolute;
+
+	.nav-bar {
+		position: absolute;
 		margin-left: 30%;
 		margin-top: -10px;
 		display: flex;
 	}
-	.nav{
+
+	.nav {
 		display: none;
 	}
-	.authentication{
+
+	.authentication {
 		display: none;
 	}
+
 	.logo {
 		margin: 0 0 0 0;
 		flex: 1;
 		text-align: center;
 	}
 
-	.blog-view{
+	.blog-view {
 		display: none;
 	}
 }
 
+@media (max-width: 740px) {
+	.nav-link{
+		margin: 35px 0px 31px 0px;
+	}   
+	.footer-nav{
+		justify-content: space-around;
+	}
+	.nav-bar{
+		right: 30px;
+		margin-left: 0px;
+		margin-top: -20px;
+	}
+
+}
 @media (max-width: 975px) {
-	.footer-logo{
+	.footer-logo {
 		margin-right: 100px;
 	}
 
-	.nav-link{
+	.nav-link {
 		margin: 35px 10px 31px 0px
 	}
 }
@@ -549,7 +568,7 @@ body {
 	}
 
 	.contacts {
-		margin-right:100px;
+		margin-right: 100px;
 	}
 
 	.blog-view {
@@ -558,7 +577,7 @@ body {
 	}
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1100px) {
 
 	.nav {
 		margin-left: 30px;
@@ -574,4 +593,3 @@ body {
 }
 
 @media (max-width: 1200px) {}
-

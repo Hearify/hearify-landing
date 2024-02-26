@@ -21,11 +21,7 @@ function Content({ handleShow }) {
                     <Blog />
                     <Blog />
                     <Blog />
-
-
-
                 </div>
-
             </div>
         </div>
     )

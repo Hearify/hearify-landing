@@ -24,6 +24,8 @@ function Content2({ handleShow }) {
                     <Blog2 />
                     <Blog2 />
                     <Blog2 />
+
+                    
                 </div>
             </div>
         </div>

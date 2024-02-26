@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import { Helmet } from "react-helmet"
 import Content2 from "../components/Content2"
 import { useState } from "react"
+import MediaQuery from "react-responsive"
 
 const IndexPage = () => {
 
@@ -19,7 +20,13 @@ const IndexPage = () => {
     <div>
       <div className="container">
         <Headery />
-        {show ? <Content handleShow={handleShow} /> : <Content2 handleShow={handleShow}/>}
+        <MediaQuery query="(max-device-width: 860px)">
+          <Content />
+        </MediaQuery>
+        <MediaQuery query="(min-device-width: 861px)">
+          {show ? <Content handleShow={handleShow} /> : <Content2 handleShow={handleShow} />}
+        </MediaQuery>
+
         <Footer />
         <Helmet>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
