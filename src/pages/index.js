@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet"
 import Content2 from "../components/Content2"
 import { useState } from "react"
 import MediaQuery from "react-responsive"
+import NavBarPosts from "../components/NavBarPosts"
 
 const IndexPage = () => {
   const [show, setShow] = useState(true)
@@ -28,6 +29,7 @@ const IndexPage = () => {
             <Content2 handleShow={handleShow} />
           )}
         </MediaQuery>
+        <NavBarPosts/>
 
         <Footer />
         <Helmet>

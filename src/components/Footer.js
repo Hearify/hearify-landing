@@ -46,19 +46,18 @@ function Footer() {
             <img alt="logo" loading="lazy" src={logo_logo} />
           </a>
           <div className="terms">
-            Be sure to take a look at our
-            <a
-              className="terms-link"
-              href="https://terms-of-service.hearify.org/"
-            >
-              <u>Terms of Use</u>
-            </a>
-            and{" "}
-            <a
-              href="https://privacy-policy.hearify.org/"
-              className="terms-link"
-            >
-              <u>Privacy Policy</u>
+            <div className="DeskTerms">Be sure to take a look at our </div>
+            <a href="#">
+              <u>
+                Terms <div className="DeskTerms">of Use</div>
+              </u>
+            </a>{" "}
+            <div className="DeskTerms">and</div>{" "}
+            <a href="#">
+              <u>
+                Privacy{" "}
+                <div className="DeskTerms">Policy</div>
+              </u>
             </a>
           </div>
         </div>
