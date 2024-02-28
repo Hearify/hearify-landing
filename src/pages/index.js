@@ -9,11 +9,10 @@ import { useState } from "react"
 import MediaQuery from "react-responsive"
 
 const IndexPage = () => {
+  const [show, setShow] = useState(true)
 
-  const [show, setShow] = useState(true);
-
-  const handleShow = (value) => {
-    setShow(value);
+  const handleShow = value => {
+    setShow(value)
   }
 
   return (
@@ -24,18 +23,23 @@ const IndexPage = () => {
           <Content />
         </MediaQuery>
         <MediaQuery query="(min-device-width: 861px)">
-          {show ? <Content handleShow={handleShow} /> : <Content2 handleShow={handleShow} />}
+          {show ? (
+            <Content handleShow={handleShow} />
+          ) : (
+            <Content2 handleShow={handleShow} />
+          )}
         </MediaQuery>
 
         <Footer />
         <Helmet>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
         </Helmet>
       </div>
-
     </div>
   )
 }
-
 
 export default IndexPage

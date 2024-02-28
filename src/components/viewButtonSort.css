@@ -1,11 +1,9 @@
-
-.btn-view{
-
-    display: flex;
-    width: auto;
-    height: auto;
-    align-items: center;
-    margin-left: 10px;
-    background-color: white;
-    border: none;
+.btn-view {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  margin-left: 10px;
+  background-color: white;
+  border: none;
 }
