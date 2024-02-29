@@ -379,14 +379,10 @@ body {
 }
 
 .terms {
+  width: 330px;
   position: absolute;
-  left: -110px;
+  left: -80px;
   top: 100px;
-
-  width: 384px;
-
-  text-align: center;
-
   font-size: 16px;
   color: #94a3b8;
 }
@@ -490,7 +486,7 @@ body {
   display: none;
 }
 
-.TermsOfUse{
+.TermsOfUse {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -591,14 +587,13 @@ li-NavBar a:hover {
 }
 
 @media (max-width: 860px) {
+  .hide-on-small-screen {
+    display: none;
+  }
   .email {
     top: auto;
     right: -5px;
     bottom: -120%;
-  }
-
-  .MobTerms {
-    display: flex;
   }
 
   .footer-nav {
@@ -622,19 +617,8 @@ li-NavBar a:hover {
     margin-top: -295px;
   }
 
-  .allterms {
-    left: 60px;
-  }
   .terms {
     left: 90px;
-  }
-
-  .DeskTerms {
-    display: none;
-  }
-
-  .termsMobile {
-    display: flex;
   }
 
   .footer-logo {

@@ -46,19 +46,20 @@ function Footer() {
             <img alt="logo" loading="lazy" src={logo_logo} />
           </a>
           <div className="terms">
-            <div className="DeskTerms">Be sure to take a look at our </div>
-            <a href="#">
+            <p class="hide-on-small-screen">
+              Be sure to take a look at our{" "}
               <u>
-                Terms <div className="DeskTerms">of Use</div>
-              </u>
-            </a>{" "}
-            <div className="DeskTerms">and</div>{" "}
-            <a href="#">
-              <u>
-                Privacy{" "}
-                <div className="DeskTerms">Policy</div>
-              </u>
-            </a>
+                <a href="#">Terms of Use</a>
+              </u>{" "}
+              and
+            </p>
+            <p>
+              <center>
+                <u>
+                  <a href="#">Privacy Policy</a>
+                </u>
+              </center>
+            </p>
           </div>
         </div>
 
