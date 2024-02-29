@@ -16,10 +16,13 @@ body {
 
   min-height: 100vh;
 
-  background-color: #fefdff;
-
   --header-height: 100px;
   --footer-height: 332px;
+
+    background-image: url("../images/background-c95dcfd5.png");
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -359,8 +362,6 @@ body {
   height: var(--footer-height);
 
   line-height: 1;
-
-  background-color: #fefdff;
 }
 
 .footer-nav {
