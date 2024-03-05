@@ -33,6 +33,25 @@ function BlogContent() {
           Photo by author Henry Cooper. You can see more his works here
         </div>
       </div>
+      <div className="postSmallName">
+        {" "}
+        Worem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+      <div className="postSecondDescription">
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+      </div>
+      <div className=""></div>
     </div>
   )
 }
