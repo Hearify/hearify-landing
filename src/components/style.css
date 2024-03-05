@@ -19,10 +19,10 @@ body {
   --header-height: 100px;
   --footer-height: 332px;
 
-    background-image: url("../images/background-c95dcfd5.png");
-    background-repeat: repeat;
-    margin: 0;
-    padding: 0;
+  background-image: url("../images/background-c95dcfd5.png");
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -493,8 +493,68 @@ body {
   flex-direction: row;
 }
 
-li-NavBar a:hover {
-  background-color: #111111;
+.postContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+  background-color: #a8a8a894;
+}
+
+.postUserName {
+  height: 20px;
+}
+
+.postUserTextInfo {
+  margin-left: 10px;
+}
+
+.postUserInfo {
+  display: flex;
+  margin-left: 60px;
+}
+
+.UserFoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.postName {
+  width: 1000px;
+  height: 200px;
+  font-size: 60px;
+  line-height: 1.1;
+  margin-top: 50px;
+  margin-left: 60px;
+  font-weight: 800;
+}
+
+.postShortDescription {
+  width: 792px;
+  min-height: 60px;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.postFirstFoto {
+  display: flex;
+  width: 996px;
+  height: 505px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.postFotoDescription{
+  width: 900px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.postFirstFotoDescription{
+  font-size: 16px;
 }
 
 @media (max-width: 1245px) {

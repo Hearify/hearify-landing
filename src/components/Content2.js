@@ -1,7 +1,7 @@
 import React from "react"
 import ViewButtonSort from "./ViewButtonSort"
 import { Helmet } from "react-helmet"
-import Blog2 from "./Blog2.js"
+import Article2 from "./Article2.js"
 import { useState } from "react"
 
 function Content2({ handleShow }) {
@@ -18,12 +18,12 @@ function Content2({ handleShow }) {
           <ViewButtonSort handleShow={handleShow} />
         </div>
         <div className="blog-box-container2">
-          <Blog2 />
-          <Blog2 />
-          <Blog2 />
-          <Blog2 />
-          <Blog2 />
-          <Blog2 />
+          <Article2 />
+          <Article2 />
+          <Article2 />
+          <Article2 />
+          <Article2 />
+          <Article2 />
         </div>
       </div>
     </div>

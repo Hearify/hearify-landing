@@ -2,7 +2,7 @@ import React from "react"
 import flower from "../images/flower.png"
 import "../components/Blog2.css"
 
-function Blog2() {
+function Article2() {
   return (
     <div>
       <div class="blog-box2">
@@ -49,4 +49,4 @@ function Blog2() {
   )
 }
 
-export default Blog2
+export default Article2
