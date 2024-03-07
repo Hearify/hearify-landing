@@ -26,9 +26,7 @@ function BlogContent() {
         sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
       </div>
       <div className="postFotoDescription">
-        <div className="postFirstFoto">
-          <img src={postFoto} />
-        </div>
+          <img className="postFirstFoto" src={postFoto} />
         <div className="postFirstFotoDescription">
           Photo by author Henry Cooper. You can see more his works here
         </div>
@@ -51,7 +49,50 @@ function BlogContent() {
         vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
         taciti sociosqu ad litora torquent per conubia nostra, per inceptos
       </div>
-      <div className=""></div>
+      <div className="postFotoDescription">
+        <div>
+          <img className="postFirstFoto" src={postFoto} />
+        </div>
+        <div className="postFirstFotoDescription">
+          Photo by author Henry Cooper. You can see more his works here
+        </div>
+      </div>
+      <div className="postThirdDescription">
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos{" "}
+      </div>
+      <div className="postAuthorQuote">
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis.
+      </div>
+      <div className="postAuthorInfo">
+        <div className="postAuthorName">-Katya Hwiljowa</div>, Marketing
+        specialist
+      </div>
+      <div className="postLastDescription">
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+      </div>
     </div>
   )
 }

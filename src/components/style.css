@@ -498,7 +498,7 @@ body {
   flex-direction: column;
   width: 100%;
   min-height: 500px;
-  background-color: #a8a8a894;
+  background-color: hsla(0, 0%, 88%, 0);
 }
 
 .postUserName {
@@ -511,6 +511,7 @@ body {
 
 .postUserInfo {
   display: flex;
+  width: 900px;
   margin-left: 60px;
 }
 
@@ -522,7 +523,7 @@ body {
 
 .postName {
   width: 1000px;
-  height: 200px;
+  min-height: 200px;
   font-size: 60px;
   line-height: 1.2;
   margin-top: 50px;
@@ -531,7 +532,7 @@ body {
 }
 
 .postShortDescription {
-  width: 792px;
+  width: 725px;
   min-height: 60px;
   margin-top: 20px;
   align-self: center;
@@ -539,14 +540,13 @@ body {
 
 .postFirstFoto {
   display: flex;
-  width: 996px;
   height: 505px;
   margin-top: 20px;
   justify-content: center;
 }
 
 .postFotoDescription {
-  width: 900px;
+  width: 725px;
   display: flex;
   align-self: center;
   align-items: center;
@@ -555,6 +555,7 @@ body {
 
 .postFirstFotoDescription {
   font-size: 16px;
+  color: #94a3b8;
 }
 
 .postSmallName {
@@ -570,10 +571,46 @@ body {
 .postSecondDescription {
   margin-top: 20px;
   align-self: center;
-  width: 792px;
+  width: 725px;
   min-height: 60px;
   font-size: 20px;
   font-weight: 400px;
+  line-height: 30px;
+}
+
+.postThirdDescription {
+  margin-top: 20px;
+  align-self: center;
+  width: 725px;
+  min-height: 60px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.postAuthorQuote {
+  margin-top: 20px;
+  align-self: center;
+  width: 725px;
+  min-height: 60px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #94a3b8;
+}
+
+.postAuthorInfo {
+  width: 725px;
+  min-height: 60px;
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.postLastDescription {
+  margin-top: 20px;
+  align-self: center;
+  width: 725px;
+  min-height: 60px;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -631,6 +668,14 @@ body {
     margin: 35px 15px 35px 0px;
   }
 }
+@media (max-width: 1060px) {
+  .postName {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1000px) {
+}
 
 @media (max-width: 975px) {
   .footer-logo {
@@ -664,6 +709,27 @@ body {
 
   .contacts {
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 960px) {
+  .postName {
+    width: 830px;
+    margin-left: 10px;
+  }
+  .postUserInfo {
+    width: 830px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .postName {
+    font-size: 55px;
+    width: 760px;
+  }
+  .postUserInfo {
+    width: 760px;
   }
 }
 
@@ -747,6 +813,58 @@ body {
   .nav-link {
     margin: 35px 10px 31px 10px;
   }
+
+  .postFirstFoto {
+    width: 724px;
+    height: 444px;
+  }
+
+  .postSmallName {
+    font-size: 35px;
+    width: 750px;
+  }
+}
+@media (max-width: 770px) {
+  .postName {
+    font-size: 40px;
+    width: 555px;
+    margin-left: 55px;
+    min-height: 130px;
+  }
+  .postUserInfo {
+    width: 555px;
+    margin-left: 55px;
+  }
+  .postShortDescription {
+    width: 610px;
+  }
+  .postFirstFoto {
+    width: 624px;
+    height: 382px;
+  }
+  .postSmallName {
+    width: 555px;
+    margin-left: 55px;
+    align-self: auto;
+  }
+  .postSecondDescription {
+    width: 610px;
+  }
+  .postThirdDescription {
+    width: 610px;
+  }
+  .postAuthorQuote {
+    width: 610px;
+  }
+  .postAuthorInfo {
+    width: 610px;
+  }
+  .postLastDescription {
+    width: 610px;
+  }
+  .postFotoDescription {
+    width: 500px;
+  }
 }
 @media (max-width: 740px) {
   .nav-link {
@@ -772,6 +890,15 @@ body {
   .terms {
     left: 30px;
   }
+  .postName {
+    margin-left: -2px;
+  }
+  .postUserInfo {
+    margin-left: -2px;
+  }
+  .postSmallName {
+    margin-left: -2px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -782,6 +909,57 @@ body {
   .contacts {
     margin-right: 210px;
   }
+  .postName {
+    font-size: 35px;
+    width: 485px;
+    margin-left: 55px;
+    min-height: 90px;
+  }
+  .postUserInfo {
+    width: 555px;
+    margin-left: 55px;
+  }
+  .postShortDescription {
+    width: 510px;
+  }
+  .postFirstFoto {
+    width: 524px;
+    height: 321px;
+  }
+  .postSmallName {
+    width: 555px;
+    margin-left: 55px;
+    align-self: auto;
+  }
+  .postSecondDescription {
+    width: 510px;
+  }
+  .postThirdDescription {
+    width: 510px;
+  }
+  .postAuthorQuote {
+    width: 510px;
+  }
+  .postAuthorInfo {
+    width: 510px;
+  }
+  .postLastDescription {
+    width: 510px;
+  }
+  .postFotoDescription {
+    width: 510px;
+  }
+  .postFirstFotoDescription{
+    font-size: 12px;
+  }
+  .postUserInfo{
+    width: 455px;
+  }
+  .postSmallName{
+    width: 455px;
+    font-size: 30px;
+  }
+  
 }
 @media (max-width: 600px) {
   .nav-link {

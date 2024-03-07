@@ -96,6 +96,10 @@
   margin-top: 15px;
 }
 
+.postAuthorName {
+  font-weight: 700;
+}
+
 #chevron_right3 {
   width: 24px;
   color: #15343a;
