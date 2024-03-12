@@ -54,9 +54,6 @@ body {
   color: #15343a;
 }
 
-.authentication {
-}
-
 .login {
   display: inline;
   text-align: center;
@@ -328,10 +325,6 @@ body {
 
 .faq {
   height: 1136px;
-}
-
-.faq-vector {
-  /* background-image: url(./images/FAQ-vector.svg); */
 }
 
 .faq-background {
@@ -612,6 +605,10 @@ body {
   min-height: 60px;
   font-size: 20px;
   line-height: 30px;
+}
+
+.postAuthorName {
+  font-weight: 700;
 }
 
 @media (max-width: 1245px) {
@@ -949,17 +946,16 @@ body {
   .postFotoDescription {
     width: 510px;
   }
-  .postFirstFotoDescription{
+  .postFirstFotoDescription {
     font-size: 12px;
   }
-  .postUserInfo{
+  .postUserInfo {
     width: 455px;
   }
-  .postSmallName{
+  .postSmallName {
     width: 455px;
     font-size: 30px;
   }
-  
 }
 @media (max-width: 600px) {
   .nav-link {
@@ -993,6 +989,16 @@ body {
   .terms {
     left: -10px;
   }
+  .postUserInfo {
+    margin-left: 10px;
+  }
+
+  .postName {
+    margin-left: 10px;
+  }
+  .postSmallName {
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1002,6 +1008,99 @@ body {
 
   .nav-link {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-nav {
+    justify-content: space-evenly;
+  }
+
+  .contacts {
+    margin-right: 210px;
+  }
+
+  .postUserName {
+    font-size: 20px;
+  }
+
+  .postUserDescription {
+    font-size: 14px;
+  }
+
+  .postName {
+    font-size: 28px;
+    line-height: 42px;
+    width: 315px;
+    margin-left: 0px;
+    align-self: center;
+    min-height: 90px;
+  }
+  .postUserInfo {
+    width: 315px;
+    margin-left: 0px;
+    align-self: center;
+  }
+  .postShortDescription {
+    width: 315px;
+  }
+  .postFirstFoto {
+    width: 290px;
+    height: 181px;
+  }
+  .postSmallName {
+    width: 315px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-left: 0px;
+    align-self: center;
+  }
+  .postSecondDescription {
+    width: 315px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .postThirdDescription {
+    width: 315px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .postAuthorQuote {
+    width: 315px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .postLastDescription {
+    width: 315px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .postFotoDescription {
+    width: 300px;
+  }
+  .postFirstFotoDescription {
+    font-size: 10px;
+  }
+  .postAuthorInfo {
+    width: 200px;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    align-self: flex-end;
+    flex-direction: column;
+  }
+  .postAuthorName {
+    width: 200px;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
   }
 }
 

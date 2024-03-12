@@ -38,6 +38,16 @@ function Content({ handleShow }) {
               cumque aliquam, magnam quisquam perspiciatis animi autem!"
           />
           <Article
+            title="Lorem ipsum dolor, sit amet consectetur adipisicin"
+            content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              cumque aliquam, magnam quisquam perspiciatis animi autem!"
+          />
+          <Article
+            title="Lorem ipsum dolor, sit amet consectetur adipisicin"
+            content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              cumque aliquam, magnam quisquam perspiciatis animi autem!"
+          />
+          <Article
             title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
               cumque aliquam, magnam quisquam perspiciatis animi autem!"
             content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos

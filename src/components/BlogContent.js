@@ -24,9 +24,27 @@ function BlogContent() {
         Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
         libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
         sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
       </div>
       <div className="postFotoDescription">
-          <img className="postFirstFoto" src={postFoto} />
+        <img className="postFirstFoto" src={postFoto} />
         <div className="postFirstFotoDescription">
           Photo by author Henry Cooper. You can see more his works here
         </div>
@@ -76,7 +94,7 @@ function BlogContent() {
         libero et velit interdum, ac aliquet odio mattis.
       </div>
       <div className="postAuthorInfo">
-        <div className="postAuthorName">-Katya Hwiljowa</div>, Marketing
+        <div className="postAuthorName">-Katya Hwiljowa, </div> Marketing
         specialist
       </div>
       <div className="postLastDescription">
