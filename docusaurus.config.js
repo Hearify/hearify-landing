@@ -8,9 +8,9 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Hearify Blog',
+  title: 'Hearify',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -56,29 +56,25 @@ const config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.svg',
     navbar: {
-      title: 'Hearify',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
+        href: 'https://hearify.org'
       },
       items: [
         {
-          to: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          to: 'https://hearify.org/#how-it-works-section',
           label: 'How it works',
         },
         {
-          to: 'https://github.com/facebook/docusaurus',
-          label: 'Pricing',
+          to: '/',
+          label: 'Blog',
         },
         {
-          to: 'https://github.com/facebook/docusaurus',
+          to: 'https://hearify.org/#faq-section',
           label: 'FAQ',
-        },
-        {
-          to: 'https://github.com/facebook/docusaurus',
-          label: 'Contacts',
         },
       ],
     },
@@ -93,20 +89,12 @@ const config = {
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'FAG',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Blog',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Pricing',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
           ],
         },
-        {
+        /*{
           title: 'Community',
           items: [
             {
@@ -123,6 +111,20 @@ const config = {
               href: 'https://twitter.com/docusaurus',
             },
           ],
+        },*/
+        {
+          title: 'Terms of Use and Privacy Policy.',
+          items: [
+
+            {
+              label: 'Privacy Policy',
+              href: 'https://privacy-policy.hearify.org/',
+            },
+            {
+              label: 'Terms of Service',
+              href: 'https://terms-of-service.hearify.org/',
+            },
+          ],
         },
         {
           title: 'More',
@@ -134,7 +136,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright <a>Terms</a> and <a>Privacy</a> © ${new Date().getFullYear()} Hearify, Inc. Built with Docusaurus.`,
+      copyright: `Copyright ${new Date().getFullYear()} Hearify, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
