@@ -39,14 +39,10 @@ const config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          sidebarPath: './sidebars.js'
         },
         blog: {
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          showReadingTime: true
         },
         theme: {
           customCss: './src/css/custom.css',
