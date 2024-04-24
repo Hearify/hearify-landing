@@ -5,6 +5,10 @@
  */
 
 /* You can override the default Infima variables here. */
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 :root {
   --ifm-color-primary: #414141;
   --ifm-color-primary-dark: #8600cf;

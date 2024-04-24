@@ -52,6 +52,7 @@ const config = {
   ],
 
   themeConfig: {
+    customCss: require.resolve('./src/css/custom.css'),
     image: 'img/logo.svg',
     navbar: {
       logo: {
