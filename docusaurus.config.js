@@ -42,6 +42,7 @@ const config = {
           sidebarPath: './sidebars.js'
         },
         blog: {
+          routeBasePath: '/articles',
           showReadingTime: true
         },
         theme: {
@@ -50,6 +51,7 @@ const config = {
       },
     ],
   ],
+
   themeConfig: {
     customCss: require.resolve('./src/css/custom.css'),
     image: 'img/logo.svg',
@@ -65,7 +67,7 @@ const config = {
           label: 'How it works',
         },
         {
-          to: '/',
+          to: '/articles',
           label: 'Blog',
         },
         {
@@ -84,14 +86,17 @@ const config = {
               label: 'How Hearify works',
               href: 'https://hearify.org/#how-it-works-section',
             },
+        {
+          label: 'Blog',
+          href: 'https://hearify.org/blog/articles',
+        },
+
             {
               label: 'FAQ',
               href: 'https://hearify.org/#faq-section',
             },
           ],
         },
-
-        
         /*{
           title: 'Community',
           items: [
@@ -110,7 +115,7 @@ const config = {
             },
           ],
         },*/
-            {
+        {
           title: 'Terms of Use and Privacy Policy.',
           items: [
 
@@ -141,19 +146,15 @@ const config = {
       darkTheme: prismThemes.dracula,
     },
   },
-  
- // Use customFields to include the redirect route
+
+  // Use customFields to include the redirect route
   customFields: {
     // Add the redirect route
     redirects: [
-      {
-        from: '/blog',
-        to: '/blog/blog',
-      },
-      {
-        from: '/',
-        to: '/blog',
-      }
+//      {
+//        from: '/',
+//        to: '/blog',
+//      },
     ],
   },
 };
