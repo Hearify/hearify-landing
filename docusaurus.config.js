@@ -8,20 +8,20 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Hearify',
-  tagline: 'Dinosaurs are cool',
+  title: 'AI Quiz Generator by Hearify',
+  tagline: 'Convert PDFs, texts and videos into engaging quizzes, customize questions, and provide instant feedback.',
   favicon: 'img/logo.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/blog/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Hearify', // Usually your GitHub org/user name.
+  projectName: 'AI Quiz Generator', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -50,13 +50,12 @@ const config = {
       },
     ],
   ],
-
   themeConfig: {
     customCss: require.resolve('./src/css/custom.css'),
     image: 'img/logo.svg',
     navbar: {
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Hearify Logo',
         src: 'img/logo.svg',
         href: 'https://hearify.org'
       },
@@ -79,18 +78,20 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'About Hearify',
           items: [
             {
               label: 'How Hearify works',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://hearify.org/#how-it-works-section',
             },
             {
-              label: 'Blog',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'FAQ',
+              href: 'https://hearify.org/#faq-section',
             },
           ],
         },
+
+        
         /*{
           title: 'Community',
           items: [
@@ -109,7 +110,7 @@ const config = {
             },
           ],
         },*/
-        {
+            {
           title: 'Terms of Use and Privacy Policy.',
           items: [
 
@@ -127,28 +128,32 @@ const config = {
           title: 'More',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Hearify LinkedIn',
+              href: 'https://www.linkedin.com/company/hearify/',
             },
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} Hearify, Inc. Built with Docusaurus.`,
+      copyright: `Copyright ${new Date().getFullYear()} Hearify`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   },
-
-  // Use customFields to include the redirect route
+  
+ // Use customFields to include the redirect route
   customFields: {
     // Add the redirect route
     redirects: [
       {
+        from: '/blog',
+        to: '/blog/blog',
+      },
+      {
         from: '/',
         to: '/blog',
-      },
+      }
     ],
   },
 };
