@@ -1,9 +1,14 @@
 polina:
   name: Polina Vasylenko
-  title: AI-enthusiast, Teacher & Mentor at online schools
+  title: AI-enthusiast, Product Manager
   image_url: ./images/Lina.jpeg
 
 sofiia:
   name: Sofiia Shaposhnikova
-  title: AI Engineer, EdTech Entrepreneur
+  title: AI Engineer, Founder at Hearify
   image_url: ./images/Sofiia.jpg
+
+anna:
+  name: Anna Fox
+  title: Teacher & Mentor at online schools
+  image_url: ./images/Anna.jpg
