@@ -43,7 +43,8 @@ const config = {
         },
         blog: {
           routeBasePath: '/articles',
-          showReadingTime: true
+          showReadingTime: true,
+          blogSidebarCount: 25
         },
         theme: {
           customCss: './src/css/custom.css',
