@@ -1,56 +1,56 @@
 [
   {
-    "slug": "my-Lifestyle-post",
-    "section": "Lifestyle",
-    "title": "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "description": "Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "slug": "80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s",
+    "tag": "Lifestyle",
+    "title": "80s Music Quiz",
+    "description": "Test your knowledge of the unforgettable music that defined the 1980s! From pop legends to rock anthems, this quiz will challenge your memory of the decade's greatest hits and artists. Let's see if you're an 80s music expert!",
     "minutesToRead": 5,
     "date": "Jul 20, 2024",
-    "coverUrl": "https://s3-alpha-sig.figma.com/img/c768/f22b/fd431951e6006c83532538725a144cfa?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnatjBg9fPWe3OXqO5X8NqfkAwlsDKZmRQpr6pNIoitV2QEI1-3aeKAzTVJTBeyju~j095HoKowPtuDLYVf9ZU0F6C9GZum7Tjs1bYkPW-m7abDAe81uy13-x6uegbFM2~FviH4Nk25cl1D3PqwpufnqAI74Sy7s8nt3-nQsH-WlOuisXxv58Ktxj3bgFD-DFMaK6n6OHD14tjCa3l97UZcrFtJ0V~f~pqKSAKFB-T~QWcPRfq0nTRZ9MD9-q07VxIc3SJBo--fA99tseR43iUI2D2Yr5P6J2vTDcdh8FHlijsJL1q~putBURgHOwEfWdfaq4bzQtMcxMaAtxutMwQ__"
+    "coverUrl": "/blog/images/80s_start.png"
   },
   {
-    "slug": "my-Lifestyle-post",
-    "section": "Lifestyle",
-    "title": "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "description": "Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "minutesToRead": 5,
+    "slug": "80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s",
+    "tag": "AI",
+    "title": "How to use AI to create assessments",
+    "description": "In the quickly expanding area of educational technology, Generative AI is a leading example of new ideas. It is changing the usual ways of teaching and testing. This new technology can make learning more tailored to each person and make creating educational materials much simpler than before.\nThis article will explain what Generative AI is, look at how it can be used to make good test questions, explore how it can help students learn better, and finally, think about how to use it responsibly in education.",
+    "minutesToRead": 10,
     "date": "Jul 20, 2024",
-    "coverUrl": "https://s3-alpha-sig.figma.com/img/c768/f22b/fd431951e6006c83532538725a144cfa?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnatjBg9fPWe3OXqO5X8NqfkAwlsDKZmRQpr6pNIoitV2QEI1-3aeKAzTVJTBeyju~j095HoKowPtuDLYVf9ZU0F6C9GZum7Tjs1bYkPW-m7abDAe81uy13-x6uegbFM2~FviH4Nk25cl1D3PqwpufnqAI74Sy7s8nt3-nQsH-WlOuisXxv58Ktxj3bgFD-DFMaK6n6OHD14tjCa3l97UZcrFtJ0V~f~pqKSAKFB-T~QWcPRfq0nTRZ9MD9-q07VxIc3SJBo--fA99tseR43iUI2D2Yr5P6J2vTDcdh8FHlijsJL1q~putBURgHOwEfWdfaq4bzQtMcxMaAtxutMwQ__"
+    "coverUrl": "/blog/images/11.jpg"
   },
   {
-    "slug": "my-Lifestyle-post",
-    "section": "Lifestyle",
-    "title": "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "description": "Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "minutesToRead": 5,
+    "slug": "80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s",
+    "tag": "AI",
+    "title": "How to Use AI Quiz for Personalized Learning",
+    "description": "Like all other domains of life, the education landscape is inevitably undergoing an AI revolution. AI-powered learning tools are transforming traditional learning methods by creating personalized experiences for students. This article delves into the exciting potential of AI quizzes for personalized learning.",
+    "minutesToRead": 10,
     "date": "Jul 20, 2024",
-    "coverUrl": "https://s3-alpha-sig.figma.com/img/c768/f22b/fd431951e6006c83532538725a144cfa?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnatjBg9fPWe3OXqO5X8NqfkAwlsDKZmRQpr6pNIoitV2QEI1-3aeKAzTVJTBeyju~j095HoKowPtuDLYVf9ZU0F6C9GZum7Tjs1bYkPW-m7abDAe81uy13-x6uegbFM2~FviH4Nk25cl1D3PqwpufnqAI74Sy7s8nt3-nQsH-WlOuisXxv58Ktxj3bgFD-DFMaK6n6OHD14tjCa3l97UZcrFtJ0V~f~pqKSAKFB-T~QWcPRfq0nTRZ9MD9-q07VxIc3SJBo--fA99tseR43iUI2D2Yr5P6J2vTDcdh8FHlijsJL1q~putBURgHOwEfWdfaq4bzQtMcxMaAtxutMwQ__"
+    "coverUrl": "/blog/images/m8.jpg"
   },
   {
-    "slug": "my-Lifestyle-post",
-    "section": "Lifestyle",
-    "title": "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "description": "Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "slug": "80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s",
+    "tag": "Lifestyle",
+    "title": "80s Music Quiz",
+    "description": "Test your knowledge of the unforgettable music that defined the 1980s! From pop legends to rock anthems, this quiz will challenge your memory of the decade's greatest hits and artists. Let's see if you're an 80s music expert!",
     "minutesToRead": 5,
     "date": "Jul 20, 2024",
-    "coverUrl": "https://s3-alpha-sig.figma.com/img/c768/f22b/fd431951e6006c83532538725a144cfa?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnatjBg9fPWe3OXqO5X8NqfkAwlsDKZmRQpr6pNIoitV2QEI1-3aeKAzTVJTBeyju~j095HoKowPtuDLYVf9ZU0F6C9GZum7Tjs1bYkPW-m7abDAe81uy13-x6uegbFM2~FviH4Nk25cl1D3PqwpufnqAI74Sy7s8nt3-nQsH-WlOuisXxv58Ktxj3bgFD-DFMaK6n6OHD14tjCa3l97UZcrFtJ0V~f~pqKSAKFB-T~QWcPRfq0nTRZ9MD9-q07VxIc3SJBo--fA99tseR43iUI2D2Yr5P6J2vTDcdh8FHlijsJL1q~putBURgHOwEfWdfaq4bzQtMcxMaAtxutMwQ__"
+    "coverUrl": "/blog/images/80s_start.png"
   },
   {
-    "slug": "my-Lifestyle-post",
-    "section": "Lifestyle",
-    "title": "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "description": "Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "minutesToRead": 5,
+    "slug": "80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s",
+    "tag": "AI",
+    "title": "How to use AI to create assessments",
+    "description": "In the quickly expanding area of educational technology, Generative AI is a leading example of new ideas. It is changing the usual ways of teaching and testing. This new technology can make learning more tailored to each person and make creating educational materials much simpler than before.\nThis article will explain what Generative AI is, look at how it can be used to make good test questions, explore how it can help students learn better, and finally, think about how to use it responsibly in education.",
+    "minutesToRead": 10,
     "date": "Jul 20, 2024",
-    "coverUrl": "https://s3-alpha-sig.figma.com/img/c768/f22b/fd431951e6006c83532538725a144cfa?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnatjBg9fPWe3OXqO5X8NqfkAwlsDKZmRQpr6pNIoitV2QEI1-3aeKAzTVJTBeyju~j095HoKowPtuDLYVf9ZU0F6C9GZum7Tjs1bYkPW-m7abDAe81uy13-x6uegbFM2~FviH4Nk25cl1D3PqwpufnqAI74Sy7s8nt3-nQsH-WlOuisXxv58Ktxj3bgFD-DFMaK6n6OHD14tjCa3l97UZcrFtJ0V~f~pqKSAKFB-T~QWcPRfq0nTRZ9MD9-q07VxIc3SJBo--fA99tseR43iUI2D2Yr5P6J2vTDcdh8FHlijsJL1q~putBURgHOwEfWdfaq4bzQtMcxMaAtxutMwQ__"
+    "coverUrl": "/blog/images/11.jpg"
   },
   {
-    "slug": "my-Lifestyle-post",
-    "section": "Lifestyle",
-    "title": "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "description": "Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "minutesToRead": 5,
+    "slug": "80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s",
+    "tag": "AI",
+    "title": "How to Use AI Quiz for Personalized Learning",
+    "description": "Like all other domains of life, the education landscape is inevitably undergoing an AI revolution. AI-powered learning tools are transforming traditional learning methods by creating personalized experiences for students. This article delves into the exciting potential of AI quizzes for personalized learning.",
+    "minutesToRead": 10,
     "date": "Jul 20, 2024",
-    "coverUrl": "https://s3-alpha-sig.figma.com/img/c768/f22b/fd431951e6006c83532538725a144cfa?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnatjBg9fPWe3OXqO5X8NqfkAwlsDKZmRQpr6pNIoitV2QEI1-3aeKAzTVJTBeyju~j095HoKowPtuDLYVf9ZU0F6C9GZum7Tjs1bYkPW-m7abDAe81uy13-x6uegbFM2~FviH4Nk25cl1D3PqwpufnqAI74Sy7s8nt3-nQsH-WlOuisXxv58Ktxj3bgFD-DFMaK6n6OHD14tjCa3l97UZcrFtJ0V~f~pqKSAKFB-T~QWcPRfq0nTRZ9MD9-q07VxIc3SJBo--fA99tseR43iUI2D2Yr5P6J2vTDcdh8FHlijsJL1q~putBURgHOwEfWdfaq4bzQtMcxMaAtxutMwQ__"
+    "coverUrl": "/blog/images/m8.jpg"
   }
 ]

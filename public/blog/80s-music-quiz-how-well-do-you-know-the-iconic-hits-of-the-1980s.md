@@ -1,22 +1,12 @@
-![AIEdu](https://s3-alpha-sig.figma.com/img/c768/f22b/fd431951e6006c83532538725a144cfa?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnatjBg9fPWe3OXqO5X8NqfkAwlsDKZmRQpr6pNIoitV2QEI1-3aeKAzTVJTBeyju~j095HoKowPtuDLYVf9ZU0F6C9GZum7Tjs1bYkPW-m7abDAe81uy13-x6uegbFM2~FviH4Nk25cl1D3PqwpufnqAI74Sy7s8nt3-nQsH-WlOuisXxv58Ktxj3bgFD-DFMaK6n6OHD14tjCa3l97UZcrFtJ0V~f~pqKSAKFB-T~QWcPRfq0nTRZ9MD9-q07VxIc3SJBo--fA99tseR43iUI2D2Yr5P6J2vTDcdh8FHlijsJL1q~putBURgHOwEfWdfaq4bzQtMcxMaAtxutMwQ)
-*Photo by author Henry Cooper. You can see more his works here*
+Test your knowledge of the unforgettable music that defined the 1980s! From pop legends to rock anthems, this quiz will challenge your memory of the decade's greatest hits and artists. Let's see if you're an 80s music expert!
 
-In the quickly expanding area of educational technology, Generative AI is a leading example of new ideas. It is changing the usual ways of teaching and testing. This new technology can make learning more tailored to each person and make creating educational materials much simpler than before.
-This article will explain what Generative AI is, look at how it can be used to make good test questions, explore how it can help students learn better, and finally, think about how to use it responsibly in education.
+![AIEdu](/blog/images/80s_start.png)
 
-## What is Generative AI?
-Generative AI refers to a subset of artificial intelligence technologies capable of generating new content, from text and images to data patterns, based on the learning from vast amounts of existing data. Unlike traditional AI, which is designed to follow explicit instructions, Generative AI adopts a more creative approach, using algorithms like Generative Adversarial Networks (GANs) and transformers to produce original, contextually relevant material.
+## Take the Quiz Now and Relive the Magic of the 1980s!
 
-In the educational sphere, Generative AI has begun to make its mark, offering tools that can generate rich, diverse educational content, including quizzes, illustrative diagrams, and even explanatory paragraphs. These tools not only assist in creating formative assessments but also in developing customized learning materials that cater to the needs of every student.
+Relive the glory days of the 80s with this fun and challenging quiz. Perfect for music enthusiasts, trivia fans, and anyone who loves the vibrant sounds of the decade. Share the quiz with friends and see who can remember the most hits!
 
-![AIEdu](https://s3-alpha-sig.figma.com/img/c768/f22b/fd431951e6006c83532538725a144cfa?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnatjBg9fPWe3OXqO5X8NqfkAwlsDKZmRQpr6pNIoitV2QEI1-3aeKAzTVJTBeyju~j095HoKowPtuDLYVf9ZU0F6C9GZum7Tjs1bYkPW-m7abDAe81uy13-x6uegbFM2~FviH4Nk25cl1D3PqwpufnqAI74Sy7s8nt3-nQsH-WlOuisXxv58Ktxj3bgFD-DFMaK6n6OHD14tjCa3l97UZcrFtJ0V~f~pqKSAKFB-T~QWcPRfq0nTRZ9MD9-q07VxIc3SJBo--fA99tseR43iUI2D2Yr5P6J2vTDcdh8FHlijsJL1q~putBURgHOwEfWdfaq4bzQtMcxMaAtxutMwQ)
-*How does generative AI work from teacher prosperity*
-
-## Generative AI in Creating Assessment Questions
-
-Using Generative AI to create test questions is a big improvement in how we teach. This technology can make all kinds of questions, like multiple-choice, fill-in-the-blanks, and even tougher ones that make students think hard. Teachers just need to tell the AI what topics to cover and how tough the questions should be. Then, the AI can make a bunch of different questions that really test if students understand the material.
-
-One of the best things about Generative AI in education is how it can make tests that help students learn, not just show what they already know. It can make questions and give feedback that's just right for each student. This means teaching can be more flexible, changing quickly to match how students are doing and keeping them interested.
+Whether you're reminiscing about the past or discovering these classic tunes for the first time, this quiz is sure to entertain and educate.
 
 *Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.*
 
