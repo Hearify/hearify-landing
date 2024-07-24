@@ -1,0 +1,28 @@
+@use "src/styles/helpers" as *;
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+  box-shadow: $shadow-card;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  @include text-field-lg;
+}
+
+.role {
+  @include text-subtitle-4;
+  background-color: var(--white);
+  padding: 4px 8px;
+}

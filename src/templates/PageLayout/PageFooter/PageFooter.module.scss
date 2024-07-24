@@ -1,0 +1,94 @@
+@use "src/styles/helpers" as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 32px;
+  max-width: $max-page-width;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.navigation {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  @include md {
+    width: 100%;
+    max-width: 450px;
+    justify-content: space-around;
+  }
+}
+
+
+.link {
+  @include text-subtitle-2;
+  transition: $default-transition;
+
+  &:hover {
+    color: var(--brand-purpe-400);
+  }
+}
+
+.logo {
+  width: 180px;
+  height: 68px;
+  @include sm {
+    width: 106px;
+    height: 43px;
+  }
+}
+
+.socials {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: flex-end;
+    @include md {
+      width: 100%;
+      max-width: 300px;
+      justify-content: space-around;
+    }
+  }
+}
+
+.email {
+  @include text-main-2;
+  transition: $default-transition;
+  text-align: right;
+
+  &:hover {
+    color: var(--brand-purpe-400);
+  }
+}
+
+.privacy {
+  @include text-subtitle-3;
+  text-align: center;
+  color: var(--neural-400);
+
+  a {
+    text-decoration: underline;
+  }
+}
