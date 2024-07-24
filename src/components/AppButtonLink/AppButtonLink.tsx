@@ -36,7 +36,7 @@ const AppButtonLink: React.FC<AppButtonLinkProps> = ({
     styles[`AppButton--${size}`],
     block && styles['AppButton--block'],
     disabled && styles['AppButton--disabled'],
-    className
+    className,
   );
 
   return (

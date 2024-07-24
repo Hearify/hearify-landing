@@ -50,12 +50,15 @@ const Topic: React.FC<TopicProps> = ({ topic, children }) => {
           <div className={styles.footer}>
             <div className={styles.socials}>
               <a href="https://www.facebook.com/people/Hearify/61552644703836/" target="_blank" rel="noreferrer">
+                {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
                 <Image src={facebookImg} alt="Facebook" width={32} height={32} />
               </a>
               <a href="https://www.linkedin.com/company/hearify/" target="_blank" rel="noreferrer">
+                {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
                 <Image src={linkedInImg} alt="LinkedIn" width={32} height={32} />
               </a>
               <a href="https://www.instagram.com/hearify.tech/" target="_blank" rel="noreferrer">
+                {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
                 <Image src={instagramImg} alt="Instagram" width={32} height={32} />
               </a>
             </div>

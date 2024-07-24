@@ -21,6 +21,7 @@ const TopicAuthor: React.FC<TopicAuthorProps> = ({ author }) => {
           <p className={styles.name}>{author.name}</p>
           <p className={styles.role}>{AuthorRoleEnum[author.role]}</p>
           <a href={author.linkedInUrl} target="_blank" rel="noreferrer">
+            {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
             <Image src={linkedInImg} alt="LinkedIn" width={24} height={24} />
           </a>
         </div>

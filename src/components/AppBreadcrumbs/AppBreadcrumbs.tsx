@@ -31,6 +31,7 @@ const AppBreadcrumbs: React.FC<AppBreadcrumbsProps> = ({ items }) => {
               </li>
             )}
 
+            {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
             <li className={styles.item}>{index < items.length - 1 && <Image src={arrowIcon} alt="separator" />}</li>
           </>
         ))}
