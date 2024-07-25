@@ -39,19 +39,25 @@ const TopicPage: NextPage<TopicProps & MDXProps> = ({ topic, headers, mdxSource 
 export default TopicPage;
 
 export const getServerSideProps: GetServerSideProps<MDXProps> = async context => {
-  const slug = context.params?.slug as string;
+  try {
+    const slug = context.params?.slug as string;
 
-  const mdxText = await BlogService.loadTopicMarkdown(slug);
-  const mdxSource = await serializeMarkdown(mdxText);
+    const mdxText = await BlogService.loadTopicMarkdown(slug);
+    const mdxSource = await serializeMarkdown(mdxText);
 
-  const topic = await BlogService.loadTopic(slug);
-  const headers = extractHeaders(mdxText);
+    const topic = await BlogService.loadTopic(slug);
+    const headers = extractHeaders(mdxText);
 
-  return {
-    props: {
-      mdxSource,
-      topic,
-      headers,
-    },
-  };
+    return {
+      props: {
+        mdxSource,
+        topic,
+        headers,
+      },
+    };
+  } catch {
+    return {
+      notFound: true,
+    };
+  }
 };

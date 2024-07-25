@@ -41,7 +41,7 @@ class BlogService {
     const suggestions = topics
       .filter(item => item.slug !== slug)
       .slice(0, 3)
-      .toSorted(() => 0.5 - Math.random());
+      .sort(() => 0.5 - Math.random());
 
     return {
       ...topic,
