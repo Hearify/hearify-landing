@@ -31,8 +31,9 @@ const Topic: React.FC<TopicProps> = ({ topic, children }) => {
           />
 
           <div className={styles.authors}>
-            <TopicAuthor author={topic.author} />
-            <TopicAuthor author={topic.editor} />
+            {/* eslint-disable jsx-a11y/aria-role */}
+            <TopicAuthor author={topic.author} role="author" />
+            <TopicAuthor author={topic.editor} role="editor" />
           </div>
 
           <div className={styles.header}>

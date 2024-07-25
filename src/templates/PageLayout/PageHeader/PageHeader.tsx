@@ -23,7 +23,7 @@ const PageHeader: React.FC = () => {
 
   return (
     <div className={styles.wrapper}>
-      <Link href="/" className={styles.logo}>
+      <Link href="https://hearify.org" className={styles.logo}>
         <Image src={logoImg} alt="Hearify logo" width={180} height={68} className={styles.logoImage} />
       </Link>
 
@@ -63,7 +63,7 @@ const PageHeader: React.FC = () => {
 
           <div className={cn(styles.drawer, isMenuOpen && styles.drawerActive)}>
             <div className={styles.drawerContent}>
-              <Link href="/">
+              <Link href="https://hearify.org">
                 <Image src={logoImg} alt="Hearify logo" width={180} height={68} />
               </Link>
 
