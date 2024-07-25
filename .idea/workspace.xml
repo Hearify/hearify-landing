@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="fix: add automatic sidebar generation">
-      <change afterPath="$PROJECT_DIR$/src/utils/serializeMarkdown.ts" afterDir="false" />
+    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="fix: minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/topics/15-best-ai-for-quiz-answers.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/topics/15-best-ai-for-quiz-answers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/topics/how-to-use-ai-quiz-for-personalized-learning.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/topics/how-to-use-ai-quiz-for-personalized-learning.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/extractHeaders.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/extractHeaders.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,7 @@
       <workItem from="1721822651018" duration="4813000" />
       <workItem from="1721853791112" duration="4777000" />
       <workItem from="1721910025315" duration="7000" />
-      <workItem from="1721910054162" duration="677000" />
+      <workItem from="1721910054162" duration="2100000" />
     </task>
     <task id="LOCAL-00001" summary="feat: switch from gatsby to nextjs">
       <option name="closed" value="true" />
@@ -139,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721901970815</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix: minor changes">
+      <option name="closed" value="true" />
+      <created>1721910869431</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721910869431</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +191,7 @@
     <MESSAGE value="fix: add responsive to TopicAuthor component" />
     <MESSAGE value="feat: add 3 topics" />
     <MESSAGE value="fix: add automatic sidebar generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: add automatic sidebar generation" />
+    <MESSAGE value="fix: minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: minor changes" />
   </component>
 </project>

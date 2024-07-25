@@ -1,4 +1,4 @@
-const HEADER_REGEX = /^(#{1,6})\s+(.+)$/gm;
+const HEADER_REGEX = /^(#{2})\s+(.+)$/gm;
 
 const extractHeaders = (content: string): string[] => {
   return Array.from(content.matchAll(HEADER_REGEX)).map(match => match[2]);
