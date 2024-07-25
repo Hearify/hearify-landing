@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="fix: minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/extractHeaders.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/extractHeaders.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/FAQBlock/FAQBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FAQBlock/FAQBlock.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +36,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/user/WebstormProjects/blog/public/blog&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -86,7 +84,8 @@
       <workItem from="1721822651018" duration="4813000" />
       <workItem from="1721853791112" duration="4777000" />
       <workItem from="1721910025315" duration="7000" />
-      <workItem from="1721910054162" duration="2100000" />
+      <workItem from="1721910054162" duration="2964000" />
+      <workItem from="1721914631328" duration="86000" />
     </task>
     <task id="LOCAL-00001" summary="feat: switch from gatsby to nextjs">
       <option name="closed" value="true" />
@@ -144,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721910869431</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix: minor changes">
+      <option name="closed" value="true" />
+      <created>1721913399265</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721913399265</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
