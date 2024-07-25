@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import AppBreadcrumbs from '@/components/AppBreadcrumbs/AppBreadcrumbs';
 import TopicAuthor from '@/containers/TopicAuthor/TopicAuthor';
@@ -10,15 +12,25 @@ import styles from './Topic.module.scss';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import TopicCard from '@/containers/TopicCard/TopicCard';
 import AppHeading from '@/components/AppHeading/AppHeading';
+import slugify from '@/utils/slugify';
 
 import type { Topic as TopicType } from '@/types/topic';
 
 export type TopicProps = {
   topic: TopicType;
+  headers: string[];
   children: React.ReactNode;
 };
 
-const Topic: React.FC<TopicProps> = ({ topic, children }) => {
+const Topic: React.FC<TopicProps> = ({
+  topic, //
+  headers,
+  children,
+}) => {
+  const router = useRouter();
+
+  const cleanPath: string = router.asPath.split('#')[0].split('?')[0];
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.main}>
@@ -82,13 +94,13 @@ const Topic: React.FC<TopicProps> = ({ topic, children }) => {
 
         <aside className={styles.sidebar}>
           <h3 className={styles.sidebarTitle}>Table of contents</h3>
-          <ol className={styles.sidebarContainer}>
-            {topic.sections.map(section => (
-              <li key={section} className={styles.sidebarItem}>
-                {section}
-              </li>
+          <nav className={styles.sidebarContainer}>
+            {headers.map(item => (
+              <Link key={item} className={styles.sidebarItem} href={`${cleanPath}#${slugify(item)}`}>
+                {item}
+              </Link>
             ))}
-          </ol>
+          </nav>
         </aside>
       </div>
 

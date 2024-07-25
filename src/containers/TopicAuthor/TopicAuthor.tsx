@@ -24,6 +24,7 @@ const TopicAuthor: React.FC<TopicAuthorProps> = ({ author, role }) => {
           <div className={styles.body}>
             <p className={styles.role}>{AuthorRoleEnum[role]}</p>
             <a href={author.linkedInUrl} target="_blank" rel="noreferrer">
+              {/* TODO(Sasha): Fix image assign everywhere */}
               {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
               <Image src={linkedInImg} alt="LinkedIn" width={24} height={24} />
             </a>

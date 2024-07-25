@@ -10,7 +10,6 @@ export type TopicPreview = {
   coverUrl: string;
   authorSlug: string;
   editorSlug: string;
-  sections: string[];
 };
 
 export type Topic = {
@@ -21,7 +20,6 @@ export type Topic = {
   title: string;
   date: string;
   minutesToRead: number;
-  sections: string[];
   author: Author;
   editor: Author;
   suggestions: TopicPreview[];

@@ -43,8 +43,6 @@ class BlogService {
       .slice(0, 3)
       .toSorted(() => 0.5 - Math.random());
 
-    console.log(topics);
-
     return {
       ...topic,
       author,

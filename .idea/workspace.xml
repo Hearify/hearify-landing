@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="fix: add responsive to TopicAuthor component">
-      <change afterPath="$PROJECT_DIR$/public/main-image.png" afterDir="false" />
+    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="feat: add 3 topics">
+      <change afterPath="$PROJECT_DIR$/src/utils/extractHeaders.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/slugify.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog/topics.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/topics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/BlogService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BlogService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Topic/Topic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/topic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/topic.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/user/WebstormProjects/blog/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Users/user/WebstormProjects/blog/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/WebstormProjects/blog/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/user/WebstormProjects/blog/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -164,6 +170,7 @@
     <MESSAGE value="fix: fix types" />
     <MESSAGE value="fix: refactor usage of jsons" />
     <MESSAGE value="fix: add responsive to TopicAuthor component" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: add responsive to TopicAuthor component" />
+    <MESSAGE value="feat: add 3 topics" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add 3 topics" />
   </component>
 </project>

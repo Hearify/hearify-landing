@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 import Topic from '@/templates/Topic/Topic';
 import BlogService from '@/services/BlogService';
+import extractHeaders from '@/utils/extractHeaders';
 
 import type { TopicProps } from '@/templates/Topic/Topic';
 import type { GetServerSideProps, NextPage } from 'next';
@@ -14,7 +15,7 @@ type MDXProps = {
 };
 
 /* eslint-disable react/jsx-props-no-spreading */
-const TopicPage: NextPage<TopicProps & MDXProps> = ({ topic, mdxSource }) => {
+const TopicPage: NextPage<TopicProps & MDXProps> = ({ topic, headers, mdxSource }) => {
   const pageTitle = `${topic.title} — Hearify`;
   const pageDescription = topic.description;
 
@@ -28,7 +29,7 @@ const TopicPage: NextPage<TopicProps & MDXProps> = ({ topic, mdxSource }) => {
         <meta key="og:image" property="og:image" content={topic.coverUrl} />
       </Head>
 
-      <Topic topic={topic}>
+      <Topic topic={topic} headers={headers}>
         <MDXRemote {...mdxSource} />
       </Topic>
     </>
@@ -45,11 +46,13 @@ export const getServerSideProps: GetServerSideProps<MDXProps> = async context =>
     const mdxSource = await serialize(mdxText);
 
     const topic = await BlogService.loadTopic(slug);
+    const headers = extractHeaders(mdxText);
 
     return {
       props: {
         mdxSource,
         topic,
+        headers,
       },
     };
   } catch (error) {
