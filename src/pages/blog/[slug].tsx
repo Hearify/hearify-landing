@@ -56,6 +56,7 @@ export const getServerSideProps: GetServerSideProps<MDXProps> = async context =>
       },
     };
   } catch (error) {
+    console.error(error);
     return {
       notFound: true,
     };
