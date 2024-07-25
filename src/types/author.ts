@@ -6,10 +6,10 @@ export enum AuthorRoleEnum {
 export type AuthorRole = keyof typeof AuthorRoleEnum;
 
 export type Author = {
+  slug: string;
   name: string;
   description: string;
   avatarUrl: string;
   linkedInUrl: string;
   aboutMe?: string;
-  role: AuthorRole;
 };

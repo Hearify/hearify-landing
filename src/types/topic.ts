@@ -5,18 +5,24 @@ export type TopicPreview = {
   tag: string;
   title: string;
   description: string;
-  minutesToRead: number;
   date: string;
+  minutesToRead: number;
   coverUrl: string;
+  authorSlug: string;
+  editorSlug: string;
+  sections: string[];
 };
 
 export type Topic = {
-  title: string;
   slug: string;
+  tag: string;
+  description: string;
+  coverUrl: string;
+  title: string;
+  date: string;
+  minutesToRead: number;
+  sections: string[];
   author: Author;
   editor: Author;
-  minutesToRead: number;
-  date: string;
-  sections: string[];
   suggestions: TopicPreview[];
 };
