@@ -1,10 +1,10 @@
-import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 import Head from 'next/head';
 
 import Topic from '@/templates/Topic/Topic';
 import BlogService from '@/services/BlogService';
 import extractHeaders from '@/utils/extractHeaders';
+import serializeMarkdown from '@/utils/serializeMarkdown';
 
 import type { TopicProps } from '@/templates/Topic/Topic';
 import type { GetServerSideProps, NextPage } from 'next';
@@ -43,7 +43,7 @@ export const getServerSideProps: GetServerSideProps<MDXProps> = async context =>
     const slug = context.params?.slug as string;
 
     const mdxText = await BlogService.loadTopicMarkdown(slug);
-    const mdxSource = await serialize(mdxText);
+    const mdxSource = await serializeMarkdown(mdxText);
 
     const topic = await BlogService.loadTopic(slug);
     const headers = extractHeaders(mdxText);

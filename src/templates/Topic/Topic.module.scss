@@ -112,6 +112,12 @@
   h2 {
     @include text-heading-2;
     margin-bottom: 24px;
+
+    // Hack to add offset for anchor links work
+    padding-top: 150px;
+    margin-top: -150px;
+    display: inline-block; /* required for webkit browsers */
+
     @include sm {
       @include text-heading-4;
     }
