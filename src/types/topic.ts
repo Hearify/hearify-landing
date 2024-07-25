@@ -1,5 +1,10 @@
 import type { Author } from '@/types/author';
 
+export type FAQItem = {
+  question: string;
+  answer: string;
+};
+
 export type TopicPreview = {
   slug: string;
   tag: string;
@@ -10,6 +15,7 @@ export type TopicPreview = {
   coverUrl: string;
   authorSlug: string;
   editorSlug: string;
+  faq?: FAQItem[];
 };
 
 export type Topic = {
@@ -20,6 +26,7 @@ export type Topic = {
   title: string;
   date: string;
   minutesToRead: number;
+  faq?: FAQItem[];
   author: Author;
   editor: Author;
   suggestions: TopicPreview[];

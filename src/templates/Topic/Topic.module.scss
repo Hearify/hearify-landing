@@ -39,7 +39,7 @@
   justify-content: space-between;
   @include xs {
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
   }
 }
 
@@ -201,11 +201,29 @@
   }
 }
 
+.faq {
+  margin-top: 32px;
+
+  &__title {
+    @include text-heading-2;
+    margin-bottom: 48px;
+    @include sm {
+      @include text-heading-4;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
 .suggestions {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 32px;
 
   &__list {
     display: grid;

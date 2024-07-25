@@ -20,9 +20,11 @@
 
   @include md {
     gap: 0;
+    padding-left: 32px;
   }
-  @include sm {
-    padding: 40px 16px;
+  @include xs {
+    flex-direction: column-reverse;
+    padding: 0;
   }
 }
 
@@ -32,7 +34,14 @@
   min-width: 550px;
   flex-direction: column;
   gap: 16px;
+  @include lg {
+    padding: 16px;
+  }
   @include sm {
+    min-width: 300px;
+  }
+  @include xs {
+    padding: 16px 32px 32px;
     min-width: unset;
     align-items: center;
     text-align: center;
@@ -58,8 +67,8 @@
     width: 100%;
     height: auto;
   }
-  @include sm {
-    display: none;
+  @include xs {
+    max-width: 300px;
   }
 }
 

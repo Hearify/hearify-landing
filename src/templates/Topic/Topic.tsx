@@ -13,6 +13,7 @@ import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import TopicCard from '@/containers/TopicCard/TopicCard';
 import AppHeading from '@/components/AppHeading/AppHeading';
 import slugify from '@/utils/slugify';
+import FAQBlock from '@/containers/FAQBlock/FAQBlock';
 
 import type { Topic as TopicType } from '@/types/topic';
 
@@ -103,6 +104,20 @@ const Topic: React.FC<TopicProps> = ({
           </nav>
         </aside>
       </div>
+
+      {topic.faq && (
+        <div className={styles.faq}>
+          <AppHeading variant="h2" className={styles.faqTitle}>
+            FAQ
+          </AppHeading>
+
+          <div className={styles.faqList}>
+            {topic.faq.map(faq => (
+              <FAQBlock key={faq.question} question={faq.question} answer={faq.answer} />
+            ))}
+          </div>
+        </div>
+      )}
 
       <BoostAlert />
 
