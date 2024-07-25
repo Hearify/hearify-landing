@@ -1,4 +1,6 @@
 import React from 'react';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { Nunito, Caveat } from 'next/font/google';
 
 import PageLayout from '@/templates/PageLayout/PageLayout';
@@ -24,12 +26,51 @@ if (typeof window === 'undefined') {
 
 /* eslint-disable react/jsx-props-no-spreading */
 const App = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
+
+  const cleanPath: string = router.asPath.split('#')[0].split('?')[0];
+  const canonicalUrl: string = process.env.NEXT_PUBLIC_BASE_URL + (router.asPath === '/' ? '' : cleanPath);
+
   return (
-    <div className={`${nunito.variable} ${caveat.variable}`}>
-      <PageLayout>
-        <Component {...pageProps} />
-      </PageLayout>
-    </div>
+    <>
+      <Head>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, maximum-scale=5, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Hearify" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta key="og:image" property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/main-image.png`} />
+
+        {/* TODO(Sasha): Remove noindex once landing is deployed with webiste */}
+        <meta name="robots" content="noindex" />
+
+        <link rel="icon" href="/favicon.ico" />
+        {/* TODO(Sasha): Add icons */}
+        {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
+        {/* <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /> */}
+        {/* <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> */}
+        {/* <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" /> */}
+        {/* <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" /> */}
+        {/* <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" /> */}
+        {/* <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png" /> */}
+        {/* <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76-precomposed.png" /> */}
+        {/* <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png" /> */}
+        {/* <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" /> */}
+        {/* <link rel="shortcut icon" type="image/x-icon" href="/mstile-150x150.png" /> */}
+        {/* <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4535ff" /> */}
+
+        <link rel="canonical" href={canonicalUrl} />
+      </Head>
+
+      <div className={`${nunito.variable} ${caveat.variable}`}>
+        <PageLayout>
+          <Component {...pageProps} />
+        </PageLayout>
+      </div>
+    </>
   );
 };
 
