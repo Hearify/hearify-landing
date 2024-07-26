@@ -10,7 +10,7 @@ export const headerNavigation: NavigationItem[] = [
   },
   {
     title: 'Blog',
-    href: '/blog',
+    href: '/',
   },
   {
     title: 'FAQ',
@@ -25,7 +25,7 @@ export const footerNavigation: NavigationItem[] = [
   },
   {
     title: 'Blog',
-    href: '/blog',
+    href: '/',
   },
   {
     title: 'FAQ',
