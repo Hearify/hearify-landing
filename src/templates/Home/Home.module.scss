@@ -7,7 +7,8 @@
     background-image: url("/landing/mobile-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 60px;
+    // TODO(Sasha): Fix this hack later
+    margin: 60px -32px 0;
   }
 }
 
