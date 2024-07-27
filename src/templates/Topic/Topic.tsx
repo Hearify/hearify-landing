@@ -38,8 +38,8 @@ const Topic: React.FC<TopicProps> = ({
         <article className={styles.body}>
           <AppBreadcrumbs
             items={[
-              { text: 'Blog', href: '/' },
-              { text: topic.title, href: `/${topic.slug}` },
+              { text: 'Blog', href: '/blog' },
+              { text: topic.title, href: `/blog/${topic.slug}` },
             ]}
           />
 

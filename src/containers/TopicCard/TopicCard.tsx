@@ -12,7 +12,7 @@ export type TopicCardProps = {
 };
 
 const TopicCard: React.FC<TopicCardProps> = ({ topic }) => {
-  const topicUrl = `/${topic.slug}`;
+  const topicUrl = `/blog/${topic.slug}`;
 
   return (
     <div className={styles.wrapper}>

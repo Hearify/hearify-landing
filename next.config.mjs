@@ -4,7 +4,6 @@ import remarkAutolinkHeadings from 'remark-autolink-headings';
 
 const config = {
   reactStrictMode: true,
-  basePath: '/blog',
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   i18n: {
     locales: ['en'],
