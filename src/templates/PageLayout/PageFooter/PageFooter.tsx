@@ -17,7 +17,7 @@ const PageFooter: React.FC = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         {isDeviceSmall && (
-          <Link href="https://hearify.org">
+          <Link href="/">
             <Image src={logoImg} alt="Hearify logo" width={180} height={68} className={styles.logo} />
           </Link>
         )}
@@ -31,7 +31,7 @@ const PageFooter: React.FC = () => {
         </nav>
 
         {isDeviceLarge && (
-          <Link href="https://hearify.org">
+          <Link href="/">
             <Image src={logoImg} alt="Hearify logo" width={180} height={68} className={styles.logo} />
           </Link>
         )}

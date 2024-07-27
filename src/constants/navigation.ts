@@ -6,7 +6,7 @@ export type NavigationItem = {
 export const headerNavigation: NavigationItem[] = [
   {
     title: 'How it works',
-    href: 'https://hearify.org/#how-it-works-section',
+    href: '/#how-it-works-section',
   },
   {
     title: 'Blog',
@@ -14,14 +14,14 @@ export const headerNavigation: NavigationItem[] = [
   },
   {
     title: 'FAQ',
-    href: 'https://hearify.org/#faq-section',
+    href: '/#faq-section',
   },
 ];
 
 export const footerNavigation: NavigationItem[] = [
   {
     title: 'How it works',
-    href: 'https://hearify.org/#how-it-works-section',
+    href: '/#how-it-works-section',
   },
   {
     title: 'Blog',
@@ -29,6 +29,6 @@ export const footerNavigation: NavigationItem[] = [
   },
   {
     title: 'FAQ',
-    href: 'https://hearify.org/#faq-section',
+    href: '/#faq-section',
   },
 ];

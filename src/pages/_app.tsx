@@ -44,9 +44,6 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta property="og:url" content={canonicalUrl} />
         <meta key="og:image" property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/main-image.png`} />
 
-        {/* TODO(Sasha): Remove noindex once landing is deployed with webiste */}
-        <meta name="robots" content="noindex" />
-
         <link rel="icon" href="/favicon.ico" />
         {/* TODO(Sasha): Add icons */}
         {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}

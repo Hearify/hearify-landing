@@ -1,0 +1,402 @@
+@use "src/styles/helpers" as *;
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  @include lg {
+    background-image: url("/landing/mobile-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+  }
+}
+
+.hero {
+  padding-top: 80px;
+  position: relative;
+  background-image: url("/landing/hero-image.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 760px;
+  @include lg {
+    padding-top: 16px;
+    background-position: center;
+    background-size: cover;
+    background-image: none;
+  }
+
+  &__left {
+    @include lg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__right {
+    @include lg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    @include text-heading-1;
+    max-width: 879px;
+    margin-bottom: 32px;
+    @include lg {
+      @include text-heading-2;
+      margin-bottom: 12px;
+    }
+    @include sm {
+      @include text-heading-3;
+      max-width: 466px;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    @include text-subtitle-2;
+    margin-bottom: 40px;
+    max-width: 331px;
+    @include lg {
+      @include text-subtitle-3;
+      max-width: 466px;
+    }
+    @include sm {
+      @include text-subtitle-4;
+      max-width: 466px;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    @include text-button-lg;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 55px;
+    background: #6444f4;
+    border: 2px solid #6444f4;
+    border-radius: 8px;
+    color: #fefdff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: $default-transition;
+
+    @include lg {
+      @include text-field-lg;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 466px;
+      padding: 16px 32px;
+    }
+    @include sm {
+      padding: 12px 70px;
+    }
+    @include xs {
+      width: auto;
+    }
+
+    &::before {
+      content: url("/landing/splash.svg");
+      position: absolute;
+      left: -30px;
+      top: -28px;
+    }
+  }
+}
+
+.hero-quiz {
+  &__image {
+    position: absolute;
+    top: 291px;
+    right: 380px;
+    @include lg {
+      position: static;
+      margin-top: 20px;
+    }
+    @include sm {
+      align-self: start;
+      margin-top: 0;
+    }
+    @include xs {
+      max-width: 290px;
+      align-self: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__window-image {
+    position: absolute;
+    top: 146px;
+    right: 103px;
+    @include lg {
+      position: static;
+      margin-top: 45px;
+    }
+    @include sm {
+      align-self: end;
+      margin-bottom: -30px;
+    }
+    @include xs {
+      align-self: center;
+      max-width: 284px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 265px;
+    right: 425px;
+    @include lg {
+      display: none;
+    }
+  }
+}
+
+.dashboard {
+  background-image: url("/landing/bg.svg");
+  background-position: center;
+  background-size: cover;
+  @include lg {
+    background-image: none;
+  }
+}
+
+.how-it-works {
+  padding-top: 100px;
+  @include lg {
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+  }
+  @include sm {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding-top: 55px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+    @include lg {
+      flex-wrap: wrap;
+    }
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    @include text-heading-2;
+    text-align: center;
+    background-image: url("/landing/how-hearify-works.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    margin-bottom: 64px;
+    @include sm {
+      @include text-heading-4;
+      text-align: center;
+      background-size: contain;
+      height: 100%;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__item {
+    max-width: 486px;
+    width: 100%;
+    padding: 32px;
+    border-radius: 20px;
+    background: linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.25) 0%,
+                    rgba(255, 255, 255, 0.13) 68.53%
+    );
+    backdrop-filter: blur(22.885459899902344px);
+    @include lg {
+      max-width: 344px;
+    }
+    @include sm {
+      width: 95%;
+      max-width: 486px;
+    }
+
+    &-title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 42px;
+      color: #4e30d2;
+      margin-bottom: 24px;
+    }
+
+    &-second {
+      @extend .how-it-works__item;
+      max-width: 338px;
+      @include sm {
+        max-width: 486px;
+      }
+    }
+
+    &-third {
+      @extend .how-it-works__item;
+      max-width: 346px;
+      @include sm {
+        max-width: 486px;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    max-width: 313px;
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    @include lg {
+      width: 100%;
+    }
+
+    &--second {
+      @extend .how-it-works__image;
+      margin-left: 41px;
+      margin-top: -108px;
+      @include sm {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.faq {
+  padding-top: 100px;
+  @include sm {
+    padding-top: 55px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+    height: 70px;
+    background: url("/landing/FAQ-vector.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include sm {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__list {
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.create-quiz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  border-radius: 20px;
+  background-image: url(/landing/create-quiz-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 874px;
+  @include sm {
+    background-image: none;
+    min-height: 0;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 56px 42px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 852px;
+    background: linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.25) 0%,
+                    rgba(255, 255, 255, 0.125) 68.53%
+    );
+
+    @include sm {
+      padding: 20px 8px;
+      min-height: 0;
+    }
+  }
+
+  &__text {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 48px;
+    @include sm {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+  }
+
+  &__color-text {
+    color: #4e30d2;
+  }
+
+  &__button {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 55px;
+    background: #6444f4;
+    border: 2px solid #6444f4;
+    border-radius: 8px;
+    color: #fefdff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s linear;
+    @include lg {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 466px;
+      font-size: 18px;
+      padding: 16px 32px;
+    }
+    @include sm {
+      font-size: 18px;
+      padding: 12px 70px;
+    }
+  }
+}
