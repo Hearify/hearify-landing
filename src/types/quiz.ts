@@ -5,6 +5,7 @@ export type QuizPreview = {
   title: string;
   description: string;
   coverUrl: string;
+  appUrl: string;
   authorSlug: string;
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 
 import AppBreadcrumbs from '@/components/AppBreadcrumbs/AppBreadcrumbs';
@@ -38,23 +39,25 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
           </div>
 
           <div className={styles.content}>
-            <div className={styles.popup}>
+            <Link className={styles.popup} href={quiz.appUrl}>
               <Image src={quiz.coverUrl} alt={quiz.title} width={800} height={500} className={styles.popupImage} />
 
               <div className={styles.popupContainer}>
-                <h4 className={styles.popupTitle}>{quiz.title}</h4>
-                <AppButtonLink width="330px" href="#" size="lg">
-                  START QUIZ
-                </AppButtonLink>
+                <div className={styles.popupBackground}>
+                  <h4 className={styles.popupTitle}>{quiz.title}</h4>
+                  <AppButtonLink href="#" size="lg" className={styles.popupButton}>
+                    START QUIZ
+                  </AppButtonLink>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {children}
           </div>
         </article>
       </div>
 
-      <BoostAlert />
+      <BoostAlert/>
 
       <div className={styles.suggestions}>
         <AppHeading variant="h2">Related Quizzes</AppHeading>

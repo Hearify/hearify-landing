@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
@@ -30,7 +31,7 @@ const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
           </p>
         </div>
 
-        <div className={styles.quiz}>
+        <Link className={styles.quiz} href={quizOfTheDay.appUrl}>
           <span className={styles.quizTag}>Recommended for you</span>
 
           <Image
@@ -44,11 +45,11 @@ const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
           <div className={styles.quizContent}>
             <h4 className={styles.quizTitle}>{quizOfTheDay.title}</h4>
             <p className={styles.quizDescription}>{quizOfTheDay.description}</p>
-            <AppButtonLink className={styles.quizButton} href={`/library/${quizOfTheDay.slug}`} size="lg" width="240px">
+            <AppButtonLink className={styles.quizButton} href={quizOfTheDay.appUrl} size="lg" width="240px">
               START QUIZ
             </AppButtonLink>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className={styles.topics}>
