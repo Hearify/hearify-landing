@@ -4,37 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="fix: add nice shadow to header">
-      <change afterPath="$PROJECT_DIR$/public/blog/quizzes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/blog/quizzes/15-best-ai-for-quiz-answers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/blog/quizzes/how-to-use-ai-for-assessments.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/blog/quizzes/how-to-use-ai-quiz-for-personalized-learning.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gradient-faq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gradient.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/QuizCard/QuizCard.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/QuizCard/QuizCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/library/[slug].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/library/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/Article/Article.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/Library/Library.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/Library/Library.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/Quiz/Quiz.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/quiz.ts" afterDir="false" />
+    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="feat: add library and fix gradients">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/FAQBlock/FAQBlock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/FAQBlock/FAQBlock.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/AuthorCard/AuthorCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TopicAuthor/TopicAuthor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/AuthorCard/AuthorCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TopicCard/TopicCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ArticleCard/ArticleCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TopicCard/TopicCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ArticleCard/ArticleCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/BlogService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BlogService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Blog/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Blog/Blog.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/Home/Home.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Home/Home.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/PageLayout/PageHeader/PageHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/PageLayout/PageHeader/PageHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Article/Article.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Quiz/Quiz.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Quiz/Quiz.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Quiz/Quiz.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +92,7 @@
       <workItem from="1721914631328" duration="2923000" />
       <workItem from="1722185820704" duration="2216000" />
       <workItem from="1722231247314" duration="9695000" />
-      <workItem from="1722256847634" duration="6666000" />
+      <workItem from="1722256847634" duration="8567000" />
     </task>
     <task id="LOCAL-00001" summary="feat: switch from gatsby to nextjs">
       <option name="closed" value="true" />
@@ -249,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722231810814</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: add library and fix gradients">
+      <option name="closed" value="true" />
+      <created>1722263681376</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722263681376</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +281,7 @@
     <MESSAGE value="fix: minor changes" />
     <MESSAGE value="fix: rename topics to articles" />
     <MESSAGE value="fix: add nice shadow to header" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: add nice shadow to header" />
+    <MESSAGE value="feat: add library and fix gradients" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add library and fix gradients" />
   </component>
 </project>

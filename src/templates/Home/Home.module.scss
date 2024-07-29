@@ -4,7 +4,6 @@
   font-family: $font-nunito;
   margin: 0 auto;
   padding: 0 20px;
-  box-shadow: $shadow-header;
   @include lg {
     background-image: url("/landing/mobile-bg.png");
     background-size: cover;
