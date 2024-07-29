@@ -15,8 +15,12 @@
   position: sticky;
   top: 0;
   z-index: $z-index-header;
-  box-shadow: $shadow-header;
+  transition: $default-transition;
   background-color: var(--white);
+
+  &--scroll {
+    box-shadow: $shadow-header;
+  }
 }
 
 .container {

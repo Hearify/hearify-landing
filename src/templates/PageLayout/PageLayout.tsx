@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import cn from 'classnames';
 
 import styles from './PageLayout.module.scss';
 import PageHeader from './PageHeader/PageHeader';
@@ -9,9 +10,22 @@ export type PageLayoutProps = {
 };
 
 const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
+  const [isScrolling, setIsScrolling] = useState<boolean>(false);
+
+  useEffect(() => {
+    const onScroll = (): void => {
+      setIsScrolling(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
   return (
     <div className={styles.wrapper}>
-      <header className={styles.header}>
+      <header className={cn(styles.header, isScrolling && styles.headerScroll)}>
         <PageHeader />
       </header>
 

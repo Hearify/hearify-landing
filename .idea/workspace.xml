@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="fix: minor changes">
+    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="fix: rename topics to articles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/topics.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/topics/15-best-ai-for-quiz-answers.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/15-best-ai-for-quiz-answers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/topics/how-to-use-ai-for-assessments.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-for-assessments.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/topics/how-to-use-ai-quiz-for-personalized-learning.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-quiz-for-personalized-learning.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TopicCard/TopicCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopicCard/TopicCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/BlogService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BlogService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Blog/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Blog/Blog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Topic/Topic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/topic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/article.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/helpers/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/helpers/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/PageLayout/PageLayout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/PageLayout/PageLayout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/PageLayout/PageLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/PageLayout/PageLayout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +92,7 @@
       <workItem from="1721910054162" duration="2964000" />
       <workItem from="1721914631328" duration="2923000" />
       <workItem from="1722185820704" duration="2216000" />
+      <workItem from="1722231247314" duration="524000" />
     </task>
     <task id="LOCAL-00001" summary="feat: switch from gatsby to nextjs">
       <option name="closed" value="true" />
@@ -214,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722068186288</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix: rename topics to articles">
+      <option name="closed" value="true" />
+      <created>1722231279239</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722231279239</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +263,7 @@
     <MESSAGE value="fix: add automatic sidebar generation" />
     <MESSAGE value="feat: add home page" />
     <MESSAGE value="fix: minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: minor changes" />
+    <MESSAGE value="fix: rename topics to articles" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: rename topics to articles" />
   </component>
 </project>
