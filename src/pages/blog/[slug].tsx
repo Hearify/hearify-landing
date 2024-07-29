@@ -6,7 +6,7 @@ import BlogService from '@/services/BlogService';
 import extractHeaders from '@/utils/extractHeaders';
 import serializeMarkdown from '@/utils/serializeMarkdown';
 
-import type { TopicProps } from '@/templates/Topic/Topic';
+import type { ArticleProps } from '@/templates/Topic/Topic';
 import type { GetServerSideProps, NextPage } from 'next';
 import type { MDXRemoteSerializeResult } from 'next-mdx-remote';
 
@@ -15,7 +15,7 @@ type MDXProps = {
 };
 
 /* eslint-disable react/jsx-props-no-spreading */
-const TopicPage: NextPage<TopicProps & MDXProps> = ({ topic, headers, mdxSource }) => {
+const ArticlePage: NextPage<ArticleProps & MDXProps> = ({ topic, headers, mdxSource }) => {
   const pageTitle = `${topic.title} — Hearify`;
   const pageDescription = topic.description;
 
@@ -36,16 +36,16 @@ const TopicPage: NextPage<TopicProps & MDXProps> = ({ topic, headers, mdxSource 
   );
 };
 
-export default TopicPage;
+export default ArticlePage;
 
 export const getServerSideProps: GetServerSideProps<MDXProps> = async context => {
   try {
     const slug = context.params?.slug as string;
 
-    const mdxText = await BlogService.loadTopicMarkdown(slug);
+    const mdxText = await BlogService.loadArticleMarkdown(slug);
     const mdxSource = await serializeMarkdown(mdxText);
 
-    const topic = await BlogService.loadTopic(slug);
+    const topic = await BlogService.loadArticle(slug);
     const headers = extractHeaders(mdxText);
 
     return {

@@ -5,61 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="fix: minor changes">
-      <change afterPath="$PROJECT_DIR$/public/landing/FAQ-vector.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/landing/bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/landing/create-quiz-bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/landing/hero-image.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/landing/how-hearify-works.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/landing/mobile-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/landing/quiz_window.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/landing/splash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/FAQ-bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/FAQ-vector.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/appload-pdf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/appload-video.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/bg_create.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/brandico_facebook-rect.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/create-custom-quiz-bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/create-custom-quiz-block.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/customize.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/faq_bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/generate.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/hero-image.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/how-it-works-bg-mobile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/line.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/mdi_linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/mobile-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/mobile-faq-bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/mobilebg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/mockup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/pdf_window.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/performance.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/pricing-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/questions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/questions.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/quiz_matching_questions_no_answer_student.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/quiz_window.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/share-pay.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/small-bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/splash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/streamline_instagram-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/vector.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/landing/youtube_window.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/faq.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/Home/Home.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/Home/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/PageLayout/PageFooter/PageFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/PageLayout/PageFooter/PageFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/PageLayout/PageHeader/PageHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/PageLayout/PageHeader/PageHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog/topics.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog/topics/15-best-ai-for-quiz-answers.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/15-best-ai-for-quiz-answers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog/topics/how-to-use-ai-for-assessments.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-for-assessments.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog/topics/how-to-use-ai-quiz-for-personalized-learning.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-quiz-for-personalized-learning.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/TopicCard/TopicCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TopicCard/TopicCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/BlogService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BlogService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Blog/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Blog/Blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Topic/Topic.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Topic/Topic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Topic/Topic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/topic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/article.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,24 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/user/WebstormProjects/blog/src/constants",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Users/user/WebstormProjects/blog/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/WebstormProjects/blog/src/constants&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/user/WebstormProjects/blog/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/constants" />
@@ -142,6 +100,7 @@
       <workItem from="1721910025315" duration="7000" />
       <workItem from="1721910054162" duration="2964000" />
       <workItem from="1721914631328" duration="2923000" />
+      <workItem from="1722185820704" duration="2216000" />
     </task>
     <task id="LOCAL-00001" summary="feat: switch from gatsby to nextjs">
       <option name="closed" value="true" />
@@ -239,7 +198,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721917041315</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: add home page">
+      <option name="closed" value="true" />
+      <created>1722067954904</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722067954904</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix: minor changes">
+      <option name="closed" value="true" />
+      <created>1722068186287</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722068186288</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +261,7 @@
     <MESSAGE value="fix: add responsive to TopicAuthor component" />
     <MESSAGE value="feat: add 3 topics" />
     <MESSAGE value="fix: add automatic sidebar generation" />
+    <MESSAGE value="feat: add home page" />
     <MESSAGE value="fix: minor changes" />
     <option name="LAST_COMMIT_MESSAGE" value="fix: minor changes" />
   </component>

@@ -168,18 +168,6 @@
   }
 }
 
-.socials {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin: 24px 0 64px;
-  @include md {
-    width: 100%;
-    max-width: 300px;
-    justify-content: space-around;
-  }
-}
-
 .about {
   display: flex;
   flex-direction: column;

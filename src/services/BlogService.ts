@@ -1,9 +1,9 @@
 import type { Author } from '@/types/author';
-import type { Topic, TopicPreview } from '@/types/topic';
+import type { Article, ArticlePreview } from '@/types/article';
 
 class BlogService {
-  public static loadTopicPreviews = async (): Promise<TopicPreview[]> => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/topics.json`);
+  public static loadArticlePreviews = async (): Promise<ArticlePreview[]> => {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/articles.json`);
     return response.json();
   };
 
@@ -12,8 +12,8 @@ class BlogService {
     return response.json();
   };
 
-  public static loadTopicMarkdown = async (slug: string): Promise<string> => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/topics/${slug}.md`);
+  public static loadArticleMarkdown = async (slug: string): Promise<string> => {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/articles/${slug}.md`);
     return response.text();
   };
 
@@ -28,23 +28,23 @@ class BlogService {
     return author;
   };
 
-  public static loadTopic = async (slug: string): Promise<Topic> => {
-    const topics = await BlogService.loadTopicPreviews();
-    const topic = topics.find(item => item.slug === slug);
+  public static loadArticle = async (slug: string): Promise<Article> => {
+    const articles = await BlogService.loadArticlePreviews();
+    const article = articles.find(item => item.slug === slug);
 
-    if (!topic) {
-      throw new Error(`Topic with slug ${slug} not found`);
+    if (!article) {
+      throw new Error(`Article with slug ${slug} not found`);
     }
 
-    const author = await BlogService.loadAuthor(topic.authorSlug);
-    const editor = await BlogService.loadAuthor(topic.editorSlug);
-    const suggestions = topics
+    const author = await BlogService.loadAuthor(article.authorSlug);
+    const editor = await BlogService.loadAuthor(article.editorSlug);
+    const suggestions = articles
       .filter(item => item.slug !== slug)
       .slice(0, 3)
       .sort(() => 0.5 - Math.random());
 
     return {
-      ...topic,
+      ...article,
       author,
       editor,
       suggestions,

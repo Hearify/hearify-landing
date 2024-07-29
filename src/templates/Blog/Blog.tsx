@@ -8,10 +8,10 @@ import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import BlogHeroImg from '@/assets/images/blog-hero.png';
 import styles from './Blog.module.scss';
 
-import type { TopicPreview } from '@/types/topic';
+import type { ArticlePreview } from '@/types/article';
 
 export type BlogProps = {
-  topics: TopicPreview[];
+  topics: ArticlePreview[];
 };
 
 const Blog: React.FC<BlogProps> = ({ topics }) => {

@@ -29,7 +29,7 @@ const BlogPage: NextPage<BlogProps> = ({ topics }) => {
 export default BlogPage;
 
 export const getServerSideProps: GetServerSideProps<BlogProps> = async () => {
-  const topics = await BlogService.loadTopicPreviews();
+  const topics = await BlogService.loadArticlePreviews();
 
   return {
     props: {

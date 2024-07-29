@@ -15,15 +15,15 @@ import AppHeading from '@/components/AppHeading/AppHeading';
 import slugify from '@/utils/slugify';
 import FAQBlock from '@/containers/FAQBlock/FAQBlock';
 
-import type { Topic as TopicType } from '@/types/topic';
+import type { Article as TopicType } from '@/types/article';
 
-export type TopicProps = {
+export type ArticleProps = {
   topic: TopicType;
   headers: string[];
   children: React.ReactNode;
 };
 
-const Topic: React.FC<TopicProps> = ({
+const Topic: React.FC<ArticleProps> = ({
   topic, //
   headers,
   children,
@@ -62,21 +62,6 @@ const Topic: React.FC<TopicProps> = ({
           <div className={styles.content}>{children}</div>
 
           <div className={styles.footer}>
-            <div className={styles.socials}>
-              <a href="https://www.facebook.com/people/Hearify/61552644703836/" target="_blank" rel="noreferrer">
-                {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-                <Image src={facebookImg} alt="Facebook" width={32} height={32} />
-              </a>
-              <a href="https://www.linkedin.com/company/hearify/" target="_blank" rel="noreferrer">
-                {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-                <Image src={linkedInImg} alt="LinkedIn" width={32} height={32} />
-              </a>
-              <a href="https://www.instagram.com/hearify.tech/" target="_blank" rel="noreferrer">
-                {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-                <Image src={instagramImg} alt="Instagram" width={32} height={32} />
-              </a>
-            </div>
-
             <div className={styles.about}>
               <div className={styles.aboutContainer}>
                 <Image

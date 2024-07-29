@@ -5,10 +5,10 @@ import Link from 'next/link';
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import styles from './TopicCard.module.scss';
 
-import type { TopicPreview } from '@/types/topic';
+import type { ArticlePreview } from '@/types/article';
 
 export type TopicCardProps = {
-  topic: TopicPreview;
+  topic: ArticlePreview;
 };
 
 const TopicCard: React.FC<TopicCardProps> = ({ topic }) => {

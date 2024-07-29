@@ -5,7 +5,7 @@ export type FAQItem = {
   answer: string;
 };
 
-export type TopicPreview = {
+export type ArticlePreview = {
   slug: string;
   tag: string;
   title: string;
@@ -18,7 +18,7 @@ export type TopicPreview = {
   faq?: FAQItem[];
 };
 
-export type Topic = {
+export type Article = {
   slug: string;
   tag: string;
   description: string;
@@ -29,5 +29,5 @@ export type Topic = {
   faq?: FAQItem[];
   author: Author;
   editor: Author;
-  suggestions: TopicPreview[];
+  suggestions: ArticlePreview[];
 };
