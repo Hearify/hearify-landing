@@ -13,6 +13,10 @@ export const headerNavigation: NavigationItem[] = [
     href: '/blog',
   },
   {
+    title: 'Library',
+    href: '/library',
+  },
+  {
     title: 'FAQ',
     href: '/#faq-section',
   },

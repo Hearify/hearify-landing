@@ -7,23 +7,14 @@
   border-radius: 20px;
   cursor: pointer;
   transition: $default-transition;
-
-  box-shadow:
-          0px 5px 11px 0px rgba(134, 159, 172, 0.1),
-          0px 20px 20px 0px rgba(134, 159, 172, 0.09),
-          0px 44px 27px 0px rgba(134, 159, 172, 0.05),
-          0px 79px 32px 0px rgba(134, 159, 172, 0.01),
-          0px 123px 35px 0px rgba(134, 159, 172, 0);
-  background:
-          linear-gradient(rgba(240, 236, 255, 0.2) 0.23%, rgba(206, 195, 255, 0.2) 99.74%);
-
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.175) 68.53%);
   @include sm {
     padding: 16px 20px;
     border-radius: 20px;
   }
 
   &:hover {
-    box-shadow: 0 0 0 2px rgba(78, 48, 210, 0.5);
+    box-shadow: 0 0 0 2px rgba(78, 48, 210, 0.3);
   }
 }
 

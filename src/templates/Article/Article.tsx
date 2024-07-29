@@ -4,27 +4,24 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import AppBreadcrumbs from '@/components/AppBreadcrumbs/AppBreadcrumbs';
-import TopicAuthor from '@/containers/TopicAuthor/TopicAuthor';
-import facebookImg from '@/assets/icons/facebook.svg';
-import linkedInImg from '@/assets/icons/linkedin.svg';
-import instagramImg from '@/assets/icons/instagram.svg';
-import styles from './Topic.module.scss';
+import AuthorCard from '@/containers/AuthorCard/AuthorCard';
+import styles from './Article.module.scss';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
-import TopicCard from '@/containers/TopicCard/TopicCard';
+import ArticleCard from '@/containers/ArticleCard/ArticleCard';
 import AppHeading from '@/components/AppHeading/AppHeading';
 import slugify from '@/utils/slugify';
 import FAQBlock from '@/containers/FAQBlock/FAQBlock';
 
-import type { Article as TopicType } from '@/types/article';
+import type { Article as ArticleType } from '@/types/article';
 
 export type ArticleProps = {
-  topic: TopicType;
+  article: ArticleType;
   headers: string[];
   children: React.ReactNode;
 };
 
-const Topic: React.FC<ArticleProps> = ({
-  topic, //
+const Article: React.FC<ArticleProps> = ({
+  article, //
   headers,
   children,
 }) => {
@@ -39,23 +36,23 @@ const Topic: React.FC<ArticleProps> = ({
           <AppBreadcrumbs
             items={[
               { text: 'Blog', href: '/blog' },
-              { text: topic.title, href: `/blog/${topic.slug}` },
+              { text: article.title, href: `/blog/${article.slug}` },
             ]}
           />
 
           <div className={styles.authors}>
             {/* eslint-disable jsx-a11y/aria-role */}
-            <TopicAuthor author={topic.author} role="author" />
-            <TopicAuthor author={topic.editor} role="editor" />
+            <AuthorCard author={article.author} role="author" />
+            <AuthorCard author={article.editor} role="editor" />
           </div>
 
           <div className={styles.header}>
-            <h1 className={styles.title}>{topic.title}</h1>
+            <h1 className={styles.title}>{article.title}</h1>
 
             <div className={styles.container}>
-              <span className={styles.text}>{topic.minutesToRead} min read</span>
+              <span className={styles.text}>{article.minutesToRead} min read</span>
               <span className={styles.text}>·</span>
-              <span className={styles.text}>{topic.date}</span>
+              <span className={styles.text}>{article.date}</span>
             </div>
           </div>
 
@@ -65,15 +62,15 @@ const Topic: React.FC<ArticleProps> = ({
             <div className={styles.about}>
               <div className={styles.aboutContainer}>
                 <Image
-                  src={topic.author.avatarUrl}
-                  alt={topic.author.name}
+                  src={article.author.avatarUrl}
+                  alt={article.author.name}
                   className={styles.aboutImage}
                   width={100}
                   height={100}
                 />
-                <h4 className={styles.aboutTitle}>Written by {topic.author.name}</h4>
+                <h4 className={styles.aboutTitle}>Written by {article.author.name}</h4>
               </div>
-              <p className={styles.aboutText}>{topic.author.aboutMe}</p>
+              <p className={styles.aboutText}>{article.author.aboutMe}</p>
             </div>
           </div>
         </article>
@@ -90,14 +87,14 @@ const Topic: React.FC<ArticleProps> = ({
         </aside>
       </div>
 
-      {topic.faq && (
+      {article.faq && (
         <div className={styles.faq}>
           <AppHeading variant="h2" className={styles.faqTitle}>
             FAQ
           </AppHeading>
 
           <div className={styles.faqList}>
-            {topic.faq.map(faq => (
+            {article.faq.map(faq => (
               <FAQBlock key={faq.question} question={faq.question} answer={faq.answer} />
             ))}
           </div>
@@ -107,11 +104,11 @@ const Topic: React.FC<ArticleProps> = ({
       <BoostAlert />
 
       <div className={styles.suggestions}>
-        <AppHeading variant="h2">Related posts</AppHeading>
+        <AppHeading variant="h2">Related Posts</AppHeading>
 
         <div className={styles.suggestionsList}>
-          {topic.suggestions.map(suggestion => (
-            <TopicCard key={suggestion.slug} topic={suggestion} />
+          {article.suggestions.map(suggestion => (
+            <ArticleCard key={suggestion.slug} article={suggestion} />
           ))}
         </div>
       </div>
@@ -119,4 +116,4 @@ const Topic: React.FC<ArticleProps> = ({
   );
 };
 
-export default Topic;
+export default Article;

@@ -1,9 +1,15 @@
 import type { Author } from '@/types/author';
 import type { Article, ArticlePreview } from '@/types/article';
+import type { Quiz, QuizPreview } from '@/types/quiz';
 
 class BlogService {
   public static loadArticlePreviews = async (): Promise<ArticlePreview[]> => {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/articles.json`);
+    return response.json();
+  };
+
+  public static loadQuizPreviews = async (): Promise<QuizPreview[]> => {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/quizzes.json`);
     return response.json();
   };
 
@@ -14,6 +20,11 @@ class BlogService {
 
   public static loadArticleMarkdown = async (slug: string): Promise<string> => {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/articles/${slug}.md`);
+    return response.text();
+  };
+
+  public static loadQuizMarkdown = async (slug: string): Promise<string> => {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/quizzes/${slug}.md`);
     return response.text();
   };
 
@@ -47,6 +58,27 @@ class BlogService {
       ...article,
       author,
       editor,
+      suggestions,
+    };
+  };
+
+  public static loadQuiz = async (slug: string): Promise<Quiz> => {
+    const quizzes = await BlogService.loadQuizPreviews();
+    const quiz = quizzes.find(item => item.slug === slug);
+
+    if (!quiz) {
+      throw new Error(`Quiz with slug ${slug} not found`);
+    }
+
+    const author = await BlogService.loadAuthor(quiz.authorSlug);
+    const suggestions = quizzes
+      .filter(item => item.slug !== slug)
+      .slice(0, 3)
+      .sort(() => 0.5 - Math.random());
+
+    return {
+      ...quiz,
+      author,
       suggestions,
     };
   };

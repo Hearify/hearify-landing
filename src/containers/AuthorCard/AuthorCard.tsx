@@ -3,16 +3,16 @@ import Image from 'next/image';
 
 import linkedInImg from '@/assets/icons/linkedin.svg';
 import { AuthorRoleEnum } from '@/types/author';
-import styles from './TopicAuthor.module.scss';
+import styles from './AuthorCard.module.scss';
 
 import type { Author, AuthorRole } from '@/types/author';
 
-export type TopicAuthorProps = {
+export type AuthorCardProps = {
   author: Author;
   role: AuthorRole;
 };
 
-const TopicAuthor: React.FC<TopicAuthorProps> = ({ author, role }) => {
+const AuthorCard: React.FC<AuthorCardProps> = ({ author, role }) => {
   return (
     <div className={styles.wrapper}>
       <a href={author.linkedInUrl} target="_blank" rel="noreferrer" className={styles.avatar}>
@@ -35,4 +35,4 @@ const TopicAuthor: React.FC<TopicAuthorProps> = ({ author, role }) => {
   );
 };
 
-export default TopicAuthor;
+export default AuthorCard;

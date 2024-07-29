@@ -1,12 +1,11 @@
 import { MDXRemote } from 'next-mdx-remote';
 import Head from 'next/head';
 
-import Article from '@/templates/Article/Article';
 import BlogService from '@/services/BlogService';
-import extractHeaders from '@/utils/extractHeaders';
+import Quiz from '@/templates/Quiz/Quiz';
 import serializeMarkdown from '@/utils/serializeMarkdown';
 
-import type { ArticleProps } from '@/templates/Article/Article';
+import type { QuizProps } from '@/templates/Quiz/Quiz';
 import type { GetServerSideProps, NextPage } from 'next';
 import type { MDXRemoteSerializeResult } from 'next-mdx-remote';
 
@@ -15,9 +14,9 @@ type MDXProps = {
 };
 
 /* eslint-disable react/jsx-props-no-spreading */
-const ArticlePage: NextPage<ArticleProps & MDXProps> = ({ article, headers, mdxSource }) => {
-  const pageTitle = `${article.title} — Hearify`;
-  const pageDescription = article.description;
+const QuizPage: NextPage<QuizProps & MDXProps> = ({ quiz, mdxSource }) => {
+  const pageTitle = `${quiz.title} — Hearify`;
+  const pageDescription = quiz.description;
 
   return (
     <>
@@ -26,33 +25,31 @@ const ArticlePage: NextPage<ArticleProps & MDXProps> = ({ article, headers, mdxS
         <meta name="description" content={pageDescription} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta key="og:image" property="og:image" content={article.coverUrl} />
+        <meta key="og:image" property="og:image" content={quiz.coverUrl} />
       </Head>
 
-      <Article article={article} headers={headers}>
+      <Quiz quiz={quiz}>
         <MDXRemote {...mdxSource} />
-      </Article>
+      </Quiz>
     </>
   );
 };
 
-export default ArticlePage;
+export default QuizPage;
 
 export const getServerSideProps: GetServerSideProps<MDXProps> = async context => {
   try {
     const slug = context.params?.slug as string;
 
-    const mdxText = await BlogService.loadArticleMarkdown(slug);
+    const mdxText = await BlogService.loadQuizMarkdown(slug);
     const mdxSource = await serializeMarkdown(mdxText);
 
-    const article = await BlogService.loadArticle(slug);
-    const headers = extractHeaders(mdxText);
+    const quiz = await BlogService.loadQuiz(slug);
 
     return {
       props: {
         mdxSource,
-        article,
-        headers,
+        quiz,
       },
     };
   } catch {

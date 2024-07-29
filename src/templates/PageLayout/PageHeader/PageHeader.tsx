@@ -69,7 +69,7 @@ const PageHeader: React.FC = () => {
 
               <nav className={styles.navigation}>
                 {headerNavigation.map(item => (
-                  <Link key={item.title} href={item.href} className={styles.link}>
+                  <Link key={item.title} href={item.href} className={styles.link} onClick={toggleMenu}>
                     {item.title}
                   </Link>
                 ))}
