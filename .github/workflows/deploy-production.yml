@@ -49,7 +49,7 @@ jobs:
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
-            cd new_blog/blog/scripts
+            cd new_blog/blog
             chmod +x deploy.sh
             ./deploy.sh
           EOF

@@ -9,7 +9,7 @@ fi
 # Remove any existing image to avoid conflicts
 existing_image_id=$(docker images -q blog-nextjs)
 if [ ! -z "$existing_image_id" ]; then
-  docker rmi -f $existing_image_id
+  docker rmi -f blog-nextjs:latest
 fi
 
 # Build and run new Docker container
