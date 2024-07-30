@@ -18,6 +18,10 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
 
+      - name: Add server to known_hosts
+        run: |
+          ssh-keyscan -H ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
+
       - name: Deploy to Azure Server
         env:
           AZURE_HOST: ${{ secrets.AZURE_HOST }}
