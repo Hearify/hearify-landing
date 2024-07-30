@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Library from '@/templates/Library/Library';
 import BlogService from '@/services/BlogService';
@@ -28,7 +29,7 @@ const BlogPage: NextPage<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
 
 export default BlogPage;
 
-export const getServerSideProps: GetServerSideProps<LibraryProps> = async () => {
+export const getServerSideProps: GetServerSideProps<LibraryProps> = async context => {
   const quizzes = await BlogService.loadQuizPreviews();
   const randomQuiz = quizzes[Math.floor(Math.random() * quizzes.length)];
 
@@ -36,6 +37,7 @@ export const getServerSideProps: GetServerSideProps<LibraryProps> = async () => 
     props: {
       quizzes,
       quizOfTheDay: randomQuiz,
+      ...(await serverSideTranslations(String(context.locale), ['common'])),
     },
   };
 };

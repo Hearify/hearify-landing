@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 import cn from 'classnames';
+import { useTranslation } from 'next-i18next';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import logoImg from '@/assets/images/logo.png';
@@ -11,6 +12,7 @@ import { headerNavigation } from '@/constants/navigation';
 import styles from './PageHeader.module.scss';
 
 const PageHeader: React.FC = () => {
+  const { t } = useTranslation();
   const router = useRouter();
 
   const { isDeviceLarge } = useDeviceDetect('lg');
@@ -32,20 +34,20 @@ const PageHeader: React.FC = () => {
           <nav className={styles.navigation}>
             {headerNavigation.map(item => (
               <Link
-                key={item.title}
+                key={item.i18nKey}
                 href={item.href}
                 className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
               >
-                {item.title}
+                {t(item.i18nKey)}
               </Link>
             ))}
           </nav>
 
           <div className={styles.actions}>
             <AppButtonLink variant="secondary" width="110px" href="https://app.hearify.org/login">
-              LOG IN
+              {t('log_in')}
             </AppButtonLink>
-            <AppButtonLink href="https://app.hearify.org/register">TRY FOR FREE</AppButtonLink>
+            <AppButtonLink href="https://app.hearify.org/register">{t('try_for_free')}</AppButtonLink>
           </div>
         </>
       ) : (
@@ -69,8 +71,8 @@ const PageHeader: React.FC = () => {
 
               <nav className={styles.navigation}>
                 {headerNavigation.map(item => (
-                  <Link key={item.title} href={item.href} className={styles.link} onClick={toggleMenu}>
-                    {item.title}
+                  <Link key={item.i18nKey} href={item.href} className={styles.link} onClick={toggleMenu}>
+                    {item.i18nKey}
                   </Link>
                 ))}
               </nav>

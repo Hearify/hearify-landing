@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Trans, useTranslation } from 'next-i18next';
 
 import logoImg from '@/assets/images/logo.png';
 import facebookImg from '@/assets/icons/facebook.svg';
@@ -11,6 +12,8 @@ import { footerNavigation } from '@/constants/navigation';
 import styles from './PageFooter.module.scss';
 
 const PageFooter: React.FC = () => {
+  const { t } = useTranslation();
+
   const { isDeviceLarge, isDeviceSmall } = useDeviceDetect('md');
 
   return (
@@ -25,7 +28,7 @@ const PageFooter: React.FC = () => {
         <nav className={styles.navigation}>
           {footerNavigation.map(item => (
             <Link key={item.href} href={item.href} className={styles.link}>
-              {item.title}
+              {t(item.i18nKey)}
             </Link>
           ))}
         </nav>
@@ -60,13 +63,15 @@ const PageFooter: React.FC = () => {
 
       {isDeviceLarge ? (
         <p className={styles.privacy}>
-          Be sure to take a look at our <Link href="https://terms-of-service.hearify.org/">Terms of Use</Link> and{' '}
-          <Link href="https://privacy-policy.hearify.org/">Privacy Policy</Link>
+          <Trans i18nKey="terms_of_use_and_privacy_policy">
+            Be sure to take a look at our <Link href="https://terms-of-service.hearify.org/">Terms of Use</Link> and{' '}
+            <Link href="https://privacy-policy.hearify.org/">Privacy Policy</Link>
+          </Trans>
         </p>
       ) : (
         <p className={styles.privacy}>
-          <Link href="https://terms-of-service.hearify.org/">Terms</Link> |{' '}
-          <Link href="https://privacy-policy.hearify.org/">Privacy</Link>
+          <Link href="https://terms-of-service.hearify.org/">{t('terms')}</Link> |{' '}
+          <Link href="https://privacy-policy.hearify.org/">{t('privacy')}</Link>
         </p>
       )}
     </div>

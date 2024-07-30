@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import AppHeading from '@/components/AppHeading/AppHeading';
@@ -15,21 +16,18 @@ export type BlogProps = {
 };
 
 const Blog: React.FC<BlogProps> = ({ articles }) => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <AppHeading className={styles.heroTitle} variant="h2">
-            Welcome to our blog!
+            {t('welcome_to_blog')}
           </AppHeading>
-          <p className={styles.heroText}>
-            Dive into the world where artificial intelligence meets personal growth. Our blog is dedicated to providing
-            you with engaging AI quizzes that not only test your knowledge but also enhance your learning experience.
-            Discover insightful tips on how to maximize your study sessions, utilize AI tools for smarter learning, and
-            continuously improve yourself.
-          </p>
+          <p className={styles.heroText}>{t('blog_description')}</p>
           <AppButtonLink className={styles.heroButton} href="https://app.hearify.org/register" size="lg" width="240px">
-            TRY FOR FREE
+            {t('try_for_free')}
           </AppButtonLink>
         </div>
 
@@ -38,7 +36,7 @@ const Blog: React.FC<BlogProps> = ({ articles }) => {
 
       <div className={styles.topics}>
         <AppHeading variant="h2" className={styles.topicsTitle}>
-          Articles
+          {t('articles')}
         </AppHeading>
 
         <div className={styles.list}>

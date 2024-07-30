@@ -36,6 +36,7 @@ module.exports = {
   },
   rules: {
     'no-console': 'off',
+    'radix': 'off',
     'prettier/prettier': ['error'],
     'class-methods-use-this': 'off',
     'react/react-in-jsx-scope': 'off',

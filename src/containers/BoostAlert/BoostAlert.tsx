@@ -1,18 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 
 import BlogGroupImg from '@/assets/images/blog-group.png';
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import styles from './BoostAlert.module.scss';
 
 const BoostAlert: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <h3 className={styles.title}>Boost Your Knowledge: Create Personalized Quizzes with AI!</h3>
-        <p className={styles.text}>Try our AI quiz creator now—completely free of charge!</p>
+        <h3 className={styles.title}>{t('boost_your_knowledge')}</h3>
+        <p className={styles.text}>{t('try_out_ai_quiz')}</p>
         <AppButtonLink className={styles.button} href="https://app.hearify.org/register" width="240px" size="lg">
-          TRY FOR FREE
+          {t('try_for_free')}
         </AppButtonLink>
       </div>
 

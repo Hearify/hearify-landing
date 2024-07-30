@@ -1,5 +1,6 @@
 import { MDXRemote } from 'next-mdx-remote';
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import BlogService from '@/services/BlogService';
 import Quiz from '@/templates/Quiz/Quiz';
@@ -50,6 +51,7 @@ export const getServerSideProps: GetServerSideProps<MDXProps> = async context =>
       props: {
         mdxSource,
         quiz,
+        ...(await serverSideTranslations(String(context.locale), ['common'])),
       },
     };
   } catch {

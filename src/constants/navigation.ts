@@ -1,38 +1,38 @@
 export type NavigationItem = {
-  title: string;
+  i18nKey: string;
   href: string;
 };
 
 export const headerNavigation: NavigationItem[] = [
   {
-    title: 'How it works',
+    i18nKey: 'how_it_works',
     href: '/#how-it-works-section',
   },
   {
-    title: 'Blog',
+    i18nKey: 'blog',
     href: '/blog',
   },
   {
-    title: 'Library',
+    i18nKey: 'library',
     href: '/library',
   },
   {
-    title: 'FAQ',
+    i18nKey: 'faq',
     href: '/#faq-section',
   },
 ];
 
 export const footerNavigation: NavigationItem[] = [
   {
-    title: 'How it works',
+    i18nKey: 'how_it_works',
     href: '/#how-it-works-section',
   },
   {
-    title: 'Blog',
+    i18nKey: 'blog',
     href: '/blog',
   },
   {
-    title: 'FAQ',
+    i18nKey: 'faq',
     href: '/#faq-section',
   },
 ];
