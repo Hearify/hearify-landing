@@ -42,9 +42,15 @@ jobs:
             # Ensure the correct branch is checked out
             git checkout main
 
-            # Debugging: Show the current state of the repo
-            echo "Current branch and commit:"
-            git branch -v
+            # Verify remote URL and branch tracking
+            echo "Remote URL:"
+            git remote -v
+
+            echo "Branch tracking information:"
+            git branch -vv
+
+            # Force fetch the latest changes
+            git fetch origin
 
             # Pull the latest changes
             git pull
@@ -55,7 +61,7 @@ jobs:
 
             npm install
             npm run build
-          
+
             chmod +x deploy.sh
             ./deploy.sh
           EOF

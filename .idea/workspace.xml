@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="chore: test workflow">
-      <change beforePath="$PROJECT_DIR$/src/templates/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Home/Home.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="chore: test workflow" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,11 +56,11 @@
       <recent name="$PROJECT_DIR$/src/containers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$/public/blog/quizzes" />
       <recent name="$PROJECT_DIR$/public/blog/articles" />
       <recent name="$PROJECT_DIR$/public/blog" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -91,7 +89,7 @@
       <workItem from="1722185820704" duration="2216000" />
       <workItem from="1722231247314" duration="9695000" />
       <workItem from="1722256847634" duration="8567000" />
-      <workItem from="1722286111514" duration="7313000" />
+      <workItem from="1722286111514" duration="7688000" />
     </task>
     <task id="LOCAL-00001" summary="feat: switch from gatsby to nextjs">
       <option name="closed" value="true" />
@@ -405,7 +403,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722330750083</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722330859209</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1722330859209</updated>
+    </task>
+    <task id="LOCAL-00041" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722331031965</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1722331031965</updated>
+    </task>
+    <task id="LOCAL-00042" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722331213414</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1722331213414</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
