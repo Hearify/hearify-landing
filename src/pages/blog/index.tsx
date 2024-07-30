@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Blog from '@/templates/Blog/Blog';
 import BlogService from '@/services/BlogService';
@@ -28,12 +29,13 @@ const BlogPage: NextPage<BlogProps> = ({ articles }) => {
 
 export default BlogPage;
 
-export const getServerSideProps: GetServerSideProps<BlogProps> = async () => {
+export const getServerSideProps: GetServerSideProps<BlogProps> = async (context) => {
   const articles = await BlogService.loadArticlePreviews();
 
   return {
     props: {
       articles,
+      ...(await serverSideTranslations(String(context.locale), ['common'])),
     },
   };
 };

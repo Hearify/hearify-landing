@@ -3,12 +3,12 @@ import remarkSlug from 'remark-slug';
 import remarkAutolinkHeadings from 'remark-autolink-headings';
 
 const config = {
-  reactStrictMode: true,
-  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   i18n: {
-    locales: ['en'],
+    locales: ['en', 'uk'],
     defaultLocale: 'en',
   },
+  reactStrictMode: true,
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   images: {
     remotePatterns: [
       {
@@ -17,6 +17,7 @@ const config = {
       },
     ],
   },
+
 
   webpack: (config) => {
     // camel-case style names from css modules

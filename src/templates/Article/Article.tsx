@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 
 import AppBreadcrumbs from '@/components/AppBreadcrumbs/AppBreadcrumbs';
 import AuthorCard from '@/containers/AuthorCard/AuthorCard';
@@ -26,6 +27,7 @@ const Article: React.FC<ArticleProps> = ({
   children,
 }) => {
   const router = useRouter();
+  const { t } = useTranslation();
 
   const cleanPath: string = router.asPath.split('#')[0].split('?')[0];
 
@@ -35,7 +37,7 @@ const Article: React.FC<ArticleProps> = ({
         <article className={styles.body}>
           <AppBreadcrumbs
             items={[
-              { text: 'Blog', href: '/blog' },
+              { text: t('blog'), href: '/blog' },
               { text: article.title, href: `/blog/${article.slug}` },
             ]}
           />
@@ -68,7 +70,9 @@ const Article: React.FC<ArticleProps> = ({
                   width={100}
                   height={100}
                 />
-                <h4 className={styles.aboutTitle}>Written by {article.author.name}</h4>
+                <h4 className={styles.aboutTitle}>
+                  {t('written_by')} {article.author.name}
+                </h4>
               </div>
               <p className={styles.aboutText}>{article.author.aboutMe}</p>
             </div>
@@ -76,7 +80,7 @@ const Article: React.FC<ArticleProps> = ({
         </article>
 
         <aside className={styles.sidebar}>
-          <h3 className={styles.sidebarTitle}>Table of contents</h3>
+          <h3 className={styles.sidebarTitle}>{t('table_of_contents')}</h3>
           <nav className={styles.sidebarContainer}>
             {headers.map(item => (
               <Link key={item} className={styles.sidebarItem} href={`${cleanPath}#${slugify(item)}`}>
@@ -90,7 +94,7 @@ const Article: React.FC<ArticleProps> = ({
       {article.faq && (
         <div className={styles.faq}>
           <AppHeading variant="h2" className={styles.faqTitle}>
-            FAQ
+            {t('faq')}
           </AppHeading>
 
           <div className={styles.faqList}>
@@ -104,7 +108,7 @@ const Article: React.FC<ArticleProps> = ({
       <BoostAlert />
 
       <div className={styles.suggestions}>
-        <AppHeading variant="h2">Related Posts</AppHeading>
+        <AppHeading variant="h2">{t('related_posts')}</AppHeading>
 
         <div className={styles.suggestionsList}>
           {article.suggestions.map(suggestion => (

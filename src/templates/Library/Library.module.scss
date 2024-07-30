@@ -80,15 +80,22 @@
   }
 
   &__content {
+    width: 100%;
+    max-width: 435px;
     position: absolute;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.8);
-    flex: 1 0 0;
+    padding: 16px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  &__background {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 24px 32px 32px 32px;
+    padding: 40px;
+    background-color: var(--general-white);
+    border-radius: 8px;
   }
 
   &__title {

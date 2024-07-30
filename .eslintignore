@@ -9,4 +9,5 @@ build
 # Config files
 .eslintrc.js
 .prettierrc.js
-next.config.js
+next.config.mjs
+next-i18next.config.js

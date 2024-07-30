@@ -15,7 +15,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ quiz }) => {
 
   return (
     <div className={styles.wrapper}>
-      <Link href={topicUrl}>
+      <Link href={quiz.appUrl}>
         <Image src={quiz.coverUrl} alt={quiz.title} width={320} height={230} className={styles.image} />
       </Link>
 

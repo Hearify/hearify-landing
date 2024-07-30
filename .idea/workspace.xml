@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="chore: test workflow" />
+    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="chore: test workflow">
+      <change afterPath="$PROJECT_DIR$/next-i18next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/locales/en/common.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/locales/uk/common.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog/articles/15-best-ai-for-quiz-answers.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/15-best-ai-for-quiz-answers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-for-assessments.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-for-assessments.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-quiz-for-personalized-learning.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-quiz-for-personalized-learning.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeading/AppHeading.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeading/AppHeading.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/AuthorCard/AuthorCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/AuthorCard/AuthorCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/BoostAlert/BoostAlert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/BoostAlert/BoostAlert.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/QuizCard/QuizCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/QuizCard/QuizCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/library/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/library/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/library/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/library/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Article/Article.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Blog/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Blog/Blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Library/Library.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Library/Library.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Library/Library.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Library/Library.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/PageLayout/PageFooter/PageFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/PageLayout/PageFooter/PageFooter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/PageLayout/PageHeader/PageHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/PageLayout/PageHeader/PageHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Quiz/Quiz.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Quiz/Quiz.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/library" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,8 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "js.linters.configure.manually.selectedeslint": "true",
+    "git-widget-placeholder": "feature/18n",
     "last_opened_file_path": "/Users/user/WebstormProjects/blog/.github",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",

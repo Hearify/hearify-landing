@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { appWithTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { Nunito, Caveat } from 'next/font/google';
 
@@ -102,4 +103,4 @@ const App = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default App;
+export default appWithTranslation(App);

@@ -1,8 +1,9 @@
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Home from '@/templates/Home/Home';
 
-import type { NextPage } from 'next';
+import type { GetServerSideProps, NextPage } from 'next';
 
 const HomePage: NextPage = () => {
   const pageTitle = `AI Quiz Generator from PDF, Video & Text by Hearify AI Quiz Maker`;
@@ -23,3 +24,11 @@ const HomePage: NextPage = () => {
 };
 
 export default HomePage;
+
+export const getServerSideProps: GetServerSideProps = async context => {
+  return {
+    props: {
+      ...(await serverSideTranslations(String(context.locale), ['common'])),
+    },
+  };
+};

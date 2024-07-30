@@ -1,5 +1,6 @@
 import { MDXRemote } from 'next-mdx-remote';
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Article from '@/templates/Article/Article';
 import BlogService from '@/services/BlogService';
@@ -53,6 +54,7 @@ export const getServerSideProps: GetServerSideProps<MDXProps> = async context =>
         mdxSource,
         article,
         headers,
+        ...(await serverSideTranslations(String(context.locale), ['common'])),
       },
     };
   } catch {

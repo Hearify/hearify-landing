@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 
 import AppBreadcrumbs from '@/components/AppBreadcrumbs/AppBreadcrumbs';
 import AuthorCard from '@/containers/AuthorCard/AuthorCard';
@@ -18,13 +19,15 @@ export type QuizProps = {
 };
 
 const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.main}>
         <article className={styles.body}>
           <AppBreadcrumbs
             items={[
-              { text: 'Library', href: '/library' },
+              { text: t('library'), href: '/library' },
               { text: quiz.title, href: `/library/${quiz.slug}` },
             ]}
           />
@@ -39,18 +42,20 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
           </div>
 
           <div className={styles.content}>
-            <Link className={styles.popup} href={quiz.appUrl}>
-              <Image src={quiz.coverUrl} alt={quiz.title} width={800} height={500} className={styles.popupImage} />
+            <div className={styles.popup}>
+              <Link href={quiz.appUrl}>
+                <Image src={quiz.coverUrl} alt={quiz.title} width={800} height={500} className={styles.popupImage} />
+              </Link>
 
               <div className={styles.popupContainer}>
                 <div className={styles.popupBackground}>
                   <h4 className={styles.popupTitle}>{quiz.title}</h4>
-                  <AppButtonLink href="#" size="lg" className={styles.popupButton}>
-                    START QUIZ
+                  <AppButtonLink href={quiz.appUrl} size="lg" className={styles.popupButton}>
+                    {t('start_quiz')}
                   </AppButtonLink>
                 </div>
               </div>
-            </Link>
+            </div>
 
             {children}
           </div>
@@ -60,7 +65,7 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
       <BoostAlert />
 
       <div className={styles.suggestions}>
-        <AppHeading variant="h2">Related Quizzes</AppHeading>
+        <AppHeading variant="h2">{t('related_quizzes')}</AppHeading>
 
         <div className={styles.suggestionsList}>
           {quiz.suggestions.map(item => (
