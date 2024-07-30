@@ -23,7 +23,7 @@ const Blog: React.FC<BlogProps> = ({ articles }) => {
             Welcome to our blog!
           </AppHeading>
           <p className={styles.heroText}>
-            Dive into a world where artificial intelligence meets personal growth. Our blog is dedicated to providing
+            Dive into the world where artificial intelligence meets personal growth. Our blog is dedicated to providing
             you with engaging AI quizzes that not only test your knowledge but also enhance your learning experience.
             Discover insightful tips on how to maximize your study sessions, utilize AI tools for smarter learning, and
             continuously improve yourself.
