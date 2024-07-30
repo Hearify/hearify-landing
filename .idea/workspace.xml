@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="feat: add library and fix gradients">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/articles/15-best-ai-for-quiz-answers.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/15-best-ai-for-quiz-answers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-for-assessments.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-for-assessments.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-quiz-for-personalized-learning.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/articles/how-to-use-ai-quiz-for-personalized-learning.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/quizzes.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog/quizzes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/quizzes/15-best-ai-for-quiz-answers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/quizzes/how-to-use-ai-for-assessments.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blog/quizzes/how-to-use-ai-quiz-for-personalized-learning.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Library/Library.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Library/Library.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Quiz/Quiz.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Quiz/Quiz.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/Quiz/Quiz.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Quiz/Quiz.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/quiz.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/quiz.ts" afterDir="false" />
-    </list>
+    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="chore: add trackings" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="feature/library" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -239,7 +226,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722263681376</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: add quizzes">
+      <option name="closed" value="true" />
+      <created>1722283757046</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722283757046</updated>
+    </task>
+    <task id="LOCAL-00019" summary="chore: add trackings">
+      <option name="closed" value="true" />
+      <created>1722284024717</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722284024717</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +294,8 @@
     <MESSAGE value="fix: rename topics to articles" />
     <MESSAGE value="fix: add nice shadow to header" />
     <MESSAGE value="feat: add library and fix gradients" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add library and fix gradients" />
+    <MESSAGE value="feat: add quizzes" />
+    <MESSAGE value="chore: add trackings" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add trackings" />
   </component>
 </project>

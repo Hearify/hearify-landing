@@ -62,8 +62,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="canonical" href={canonicalUrl} />
       </Head>
 
-      <div dangerouslySetInnerHTML={
-        { __html: `    <!-- Google Tag Manager -->
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `    <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -88,9 +89,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV5D2MP9"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        `}
-      }/>
-
+        `,
+        }}
+      />
 
       <div className={`${nunito.variable} ${caveat.variable}`}>
         <PageLayout>

@@ -57,7 +57,7 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
         </article>
       </div>
 
-      <BoostAlert/>
+      <BoostAlert />
 
       <div className={styles.suggestions}>
         <AppHeading variant="h2">Related Quizzes</AppHeading>
