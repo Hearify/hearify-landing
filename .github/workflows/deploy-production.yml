@@ -23,7 +23,7 @@ jobs:
           AZURE_HOST: ${{ secrets.AZURE_HOST }}
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
         run: |
-          ssh $AZURE_USERNAME@$AZURE_HOST << 'EOF'
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
           
             # Stop and remove existing container if running
             existing_container_id=\$(docker ps -q --filter "name=blog-nextjs")
