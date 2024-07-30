@@ -21,8 +21,7 @@ jobs:
           ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 
       - name: Add server to known_hosts
-        run: |
-          ssh-keyscan -H ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
+        run: ssh-keyscan -H ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
 
       - name: Copy SSH key to server
         env:
@@ -44,6 +43,7 @@ jobs:
         env:
           AZURE_HOST: ${{ secrets.AZURE_HOST }}
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
+          GIT_SSH_COMMAND: "ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
             set -e
@@ -52,6 +52,9 @@ jobs:
 
             # Ensure the correct branch is checked out
             git checkout main
+
+            # Stash any local changes to avoid conflicts
+            git stash
 
             # Set remote URL to use SSH
             git remote set-url origin git@github.com:Hearify/blog.git
