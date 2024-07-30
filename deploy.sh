@@ -1,11 +1,12 @@
 #!/bin/bash
 
+docker ps -q --filter "ancestor=blog-nextjs"
 # Stop and remove existing container if running
-existing_container_id=$(docker ps -q --filter "name=blog-nextjs")
+existing_container_id=$(docker ps -q --filter "ancestor=blog-nextjs")
 if [ ! -z "$existing_container_id" ]; then
   echo "Stopping and removing existing container: $existing_container_id"
   docker stop $existing_container_id
-  docker rm blog-nextjs
+  docker rm $existing_container_id
 fi
 
 # Remove any existing image to avoid conflicts
