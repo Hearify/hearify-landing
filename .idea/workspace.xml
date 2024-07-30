@@ -89,23 +89,7 @@
       <workItem from="1722185820704" duration="2216000" />
       <workItem from="1722231247314" duration="9695000" />
       <workItem from="1722256847634" duration="8567000" />
-      <workItem from="1722286111514" duration="11370000" />
-    </task>
-    <task id="LOCAL-00002" summary="fix: add first blog post">
-      <option name="closed" value="true" />
-      <created>1721824416064</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1721824416064</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fix: fix types">
-      <option name="closed" value="true" />
-      <created>1721825556977</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1721825556977</updated>
+      <workItem from="1722286111514" duration="11800000" />
     </task>
     <task id="LOCAL-00004" summary="fix: refactor usage of jsons">
       <option name="closed" value="true" />
@@ -483,7 +467,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722335018781</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722335215924</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1722335215924</updated>
+    </task>
+    <task id="LOCAL-00052" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722335448022</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1722335448022</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

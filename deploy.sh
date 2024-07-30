@@ -19,4 +19,4 @@ fi
 echo "Building new Docker image"
 docker build -t blog-nextjs .
 echo "Running new Docker container"
-docker run -d -p 3000:3000 --name blog-nextjs blog-nextjs
+docker run -d -p 3000:3000 blog-nextjs
