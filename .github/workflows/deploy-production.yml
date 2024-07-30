@@ -29,7 +29,7 @@ jobs:
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
-            cd /home/$AZURE_USERNAME/new_blog/blog
+            cd new_blog/blog
             git pull
             npm install
             npm run build
@@ -41,7 +41,8 @@ jobs:
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
           ENV_CONFIG: ${{ vars.ENV_CONFIG }}
         run: |
-          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST 'echo "${{ secrets.ENV_CONFIG }}" > /home/$AZURE_USERNAME/new_blog/blog/.env'
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST 'mkdir -p /home/$AZURE_USERNAME/new_blog/blog && touch /home/$AZURE_USERNAME/new_blog/blog/.env'
+          echo "${{ secrets.ENV_CONFIG }}" | ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST 'cat > /home/$AZURE_USERNAME/new_blog/blog/.env'
 
       - name: Execute deploy script on server
         env:
@@ -49,7 +50,7 @@ jobs:
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
-            cd /home/$AZURE_USERNAME/new_blog/blog
+            cd new_blog/blog
             chmod +x deploy.sh
             ./deploy.sh
           EOF
