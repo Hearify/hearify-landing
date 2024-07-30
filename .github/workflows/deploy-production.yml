@@ -24,6 +24,14 @@ jobs:
         run: |
           ssh-keyscan -H ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
 
+      - name: Copy SSH key to server
+        env:
+          AZURE_HOST: ${{ secrets.AZURE_HOST }}
+          AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
+        run: |
+          scp -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ~/.ssh/id_rsa $AZURE_USERNAME@$AZURE_HOST:~/.ssh/id_rsa
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST 'chmod 600 ~/.ssh/id_rsa'
+
       - name: Copy environment configuration to server
         env:
           AZURE_HOST: ${{ secrets.AZURE_HOST }}
@@ -38,9 +46,8 @@ jobs:
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
-          
-            ssh -T git@github.com
-          
+            set -e
+
             cd new_blog/blog
 
             # Ensure the correct branch is checked out
@@ -57,10 +64,10 @@ jobs:
             git branch -vv
 
             # Force fetch the latest changes
-            git fetch origin
+            GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" git fetch origin
 
             # Pull the latest changes
-            git pull origin main
+            GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" git pull origin main
 
             # Debugging: Show the state after pull
             echo "State after git pull:"
