@@ -16,19 +16,28 @@ jobs:
       - name: Set up SSH key
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
 
       - name: Add server to known_hosts
         run: |
           ssh-keyscan ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
+          cat ~/.ssh/known_hosts
 
-      - name: Deploy to Azure Server
+      - name: Test SSH connection
         env:
           AZURE_HOST: ${{ secrets.AZURE_HOST }}
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
         run: |
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $AZURE_USERNAME@$AZURE_HOST << 'EOF'
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST "echo 'SSH connection successful'"
+
+      - name: Deploy to Azure Server
+        if: success()
+        env:
+          AZURE_HOST: ${{ secrets.AZURE_HOST }}
+          AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
             cd new_blog/blog
             git pull
             npm install
