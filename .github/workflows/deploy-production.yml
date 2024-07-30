@@ -23,7 +23,15 @@ jobs:
         run: |
           ssh-keyscan -H ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
 
-      - name: SSH into server and update project
+      - name: Copy environment configuration to server
+        env:
+          AZURE_HOST: ${{ secrets.AZURE_HOST }}
+          AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
+          ENV_CONFIG: ${{ vars.ENV_CONFIG }}
+        run: |
+          echo "${{ env.ENV_CONFIG }}" | ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST 'cat > new_blog/blog/.env'
+
+      - name: Update project
         env:
           AZURE_HOST: ${{ secrets.AZURE_HOST }}
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
@@ -35,21 +43,13 @@ jobs:
             npm run build
           EOF
 
-      - name: Copy environment configuration to server
-        env:
-          AZURE_HOST: ${{ secrets.AZURE_HOST }}
-          AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
-          ENV_CONFIG: ${{ vars.ENV_CONFIG }}
-        run: |
-          echo "${{ env.ENV_CONFIG }}" | ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST 'cat > new_blog/blog/.env'
-
       - name: Execute deploy script on server
         env:
           AZURE_HOST: ${{ secrets.AZURE_HOST }}
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
-            cd new_blog/blog
+            cd new_blog/blog/scripts
             chmod +x deploy.sh
             ./deploy.sh
           EOF
