@@ -46,8 +46,6 @@ jobs:
           GIT_SSH_COMMAND: "ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
-            set -e
-
             cd new_blog/blog
 
             # Ensure the correct branch is checked out
@@ -56,25 +54,11 @@ jobs:
             # Stash any local changes to avoid conflicts
             git stash
 
-            # Set remote URL to use SSH
-            git remote set-url origin git@github.com:Hearify/blog.git
-
-            # Verify remote URL and branch tracking
-            echo "Remote URL:"
-            git remote -v
-
-            echo "Branch tracking information:"
-            git branch -vv
-
             # Force fetch the latest changes
             GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" git fetch origin
 
             # Pull the latest changes
             GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" git pull origin main
-
-            # Debugging: Show the state after pull
-            echo "State after git pull:"
-            git branch -v
 
             npm install
             npm run build

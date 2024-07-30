@@ -19,7 +19,7 @@ import FAQBlock from '@/containers/FAQBlock/FAQBlock';
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 const Home: React.FC = () => {
   return (
-    <div className={styles.wrapper} data-testid="updated from webstorm">
+    <div className={styles.wrapper}>
       <section className={styles.hero}>
         <div className={styles.heroLeft}>
           <h1 className={styles.heroTitle} data-translate="ai_generate_custom_quiz">
