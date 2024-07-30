@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Hotjar from '@hotjar/browser';
 import cn from 'classnames';
 
 import styles from './PageLayout.module.scss';
@@ -22,12 +21,6 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
     return () => {
       window.removeEventListener('scroll', onScroll);
     };
-  }, []);
-
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'development') return;
-
-    Hotjar.init(parseInt(process.env.NEXT_PUBLIC_HOTJAR_ID), parseInt(process.env.NEXT_PUBLIC_HOTJAR_VERSION));
   }, []);
 
   return (
