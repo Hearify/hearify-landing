@@ -29,7 +29,7 @@ const BlogPage: NextPage<BlogProps> = ({ articles }) => {
 
 export default BlogPage;
 
-export const getServerSideProps: GetServerSideProps<BlogProps> = async (context) => {
+export const getServerSideProps: GetServerSideProps<BlogProps> = async context => {
   const articles = await BlogService.loadArticlePreviews();
 
   return {

@@ -29,7 +29,7 @@ const BlogPage: NextPage<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
 
 export default BlogPage;
 
-export const getServerSideProps: GetServerSideProps<LibraryProps> = async (context) => {
+export const getServerSideProps: GetServerSideProps<LibraryProps> = async context => {
   const quizzes = await BlogService.loadQuizPreviews();
   const randomQuiz = quizzes[Math.floor(Math.random() * quizzes.length)];
 
