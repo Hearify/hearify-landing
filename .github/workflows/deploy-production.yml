@@ -1,0 +1,36 @@
+name: Deploy to Azure
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to Azure Server
+        env:
+          AZURE_HOST: ${{ secrets.AZURE_HOST }}
+          AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
+        run: |
+          ssh $AZURE_USERNAME@$AZURE_HOST << 'EOF'
+            cd new_blog/blog
+            git pull
+            npm install
+            npm run build
+            docker stop blog-nextjs || true
+            docker rm blog-nextjs || true
+            docker rmi blog-nextjs || true
+            docker build -t blog-nextjs .
+            docker run -d -p 3000:3000 --name blog-nextjs blog-nextjs
+          EOF
