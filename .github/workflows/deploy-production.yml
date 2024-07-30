@@ -38,18 +38,24 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
             cd new_blog/blog
+
+            # Ensure the correct branch is checked out
+            git checkout main
+
+            # Debugging: Show the current state of the repo
+            echo "Current branch and commit:"
+            git branch -v
+
+            # Pull the latest changes
             git pull
+
+            # Debugging: Show the state after pull
+            echo "State after git pull:"
+            git branch -v
+
             npm install
             npm run build
-          EOF
-
-      - name: Execute deploy script on server
-        env:
-          AZURE_HOST: ${{ secrets.AZURE_HOST }}
-          AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
-        run: |
-          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
-            cd new_blog/blog
+          
             chmod +x deploy.sh
             ./deploy.sh
           EOF
