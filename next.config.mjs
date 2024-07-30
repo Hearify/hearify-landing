@@ -17,8 +17,20 @@ const config = {
       },
     ],
   },
-
-
+  async redirects() {
+    return [
+      {
+        source: '/blog/articles/:slug(.*[^md])',
+        destination: '/blog/:slug',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles',
+        destination: '/blog',
+        permanent: true,
+      }
+    ];
+  },
   webpack: (config) => {
     // camel-case style names from css modules
     config.module.rules
