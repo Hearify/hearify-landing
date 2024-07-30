@@ -89,7 +89,7 @@
       <workItem from="1722185820704" duration="2216000" />
       <workItem from="1722231247314" duration="9695000" />
       <workItem from="1722256847634" duration="8567000" />
-      <workItem from="1722286111514" duration="4187000" />
+      <workItem from="1722286111514" duration="4503000" />
     </task>
     <task id="LOCAL-00001" summary="feat: switch from gatsby to nextjs">
       <option name="closed" value="true" />
@@ -283,7 +283,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722327455620</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722327698050</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722327698050</updated>
+    </task>
+    <task id="LOCAL-00026" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722327805367</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1722327805367</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
