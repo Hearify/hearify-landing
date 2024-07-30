@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="chore: add trackings" />
+    <list default="true" id="acc449a9-5263-4d2f-92f0-1dffb4e3ce93" name="Changes" comment="chore: test workflow">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy-production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy-production.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,31 +32,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/user/WebstormProjects/blog/public/blog/quizzes&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/user/WebstormProjects/blog/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/Users/user/WebstormProjects/blog/.github",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/user/WebstormProjects/blog/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/blog/quizzes" />
       <recent name="$PROJECT_DIR$/src/templates" />
       <recent name="$PROJECT_DIR$/src/containers" />
-      <recent name="$PROJECT_DIR$/src/pages/library" />
-      <recent name="$PROJECT_DIR$/src/types" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/blog/quizzes" />
@@ -89,6 +92,7 @@
       <workItem from="1722185820704" duration="2216000" />
       <workItem from="1722231247314" duration="9695000" />
       <workItem from="1722256847634" duration="8567000" />
+      <workItem from="1722286111514" duration="3902000" />
     </task>
     <task id="LOCAL-00001" summary="feat: switch from gatsby to nextjs">
       <option name="closed" value="true" />
@@ -242,7 +246,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722284024717</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix: minor changes">
+      <option name="closed" value="true" />
+      <created>1722324387002</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722324387002</updated>
+    </task>
+    <task id="LOCAL-00021" summary="chore: add deploy-production workflow">
+      <option name="closed" value="true" />
+      <created>1722325109895</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1722325109895</updated>
+    </task>
+    <task id="LOCAL-00022" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722326676965</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1722326676965</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,12 +318,14 @@
     <MESSAGE value="feat: add 3 topics" />
     <MESSAGE value="fix: add automatic sidebar generation" />
     <MESSAGE value="feat: add home page" />
-    <MESSAGE value="fix: minor changes" />
     <MESSAGE value="fix: rename topics to articles" />
     <MESSAGE value="fix: add nice shadow to header" />
     <MESSAGE value="feat: add library and fix gradients" />
     <MESSAGE value="feat: add quizzes" />
     <MESSAGE value="chore: add trackings" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: add trackings" />
+    <MESSAGE value="fix: minor changes" />
+    <MESSAGE value="chore: add deploy-production workflow" />
+    <MESSAGE value="chore: test workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: test workflow" />
   </component>
 </project>

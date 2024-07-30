@@ -19,6 +19,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.AZURE_HOST }}
 
+      - name: Add server to known_hosts
+        run: |
+          ssh-keyscan ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
+
       - name: Deploy to Azure Server
         env:
           AZURE_HOST: ${{ secrets.AZURE_HOST }}
