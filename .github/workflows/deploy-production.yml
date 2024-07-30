@@ -13,14 +13,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
 
       - name: Add server to known_hosts
         run: |
-          mkdir -p ~/.ssh
           ssh-keyscan ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy to Azure Server
@@ -28,7 +28,7 @@ jobs:
           AZURE_HOST: ${{ secrets.AZURE_HOST }}
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
         run: |
-          ssh -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $AZURE_USERNAME@$AZURE_HOST << 'EOF'
             cd new_blog/blog
             git pull
             npm install
