@@ -21,7 +21,7 @@ const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <AppHeading className={styles.heroTitle} variant="h2">
-            Welcome To Our Quiz Library!
+            Welcome to our quiz library!
           </AppHeading>
           <p className={styles.heroText}>
             Dive into a world where artificial intelligence meets personal growth. Our blog is dedicated to providing
