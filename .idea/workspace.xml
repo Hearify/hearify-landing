@@ -89,15 +89,7 @@
       <workItem from="1722185820704" duration="2216000" />
       <workItem from="1722231247314" duration="9695000" />
       <workItem from="1722256847634" duration="8567000" />
-      <workItem from="1722286111514" duration="11020000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat: switch from gatsby to nextjs">
-      <option name="closed" value="true" />
-      <created>1721812887657</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1721812887657</updated>
+      <workItem from="1722286111514" duration="11370000" />
     </task>
     <task id="LOCAL-00002" summary="fix: add first blog post">
       <option name="closed" value="true" />
@@ -475,7 +467,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722334262954</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722334694965</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1722334694965</updated>
+    </task>
+    <task id="LOCAL-00050" summary="chore: test workflow">
+      <option name="closed" value="true" />
+      <created>1722335018781</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1722335018781</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
