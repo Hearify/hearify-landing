@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "breakpoints" as *;
 
 @mixin text-main-1 {
   font-family: $font-nunito;
@@ -33,6 +34,11 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+  @include md {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 @mixin text-field-md {
@@ -89,6 +95,11 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
+  @include md {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 @mixin text-subtitle-3 {
@@ -117,6 +128,11 @@
   font-weight: 800;
   font-size: 64px;
   line-height: 87.3px;
+  @include md {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+  }
 }
 
 @mixin text-heading-2 {
@@ -124,6 +140,11 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
+  @include md {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+  }
 }
 
 @mixin text-heading-3 {
@@ -131,6 +152,11 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 150%;
+  @include md {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
 @mixin text-heading-4 {
