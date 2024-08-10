@@ -5,7 +5,7 @@
     "description": "Test your knowledge of the unforgettable music that defined the 1980s! From pop legends to rock anthems, this quiz will challenge your memory of the decade's greatest hits and artists. Let's see if you're an 80s music expert!",
     "coverUrl": "/blog/images/80s_start.png",
     "appUrl": "https://app.hearify.org/waiting/gbfigkntrn",
-    "authorSlug": "sofiia-shaposhnikova"
+    "authorSlug": "anna-fox"
   },
   {
     "slug": "all-american-history-quiz-test-your-knowledge-of-us-history",
@@ -13,7 +13,7 @@
     "description": "Dive into the rich and diverse history of the United States with our All-American History Quiz! Challenge yourself with questions about significant events, influential figures, and key moments that have shaped the nation. Let's see how well you know American history!",
     "coverUrl": "/blog/images/american_history_start(2).png",
     "appUrl": "https://app.hearify.org/waiting/nehzeqqzhg",
-    "authorSlug": "sofiia-shaposhnikova"
+    "authorSlug": "anna-fox"
   },
   {
     "slug": "the-human-body-quiz-test-your-knowledge-of-human-anatomy",
@@ -21,7 +21,7 @@
     "description": "Explore our fascinating quiz and challenge your understanding of the human body! This quiz covers various aspects of human anatomy, physiology, and the functions of different body systems. See how well you know the amazing machine that is the human body.",
     "coverUrl": "/blog/images/anatomy_start.png",
     "appUrl": "https://app.hearify.org/waiting/tvmtlouwum",
-    "authorSlug": "sofiia-shaposhnikova"
+    "authorSlug": "anna-fox"
   },
   {
     "slug": "literature-antonyms-and-synonyms-quiz-test-your-vocabulary-skills",
@@ -29,7 +29,7 @@
     "description": "Explore the world of words with our Literature Antonyms and Synonyms Quiz! Challenge yourself to match the correct antonyms and synonyms for various literary terms and expressions. Perfect for language enthusiasts and literature students alike!",
     "coverUrl": "/blog/images/books2_start.png",
     "appUrl": "https://app.hearify.org/waiting/uzgfmdkcpr",
-    "authorSlug": "sofiia-shaposhnikova"
+    "authorSlug":"anna-fox"
   },
   {
     "slug": "countries-and-capitals-quiz-test-your-geography-knowledge",
@@ -37,7 +37,7 @@
     "description": "Ready to challenge your geography skills? Take our quiz and see how well you know the capitals of countries around the world. Perfect for students, travelers, and anyone who loves learning about different places.",
     "coverUrl": "/blog/images/capitals_start.png",
     "appUrl": "https://app.hearify.org/waiting/cwzjubsnto",
-    "authorSlug": "sofiia-shaposhnikova"
+    "authorSlug": "anna-fox"
   },
   {
     "slug": "disney-quiz-how-well-do-you-know-your-disney-classics",
@@ -45,7 +45,7 @@
     "description": "Are you a true Disney fan? Test your knowledge of Disney movies, characters, and magical moments with this enchanting quiz. Dive into the world of Disney and see how much you really know!",
     "coverUrl": "/blog/images/disney_start(1).png",
     "appUrl": "https://app.hearify.org/waiting/njebmiprgz",
-    "authorSlug": "sofiia-shaposhnikova"
+    "authorSlug": "anna-fox"
   },
   {
     "slug": "who-said-this-famous-quotes-quiz",
@@ -53,7 +53,7 @@
     "description": "Dive into our engaging quiz and challenge your knowledge of famous historical quotes! Discover who said these iconic phrases that have shaped history and find out how well you know these influential figures.",
     "coverUrl": "/blog/images/quotes_start.png",
     "appUrl": "https://app.hearify.org/waiting/zamvwhflju",
-    "authorSlug": "sofiia-shaposhnikova"
+    "authorSlug": "anna-fox"
   },
   {
     "slug": "match-the-quote-to-the-movie-quiz-test-your-movie-knowledge",
@@ -61,7 +61,7 @@
     "description": "Are you a movie buff? Challenge yourself with our exciting quiz that matches famous movie quotes to their respective films. See how well you know these iconic lines from cinematic history!",
     "coverUrl": "/blog/images/movies_start.png",
     "appUrl": "https://app.hearify.org/waiting/tysdgnyxxc",
-    "authorSlug": "sofiia-shaposhnikova"
+    "authorSlug": "anna-fox"
   },
   {
     "slug": "us-state-capitals-quiz-how-well-do-you-know-your-state-capitals",
@@ -69,7 +69,15 @@
     "description": "Challenge yourself with the ultimate 50 states and capitals quiz. Our engaging quiz will help you learn and test your knowledge of all the United States capitals. Perfect for both beginners and geography enthusiasts.",
     "coverUrl": "/blog/images/uscapitals_start.png",
     "appUrl": "https://app.hearify.org/waiting/gkzzmubfvr",
-    "authorSlug": "sofiia-shaposhnikova"
-  }
+    "authorSlug": "anna-fox"
+  },
+  {
+    "slug": "astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos",
+    "title": "Astronomy and Space Quiz: Explore the Universe",
+    "description": "Take a journey through the stars with our fun and easy Astronomy and Space quiz. Test your knowledge of planets, galaxies, and all things cosmic. Perfect for beginners and space lovers alike!",
+    "coverUrl": "/blog/images/astronomy_space_quiz.png",
+    "appUrl": "https://app.hearify.org/waiting/xiwewyqaug",
+    "authorSlug": "anna-fox"
+}
 ]
 
