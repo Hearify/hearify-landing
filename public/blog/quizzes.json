@@ -1,4 +1,28 @@
 [
+    {
+    "slug": "astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos",
+    "title": "Astronomy and Space Quiz: Explore the Universe",
+    "description": "Take a journey through the stars with our fun and easy Astronomy and Space quiz. Test your knowledge of planets, galaxies, and all things cosmic. Perfect for beginners and space lovers alike!",
+    "coverUrl": "/blog/images/astronomy_space_quiz.png",
+    "appUrl": "https://app.hearify.org/waiting/xiwewyqaug",
+    "authorSlug": "anna-fox"
+},
+  {
+    "slug": "world-war-2-quiz-test-your-knowledge-of-history",
+    "title": "World War 2 Quiz: Test Your Knowledge of History",
+    "description": "Dive into history with our World War 2 quiz. Challenge yourself with questions about key events, leaders, and battles. Perfect for history buffs and anyone looking to learn more about this important period.",
+    "coverUrl": "/blog/images/ww2.png",
+    "appUrl": "https://app.hearify.org/waiting/nmnbkairvo",
+    "authorSlug": "anna-fox"
+},
+  {
+    "slug": "periodic-table-quiz-test-your-knowledge-of-elements",
+    "title": "Periodic Table Quiz: Explore the Elements",
+    "description": "Test your knowledge of the elements with our fun and informative Periodic Table quiz. Challenge yourself on the properties, symbols, and groups of elements. Great for science fans and students alike!",
+    "coverUrl": "/blog/images/chem.png",
+    "appUrl": "https://app.hearify.org/waiting/wodmbvxufz",
+    "authorSlug": "anna-fox"
+},
   {
     "slug": "80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s",
     "title": "80s Music Quiz",
@@ -70,14 +94,6 @@
     "coverUrl": "/blog/images/uscapitals_start.png",
     "appUrl": "https://app.hearify.org/waiting/gkzzmubfvr",
     "authorSlug": "anna-fox"
-  },
-  {
-    "slug": "astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos",
-    "title": "Astronomy and Space Quiz: Explore the Universe",
-    "description": "Take a journey through the stars with our fun and easy Astronomy and Space quiz. Test your knowledge of planets, galaxies, and all things cosmic. Perfect for beginners and space lovers alike!",
-    "coverUrl": "/blog/images/astronomy_space_quiz.png",
-    "appUrl": "https://app.hearify.org/waiting/xiwewyqaug",
-    "authorSlug": "anna-fox"
-}
+  }
 ]
 
