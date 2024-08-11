@@ -9,7 +9,7 @@ import type { LibraryProps } from '@/templates/Library/Library';
 
 const BlogPage: NextPage<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
   const pageTitle = `Library — Hearify`;
-  const pageDescription = `Dive into a world where artificial intelligence meets personal growth. Our blog is dedicated to providing you with engaging AI quizzes that not only test your knowledge but also enhance your learning experience. Discover insightful tips on how to maximize your study sessions, utilize AI tools for smarter learning, and continuously improve yourself.`;
+  const pageDescription = `Learn, Play, and Challenge Yourself! It's a fun place where you can find quizzes on all kinds of topics. Whether you want to learn something new or just have a good time, we've got quizzes for you. You can test your knowledge, challenge yourself, or simply enjoy the experience. It's all about learning and having fun!`;
   const pageKeywords = `hearify blog, ai quizzes, study tips, learning experience, ai tools, personal growth`;
 
   return (
