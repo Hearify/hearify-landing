@@ -41,13 +41,28 @@ const PageFooter: React.FC = () => {
 
         <div className={styles.socials}>
           <div className={styles.socialsContainer}>
-            <a href="https://www.facebook.com/people/Hearify/61552644703836/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/people/Hearify/61552644703836/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook icon"
+            >
               <FacebookIcon width={32} height={32} />
             </a>
-            <a href="https://www.linkedin.com/company/hearify/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/company/hearify/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn icon"
+            >
               <LinkedInIcon width={32} height={32} />
             </a>
-            <a href="https://www.instagram.com/hearify.tech/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.instagram.com/hearify.tech/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram icon"
+            >
               <InstagramIcon width={32} height={32} />
             </a>
           </div>

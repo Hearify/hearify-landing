@@ -8,10 +8,6 @@ import OfficeIcon from '@/assets/icons/office.svg';
 import SchoolIcon from '@/assets/icons/school.svg';
 import styles from './HomeAudience.module.scss';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
-import ClockIcon from '@/assets/icons/clock.svg';
-import MenuIcon from '@/assets/icons/menu.svg';
-import LanguageIcon from '@/assets/icons/language.svg';
-import BoardIcon from '@/assets/icons/board.svg';
 import AppDropdown from '@/components/AppDropdown/AppDropdown';
 
 type AudienceBlock = {
