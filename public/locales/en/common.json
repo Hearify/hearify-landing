@@ -1,4 +1,191 @@
 {
+  "templates": {
+    "HomeHero": {
+      "title": "AI Quiz Generator from PDFs, Videos & Text",
+      "description": "Automatically create questions for assignments, tests, and exams from your content with our ultimate AI question generator. Ideal for educators, students, professionals, and lifelong learners.",
+      "button": "TRY FOR FREE",
+      "hint": "Loved by students and teachers in 65+ countries"
+    },
+    "HomeFeatured": {
+      "title": "Featured by:",
+      "button": "LOAD MORE"
+    },
+    "HomeCreateQuiz": {
+      "title": "Create Quiz with AI in No Time!",
+      "steps": [
+        {
+          "title": "Upload a file",
+          "description": "Pick the PDF or text file on your gadget or insert the link to the YouTube video you wish to transform into a quiz."
+        },
+        {
+          "title": "Customize",
+          "description": "Pick the page range, difficulty level of quiz options, timer, the number and type of questions, and the quiz language."
+        },
+        {
+          "title": "Generate",
+          "description": "Once all quiz options are specified, our free quiz generator will process them to create a detailed quiz."
+        },
+        {
+          "title": "Share & Play",
+          "description": "Make your own quiz and share it with your peers, colleagues, friends, etc."
+        },
+        {
+          "title": "Get Analytics",
+          "description": "The system automatically grades and creates a rating among all participants."
+        }
+      ]
+    },
+    "HomeBenefits": {
+      "title": "Top Benefits of the Best AI Question Generator",
+      "description": "Our AI quiz maker offers a wide range of benefits for first-time and skilled users. The key advantages include but not limited to:",
+      "benefits": [
+        {
+          "title": "Quick Creation in One Click!",
+          "description": "Students, scholars, and business owners usually struggle to balance personal, academic, and work commitments. At Hearify, we offer a fast AI quiz generator that can create a detailed quiz within minutes. Save time usually needed to prepare a quiz manually."
+        },
+        {
+          "title": "Adaptive content",
+          "description": "We offer the best AI for multiple choice questions that can produce quizzes up to your proficiency level and educational experience. The platform will adjust both the type and difficulty level of questions instantly. Adaptive learning enables us to address your unique goals and needs."
+        },
+        {
+          "title": "Multilingual Support",
+          "description": "Online AI quiz maker can create quizzes in different languages, making study sessions less hectic and educational content more accessible to users from all over the globe. Educators can cater to different learners, making educational programs more diverse, effective, and accessible."
+        },
+        {
+          "title": "Advanced Analytics",
+          "description": "AI quiz creator can analyze your answers in order to provide you with detailed insights into your performance. Thus, you can clearly see both your strengths and gaps in your knowledge. Teachers and professors can use it to improve curriculum, understand the effectiveness of teaching methods."
+        }
+      ]
+    },
+    "HomeReviews": {
+      "title": "Hearify Reviews: Hear Our Happy Customers!",
+      "reviews": [
+        {
+          "name": "Yuliia Gorbatenko",
+          "position": "English teacher",
+          "text": "I tried Hearify several times, and I must say it's much better than ChatGPT, especially taking into account the number of mistakes and redundancy in questions, when I asked ChatGPT to create some quizzes for me. Hearify creates really interesting questions, that make sense - I admired it. I tried it with the difficult topics my student asked me to help with and I am happy with the results ❤\uFE0F\n\nI like the option to correct ready-made quizzes if necessary right in the draft - I don't need to copy everything in the document and edit it afterwards. \n\nThank you so much for providing an opportunity to use this wonderful tool! It saved me a lot of time indeed, because I drastically lack time to get ready for the lessons properly. I'll buy the subscription since the next month \uD83D\uDE4F"
+        },
+        {
+          "name": "Artem Oharkov",
+          "position": "IT teacher",
+          "text": "Hearify provides a good starting point, while you stay in control and can edit, discard, or add extra questions. It helps me with writer's block and provides a fresh perspective of what might be asked."
+        }
+      ]
+    },
+    "HomeAudience": {
+      "title": "For whom",
+      "blocks": [
+        {
+          "title": "Scholars",
+          "text": "Our AI quiz generator will quickly create 100% customized tests for specific lesson plans in order to achieve your goals."
+        },
+        {
+          "title": "Students",
+          "text": "Our platform helps institutions assess student’s learning and performance, as well as detect the key arras needed extra support."
+        },
+        {
+          "title": "Business Owners",
+          "text": "Whether it’s employee training, onboarding process, or skill assessment, our AI quiz creator helps company owners evaluate the skills of new hires and help them understand the company’s policies."
+        },
+        {
+          "title": "Educational Institutions",
+          "text": "AI quiz maker offers personalized quizzes that help with effective self-assessment. Identify areas where your knowledge isn’t sufficient and learn from your mistakes at your own pace."
+        }
+      ]
+    },
+    "HomeWhyUs": {
+      "title": "Why Choose Our AI Quiz Generator",
+      "description": "Using our question answer generator makes the process of creating, managing, and analyzing quizzes a breeze. Here’s why you should make your next quiz with us:",
+      "blocks": [
+        {
+          "title": "It’s time-saving",
+          "description": "Our platform quickly produces quizzes by effectively leveraging databases of questions and answers, saving precious time of students, trainers, educators, business owners, etc."
+        },
+        {
+          "title": "It deals with diverse question types",
+          "description": "Our question generator creates various types of questions (fill-in, multiple choice, etc.) that work well with your particular learning style."
+        },
+        {
+          "title": "Engagement enhancement",
+          "description": "Adaptive and interactive quizzes tend to make learning more enjoyable and engaging. You’re welcome to share the quiz with your college fellows (suitable for large classes and online courses)."
+        },
+        {
+          "title": "Content flexibility",
+          "description": "Hearify generates quizzes using content from various sources. We offer an easy-to-use question generator from PDF, text, video files. This allows students to test their skills from the comfort of their home."
+        }
+      ]
+    },
+    "HomeFAQ": {
+      "title": "FAQs",
+      "blocks": [
+        {
+          "question": "Is Hearify free?",
+          "answer": "Yes and no. At Hearify, we offer two options for our users. Hearify is free if you choose the Basic plan. The package includesthe creation of 30 quizzes per month, an unlimited number of students, and all core features. The Pro package will cost you $5.99 per month and provide you with 100 quizzes monthly, advanced generation quality, and access to new features."
+        },
+        {
+          "question": "Who can use AI quiz generator?",
+          "answer": "AI quiz maker can be used by a wide range of individuals and organizations in many niches, including self-learners, college and high school students, HR professionals, corporate trainers, college professors and high school teachers, private instructors, parents, guardians, etc. This makes our quiz maker for teachers, educators, students, content creators a universal tool."
+        },
+        {
+          "question": "What types of questions can I create?",
+          "answer": "You are welcome to generate various types of questions, such as multiple-choice questions (multiple choice test maker requires you to give 1 or more correct answers), single choice questions (1 correct answer), matching questions (connect items from one column with issue in the other), open questions (you’re required to provide a response), and fill in questions (fill in the blanks in the sentence with the correct words)."
+        },
+        {
+          "question": "How can I export my quiz questions?",
+          "answer": "When you create online quiz, go to the Quizzes section and click your quiz. Once it is there, click the Export button. You will see 4 options available: Copy Link, Copy Code (copy the quiz’s code, paste it into the search bar, and join the quiz!), Share Access (let other users edit, share, and remove your quiz), and Google Forms (export the quiz to Google Forms)."
+        },
+        {
+          "question": "What is the quality of the quizzes?",
+          "answer": "The quality of quizzes created by our AI question answer generator is quite high due to several factors. First of all, our generator uses vast and regularly updated databases. Second, it adjusts the difficulty of questions based on your (unique!) performance and goals. Third, it creates multiple types of questions. Finally, it guarantees a solid consistency in both – the structure and format of questions. This is especially useful and effective when you have to deal with large-scale assessments."
+        }
+      ]
+    },
+    "HomeGenerateQuestions": {
+      "title": "Generate Questions with Hearify!",
+      "blocks": [
+        {
+          "title": "277",
+          "text": "active users"
+        },
+        {
+          "title": "10+ schools",
+          "text": "use our platform regularly"
+        },
+        {
+          "title": "3+ files",
+          "text": "to transform into quizzes (YouTube, PDF, text)"
+        },
+        {
+          "title": "3166+",
+          "text": "questions created"
+        }
+      ]
+    },
+    "HomeAboutUs": {
+      "title": "About us",
+      "blocks": [
+        {
+          "name": "Sofiia Shaposhnikova",
+          "position": "Founder & CEO"
+        },
+        {
+          "name": "Sofiia Luchina",
+          "position": "Product Designer"
+        },
+        {
+          "name": "Valerii Bandurko",
+          "position": "SEO, Marketing"
+        }
+      ]
+    }
+  },
+  "containers": {
+    "JoinCommunityAlert": {
+      "title": "Join our community!",
+      "description": "Hearify is here to help you learn faster and more efficiently. Join our WhatsApp/Telegram community to get fast feedback on your questions and talk with people who have the same interests.",
+      "button": "JOIN OUR COMMUNITY"
+    }
+  },
   "start_free": "Start for free",
   "ai_generate_custom_quiz": "AI Quiz Generator from PDFs, Videos & Text",
   "ai_automatically_create_questions": "Automatically create questions for assignments, tests, and exams from your content with our ultimate AI question generator. Ideal for educators, students, professionals, and lifelong learners.",
@@ -42,23 +229,5 @@
   "welcome_to_blog": "Welcome to our blog",
   "blog_description": "Dive into the world where artificial intelligence meets personal growth. Our blog is dedicated to providing you with engaging AI quizzes that not only test your knowledge but also enhance your learning experience. Discover insightful tips on how to maximize your study sessions, utilize AI tools for smarter learning, and continuously improve yourself.",
   "library_description": "Learn, Play, and Challenge Yourself! It's a place where you can find quizzes on all kinds of topics. Whether you want to learn something new or just have a good time, we've got quizzes for you.",
-  "articles": "Articles",
-  "faq_blocks": [
-    {
-      "question": "Is it free to use?",
-      "answer": "Yes, during beta testing you can generate up to 30 quizzes per month."
-    },
-    {
-      "question": "What kinds of materials can I upload?",
-      "answer": "It could be any book, presentation, lecture or document. The file must be in PDF format and weigh less than 10 MB. You can also insert YouTube video link."
-    },
-    {
-      "question": "What types of questions can I generate?",
-      "answer": "You can create multiple choice and single choice questions, fill in, matching and open questions."
-    },
-    {
-      "question": "What is the quality of the quizzes?",
-      "answer": "The quality of the test depends on the quality of the material you have uploaded. It's essential to understand that, similar to humans, AI can make errors, and there's no guarantee of 100% accuracy. We provide all the tools needed to modify or delete questions in a created quiz before sharing it with others."
-    }
-  ]
+  "articles": "Articles"
 }

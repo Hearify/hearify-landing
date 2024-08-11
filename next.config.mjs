@@ -43,6 +43,29 @@ const config = {
           }
         });
 
+    const svgoConfig = {
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              removeViewBox: false,
+              cleanupIds: false,
+            },
+          },
+        },
+      ],
+    };
+
+    config.module.rules.push({
+      test: /\.svg$/,
+      issuer: /\.[jt]sx?$/,
+      loader: '@svgr/webpack',
+      options: {
+        svgoConfig: svgoConfig,
+      },
+    })
+
     return config;
   },
 };

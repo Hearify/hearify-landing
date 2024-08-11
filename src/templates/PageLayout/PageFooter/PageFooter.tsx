@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
 
 import logoImg from '@/assets/images/logo.png';
-import facebookImg from '@/assets/icons/facebook.svg';
-import linkedInImg from '@/assets/icons/linkedin.svg';
-import instagramImg from '@/assets/icons/instagram.svg';
+import FacebookIcon from '@/assets/icons/facebook.svg';
+import LinkedInIcon from '@/assets/icons/linkedin.svg';
+import InstagramIcon from '@/assets/icons/instagram.svg';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import { footerNavigation } from '@/constants/navigation';
 import styles from './PageFooter.module.scss';
@@ -42,16 +42,13 @@ const PageFooter: React.FC = () => {
         <div className={styles.socials}>
           <div className={styles.socialsContainer}>
             <a href="https://www.facebook.com/people/Hearify/61552644703836/" target="_blank" rel="noreferrer">
-              {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-              <Image src={facebookImg} alt="Facebook" width={32} height={32} />
+              <FacebookIcon width={32} height={32} />
             </a>
             <a href="https://www.linkedin.com/company/hearify/" target="_blank" rel="noreferrer">
-              {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-              <Image src={linkedInImg} alt="LinkedIn" width={32} height={32} />
+              <LinkedInIcon width={32} height={32} />
             </a>
             <a href="https://www.instagram.com/hearify.tech/" target="_blank" rel="noreferrer">
-              {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-              <Image src={instagramImg} alt="Instagram" width={32} height={32} />
+              <InstagramIcon width={32} height={32} />
             </a>
           </div>
 

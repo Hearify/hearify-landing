@@ -30,7 +30,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
       </header>
 
       <div className={styles.container}>
-        <main className={styles.body}>{children}</main>
+        <div className={styles.body}>{children}</div>
       </div>
 
       <footer className={styles.footer}>

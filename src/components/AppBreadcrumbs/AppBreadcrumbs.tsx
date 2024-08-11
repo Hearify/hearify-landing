@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import cn from 'classnames';
 
-import arrowIcon from '@/assets/icons/chevron-right.svg';
+import ArrowIcon from '@/assets/icons/chevron-right.svg';
 import styles from './AppBreadcrumbs.module.scss';
 
 export type BreadcrumbItem = {
@@ -31,8 +30,7 @@ const AppBreadcrumbs: React.FC<AppBreadcrumbsProps> = ({ items }) => {
               </li>
             )}
 
-            {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-            <li className={styles.item}>{index < items.length - 1 && <Image src={arrowIcon} alt="separator" />}</li>
+            <li className={styles.item}>{index < items.length - 1 && <ArrowIcon />}</li>
           </>
         ))}
       </ol>
