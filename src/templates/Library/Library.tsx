@@ -26,7 +26,7 @@ const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
           <AppHeading className={styles.heroTitle} variant="h2">
             {t('welcome_to_library')}
           </AppHeading>
-          <p className={styles.heroText}>{t('blog_description')}</p>
+          <p className={styles.heroText}>{t('library_description')}</p>
         </div>
 
         <div className={styles.quiz}>
