@@ -1,0 +1,94 @@
+@use "src/styles/helpers" as *;
+
+.wrapper {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  &::before {
+    width: 900px;
+    height: 800px;
+    background: radial-gradient(rgba(172, 154, 255, 0.9) 25%, rgba(255, 255, 255, 0) 70%);
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  &::after {
+    width: 600px;
+    height: 500px;
+    transform: rotate(-16deg);
+    background: radial-gradient(rgba(172, 154, 255, 0.9) 25%, rgba(255, 255, 255, 0) 70%);
+    top: -20px;
+    right: -50px;
+    z-index: -1;
+    @include md {
+      display: none;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px 24px;
+  padding: 64px;
+  @include md {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 8px;
+    gap: 8px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 32px 32px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.125) 68.53%);
+}
+
+.subtitle {
+  @include text-heading-4;
+  margin-bottom: 12px;
+}
+
+.text {
+  @include text-subtitle-3;
+  max-width: 330px;
+}
+
+.image {
+  display: flex;
+  padding: 12px;
+  margin: -40px 0 32px;
+  border-radius: 12px;
+  color: var(--brand-purpe-300);
+  background-color: var(--brand-purpe-10);
+  @include md {
+    margin: 0;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: var(--brand-purpe-50);
+  }
+
+  svg {
+    width: 56px;
+    height: 56px;
+    @include md {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+@use "src/styles/helpers" as *;
+
+.wrapper {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  &::before {
+    width: 750px;
+    height: 550px;
+    background: radial-gradient(rgba(187, 143, 255, 0.9) 25%, rgba(255, 255, 255, 0) 70%);
+    right: 150px;
+    top: 150px;
+    z-index: -1;
+  }
+
+  &::after {
+    width: 600px;
+    height: 500px;
+    background: radial-gradient(rgba(172, 154, 255, 0.9) 25%, rgba(255, 255, 255, 0) 70%);
+    top: -20px;
+    right: -50px;
+    z-index: -1;
+  }
+}
+
+.title {
+  margin-bottom: 100px;
+  @include md {
+    margin-bottom: 32px;
+  }
+}
+
+.card {
+  width: 100%;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+}
+
+.carousel {
+  max-width: 100% !important;
+  padding-bottom: 48px;
+
+  :global .slide {
+    text-align: center;
+  }
+}
+
+.dots {
+  padding: 0 6px;
+
+  svg {
+    width: 8px;
+    height: 8px;
+    fill: var(--brand-purpe-400);
+  }
+}
+
+.arrow {
+  color: var(--black) !important;
+  background-color: transparent !important;
+  transition: $default-transition;
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  &:hover {
+    color: var(--brand-purpe-400) !important;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.review {
+  height: 100%;
+  text-align: start;
+  width: 100%;
+  max-width: 960px;
+  padding: 48px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.125) 68.53%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+
+}
+
+.name {
+  @include text-field-lg;
+}
+
+.position {
+  @include text-field-sm;
+}
+
+.content {
+  @include text-subtitle-2;
+  white-space: pre-wrap;
+}

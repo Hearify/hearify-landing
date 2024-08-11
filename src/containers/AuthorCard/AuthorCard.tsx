@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import linkedInImg from '@/assets/icons/linkedin.svg';
+import LinkedInIcon from '@/assets/icons/linkedin.svg';
 import { AuthorRoleEnum } from '@/types/author';
 import styles from './AuthorCard.module.scss';
 
@@ -18,7 +18,7 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ author, role }) => {
       <a href={author.linkedInUrl} target="_blank" rel="noreferrer" className={styles.avatar}>
         <Image src={author.avatarUrl} alt={author.name} width={100} height={100} className={styles.avatarImage} />
         {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-        <Image src={linkedInImg} alt="LinkedIn" width={32} height={32} className={styles.avatarIcon} />
+        <LinkedInIcon width={32} height={32} className={styles.avatarIcon}/>
       </a>
 
       <div className={styles.container}>

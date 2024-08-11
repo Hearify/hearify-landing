@@ -1,0 +1,94 @@
+@use "src/styles/helpers" as *;
+
+.wrapper {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  &::before {
+    width: 900px;
+    height: 800px;
+    background: radial-gradient(rgba(172, 154, 255, 0.9) 25%, rgba(255, 255, 255, 0) 70%);
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  &::after {
+    width: 600px;
+    height: 500px;
+    transform: rotate(-16deg);
+    background: radial-gradient(rgba(172, 154, 255, 0.9) 25%, rgba(255, 255, 255, 0) 70%);
+    top: -20px;
+    right: -50px;
+    z-index: -1;
+  }
+}
+
+.title {
+  margin-bottom: 100px;
+  @include md {
+    margin-bottom: 32px;
+  }
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  border-radius: 12px;
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.item {
+  flex: 1;
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 20px;
+  padding: 32px;
+  padding-bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.125) 68.53%);
+  @include md {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 16px;
+    padding-bottom: 0;
+  }
+  @include xs {
+    max-width: unset;
+  }
+}
+
+.name {
+  @include text-field-lg;
+}
+
+.position {
+  @include text-field-sm;
+  margin-bottom: 32px;
+  @include sm {
+    margin-bottom: 16px;
+  }
+}
+
+.image {
+  @include sm {
+    img {
+      width: 70px;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "src/styles/helpers" as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  @include text-heading-4;
+  margin-bottom: 40px;
+  @include md {
+    margin-bottom: 24px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  row-gap: 56px;
+  column-gap: 32px;
+  @include md {
+    margin-bottom: 24px;
+  }
+}
