@@ -27,6 +27,9 @@ const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
             {t('welcome_to_library')}
           </AppHeading>
           <p className={styles.heroText}>{t('library_description')}</p>
+          <AppButtonLink className={styles.heroButton} href="https://app.hearify.org/register" size="lg" width="240px">
+            {t('try_for_free')}
+          </AppButtonLink>
         </div>
 
         <div className={styles.quiz}>

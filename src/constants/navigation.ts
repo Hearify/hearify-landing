@@ -24,10 +24,6 @@ export const headerNavigation: NavigationItem[] = [
 
 export const footerNavigation: NavigationItem[] = [
   {
-    i18nKey: 'how_it_works',
-    href: '/#how-it-works-section',
-  },
-  {
     i18nKey: 'blog',
     href: '/blog',
   },
