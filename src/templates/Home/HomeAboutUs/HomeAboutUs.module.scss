@@ -59,13 +59,11 @@
   gap: 12px;
   border-radius: 20px;
   padding: 32px;
-  padding-bottom: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.125) 68.53%);
   @include md {
     width: 100%;
     justify-content: flex-start;
     padding: 16px;
-    padding-bottom: 0;
   }
   @include xs {
     max-width: unset;
@@ -78,17 +76,16 @@
 
 .position {
   @include text-field-sm;
-  margin-bottom: 32px;
-  @include sm {
-    margin-bottom: 16px;
-  }
 }
 
 .image {
-  @include sm {
     img {
-      width: 70px;
-      height: auto;
+      width: 100px;
+      height: 100px;
+
+      @include sm {
+        width: 60px;
+        height: 60px
     }
   }
 }

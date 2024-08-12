@@ -8,7 +8,7 @@
   cursor: pointer;
   transition: $default-transition;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.175) 68.53%);
-  @include sm {
+  @include md {
     padding: 16px 20px;
     border-radius: 20px;
   }
@@ -23,7 +23,7 @@
   color: var(--brand-purpe-500);
   display: flex;
   justify-content: space-between;
-  @include sm {
+  @include md {
     @include text-subtitle-2;
   }
 }
@@ -36,7 +36,7 @@
   transition:
           max-height 0.3s ease-out,
           padding 0.3s ease-out;
-  @include sm {
+  @include md {
     @include text-main-2;
   }
 }

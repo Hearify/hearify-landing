@@ -6,6 +6,8 @@ import { useTranslation } from 'next-i18next';
 import AppHeading from '@/components/AppHeading/AppHeading';
 import reviewAuthor1 from '@/assets/images/reviews/review-author-1.png';
 import reviewAuthor2 from '@/assets/images/reviews/review-author-2.png';
+import reviewAuthor3 from '@/assets/images/reviews/review-author-3.png';
+import reviewAuthor4 from '@/assets/images/reviews/review-author-4.png';
 import styles from './HomeReviews.module.scss';
 
 type ReviewBlock = {
@@ -49,6 +51,8 @@ const HomeReviews: React.FC = () => {
                 <div className={styles.header}>
                   {index === 0 && <Image src={reviewAuthor1} alt={item.name} width={100} height={100} />}
                   {index === 1 && <Image src={reviewAuthor2} alt={item.name} width={100} height={100} />}
+                  {index === 2 && <Image src={reviewAuthor3} alt={item.name} width={100} height={100} />}
+                  {index === 3 && <Image src={reviewAuthor4} alt={item.name} width={100} height={100} />}
 
                   <div className={styles.body}>
                     <p className={styles.name}>{item.name}</p>

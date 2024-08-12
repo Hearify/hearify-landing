@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import Carousel from 'nuka-carousel';
 import { useTranslation } from 'next-i18next';
 import cn from 'classnames';
-import Carousel from 'nuka-carousel';
-import Link from 'next/link';
 
 import AppHeading from '@/components/AppHeading/AppHeading';
 import createQuizImage1 from '@/assets/images/create-quiz/create-quiz-1.png';
 import createQuizImage2 from '@/assets/images/create-quiz/create-quiz-2.png';
 import createQuizImage3 from '@/assets/images/create-quiz/create-quiz-3.png';
 import createQuizImage4 from '@/assets/images/create-quiz/create-quiz-4.png';
-import createQuizImage5A from '@/assets/images/create-quiz/create-quiz-5-a.png';
-import createQuizImage5B from '@/assets/images/create-quiz/create-quiz-5-b.png';
+import createQuizImage5 from '@/assets/images/create-quiz/create-quiz-5.png';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import styles from './HomeCreateQuiz.module.scss';
 
@@ -65,16 +64,11 @@ const HomeCreateQuiz: React.FC = () => {
             <p className={styles.description}>{currentDescription}</p>
 
             <Link href="https://app.hearify.org" className={styles.images}>
-              {activeStep === 0 && <Image src={createQuizImage1} alt={currentTitle} />}
-              {activeStep === 1 && <Image src={createQuizImage2} alt={currentTitle} />}
-              {activeStep === 2 && <Image src={createQuizImage3} alt={currentTitle} />}
-              {activeStep === 3 && <Image src={createQuizImage4} alt={currentTitle} />}
-              {activeStep === 4 && (
-                <>
-                  <Image src={createQuizImage5A} alt={currentTitle} />
-                  <Image src={createQuizImage5B} alt={currentTitle} />
-                </>
-              )}
+              {activeStep === 0 && <Image src={createQuizImage1} alt={currentTitle} width={500} height={500} />}
+              {activeStep === 1 && <Image src={createQuizImage2} alt={currentTitle} width={500} height={500} />}
+              {activeStep === 2 && <Image src={createQuizImage3} alt={currentTitle} width={500} height={500} />}
+              {activeStep === 3 && <Image src={createQuizImage4} alt={currentTitle} width={500} height={500} />}
+              {activeStep === 4 && <Image src={createQuizImage5} alt={currentTitle} width={500} height={500} />}
             </Link>
           </div>
         </div>
@@ -99,16 +93,11 @@ const HomeCreateQuiz: React.FC = () => {
                 <p className={styles.description}>{item.description}</p>
 
                 <div className={styles.images}>
-                  {index === 0 && <Image src={createQuizImage1} alt={currentTitle} />}
-                  {index === 1 && <Image src={createQuizImage2} alt={currentTitle} />}
-                  {index === 2 && <Image src={createQuizImage3} alt={currentTitle} />}
-                  {index === 3 && <Image src={createQuizImage4} alt={currentTitle} />}
-                  {index === 4 && (
-                    <>
-                      <Image src={createQuizImage5A} alt={currentTitle} />
-                      <Image src={createQuizImage5B} alt={currentTitle} />
-                    </>
-                  )}
+                  {index === 0 && <Image src={createQuizImage1} alt={item.title} width={500} height={500} />}
+                  {index === 1 && <Image src={createQuizImage2} alt={item.title} width={500} height={500} />}
+                  {index === 2 && <Image src={createQuizImage3} alt={item.title} width={500} height={500} />}
+                  {index === 3 && <Image src={createQuizImage4} alt={item.title} width={500} height={500} />}
+                  {index === 4 && <Image src={createQuizImage5} alt={item.title} width={500} height={500} />}
                 </div>
               </div>
             ))}
