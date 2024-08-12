@@ -6,9 +6,10 @@
   align-items: center;
   justify-content: space-between;
   max-width: $max-page-width;
-  height: 100px;
+  height: $header-height;
   padding: 0 32px;
   @include sm {
+    height: $header-height-sm;
     padding: 0 24px;
   }
 }
