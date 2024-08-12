@@ -32,6 +32,10 @@ export const footerNavigation: NavigationItem[] = [
     href: '/blog',
   },
   {
+    i18nKey: 'library',
+    href: '/library',
+  },
+  {
     i18nKey: 'faq',
     href: '/#faq-section',
   },
