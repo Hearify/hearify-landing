@@ -79,9 +79,9 @@ const PageHeader: React.FC = () => {
 
               <div className={styles.actions}>
                 <AppButtonLink variant="secondary" width="110px" href="https://app.hearify.org/login">
-                  LOG IN
+                  {t('log_in')}
                 </AppButtonLink>
-                <AppButtonLink href="https://app.hearify.org/register">TRY FOR FREE</AppButtonLink>
+                <AppButtonLink href="https://app.hearify.org/register">{t('try_for_free')}</AppButtonLink>
               </div>
             </div>
           </div>

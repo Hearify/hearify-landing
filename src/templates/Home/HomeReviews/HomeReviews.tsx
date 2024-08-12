@@ -49,10 +49,18 @@ const HomeReviews: React.FC = () => {
             <div className={styles.container} key={item.name}>
               <div className={styles.review}>
                 <div className={styles.header}>
-                  {index === 0 && <Image src={reviewAuthor1} alt={item.name} width={100} height={100} />}
-                  {index === 1 && <Image src={reviewAuthor2} alt={item.name} width={100} height={100} />}
-                  {index === 2 && <Image src={reviewAuthor3} alt={item.name} width={100} height={100} />}
-                  {index === 3 && <Image src={reviewAuthor4} alt={item.name} width={100} height={100} />}
+                  {index === 0 && (
+                    <Image src={reviewAuthor1} alt={item.name} width={100} height={100} className={styles.image} />
+                  )}
+                  {index === 1 && (
+                    <Image src={reviewAuthor2} alt={item.name} width={100} height={100} className={styles.image} />
+                  )}
+                  {index === 2 && (
+                    <Image src={reviewAuthor3} alt={item.name} width={100} height={100} className={styles.image} />
+                  )}
+                  {index === 3 && (
+                    <Image src={reviewAuthor4} alt={item.name} width={100} height={100} className={styles.image} />
+                  )}
 
                   <div className={styles.body}>
                     <p className={styles.name}>{item.name}</p>

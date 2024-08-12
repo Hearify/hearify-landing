@@ -9,7 +9,6 @@ import HomeBenefits from './HomeBenefits/HomeBenefits';
 import HomeReviews from './HomeReviews/HomeReviews';
 import HomeAudience from './HomeAudience/HomeAudience';
 import HomeWhyUs from './HomeWhyUs/HomeWhyUs';
-import HomeGenerateQuestions from './HomeGenerateQuestions/HomeGenerateQuestions';
 import HomeFAQ from './HomeFAQ/HomeFAQ';
 import HomeAboutUs from './HomeAboutUs/HomeAboutUs';
 import styles from './Home.module.scss';
@@ -25,7 +24,6 @@ const Home: React.FC = () => {
       <HomeReviews />
       <HomeAudience />
       <HomeWhyUs />
-      <HomeGenerateQuestions />
       <JoinCommunityAlert />
       <HomeFAQ />
       <HomeAboutUs />
