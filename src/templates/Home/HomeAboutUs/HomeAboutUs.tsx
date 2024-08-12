@@ -29,9 +29,9 @@ const HomeAboutUs: React.FC = () => {
         {aboutUsBlocks.map((item, index) => (
           <div key={item.name} className={styles.item}>
             <div className={styles.image}>
-              {index === 0 && <Image src={AboutUsImage1} alt={item.name} />}
-              {index === 1 && <Image src={AboutUsImage2} alt={item.name} />}
-              {index === 2 && <Image src={AboutUsImage3} alt={item.name} />}
+              {index === 0 && <Image src={AboutUsImage1} alt={item.name} width={100} height={100} />}
+              {index === 1 && <Image src={AboutUsImage2} alt={item.name} width={100} height={100} />}
+              {index === 2 && <Image src={AboutUsImage3} alt={item.name} width={100} height={100} />}
             </div>
 
             <div className={styles.content}>

@@ -63,12 +63,22 @@
         {
           "name": "Yuliia Gorbatenko",
           "position": "English teacher",
-          "text": "I tried Hearify several times, and I must say it's much better than ChatGPT, especially taking into account the number of mistakes and redundancy in questions, when I asked ChatGPT to create some quizzes for me. Hearify creates really interesting questions, that make sense - I admired it. I tried it with the difficult topics my student asked me to help with and I am happy with the results ❤\uFE0F\n\nI like the option to correct ready-made quizzes if necessary right in the draft - I don't need to copy everything in the document and edit it afterwards. \n\nThank you so much for providing an opportunity to use this wonderful tool! It saved me a lot of time indeed, because I drastically lack time to get ready for the lessons properly. I'll buy the subscription since the next month \uD83D\uDE4F"
+          "text": "I tried Hearify several times, and I must say it's much better than ChatGPT, especially taking into account the number of mistakes and redundancy in questions, when I asked ChatGPT to create some quizzes for me. Hearify creates really interesting questions, that make sense - I admired it. I tried it with the difficult topics my student asked me to help with and I am happy with the results ❤\uFE0F"
         },
         {
           "name": "Artem Oharkov",
           "position": "IT teacher",
           "text": "Hearify provides a good starting point, while you stay in control and can edit, discard, or add extra questions. It helps me with writer's block and provides a fresh perspective of what might be asked."
+        },
+        {
+          "name": "Emily Thompson",
+          "position": "High School English Teacher",
+          "text": "As someone who has tried multiple quiz generators, I can confidently say that Hearify stands out. I was skeptical at first, but after using it with content from complex topics, I was genuinely impressed by the quality of questions it produced. The questions were relevant, challenging, and perfectly suited for my students. The ability to generate quizzes from different types of content—PDFs, videos, and text—is a game-changer."
+        },
+        {
+          "name": "Alex Johnson",
+          "position": "Undergraduate Computer Science Student",
+          "text": "I've always found it difficult to come up with good quiz questions when studying. Hearify took that stress away. I uploaded my textbooks, and it generated a whole set of questions for me to practice with. The questions were spot-on and covered all the key topics. It even gave me some tricky ones that I might have missed if I were studying on my own. I highly recommend it to any student who wants to make the most out of their study sessions."
         }
       ]
     },
@@ -144,20 +154,20 @@
       "title": "Generate Questions with Hearify!",
       "blocks": [
         {
+          "title": "31660+",
+          "text": "questions created"
+        },
+        {
+          "title": "3+ files",
+          "text": "to transform into quizzes"
+        },
+        {
           "title": "277",
           "text": "active users"
         },
         {
           "title": "10+ schools",
           "text": "use our platform regularly"
-        },
-        {
-          "title": "3+ files",
-          "text": "to transform into quizzes (YouTube, PDF, text)"
-        },
-        {
-          "title": "3166+",
-          "text": "questions created"
         }
       ]
     },
@@ -182,7 +192,7 @@
   "containers": {
     "JoinCommunityAlert": {
       "title": "Join our community!",
-      "description": "Hearify is here to help you learn faster and more efficiently. Join our WhatsApp/Telegram community to get fast feedback on your questions and talk with people who have the same interests.",
+      "description": "Hearify is here to help you learn faster and more efficiently. Join our WhatsApp and Telegram community to get fast feedback on your questions and talk with people who have the same interests.",
       "button": "JOIN OUR COMMUNITY"
     }
   },
@@ -205,7 +215,7 @@
   "free_to_use": "Is it free to use?",
   "start_quiz": "START QUIZ",
   "all_quizzes": "All Quizzes",
-  "welcome_to_library": "Welcome to our quiz library!",
+  "welcome_to_library": "Welcome to quiz library!",
   "recommended_for_you": "Recommended for you",
   "table_of_contents": "Table of contents",
   "written_by": "Written by",

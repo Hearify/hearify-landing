@@ -84,17 +84,19 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 650px;
+  min-height: 700px;
   padding: 32px;
   border-radius: 12px;
   background-color: var(--brand-purpe-10);
   @include lg {
     min-height: unset;
     background-color: transparent;
+    padding: 8px;
+  }
+  @include xs {
     justify-content: flex-start;
     align-items: flex-start;
     text-align: start;
-    padding: 0;
   }
 }
 
