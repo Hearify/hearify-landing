@@ -35,12 +35,12 @@ export const featuredByBlocks: FeaturedBlock[] = [
   {
     title: 'mission impossible logo',
     imageUrl: feature2Image,
-    href: 'https://www.missionpossible.ventures/alumni,',
+    href: 'https://www.missionpossible.ventures/alumni',
   },
   {
     title: 'CfE Accelerator logo',
     imageUrl: feature3Image,
-    href: 'https://ucucfe.com.ua/hto-zabrav-330-000-v-ideaslab/',
+    href: 'https://vacu2m.com/techstars-startup-weekend-kyiv-hybrid-event-rezultati/',
   },
   {
     title: 'Tech Ukraine logo',
@@ -115,6 +115,6 @@ export const featuredByBlocks: FeaturedBlock[] = [
   {
     title: 'Venture cup  logo',
     imageUrl: feature18Image,
-    href: 'https://venturecup.dk',
+    href: 'https://venturecup.dk/university-startup-world-cup/',
   },
 ];

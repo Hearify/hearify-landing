@@ -29,7 +29,7 @@ const HomeFeatured: React.FC = () => {
       <div className={styles.list}>
         {blocks.map(item => (
           <Link key={item.title} href={item.href} rel="nofollow" target="_blank">
-            <Image src={item.imageUrl} alt={item.title} height={60} />
+            <Image src={item.imageUrl} alt={item.title} height={60} className={styles.image} />
           </Link>
         ))}
       </div>

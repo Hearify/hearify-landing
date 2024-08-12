@@ -25,3 +25,10 @@
     margin-bottom: 24px;
   }
 }
+
+.image {
+  @include md {
+    height: 30px;
+    width: auto;
+  }
+}

@@ -50,9 +50,6 @@
 
 .title {
   @include text-heading-3;
-  @include sm {
-    @include text-subtitle-2;
-  }
 }
 
 .text {
@@ -68,7 +65,8 @@
     height: auto;
   }
   @include xs {
-    max-width: 300px;
+    max-height: 150px;
+    object-fit: contain;
   }
 }
 

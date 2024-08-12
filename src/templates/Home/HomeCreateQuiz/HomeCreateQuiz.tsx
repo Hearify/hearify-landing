@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import cn from 'classnames';
@@ -30,6 +30,14 @@ const HomeCreateQuiz: React.FC = () => {
 
   const currentTitle = textSteps[activeStep].title;
   const currentDescription = textSteps[activeStep].description;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveStep(prevStep => (prevStep + 1) % textSteps.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [textSteps.length]);
 
   return (
     <section className={styles.wrapper} id="create-quiz">
@@ -85,7 +93,9 @@ const HomeCreateQuiz: React.FC = () => {
           >
             {textSteps.map((item, index) => (
               <div key={item.title} className={styles.body}>
-                <h4 className={styles.subtitle}>1. {item.title}</h4>
+                <h4 className={styles.subtitle}>
+                  {index + 1}. {item.title}
+                </h4>
                 <p className={styles.description}>{item.description}</p>
 
                 <div className={styles.images}>
