@@ -14,6 +14,7 @@ export type AlphaPaginationProps = {
   onChange: (page: number) => void;
 };
 
+/* eslint-disable react/no-array-index-key */
 const AppPagination: React.FC<AlphaPaginationProps> = ({
   page,
   count,
