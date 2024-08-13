@@ -27,11 +27,11 @@ const Blog: React.FC<BlogProps> = ({
   const { t } = useTranslation();
   const router = useRouter();
 
-  const handlePageChange = async (page: number): Promise<void> => {
+  const handlePageChange = async (newPage: number): Promise<void> => {
     await router.push(
       {
         pathname: router.pathname,
-        query: { ...router.query, page },
+        query: { ...router.query, page: newPage },
       },
       undefined,
       { scroll: true },
