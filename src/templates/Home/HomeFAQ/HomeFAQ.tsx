@@ -4,6 +4,7 @@ import { useTranslation } from 'next-i18next';
 import styles from './HomeFAQ.module.scss';
 import FAQBlock from '@/containers/FAQBlock/FAQBlock';
 import AppHeading from '@/components/AppHeading/AppHeading';
+import FAQSchema from '@/containers/FAQSchema/FAQSchema';
 
 import type { FAQItem } from '@/types/article';
 
@@ -14,6 +15,8 @@ const HomeFAQ: React.FC = () => {
 
   return (
     <section className={styles.wrapper} id="faq">
+      <FAQSchema items={faqBlocks} />
+
       <AppHeading variant="h2" className={styles.title}>
         {t('title')}
       </AppHeading>

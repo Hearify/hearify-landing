@@ -6,12 +6,14 @@ import { useTranslation } from 'next-i18next';
 
 import AppBreadcrumbs from '@/components/AppBreadcrumbs/AppBreadcrumbs';
 import AuthorCard from '@/containers/AuthorCard/AuthorCard';
-import styles from './Article.module.scss';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import ArticleCard from '@/containers/ArticleCard/ArticleCard';
 import AppHeading from '@/components/AppHeading/AppHeading';
-import slugify from '@/utils/slugify';
 import FAQBlock from '@/containers/FAQBlock/FAQBlock';
+import ArticleSchema from '@/templates/Article/ArticleSchema/ArticleSchema';
+import slugify from '@/utils/slugify';
+import styles from './Article.module.scss';
+import FAQSchema from '@/containers/FAQSchema/FAQSchema';
 
 import type { Article as ArticleType } from '@/types/article';
 
@@ -33,6 +35,8 @@ const Article: React.FC<ArticleProps> = ({
 
   return (
     <div className={styles.wrapper}>
+      <ArticleSchema article={article} />
+
       <div className={styles.main}>
         <article className={styles.body}>
           <AppBreadcrumbs
@@ -93,6 +97,8 @@ const Article: React.FC<ArticleProps> = ({
 
       {article.faq && (
         <div className={styles.faq}>
+          <FAQSchema items={article.faq} />
+
           <AppHeading variant="h2" className={styles.faqTitle}>
             {t('faq')}
           </AppHeading>

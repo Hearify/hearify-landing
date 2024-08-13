@@ -10,6 +10,7 @@ import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import QuizCard from '@/containers/QuizCard/QuizCard';
 import AppHeading from '@/components/AppHeading/AppHeading';
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
+import QuizSchema from '@/templates/Quiz/QuizSchema/QuizSchema';
 
 import type { Quiz as QuizType } from '@/types/quiz';
 
@@ -23,6 +24,8 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
 
   return (
     <div className={styles.wrapper}>
+      <QuizSchema quiz={quiz} />
+
       <div className={styles.main}>
         <article className={styles.body}>
           <AppBreadcrumbs
