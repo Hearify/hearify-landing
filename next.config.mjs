@@ -20,6 +20,71 @@ const config = {
   async redirects() {
     return [
       {
+        source: '/blog/articles/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
+        destination: '/library/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/world-war-2-quiz-test-your-knowledge-of-history',
+        destination: '/library/world-war-2-quiz-test-your-knowledge-of-history',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/periodic-table-quiz-test-your-knowledge-of-elements',
+        destination: '/library/periodic-table-quiz-test-your-knowledge-of-elements',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s',
+        destination: '/library/80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/all-american-history-quiz-test-your-knowledge-of-us-history',
+        destination: '/library/all-american-history-quiz-test-your-knowledge-of-us-history',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
+        destination: '/library/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/the-human-body-quiz-test-your-knowledge-of-human-anatomy',
+        destination: '/library/the-human-body-quiz-test-your-knowledge-of-human-anatomy',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/literature-antonyms-and-synonyms-quiz-test-your-vocabulary-skills',
+        destination: '/library/literature-antonyms-and-synonyms-quiz-test-your-vocabulary-skills',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/countries-and-capitals-quiz-test-your-geography-knowledge',
+        destination: '/library/countries-and-capitals-quiz-test-your-geography-knowledge',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/disney-quiz-how-well-do-you-know-your-disney-classics',
+        destination: '/library/disney-quiz-how-well-do-you-know-your-disney-classics',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/who-said-this-famous-quotes-quiz',
+        destination: '/library/who-said-this-famous-quotes-quiz',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/match-the-quote-to-the-movie-quiz-test-your-movie-knowledge',
+        destination: '/library/match-the-quote-to-the-movie-quiz-test-your-movie-knowledge',
+        permanent: true,
+      },
+      {
+        source: '/blog/articles/us-state-capitals-quiz-how-well-do-you-know-your-state-capitals',
+        destination: '/library/us-state-capitals-quiz-how-well-do-you-know-your-state-capitals',
+        permanent: true,
+      },
+      {
         source: '/blog/articles/:slug(.*[^md])',
         destination: '/blog/:slug',
         permanent: true,

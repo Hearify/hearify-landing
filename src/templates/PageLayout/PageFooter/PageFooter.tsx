@@ -67,8 +67,8 @@ const PageFooter: React.FC = () => {
             </a>
           </div>
 
-          <a className={styles.email} href="mailto:hearify.tech@gmail.com">
-            hearify.tech@gmail.com
+          <a className={styles.email} href="mailto:info@hearify.org">
+            info@hearify.org
           </a>
         </div>
       </div>

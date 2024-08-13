@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
@@ -8,15 +9,34 @@ import ArticleCard from '@/containers/ArticleCard/ArticleCard';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import BlogHeroImg from '@/assets/images/blog-hero.png';
 import styles from './Blog.module.scss';
+import AppPagination from '@/components/AppPagination/AppPagination';
 
 import type { ArticlePreview } from '@/types/article';
 
 export type BlogProps = {
   articles: ArticlePreview[];
+  page: number;
+  count: number;
 };
 
-const Blog: React.FC<BlogProps> = ({ articles }) => {
+const Blog: React.FC<BlogProps> = ({
+  articles, //
+  page,
+  count,
+}) => {
   const { t } = useTranslation();
+  const router = useRouter();
+
+  const handlePageChange = async (page: number): Promise<void> => {
+    await router.push(
+      {
+        pathname: router.pathname,
+        query: { ...router.query, page },
+      },
+      undefined,
+      { scroll: true },
+    );
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -44,6 +64,8 @@ const Blog: React.FC<BlogProps> = ({ articles }) => {
             <ArticleCard key={item.slug} article={item} />
           ))}
         </div>
+
+        <AppPagination page={page} count={count} onChange={handlePageChange} />
       </div>
 
       <BoostAlert />
