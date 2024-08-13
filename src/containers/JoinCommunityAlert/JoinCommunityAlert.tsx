@@ -14,7 +14,12 @@ const JoinCommunityAlert: React.FC = () => {
       <div className={styles.content}>
         <h3 className={styles.title}>{t('title')}</h3>
         <p className={styles.text}>{t('description')}</p>
-        <AppButtonLink className={styles.button} href="https://app.hearify.org/register" width="280px" size="lg">
+        <AppButtonLink
+          className={styles.button}
+          href="https://www.facebook.com/groups/1165181404773630/?ref=share"
+          width="280px"
+          size="lg"
+        >
           {t('button')}
         </AppButtonLink>
       </div>
