@@ -2,11 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import AppHeading from '@/components/AppHeading/AppHeading';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import QuizCard from '@/containers/QuizCard/QuizCard';
+import AppPagination from '@/components/AppPagination/AppPagination';
 import styles from './Library.module.scss';
 
 import type { QuizPreview } from '@/types/quiz';
@@ -14,10 +16,24 @@ import type { QuizPreview } from '@/types/quiz';
 export type LibraryProps = {
   quizzes: QuizPreview[];
   quizOfTheDay: QuizPreview;
+  page: number;
+  count: number;
 };
 
-const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
+const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay, page, count }) => {
   const { t } = useTranslation();
+  const router = useRouter();
+
+  const handlePageChange = async (page: number): Promise<void> => {
+    await router.push(
+      {
+        pathname: router.pathname,
+        query: { ...router.query, page },
+      },
+      undefined,
+      { scroll: true },
+    );
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -67,6 +83,8 @@ const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay }) => {
             <QuizCard key={item.slug} quiz={item} />
           ))}
         </div>
+
+        <AppPagination page={page} count={count} onChange={handlePageChange} />
       </div>
 
       <BoostAlert />
