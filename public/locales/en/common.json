@@ -76,17 +76,17 @@
           "text": "As someone who has tried multiple quiz generators, I can confidently say that Hearify stands out. I was skeptical at first, but after using it with content from complex topics, I was genuinely impressed by the quality of questions it produced. The questions were relevant, challenging, and perfectly suited for my students. The ability to generate quizzes from different types of content—PDFs, videos, and text—is a game-changer."
         },
         {
-          "name": "Alex Johnson",
-          "position": "Undergraduate Computer Science Student",
-          "text": "I've always found it difficult to come up with good quiz questions when studying. Hearify took that stress away. I uploaded my textbooks, and it generated a whole set of questions for me to practice with. The questions were spot-on and covered all the key topics. It even gave me some tricky ones that I might have missed if I were studying on my own. I highly recommend it to any student who wants to make the most out of their study sessions."
-        }
+  "name": "Alexa Johnson",
+  "position": "Undergraduate Computer Science Student",
+  "text": "I've always found it challenging to prepare for exams during my studies.  Hearify platform took away this stress. I uploaded my textbooks, and the platform generated a whole set of practice questions for me. The questions were accurate and covered all the key topics. There were even a few challenging questions."
+}
       ]
     },
     "HomeAudience": {
       "title": "For whom",
       "blocks": [
         {
-          "title": "Scholars",
+          "title": "Scholars and Teachers",
           "text": "Our AI quiz generator will quickly create 100% customized tests for specific lesson plans in order to achieve your goals."
         },
         {
@@ -130,7 +130,7 @@
       "blocks": [
         {
           "question": "Is Hearify free?",
-          "answer": "Yes and no. At Hearify, we offer two options for our users. Hearify is free if you choose the Basic plan. The package includesthe creation of 30 quizzes per month, an unlimited number of students, and all core features. The Pro package will cost you $5.99 per month and provide you with 100 quizzes monthly, advanced generation quality, and access to new features."
+          "answer": "At Hearify, we offer two options for our users. Hearify is free if you choose the Basic plan. The package includesthe creation of 30 quizzes per month, an unlimited number of students, and all core features. The Pro package will cost you $5.99 per month and provide you with 100 quizzes monthly, advanced generation quality, and access to new features."
         },
         {
           "question": "Who can use AI quiz generator?",
