@@ -22,7 +22,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ quiz }) => {
       <div className={styles.container}>
         <div className={styles.body}>
           <Link href={topicUrl} className={styles.link}>
-            <h4 className={styles.title}>{quiz.title}</h4>
+            <h4 className={styles.title}>{quiz.headline}</h4>
             <p className={styles.description}>{quiz.description}</p>
           </Link>
         </div>

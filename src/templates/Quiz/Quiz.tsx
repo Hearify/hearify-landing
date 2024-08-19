@@ -31,7 +31,7 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
           <AppBreadcrumbs
             items={[
               { text: t('library'), href: '/library' },
-              { text: quiz.title, href: `/library/${quiz.slug}` },
+              { text: quiz.headline, href: `/library/${quiz.slug}` },
             ]}
           />
 
@@ -41,7 +41,7 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
           </div>
 
           <div className={styles.header}>
-            <h1 className={styles.title}>{quiz.title}</h1>
+            <h1 className={styles.title}>{quiz.headline}</h1>
           </div>
 
           <div className={styles.content}>
@@ -52,7 +52,7 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
 
               <div className={styles.popupContainer}>
                 <div className={styles.popupBackground}>
-                  <h4 className={styles.popupTitle}>{quiz.title}</h4>
+                  <h4 className={styles.popupTitle}>{quiz.headline}</h4>
                   <AppButtonLink href={quiz.appUrl} size="lg" className={styles.popupButton}>
                     {t('start_quiz')}
                   </AppButtonLink>
