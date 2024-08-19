@@ -28,9 +28,8 @@ const QuizPage: NextPage<QuizProps & MDXProps> = ({ quiz, mdxSource }) => {
         <meta property="og:description" content={pageDescription} />
         <meta key="og:image" property="og:image" content={quiz.coverUrl} />
 
-        {Object.entries(quiz.meta).map(([name, content]) => (
-          <meta key={name} name={name} content={content} />
-        ))}
+        {quiz.meta &&
+          Object.entries(quiz.meta).map(([name, content]) => <meta key={name} name={name} content={content} />)}
       </Head>
 
       <Quiz quiz={quiz}>

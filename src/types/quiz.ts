@@ -8,11 +8,11 @@ export type QuizPreview = {
   coverUrl: string;
   appUrl: string;
   authorSlug: string;
-  meta: Record<string, string>;
+  meta?: Record<string, string>;
 };
 
 export type Quiz = QuizPreview & {
   author: Author;
   suggestions: QuizPreview[];
-  meta: Record<string, string>;
+  meta?: Record<string, string>;
 };
