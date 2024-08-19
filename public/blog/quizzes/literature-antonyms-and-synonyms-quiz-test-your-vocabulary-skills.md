@@ -1,4 +1,5 @@
-<h2>Synonyms and Antonyms Quiz: Time to Boost Your Vocabulary!</h2>
+## Synonyms and Antonyms Quiz: Time to Boost Your Vocabulary!
+
 <p>How come you, an English native speaker, feel stuck when you need to express yourself? Instead of using a colorful vocabulary, you jump from <em>&lsquo;good&rsquo;</em> to &lsquo;<em>bad&rsquo;</em> in both written and oral communication.</p>
 <h3><span style="color: #993300;"><strong><em>Stop!</em></strong></span></h3>
 <p>The English vocabulary is so rich and vast but you have to get there on your own. No excuses, no whining, just filling your bag with synonyms and antonyms that make your writing and speaking blossom without feeling blocked when trying to find what to say.</p>
