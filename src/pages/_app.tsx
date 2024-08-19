@@ -64,6 +64,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         {/* <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4535ff" /> */}
 
         <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content="index, follow" />
       </Head>
 
       <div className={`${nunito.variable} ${caveat.variable}`}>
