@@ -17,7 +17,7 @@ export type ArticlePreview = {
   authorSlug: string;
   editorSlug: string;
   faq?: FAQItem[];
-  meta: Record<string, string>;
+  meta?: Record<string, string>;
 };
 
 export type Article = {
@@ -33,5 +33,5 @@ export type Article = {
   author: Author;
   editor: Author;
   suggestions: ArticlePreview[];
-  meta: Record<string, string>;
+  meta?: Record<string, string>;
 };
