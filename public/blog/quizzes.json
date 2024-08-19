@@ -1,5 +1,77 @@
 [
   {
+    "slug": "dog-breed-quiz-test-your-knowledge-of-dog-breeds",
+    "title": "The Dog Breed Quiz: Test Your Knowledge of Dog Breeds by Hearify",
+    "description": "How well do you know your dog breeds? Take this fun quiz to test your knowledge of different dog breeds, their traits, and characteristics. Perfect for dog lovers and anyone interested in learning more about man's best friend.",
+    "coverUrl": "/blog/images/dog_breed.png",
+    "appUrl": "https://app.hearify.org/waiting/iksvkgexdn",
+    "authorSlug": "anna-fox"
+},
+{
+    "slug": "science-quiz-test-your-knowledge-of-science",
+    "title": "Science Quiz: Test Your Knowledge of Science by Hearify",
+    "description": "How much do you know about the world of science? Take this quiz to challenge your understanding of various scientific fields, from biology to physics. Perfect for students, science enthusiasts, and curious minds.",
+    "coverUrl": "/blog/images/Science.png",
+    "appUrl": "https://app.hearify.org/waiting/lidaumwvrw",
+    "authorSlug": "anna-fox"
+},
+{
+    "slug": "asian-capitals-quiz-test-your-knowledge-of-asia",
+    "title": "Asian Capitals Quiz: Test Your Knowledge of Asia by Hearify",
+    "description": "How well do you know the capitals of Asia? Take this quiz to see if you can name all the Asian capitals. Perfect for geography enthusiasts and anyone interested in learning more about this diverse continent.",
+    "coverUrl": "/blog/images/Asian_Capitals.png",
+    "appUrl": "https://app.hearify.org/waiting/xppuwnwlzc",
+    "authorSlug": "anna-fox""
+},
+  {
+    "slug": "human-bones-quiz-how-well-do-you-know-your-skeleton",
+    "title": "Human Bones Quiz: How Well Do You Know Your Skeleton? by Hearify",
+    "description": "Explore the human body with this quiz focused on bones. Test your knowledge of the skeletal system and learn more about how your body is put together. Perfect for students, anatomy enthusiasts, and curious minds.",
+    "coverUrl": "/blog/images/human_bones.png",
+    "appUrl": "https://app.hearify.org/waiting/dacsdcbzyz",
+    "authorSlug": "anna-fox"
+},
+{
+    "slug": "deadliest-animals-quiz-test-your-knowledge-of-dangerous-creatures",
+    "title": "Deadliest Animals Quiz: Test Your Knowledge of Dangerous Creatures by Hearify",
+    "description": "Do you know which animals are the most dangerous? Test your knowledge with this quiz on the deadliest creatures in the world. Perfect for animal lovers and those fascinated by the natural world.",
+    "coverUrl": "/blog/images/animals.png",
+    "appUrl": "https://app.hearify.org/waiting/elgzmrcmjt",
+    "authorSlug": "anna-fox"
+},
+{
+    "slug": "zodiac-sign-quiz-how-well-do-you-know-the-zodiac",
+    "title": "Zodiac Sign Quiz: How Well Do You Know the Zodiac? by Hearify",
+    "description": "Are you a zodiac expert? Test your knowledge of astrology and see how much you know about the signs, their traits, and their meanings. Perfect for astrology fans and those curious about the stars.",
+    "coverUrl": "/blog/images/zodiac2.png",
+    "appUrl": "https://app.hearify.org/waiting/rfaznsdqjs",
+    "authorSlug": "anna-fox"
+},
+  {
+    "slug": "us-citizenship-test-quiz-can-you-answer-these-questions",
+    "title": "Can You Answer These Questions from the United States Citizenship Test? by Hearify",
+    "description": "Think you know the basics of U.S. history, government, and civics? Test your knowledge with questions from the actual United States Citizenship Test. Perfect for those studying for the test or anyone curious about American history.",
+    "coverUrl": "/blog/images/USA_Citizenship_Test.png",
+    "appUrl": "https://app.hearify.org/waiting/yskthxawbt",
+    "authorSlug": "anna-fox"
+},
+{
+    "slug": "european-capitals-quiz-test-your-knowledge-of-europe",
+    "title": "European Capitals Quiz: Test Your Knowledge of Europe by Hearify",
+    "description": "How well do you know the capitals of Europe? Challenge yourself with this fun quiz and see if you can name all the European capitals. Perfect for geography lovers and those who enjoy learning about the world.",
+    "coverUrl": "/blog/images/european_capitals.png",
+    "appUrl": "https://app.hearify.org/waiting/gfewsxaipj",
+    "authorSlug": "anna-fox"
+},
+  {
+    "slug": "all-american-history-quiz-test-your-knowledge-of-us-history",
+    "title": "All-American History Quiz: Test Your Knowledge of U.S. History by Hearify",
+    "description": "From the founding of the nation to modern times, test your knowledge of key events and figures in American history. This quiz is perfect for history buffs and anyone interested in learning more about the USA.",
+    "coverUrl": "/blog/images/american_history.png",
+    "appUrl": "https://app.hearify.org/waiting/nehzeqqzhg",
+    "authorSlug": "anna-fox"
+},
+  {
     "slug": "astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos",
     "title": "Astronomy and Space Quiz: Explore the Universe",
     "description": "Take a journey through the stars with our fun and easy Astronomy and Space quiz. Test your knowledge of planets, galaxies, and all things cosmic. Perfect for beginners and space lovers alike!",
