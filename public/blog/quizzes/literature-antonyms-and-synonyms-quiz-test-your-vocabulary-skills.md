@@ -1,7 +1,7 @@
 ## Synonyms and Antonyms Quiz: Time to Boost Your Vocabulary!
 
 <p>How come you, an English native speaker, feel stuck when you need to express yourself? Instead of using a colorful vocabulary, you jump from <em>&lsquo;good&rsquo;</em> to &lsquo;<em>bad&rsquo;</em> in both written and oral communication.</p>
-<h3><span style="color: #993300;"><strong><em>Stop!</em></strong></span></h3>
+<h3><span><strong><em>Stop!</em></strong></span></h3>
 <p>The English vocabulary is so rich and vast but you have to get there on your own. No excuses, no whining, just filling your bag with synonyms and antonyms that make your writing and speaking blossom without feeling blocked when trying to find what to say.</p>
 <h2>That&rsquo;s what our synonyms and antonyms test was designed for!</h2>
 <p>Whether you&rsquo;re a high school student, college undergrad, English teacher looking to hone your language skills, or a writer breaking through creative blocks, this synonyms and antonyms quiz will be a hit.</p>
