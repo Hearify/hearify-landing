@@ -46,7 +46,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta property="og:url" content={canonicalUrl} />
         <meta key="og:image" property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/main-image.png`} />
 
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="icon" href="/favicon.ico" />
+
         {/* TODO(Sasha): Add icons */}
         {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
         {/* <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /> */}

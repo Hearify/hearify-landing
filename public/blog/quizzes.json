@@ -2,6 +2,7 @@
   {
     "slug": "dog-breed-quiz-test-your-knowledge-of-dog-breeds",
     "title": "The Dog Breed Quiz: Test Your Knowledge of Dog Breeds",
+    "headline": "The Dog Breed Quiz: Test Your Knowledge of Dog Breeds",
     "description": "How well do you know your dog breeds? Take this fun quiz to test your knowledge of different dog breeds, their traits, and characteristics. Perfect for dog lovers and anyone interested in learning more about man's best friend.",
     "coverUrl": "/blog/images/dog_breed.png",
     "appUrl": "https://app.hearify.org/waiting/iksvkgexdn",
@@ -10,6 +11,7 @@
 {
     "slug": "science-quiz-test-your-knowledge-of-science",
     "title": "Science Quiz: Test Your Knowledge of Science",
+    "headline": "Science Quiz: Test Your Knowledge of Science",
     "description": "How much do you know about the world of science? Take this quiz to challenge your understanding of various scientific fields, from biology to physics. Perfect for students, science enthusiasts, and curious minds.",
     "coverUrl": "/blog/images/Science.png",
     "appUrl": "https://app.hearify.org/waiting/lidaumwvrw",
@@ -18,6 +20,7 @@
 {
     "slug": "asian-capitals-quiz-test-your-knowledge-of-asia",
     "title": "Asian Capitals Quiz: Test Your Knowledge of Asia",
+    "headline": "Asian Capitals Quiz: Test Your Knowledge of Asia",
     "description": "How well do you know the capitals of Asia? Take this quiz to see if you can name all the Asian capitals. Perfect for geography enthusiasts and anyone interested in learning more about this diverse continent.",
     "coverUrl": "/blog/images/Asian_Capitals.png",
     "appUrl": "https://app.hearify.org/waiting/xppuwnwlzc",
@@ -26,6 +29,7 @@
   {
     "slug": "human-bones-quiz-how-well-do-you-know-your-skeleton",
     "title": "Human Bones Quiz: How Well Do You Know Your Skeleton?",
+    "headline": "Human Bones Quiz: How Well Do You Know Your Skeleton?",
     "description": "Explore the human body with this quiz focused on bones. Test your knowledge of the skeletal system and learn more about how your body is put together. Perfect for students, anatomy enthusiasts, and curious minds.",
     "coverUrl": "/blog/images/human_bones.png",
     "appUrl": "https://app.hearify.org/waiting/dacsdcbzyz",
@@ -34,6 +38,7 @@
 {
     "slug": "deadliest-animals-quiz-test-your-knowledge-of-dangerous-creatures",
     "title": "Deadliest Animals Quiz: Test Your Knowledge of Dangerous Creatures",
+    "headline": "Deadliest Animals Quiz: Test Your Knowledge of Dangerous Creatures",
     "description": "Do you know which animals are the most dangerous? Test your knowledge with this quiz on the deadliest creatures in the world. Perfect for animal lovers and those fascinated by the natural world.",
     "coverUrl": "/blog/images/animals.png",
     "appUrl": "https://app.hearify.org/waiting/elgzmrcmjt",
@@ -42,6 +47,7 @@
 {
     "slug": "zodiac-sign-quiz-how-well-do-you-know-the-zodiac",
     "title": "Zodiac Sign Quiz: How Well Do You Know the Zodiac?",
+    "headline": "Zodiac Sign Quiz: How Well Do You Know the Zodiac?",
     "description": "Are you a zodiac expert? Test your knowledge of astrology and see how much you know about the signs, their traits, and their meanings. Perfect for astrology fans and those curious about the stars.",
     "coverUrl": "/blog/images/zodiac2.png",
     "appUrl": "https://app.hearify.org/waiting/rfaznsdqjs",
@@ -50,6 +56,7 @@
   {
     "slug": "us-citizenship-test-quiz-can-you-answer-these-questions",
     "title": "Can You Answer These Questions from the United States Citizenship Test?",
+    "headline": "Can You Answer These Questions from the United States Citizenship Test?",
     "description": "Think you know the basics of U.S. history, government, and civics? Test your knowledge with questions from the actual United States Citizenship Test. Perfect for those studying for the test or anyone curious about American history.",
     "coverUrl": "/blog/images/USA_Citizenship_Test.png",
     "appUrl": "https://app.hearify.org/waiting/yskthxawbt",
@@ -58,6 +65,7 @@
 {
     "slug": "european-capitals-quiz-test-your-knowledge-of-europe",
     "title": "European Capitals Quiz: Test Your Knowledge of Europe",
+    "headline": "European Capitals Quiz: Test Your Knowledge of Europe",
     "description": "How well do you know the capitals of Europe? Challenge yourself with this fun quiz and see if you can name all the European capitals. Perfect for geography lovers and those who enjoy learning about the world.",
     "coverUrl": "/blog/images/european_capitals.png",
     "appUrl": "https://app.hearify.org/waiting/gfewsxaipj",
@@ -66,6 +74,7 @@
   {
     "slug": "american-history-challenge-how-much-do-you-know",
     "title": "U.S. History Trivia: Are You an Expert?",
+    "headline": "U.S. History Trivia: Are You an Expert?",
     "description": "From the founding of the nation to modern times, test your knowledge of key events and figures in American history. This quiz is perfect for history buffs and anyone interested in learning more about the USA.",
     "coverUrl": "/blog/images/american_history.png",
     "appUrl": "https://app.hearify.org/waiting/iuuaryliwn",
@@ -74,6 +83,7 @@
   {
     "slug": "astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos",
     "title": "Astronomy and Space Quiz: Explore the Universe",
+    "headline": "Astronomy and Space Quiz: Explore the Universe",
     "description": "Take a journey through the stars with our fun and easy Astronomy and Space quiz. Test your knowledge of planets, galaxies, and all things cosmic. Perfect for beginners and space lovers alike!",
     "coverUrl": "/blog/images/astronomy_space_quiz.png",
     "appUrl": "https://app.hearify.org/waiting/xiwewyqaug",
@@ -82,6 +92,7 @@
   {
     "slug": "world-war-2-quiz-test-your-knowledge-of-history",
     "title": "World War 2 Quiz: Test Your Knowledge of History",
+    "headline": "World War 2 Quiz: Test Your Knowledge of History",
     "description": "Dive into history with our World War 2 quiz. Challenge yourself with questions about key events, leaders, and battles. Perfect for history buffs and anyone looking to learn more about this important period.",
     "coverUrl": "/blog/images/ww2.png",
     "appUrl": "https://app.hearify.org/waiting/nmnbkairvo",
@@ -90,6 +101,7 @@
   {
     "slug": "periodic-table-quiz-test-your-knowledge-of-elements",
     "title": "Periodic Table Quiz: Explore the Elements",
+    "headline": "Periodic Table Quiz: Explore the Elements",
     "description": "Test your knowledge of the elements with our fun and informative Periodic Table quiz. Challenge yourself on the properties, symbols, and groups of elements. Great for science fans and students alike!",
     "coverUrl": "/blog/images/chem.png",
     "appUrl": "https://app.hearify.org/waiting/wodmbvxufz",
@@ -98,6 +110,7 @@
   {
     "slug": "80s-music-quiz-how-well-do-you-know-the-iconic-hits-of-the-1980s",
     "title": "80s Music Quiz",
+    "headline": "80s Music Quiz",
     "description": "Test your knowledge of the unforgettable music that defined the 1980s! From pop legends to rock anthems, this quiz will challenge your memory of the decade's greatest hits and artists. Let's see if you're an 80s music expert!",
     "coverUrl": "/blog/images/80s_start.png",
     "appUrl": "https://app.hearify.org/waiting/gbfigkntrn",
@@ -106,6 +119,7 @@
   {
     "slug": "all-american-history-quiz-test-your-knowledge-of-us-history",
     "title": "Test Your Knowledge of American History",
+    "headline": "Test Your Knowledge of American History",
     "description": "Dive into the rich and diverse history of the United States with our All-American History Quiz! Challenge yourself with questions about significant events, influential figures, and key moments that have shaped the nation. Let's see how well you know American history!",
     "coverUrl": "/blog/images/american_history_start(2).png",
     "appUrl": "https://app.hearify.org/waiting/nehzeqqzhg",
@@ -114,6 +128,7 @@
   {
     "slug": "the-human-body-quiz-test-your-knowledge-of-human-anatomy",
     "title": "Test Your Knowledge of Human Anatomy",
+    "headline": "Test Your Knowledge of Human Anatomy",
     "description": "Explore our fascinating quiz and challenge your understanding of the human body! This quiz covers various aspects of human anatomy, physiology, and the functions of different body systems. See how well you know the amazing machine that is the human body.",
     "coverUrl": "/blog/images/anatomy_start.png",
     "appUrl": "https://app.hearify.org/waiting/tvmtlouwum",
@@ -122,6 +137,7 @@
   {
     "slug": "literature-antonyms-and-synonyms-quiz-test-your-vocabulary-skills",
     "title": "Literature Antonyms and Synonyms Quiz",
+    "headline": "Literature Antonyms and Synonyms Quiz",
     "description": "Explore the world of words with our Literature Antonyms and Synonyms Quiz! Challenge yourself to match the correct antonyms and synonyms for various literary terms and expressions. Perfect for language enthusiasts and literature students alike!",
     "coverUrl": "/blog/images/books2_start.png",
     "appUrl": "https://app.hearify.org/waiting/uzgfmdkcpr",
@@ -130,6 +146,7 @@
   {
     "slug": "countries-and-capitals-quiz-test-your-geography-knowledge",
     "title": "Countries and Capitals Quiz",
+    "headline": "Countries and Capitals Quiz",
     "description": "Ready to challenge your geography skills? Take our quiz and see how well you know the capitals of countries around the world. Perfect for students, travelers, and anyone who loves learning about different places.",
     "coverUrl": "/blog/images/capitals_start.png",
     "appUrl": "https://app.hearify.org/waiting/cwzjubsnto",
@@ -138,6 +155,7 @@
   {
     "slug": "disney-quiz-how-well-do-you-know-your-disney-classics",
     "title": "How Well Do You Know Your Disney Classics?",
+    "headline": "How Well Do You Know Your Disney Classics?",
     "description": "Are you a true Disney fan? Test your knowledge of Disney movies, characters, and magical moments with this enchanting quiz. Dive into the world of Disney and see how much you really know!",
     "coverUrl": "/blog/images/disney_start(1).png",
     "appUrl": "https://app.hearify.org/waiting/njebmiprgz",
@@ -146,6 +164,7 @@
   {
     "slug": "who-said-this-famous-quotes-quiz",
     "title": "Famous Quotes Quiz",
+    "headline": "Famous Quotes Quiz",
     "description": "Dive into our engaging quiz and challenge your knowledge of famous historical quotes! Discover who said these iconic phrases that have shaped history and find out how well you know these influential figures.",
     "coverUrl": "/blog/images/quotes_start.png",
     "appUrl": "https://app.hearify.org/waiting/zamvwhflju",
@@ -154,6 +173,7 @@
   {
     "slug": "match-the-quote-to-the-movie-quiz-test-your-movie-knowledge",
     "title": "Match the Quote to the Movie Quiz",
+    "headline": "Match the Quote to the Movie Quiz",
     "description": "Are you a movie buff? Challenge yourself with our exciting quiz that matches famous movie quotes to their respective films. See how well you know these iconic lines from cinematic history!",
     "coverUrl": "/blog/images/movies_start.png",
     "appUrl": "https://app.hearify.org/waiting/tysdgnyxxc",
@@ -162,6 +182,7 @@
   {
     "slug": "us-state-capitals-quiz-how-well-do-you-know-your-state-capitals",
     "title": "US States And Capitals Quiz: Test Your Knowledge",
+    "headline": "US States And Capitals Quiz: Test Your Knowledge",
     "description": "Challenge yourself with the ultimate 50 states and capitals quiz. Our engaging quiz will help you learn and test your knowledge of all the United States capitals. Perfect for both beginners and geography enthusiasts.",
     "coverUrl": "/blog/images/uscapitals_start.png",
     "appUrl": "https://app.hearify.org/waiting/gkzzmubfvr",

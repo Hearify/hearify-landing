@@ -17,7 +17,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
   return (
     <div className={styles.wrapper}>
       <Link href={topicUrl}>
-        <Image src={article.coverUrl} alt={article.title} width={320} height={230} className={styles.image} />
+        <Image src={article.coverUrl} alt={article.headline} width={320} height={230} className={styles.image} />
       </Link>
 
       <div className={styles.container}>
@@ -28,7 +28,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
 
         <div className={styles.body}>
           <Link href={topicUrl} className={styles.link}>
-            <h4 className={styles.title}>{article.title}</h4>
+            <h4 className={styles.title}>{article.headline}</h4>
             <p className={styles.description}>{article.description}</p>
           </Link>
 

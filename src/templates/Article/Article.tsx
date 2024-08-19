@@ -42,7 +42,7 @@ const Article: React.FC<ArticleProps> = ({
           <AppBreadcrumbs
             items={[
               { text: t('blog'), href: '/blog' },
-              { text: article.title, href: `/blog/${article.slug}` },
+              { text: article.headline, href: `/blog/${article.slug}` },
             ]}
           />
 
@@ -53,7 +53,7 @@ const Article: React.FC<ArticleProps> = ({
           </div>
 
           <div className={styles.header}>
-            <h1 className={styles.title}>{article.title}</h1>
+            <h1 className={styles.title}>{article.headline}</h1>
 
             <div className={styles.container}>
               <span className={styles.text}>{article.minutesToRead} min read</span>
