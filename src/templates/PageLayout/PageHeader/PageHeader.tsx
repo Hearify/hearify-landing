@@ -47,7 +47,7 @@ const PageHeader: React.FC = () => {
             <AppButtonLink variant="secondary" width="110px" href="https://app.hearify.org/login">
               {t('log_in')}
             </AppButtonLink>
-            <AppButtonLink href="https://app.hearify.org/register">{t('try_for_free')}</AppButtonLink>
+            <AppButtonLink href="https://app.hearify.org/signup">{t('try_for_free')}</AppButtonLink>
           </div>
         </>
       ) : (
@@ -81,7 +81,7 @@ const PageHeader: React.FC = () => {
                 <AppButtonLink variant="secondary" width="110px" href="https://app.hearify.org/login">
                   {t('log_in')}
                 </AppButtonLink>
-                <AppButtonLink href="https://app.hearify.org/register">{t('try_for_free')}</AppButtonLink>
+                <AppButtonLink href="https://app.hearify.org/signup">{t('try_for_free')}</AppButtonLink>
               </div>
             </div>
           </div>

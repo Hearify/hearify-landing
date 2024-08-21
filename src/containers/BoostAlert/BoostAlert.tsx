@@ -14,7 +14,7 @@ const BoostAlert: React.FC = () => {
       <div className={styles.content}>
         <h3 className={styles.title}>{t('boost_your_knowledge')}</h3>
         <p className={styles.text}>{t('try_out_ai_quiz')}</p>
-        <AppButtonLink className={styles.button} href="https://app.hearify.org/register" width="240px" size="lg">
+        <AppButtonLink className={styles.button} href="https://app.hearify.org/signup" width="240px" size="lg">
           {t('try_for_free')}
         </AppButtonLink>
       </div>
