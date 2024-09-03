@@ -14,6 +14,7 @@ export type AppBreadcrumbsProps = {
   items: BreadcrumbItem[];
 };
 
+// TODO(Sasha): Fix breadcrumbs having the same key
 const AppBreadcrumbs: React.FC<AppBreadcrumbsProps> = ({ items }) => {
   return (
     <nav className={styles.wrapper} aria-label="breadcrumb">
