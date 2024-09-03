@@ -4,27 +4,37 @@ import type { Quiz, QuizPreview } from '@/types/quiz';
 
 class BlogService {
   public static loadArticlePreviews = async (): Promise<ArticlePreview[]> => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/articles.json`);
+    const response = await fetch(
+      `https://firebasestorage.googleapis.com/v0/b/hearify-9dd16.appspot.com/o/articles.json?alt=media`,
+    );
     return response.json();
   };
 
   public static loadQuizPreviews = async (): Promise<QuizPreview[]> => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/quizzes.json`);
+    const response = await fetch(
+      `https://firebasestorage.googleapis.com/v0/b/hearify-9dd16.appspot.com/o/quizzes.json?alt=media`,
+    );
     return response.json();
   };
 
   public static loadAuthors = async (): Promise<Author[]> => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/authors.json`);
+    const response = await fetch(
+      `https://firebasestorage.googleapis.com/v0/b/hearify-9dd16.appspot.com/o/authors.json?alt=media`,
+    );
     return response.json();
   };
 
   public static loadArticleMarkdown = async (slug: string): Promise<string> => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/articles/${slug}.md`);
+    const response = await fetch(
+      `https://firebasestorage.googleapis.com/v0/b/hearify-9dd16.appspot.com/o/articles%2F${slug}.md?alt=media`,
+    );
     return response.text();
   };
 
   public static loadQuizMarkdown = async (slug: string): Promise<string> => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/quizzes/${slug}.md`);
+    const response = await fetch(
+      `https://firebasestorage.googleapis.com/v0/b/hearify-9dd16.appspot.com/o/quizzes%2F${slug}.md?alt=media`,
+    );
     return response.text();
   };
 
