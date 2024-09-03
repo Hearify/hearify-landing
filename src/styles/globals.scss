@@ -30,3 +30,8 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

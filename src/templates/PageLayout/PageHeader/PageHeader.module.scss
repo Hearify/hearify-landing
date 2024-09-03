@@ -106,10 +106,10 @@
   width: 100%;
   background: var(--white);
   transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
   z-index: $z-index-drawer;
 
   &--active {
+    transition: transform 0.3s ease-in-out;
     transform: translateX(0);
   }
 }

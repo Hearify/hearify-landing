@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -15,7 +15,7 @@ const PageHeader: React.FC = () => {
   const { t } = useTranslation();
   const router = useRouter();
 
-  const { isDeviceLarge } = useDeviceDetect('lg');
+  const { isDeviceLarge, isServer } = useDeviceDetect('lg');
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -23,13 +23,25 @@ const PageHeader: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [isMenuOpen]);
+
   return (
     <div className={styles.wrapper}>
       <Link href="/" className={styles.logo}>
         <Image src={logoImg} alt="Hearify logo" width={180} height={68} className={styles.logoImage} />
       </Link>
 
-      {isDeviceLarge ? (
+      {!isServer && isDeviceLarge ? (
         <>
           <nav className={styles.navigation}>
             {headerNavigation.map(item => (
