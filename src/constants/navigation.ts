@@ -6,7 +6,7 @@ export type NavigationItem = {
 export const headerNavigation: NavigationItem[] = [
   {
     i18nKey: 'how_it_works',
-    href: '/#how-it-works-section',
+    href: '/#create-quiz',
   },
   {
     i18nKey: 'blog',
@@ -18,7 +18,7 @@ export const headerNavigation: NavigationItem[] = [
   },
   {
     i18nKey: 'faq',
-    href: '/#faq-section',
+    href: '/#faq',
   },
 ];
 
@@ -33,6 +33,6 @@ export const footerNavigation: NavigationItem[] = [
   },
   {
     i18nKey: 'faq',
-    href: '/#faq-section',
+    href: '/#faq',
   },
 ];
