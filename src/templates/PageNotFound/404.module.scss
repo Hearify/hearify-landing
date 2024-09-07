@@ -1,0 +1,97 @@
+@use "../../styles/helpers/index" as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+  img {
+    @include xs {
+      width: 120px;
+      height: 130px;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 586px;
+
+  .title {
+    color: #15343A;
+    line-height: 42px;
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 500;
+
+    @include xs {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #15343A;
+
+    @include xs {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 24px;
+
+  @include  xs {
+    flex-direction: column-reverse;
+    margin-top: 16px;
+    gap: 16px;
+  }
+
+  .explore_btn {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+
+    @include  xs {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .generate_btn {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+
+    @include  xs {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+}
