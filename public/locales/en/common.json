@@ -187,6 +187,12 @@
           "position": "Product Designer"
         }
       ]
+    },
+    "PageNotFound": {
+      "title": "Page Not Found",
+      "description": "The page you’re looking for may have been moved, deleted, or the URL might be incorrect. While this content isn't available, your next quiz is just a click away.",
+      "primary-button": "GENERATE QUIZ",
+      "secondary-button": "EXPLORE MORE"
     }
   },
   "containers": {

@@ -31,23 +31,19 @@
 
   &--lg {
     @include text-button-lg;
-    padding: 16px;
+    padding: 13px;
     border-radius: $radius-button;
-    @include md {
-      @include text-button-md;
-      padding: 12px 16px;
-    }
   }
 
   &--md {
     @include text-button-md;
-    padding: 12px 16px;
+    padding: 9px 13px;
     border-radius: $radius-button;
   }
 
   &--sm {
     @include text-button-sm;
-    padding: 10px 12px;
+    padding: 7px 9px;
     border-radius: $radius-button;
   }
 
