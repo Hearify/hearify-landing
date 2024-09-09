@@ -24,6 +24,7 @@ const HomeAboutUs: React.FC = () => {
       <AppHeading variant="h2" className={styles.title}>
         {t('title')}
       </AppHeading>
+      <p className={styles.description}>{t('description')}</p>
 
       <div className={styles.list}>
         {aboutUsBlocks.map((item, index) => (

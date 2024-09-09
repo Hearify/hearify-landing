@@ -34,7 +34,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  @include md {
+  @include sm {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -95,7 +95,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
-  @include md {
+  @include sm {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -128,7 +128,7 @@
   font-weight: 800;
   font-size: 64px;
   line-height: 87.3px;
-  @include md {
+  @include sm {
     font-weight: 700;
     font-size: 28px;
     line-height: 150%;
@@ -140,7 +140,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
-  @include md {
+  @include sm {
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
@@ -152,7 +152,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 150%;
-  @include md {
+  @include sm {
     font-weight: 600;
     font-size: 20px;
     line-height: 150%;
@@ -163,6 +163,13 @@
   font-family: $font-nunito;
   font-weight: 700;
   font-size: 28px;
+  line-height: 150%;
+}
+
+@mixin text-heading-5 {
+  font-family: $font-nunito;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 150%;
 }
 

@@ -1,10 +1,10 @@
 {
   "templates": {
     "HomeHero": {
-      "title": "AI Quiz Generator from PDFs, Videos & Text",
+      "title": "AI Quiz Maker from PDF, Video & Text by Hearify AI Quiz Generator",
       "description": "Automatically create questions for assignments, tests, and exams from your content with our ultimate AI question generator. Ideal for educators, students, professionals, and lifelong learners.",
       "button": "TRY FOR FREE",
-      "hint": "Loved by students and teachers in 65+ countries"
+      "hint": "Loved by students and teachers in 78+ countries"
     },
     "HomeFeatured": {
       "title": "Featured by:",
@@ -12,6 +12,7 @@
     },
     "HomeCreateQuiz": {
       "title": "Create Quiz with AI in No Time!",
+      "description": "Easily create your own quizzes from videos, PDFs, or text. Hearify AI Quiz Maker brings adaptive learning to life, making assessments faster, smarter, and more fun.",
       "steps": [
         {
           "title": "Upload a file",
@@ -59,6 +60,7 @@
     },
     "HomeReviews": {
       "title": "Hearify Reviews: Hear Our Happy Customers!",
+      "description": "Find out why our customers love Hearify. Read their testimonials and learn how our AI quiz builder transforms the content creation process by making it faster, smarter, and more efficient. From educators to businesses, you can turn PDF, video, and text into interactive quizzes in just a few clicks.",
       "reviews": [
         {
           "name": "Yuliia Gorbatenko",
@@ -77,13 +79,14 @@
         },
         {
           "name": "Maria Revenko",
-          "position": "Operations manager in compliance business",
+          "position": "COO @ Crosscheck",
           "text": "The tool is very user-friendly and understandable. It was easy for me to create a quiz and to modify it. We've used quizes after training as a proof of successful material learning. We like the function that it's possible to see the detailed results and to export them."
         }
       ]
     },
     "HomeAudience": {
       "title": "For whom",
+      "description": "Hearify is designed for educators, business owners, educational institutions, and students. Whether you're enhancing classroom learning, optimizing business training, or conducting self-assessments, Hearify's AI-powered platform makes it quick and easy to create personalized, interactive quizzes. It's the perfect tool to improve engagement and results in a variety of educational and professional environments.",
       "blocks": [
         {
           "title": "Scholars and Teachers",
@@ -99,7 +102,7 @@
         },
         {
           "title": "Educational Institutions",
-          "text": "AI quiz maker offers personalized quizzes that help with effective self-assessment. Identify areas where your knowledge isn’t sufficient and learn from your mistakes at your own pace."
+          "text": "AI test maker creates personalized quizzes that promote effective self-assessment, helping learners identify gaps in their knowledge and progress at their own pace"
         }
       ]
     },
@@ -173,6 +176,7 @@
     },
     "HomeAboutUs": {
       "title": "About us",
+      "description": "We're Hearify, an AI-powered platform that helps you create personalized quizzes effortlessly, improving learning for everyone. Designed for both individuals and B2B users, our smart quiz creation tools make it easy for businesses to create customized assessments that drive engagement and improve learning outcomes. Whether you're an educator, corporate trainer, or an organization looking to optimize learning, Hearify provides the tools to make test creation faster and more efficient.",
       "blocks": [
         {
           "name": "Sofiia Shaposhnikova",
@@ -187,6 +191,12 @@
           "position": "Product Designer"
         }
       ]
+    },
+    "PageNotFound": {
+      "title": "Page Not Found",
+      "description": "The page you’re looking for may have been moved, deleted, or the URL might be incorrect. While this content isn't available, your next quiz is just a click away.",
+      "primary-button": "GENERATE QUIZ",
+      "secondary-button": "EXPLORE MORE"
     }
   },
   "containers": {
