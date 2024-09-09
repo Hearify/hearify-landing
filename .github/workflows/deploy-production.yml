@@ -37,7 +37,7 @@ jobs:
           AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}
           ENV_CONFIG: ${{ vars.ENV_CONFIG }}
         run: |
-          echo "${{ env.ENV_CONFIG }}" | ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST 'cat > new_blog/blog/.env'
+          echo "${{ env.ENV_CONFIG }}" | ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST 'cat > blog/.env'
 
       - name: Update project
         env:
