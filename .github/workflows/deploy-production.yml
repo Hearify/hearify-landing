@@ -46,7 +46,7 @@ jobs:
           GIT_SSH_COMMAND: "ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $AZURE_USERNAME@$AZURE_HOST << 'EOF'
-            cd new_blog/blog
+            cd blog
 
             # Ensure the correct branch is checked out
             git checkout main
