@@ -6,7 +6,7 @@ import Home from '@/templates/Home/Home';
 import type { GetServerSideProps, NextPage } from 'next';
 
 const HomePage: NextPage = () => {
-  const pageTitle = `AI Quiz Generator from PDF, Video & Text by Hearify AI Quiz Maker`;
+  const pageTitle = `AI Quiz Maker from PDF, Video & Text by Hearify AI Quiz Generator`;
   const pageDescription = `Transform your content with our ultimate AI question generator. Convert PDFs, texts and videos into engaging quizzes, customize questions, and provide instant feedback. Ideal for educators, students, professionals, and lifelong learners.`;
 
   return (
