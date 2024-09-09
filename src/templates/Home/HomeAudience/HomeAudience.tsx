@@ -28,6 +28,7 @@ const HomeAudience: React.FC = () => {
       <AppHeading variant="h2" className={styles.title}>
         {t('title')}
       </AppHeading>
+      <p className={styles.description}>{t('description')}</p>
 
       {isDeviceLarge ? (
         <ul className={styles.list}>

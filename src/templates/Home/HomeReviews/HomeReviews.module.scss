@@ -2,6 +2,9 @@
 
 .wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &::before,
   &::after {
@@ -30,7 +33,14 @@
 }
 
 .title {
+  margin-bottom: 24px
+}
+
+.description {
+  @include text-subtitle-2;
   margin-bottom: 64px;
+  max-width: 800px;
+  text-align: center;
   @include md {
     margin-bottom: 32px;
   }
@@ -38,9 +48,6 @@
 
 .card {
   width: 100%;
-  //display: flex;
-  //flex-direction: column;
-  //align-items: center;
 }
 
 .carousel {
