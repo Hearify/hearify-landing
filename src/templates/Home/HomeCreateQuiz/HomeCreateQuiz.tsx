@@ -65,11 +65,11 @@ const HomeCreateQuiz: React.FC = () => {
             <p className={styles.description}>{currentDescription}</p>
 
             <Link href="https://app.hearify.org" className={styles.images}>
-              {activeStep === 0 && <Image src={createQuizImage1} alt={currentTitle} width={500} height={500}/>}
-              {activeStep === 1 && <Image src={createQuizImage2} alt={currentTitle} width={500} height={500}/>}
-              {activeStep === 2 && <Image src={createQuizImage3} alt={currentTitle} width={500} height={500}/>}
-              {activeStep === 3 && <Image src={createQuizImage4} alt={currentTitle} width={500} height={500}/>}
-              {activeStep === 4 && <Image src={createQuizImage5} alt={currentTitle} width={500} height={500}/>}
+              {activeStep === 0 && <Image src={createQuizImage1} alt={currentTitle} width={500} height={500} />}
+              {activeStep === 1 && <Image src={createQuizImage2} alt={currentTitle} width={500} height={500} />}
+              {activeStep === 2 && <Image src={createQuizImage3} alt={currentTitle} width={500} height={500} />}
+              {activeStep === 3 && <Image src={createQuizImage4} alt={currentTitle} width={500} height={500} />}
+              {activeStep === 4 && <Image src={createQuizImage5} alt={currentTitle} width={500} height={500} />}
             </Link>
           </div>
         </div>
@@ -94,11 +94,11 @@ const HomeCreateQuiz: React.FC = () => {
                 <p className={styles.description}>{item.description}</p>
 
                 <div className={styles.images}>
-                  {index === 0 && <Image src={createQuizImage1} alt={item.title} width={500} height={500}/>}
-                  {index === 1 && <Image src={createQuizImage2} alt={item.title} width={500} height={500}/>}
-                  {index === 2 && <Image src={createQuizImage3} alt={item.title} width={500} height={500}/>}
-                  {index === 3 && <Image src={createQuizImage4} alt={item.title} width={500} height={500}/>}
-                  {index === 4 && <Image src={createQuizImage5} alt={item.title} width={500} height={500}/>}
+                  {index === 0 && <Image src={createQuizImage1} alt={item.title} width={500} height={500} />}
+                  {index === 1 && <Image src={createQuizImage2} alt={item.title} width={500} height={500} />}
+                  {index === 2 && <Image src={createQuizImage3} alt={item.title} width={500} height={500} />}
+                  {index === 3 && <Image src={createQuizImage4} alt={item.title} width={500} height={500} />}
+                  {index === 4 && <Image src={createQuizImage5} alt={item.title} width={500} height={500} />}
                 </div>
               </div>
             ))}
