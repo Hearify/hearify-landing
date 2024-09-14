@@ -1,13 +1,13 @@
 User-agent: *
-Disallow: /*?page=
+Disallow: /articles
 Disallow: /*?utm_source=
 
 User-Agent: Googlebot
-Disallow: /*?page=
+Disallow: /articles
 Disallow: /*?utm_source=
 
 User-agent: MSNBot/Bingbot
-Disallow: /*?page=
+Disallow: /articles
 Disallow: /*?utm_source=
 
 Sitemap: https://hearify.org/sitemap.xml
