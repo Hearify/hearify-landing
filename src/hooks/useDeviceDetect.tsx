@@ -10,7 +10,7 @@ const breakpoints: Record<DeviceDetectBreakpoint, number> = {
   xl: 1599.98,
 };
 
-const useDeviceDetect = (breakpoint: DeviceDetectBreakpoint = 'md') => {
+const useDeviceDetect = (breakpoint: DeviceDetectBreakpoint = 'sm') => {
   const [isDeviceSmall, setIsDeviceSmall] = useState<boolean>(false);
   const [isServer, setIsServer] = useState<boolean>(true);
 
