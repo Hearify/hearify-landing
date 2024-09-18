@@ -23,22 +23,18 @@
   align-items: flex-start;
   gap: 16px;
   width: 100%;
-
   @include md {
-    flex-direction: row;
     align-items: center;
     padding: 0 20px;
   }
-
   @include sm {
     flex-direction: column;
     align-items: center;
   }
 }
 
-.phoneFooter {
+.phone-footer {
   display: none;
-
   @include sm {
     display: flex;
     width: 100%;
@@ -66,7 +62,16 @@
   }
 }
 
-.phoneSocials {
+.facebook-icon,
+.linkedin-icon,
+.instagram-icon {
+  @include sm {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.phone-socials {
   display:none;
   @include md {
     height: 100%;
@@ -78,11 +83,9 @@
 
 .title {
   @include text-subtitle-2;
-
   @include lg {
     @include text-subtitle-3;
   }
-
   @include md {
     display: none;
   }
@@ -91,7 +94,6 @@
 .subtitle {
   @include text-subtitle-2;
   margin-top: 12px;
-
   @include lg {
     @include text-subtitle-3;
     margin-top: 4px;
@@ -112,11 +114,6 @@
   @include lg {
     @include text-main-3;
   }
-
-  @include md {
-    @include text-subtitle-4;
-  }
-
   @include sm {
     @include text-subtitle-5;
   }
@@ -129,7 +126,6 @@
   align-items: center;
   justify-content: space-between;
   flex: 0 1 30%;
-
   @include sm {
     display: none;
   }
@@ -152,7 +148,6 @@
   a {
     text-decoration: underline;
   }
-
   @include lg {
     @include text-subtitle-4;
   }
@@ -165,11 +160,9 @@
   grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr 1fr;
   gap: 16px 40px;
-
   @include md {
     gap: 16px 20px;
   }
-
   @include sm {
     display: grid;
     grid-template-columns: 1fr;
@@ -179,8 +172,6 @@
   }
 }
 
-
-
 .link {
   @include text-subtitle-3;
   transition: $default-transition;
@@ -188,8 +179,6 @@
   &:hover {
     color: var(--brand-purpe-400);
   }
-
-
   @include sm {
     @include text-subtitle-4;
   }

@@ -37,7 +37,7 @@ const PageFooter: React.FC = () => {
               </Link>
               <div className={styles.socials}>
                 <div>
-                  <p className={styles.subtitle}>Contact us:</p>
+                  <p className={styles.subtitle}>{t('contact_us')}</p>
                   <a className={styles.email} href="mailto:hearify.tech@gmail.com">
                     hearify.tech@gmail.com
                   </a>
@@ -49,7 +49,7 @@ const PageFooter: React.FC = () => {
                     rel="noreferrer"
                     aria-label="Facebook icon"
                   >
-                    {isDeviceSmall ? <FacebookIcon width={24} height={24} /> : <FacebookIcon width={32} height={32} />}
+                    <FacebookIcon width={32} height={32} className={styles.facebookIcon} />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/hearify/"
@@ -57,7 +57,7 @@ const PageFooter: React.FC = () => {
                     rel="noreferrer"
                     aria-label="LinkedIn icon"
                   >
-                    {isDeviceSmall ? <LinkedInIcon width={24} height={24} /> : <LinkedInIcon width={32} height={32} />}
+                    <LinkedInIcon width={32} height={32} className={styles.linkedinIcon} />
                   </a>
                   <a
                     href="https://www.instagram.com/hearify.tech/"
@@ -65,11 +65,7 @@ const PageFooter: React.FC = () => {
                     rel="noreferrer"
                     aria-label="Instagram icon"
                   >
-                    {isDeviceSmall ? (
-                      <InstagramIcon width={24} height={24} />
-                    ) : (
-                      <InstagramIcon width={32} height={32} />
-                    )}
+                    <InstagramIcon width={32} height={32} className={styles.instagramIcon} />
                   </a>
                 </div>
               </div>
@@ -86,7 +82,7 @@ const PageFooter: React.FC = () => {
 
         {isDeviceLarge && (
           <div className={styles.socials}>
-            <p className={styles.title}>Follow us on social networks:</p>
+            <p className={styles.title}>{t('follow_us')}</p>
             <div className={styles.socialsContainer}>
               <a
                 href="https://www.facebook.com/people/Hearify/61552644703836/"
@@ -114,7 +110,7 @@ const PageFooter: React.FC = () => {
               </a>
             </div>
             <div>
-              <p className={styles.subtitle}>Contact us:</p>
+              <p className={styles.subtitle}>{t('contact_us')}</p>
               <a className={styles.email} href="mailto:hearify.tech@gmail.com">
                 hearify.tech@gmail.com
               </a>
