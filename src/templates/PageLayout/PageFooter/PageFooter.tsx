@@ -49,7 +49,7 @@ const PageFooter: React.FC = () => {
                     rel="noreferrer"
                     aria-label="Facebook icon"
                   >
-                    <FacebookIcon width={32} height={32} className={styles.facebookIcon} />
+                    <FacebookIcon width={32} height={32} className={styles.icon} />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/hearify/"
@@ -57,7 +57,7 @@ const PageFooter: React.FC = () => {
                     rel="noreferrer"
                     aria-label="LinkedIn icon"
                   >
-                    <LinkedInIcon width={32} height={32} className={styles.linkedinIcon} />
+                    <LinkedInIcon width={32} height={32} className={styles.icon} />
                   </a>
                   <a
                     href="https://www.instagram.com/hearify.tech/"
@@ -65,7 +65,7 @@ const PageFooter: React.FC = () => {
                     rel="noreferrer"
                     aria-label="Instagram icon"
                   >
-                    <InstagramIcon width={32} height={32} className={styles.instagramIcon} />
+                    <InstagramIcon width={32} height={32} className={styles.icon} />
                   </a>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const PageFooter: React.FC = () => {
                 rel="noreferrer"
                 aria-label="Facebook icon"
               >
-                {isDeviceSmall ? <FacebookIcon width={24} height={24} /> : <FacebookIcon width={32} height={32} />}
+                <FacebookIcon width={32} height={32} className={styles.icon} />
               </a>
               <a
                 href="https://www.linkedin.com/company/hearify/"
@@ -98,7 +98,7 @@ const PageFooter: React.FC = () => {
                 rel="noreferrer"
                 aria-label="LinkedIn icon"
               >
-                {isDeviceSmall ? <LinkedInIcon width={24} height={24} /> : <LinkedInIcon width={32} height={32} />}
+                <LinkedInIcon width={32} height={32} className={styles.icon} />
               </a>
               <a
                 href="https://www.instagram.com/hearify.tech/"
@@ -106,7 +106,7 @@ const PageFooter: React.FC = () => {
                 rel="noreferrer"
                 aria-label="Instagram icon"
               >
-                {isDeviceSmall ? <InstagramIcon width={24} height={24} /> : <InstagramIcon width={32} height={32} />}
+                <InstagramIcon width={32} height={32} className={styles.icon} />
               </a>
             </div>
             <div>

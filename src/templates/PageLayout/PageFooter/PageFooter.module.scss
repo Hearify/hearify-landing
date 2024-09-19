@@ -34,11 +34,9 @@
 }
 
 .phone-footer {
-  display: none;
   @include sm {
     display: flex;
     width: 100%;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
@@ -62,9 +60,9 @@
   }
 }
 
-.facebook-icon,
-.linkedin-icon,
-.instagram-icon {
+.icon {
+  width: 32px;
+  height: 32px;
   @include sm {
     width: 24px;
     height: 24px;
@@ -72,7 +70,6 @@
 }
 
 .phone-socials {
-  display:none;
   @include md {
     height: 100%;
     display: flex;
@@ -86,17 +83,15 @@
   @include lg {
     @include text-subtitle-3;
   }
-  @include md {
-    display: none;
-  }
 }
 
 .subtitle {
   @include text-subtitle-2;
   margin-top: 12px;
+  margin-bottom: 8px;
   @include lg {
     @include text-subtitle-3;
-    margin-top: 4px;
+    margin-bottom: 4px;
   }
   @include sm {
     @include text-subtitle-4;
@@ -107,15 +102,15 @@
   @include text-main-2;
   transition: $default-transition;
   text-align: right;
-
-  &:hover {
-    color: var(--brand-purpe-400);
-  }
   @include lg {
     @include text-main-3;
   }
   @include sm {
     @include text-subtitle-5;
+  }
+
+  &:hover {
+    color: var(--brand-purpe-400);
   }
 }
 
@@ -125,10 +120,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  flex: 0 1 30%;
-  @include sm {
-    display: none;
-  }
+  flex-basis: 30%;
 }
 
 .logo {
@@ -144,12 +136,12 @@
   @include text-subtitle-3;
   text-align: center;
   color: var(--neural-400);
+  @include lg {
+    @include text-subtitle-4;
+  }
 
   a {
     text-decoration: underline;
-  }
-  @include lg {
-    @include text-subtitle-4;
   }
 }
 
@@ -157,29 +149,30 @@
 .navigation {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 0.1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 16px 40px;
   @include md {
     gap: 16px 20px;
   }
   @include sm {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
     width: 100%;
+    justify-content: space-between;
     gap: 12px 0;
+  }
+  @include xs {
+    grid-template-columns: 1fr;
   }
 }
 
 .link {
   @include text-subtitle-3;
   transition: $default-transition;
+  @include sm {
+    @include text-subtitle-4;
+  }
 
   &:hover {
     color: var(--brand-purpe-400);
-  }
-  @include sm {
-    @include text-subtitle-4;
   }
 }
