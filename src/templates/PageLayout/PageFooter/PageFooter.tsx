@@ -38,8 +38,8 @@ const PageFooter: React.FC = () => {
               <div className={styles.socials}>
                 <div>
                   <p className={styles.subtitle}>{t('contact_us')}</p>
-                  <a className={styles.email} href="mailto:hearify.tech@gmail.com">
-                    hearify.tech@gmail.com
+                  <a className={styles.email} href="mailto:info@hearify.org">
+                    info@hearify.org
                   </a>
                 </div>
                 <div className={styles.socialsContainer}>
@@ -111,8 +111,8 @@ const PageFooter: React.FC = () => {
             </div>
             <div>
               <p className={styles.subtitle}>{t('contact_us')}</p>
-              <a className={styles.email} href="mailto:hearify.tech@gmail.com">
-                hearify.tech@gmail.com
+              <a className={styles.email} href="mailto:info@hearify.org">
+                info@hearify.org
               </a>
             </div>
           </div>
