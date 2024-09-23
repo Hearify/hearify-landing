@@ -4,7 +4,7 @@ import remarkAutolinkHeadings from 'remark-autolink-headings';
 
 const config = {
   i18n: {
-    locales: ['en', 'uk'],
+    locales: ['en', 'uk', 'en-GB', 'en-CA', 'en-AU', 'en-US'],
     defaultLocale: 'en',
   },
   reactStrictMode: true,
@@ -22,6 +22,26 @@ const config = {
       {
         source: '/blog/articles/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
         destination: '/library/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
+        permanent: true,
+      },
+      {
+        source: '/us',
+        destination: '/en-us',
+        permanent: true,
+      },
+      {
+        source: '/ca',
+        destination: '/en-ca',
+        permanent: true,
+      },
+      {
+        source: '/au',
+        destination: '/en-au',
+        permanent: true,
+      },
+      {
+        source: '/gb',
+        destination: '/en-gb',
         permanent: true,
       },
       {
@@ -93,20 +113,20 @@ const config = {
         source: '/blog/articles',
         destination: '/blog',
         permanent: true,
-      }
+      },
     ];
   },
-  webpack: (config) => {
+  webpack: config => {
     // camel-case style names from css modules
     config.module.rules
-        .find(({ oneOf }) => !!oneOf).oneOf
-        .filter(({ use }) => JSON.stringify(use)?.includes('css-loader'))
-        .reduce((acc, { use }) => acc.concat(use), [])
-        .forEach(({ options }) => {
-          if (options.modules) {
-            options.modules.exportLocalsConvention = 'camelCase';
-          }
-        });
+      .find(({ oneOf }) => !!oneOf)
+      .oneOf.filter(({ use }) => JSON.stringify(use)?.includes('css-loader'))
+      .reduce((acc, { use }) => acc.concat(use), [])
+      .forEach(({ options }) => {
+        if (options.modules) {
+          options.modules.exportLocalsConvention = 'camelCase';
+        }
+      });
 
     const svgoConfig = {
       plugins: [
@@ -129,7 +149,7 @@ const config = {
       options: {
         svgoConfig: svgoConfig,
       },
-    })
+    });
 
     return config;
   },
