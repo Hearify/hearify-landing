@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
 import { appWithTranslation } from 'next-i18next';
-import { useRouter } from 'next/router';
 import { Nunito, Caveat } from 'next/font/google';
 
 import PageLayout from '@/templates/PageLayout/PageLayout';
@@ -28,11 +27,6 @@ if (typeof window === 'undefined') {
 
 /* eslint-disable react/jsx-props-no-spreading */
 const App = ({ Component, pageProps }: AppProps) => {
-  const router = useRouter();
-
-  const cleanPath: string = router.asPath.split('#')[0].split('?')[0];
-  const canonicalUrl: string = process.env.NEXT_PUBLIC_BASE_URL + (router.asPath === '/' ? '' : cleanPath);
-
   return (
     <>
       <Head>
@@ -43,10 +37,15 @@ const App = ({ Component, pageProps }: AppProps) => {
 
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Hearify" />
-        <meta property="og:url" content={canonicalUrl} />
         <meta key="og:image" property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/main-image.png`} />
 
-        <link rel="canonical" href={canonicalUrl} />
+        <link rel="alternate" hrefLang="en" href="https://hearify.org/" />
+        <link rel="alternate" hrefLang="en-US" href="https://hearify.org/" />
+        <link rel="alternate" hrefLang="en-GB" href="https://hearify.org/en-gb" />
+        <link rel="alternate" hrefLang="en-CA" href="https://hearify.org/en-ca" />
+        <link rel="alternate" hrefLang="en-AU" href="https://hearify.org/en-au" />
+        <link rel="alternate" hrefLang="uk" href="https://hearify.org/uk" />
+
         <link rel="icon" href="/favicon.ico" />
 
         {/* TODO(Sasha): Add icons */}
@@ -63,7 +62,6 @@ const App = ({ Component, pageProps }: AppProps) => {
         {/* <link rel="shortcut icon" type="image/x-icon" href="/mstile-150x150.png" /> */}
         {/* <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4535ff" /> */}
 
-        <link rel="canonical" href={canonicalUrl} />
         <meta name="robots" content="index, follow" />
       </Head>
 

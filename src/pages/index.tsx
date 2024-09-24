@@ -9,6 +9,8 @@ const HomePage: NextPage = () => {
   const pageTitle = `AI Quiz Maker from PDF, Video & Text by Hearify AI Quiz Generator`;
   const pageDescription = `Transform your content with our ultimate AI question generator. Convert PDFs, texts and videos into engaging quizzes, customize questions, and provide instant feedback. Ideal for educators, students, professionals, and lifelong learners.`;
 
+  const canonicalUrl: string = process.env.NEXT_PUBLIC_BASE_URL;
+
   return (
     <>
       <Head>
@@ -16,6 +18,7 @@ const HomePage: NextPage = () => {
         <meta name="description" content={pageDescription} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
+        <link rel="canonical" href={canonicalUrl} />
       </Head>
 
       <Home />
