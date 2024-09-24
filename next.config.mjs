@@ -4,7 +4,7 @@ import remarkAutolinkHeadings from 'remark-autolink-headings';
 
 const config = {
   i18n: {
-    locales: ['en', 'uk', 'en-GB', 'en-CA', 'en-AU', 'en-US'],
+    locales: ['en', 'uk', 'en-GB', 'en-CA', 'en-AU'],
     defaultLocale: 'en',
   },
   reactStrictMode: true,
@@ -26,7 +26,7 @@ const config = {
       },
       {
         source: '/us',
-        destination: '/en-us',
+        destination: '/en',
         permanent: true,
       },
       {

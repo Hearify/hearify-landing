@@ -47,7 +47,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta key="og:image" property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/main-image.png`} />
 
         <link rel="alternate" hrefLang="en" href="https://hearify.org/" />
-        <link rel="alternate" hrefLang="en-US" href="https://hearify.org/en-us" />
+        <link rel="alternate" hrefLang="en-US" href="https://hearify.org/" />
         <link rel="alternate" hrefLang="en-GB" href="https://hearify.org/en-gb" />
         <link rel="alternate" hrefLang="en-CA" href="https://hearify.org/en-ca" />
         <link rel="alternate" hrefLang="en-AU" href="https://hearify.org/en-au" />
