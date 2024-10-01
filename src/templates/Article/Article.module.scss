@@ -140,9 +140,6 @@
   }
 
   p {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
     @include text-subtitle-2;
     margin-bottom: 24px;
   }
