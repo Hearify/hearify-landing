@@ -10,12 +10,16 @@ import type { QuizProps } from '@/templates/Quiz/Quiz';
 import type { GetServerSideProps, NextPage } from 'next';
 import type { MDXRemoteSerializeResult } from 'next-mdx-remote';
 
+import CanonicalLink from '@/containers/CanonicalLink/CanonicalLink';
+import { useRouter } from 'next/router';
+
 type MDXProps = {
   mdxSource: MDXRemoteSerializeResult;
 };
 
 /* eslint-disable react/jsx-props-no-spreading */
 const QuizPage: NextPage<QuizProps & MDXProps> = ({ quiz, mdxSource }) => {
+  const router = useRouter();
   const pageTitle = `${quiz.title}`;
   const pageDescription = quiz.description;
 
@@ -27,6 +31,7 @@ const QuizPage: NextPage<QuizProps & MDXProps> = ({ quiz, mdxSource }) => {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta key="og:image" property="og:image" content={quiz.coverUrl} />
+        <CanonicalLink router={router} />
 
         {quiz.meta &&
           Object.entries(quiz.meta).map(([name, content]) => <meta key={name} name={name} content={content} />)}
