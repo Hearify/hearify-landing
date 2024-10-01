@@ -97,11 +97,11 @@ const HomeCreateQuiz: React.FC = () => {
                 </h4>
                 <p className={styles.description}>{item.description}</p>
                 <Link href="https://app.hearify.org" className={styles.images}>
-                  {index === 0 && <Image src={mobileCreateQuizImage1} alt={currentTitle} width={350} height={400} />}
-                  {index === 1 && <Image src={mobileCreateQuizImage2} alt={currentTitle} width={450} height={400} />}
-                  {index === 2 && <Image src={mobileCreateQuizImage3} alt={currentTitle} width={450} height={400} />}
-                  {index === 3 && <Image src={mobileCreateQuizImage4} alt={currentTitle} width={400} height={300} />}
-                  {index === 4 && <Image src={mobileCreateQuizImage5} alt={currentTitle} width={750} height={400} />}
+                  {index === 0 && <Image src={mobileCreateQuizImage1} alt={currentTitle} width={400} height={400} />}
+                  {index === 1 && <Image src={mobileCreateQuizImage2} alt={currentTitle} width={400} height={400} />}
+                  {index === 2 && <Image src={mobileCreateQuizImage3} alt={currentTitle} width={400} height={400} />}
+                  {index === 3 && <Image src={mobileCreateQuizImage4} alt={currentTitle} width={400} height={400} />}
+                  {index === 4 && <Image src={mobileCreateQuizImage5} alt={currentTitle} width={400} height={400} />}
                 </Link>
               </div>
             ))}
