@@ -3,8 +3,8 @@
     "HomeHero": {
       "title": "AI Quiz Generator from PDFs, Videos & Text",
       "description": "Automatically create questions for assignments, tests, and exams from your content with our ultimate AI question generator. Ideal for educators, students, professionals, and lifelong learners.",
-      "button": "TRY FOR FREE",
-      "hint": "Loved by students and teachers in 78+ countries"
+      "button": "TRY IT NOW",
+      "hint": "Loved by students and teachers in 100+ countries"
     },
     "HomeFeatured": {
       "title": "Featured by:",
@@ -133,7 +133,7 @@
       "blocks": [
         {
           "question": "Is Hearify free?",
-          "answer": "At Hearify, we offer two options for our users. Hearify is free if you choose the Basic plan. The package includesthe creation of 30 quizzes per month, an unlimited number of students, and all core features. The Pro package will cost you $5.99 per month and provide you with 100 quizzes monthly, advanced generation quality, and access to new features."
+          "answer": "At Hearify, we offer a free version that allows you to create 5 quizzes with 5 single-choice questions. For more advanced features and higher quiz limits, paid plans are available starting from $7.99 per month."
         },
         {
           "question": "Who can use AI quiz generator?",
@@ -206,7 +206,7 @@
       "button": "JOIN OUR COMMUNITY"
     }
   },
-  "start_free": "Start for free",
+  "start_free": "Try it now",
   "ai_generate_custom_quiz": "AI Quiz Generator from PDFs, Videos & Text",
   "ai_automatically_create_questions": "Automatically create questions for assignments, tests, and exams from your content with our ultimate AI question generator. Ideal for educators, students, professionals, and lifelong learners.",
   "how_it_works": "How it works",
@@ -216,7 +216,7 @@
   "blog": "Blog",
   "faq": "FAQ",
   "log_in": "LOG IN",
-  "try_for_free": "TRY FOR FREE",
+  "try_for_free": "TRY IT NOW",
   "sign_up": "Sign up",
   "how_hearify_works": "How Hearify works",
   "upload_file": "1. Upload a file",
