@@ -28,6 +28,7 @@ const ArticlePage: NextPage<ArticleProps & MDXProps> = ({ article, headers, mdxS
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta key="og:image" property="og:image" content={article.coverUrl} />
+
         {article.meta &&
           Object.entries(article.meta).map(([name, content]) => <meta key={name} name={name} content={content} />)}
       </Head>

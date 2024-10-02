@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Script from 'next/script';
 import { appWithTranslation } from 'next-i18next';
 import { Nunito, Caveat } from 'next/font/google';
@@ -8,8 +9,6 @@ import PageLayout from '@/templates/PageLayout/PageLayout';
 import '@/styles/globals.scss';
 
 import type { AppProps } from 'next/app';
-import CanonicalLink from '@/containers/CanonicalLink/CanonicalLink';
-import { useRouter } from 'next/router';
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -30,6 +29,12 @@ if (typeof window === 'undefined') {
 /* eslint-disable react/jsx-props-no-spreading */
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
+
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL?.replace(/\/$/, '');
+  const cleanPath = router.asPath.split('#')[0].split('?')[0];
+  const canonicalEnUrl = `${baseUrl}${cleanPath === '/' ? '' : cleanPath}`;
+  const canonicalUkUrl = `${baseUrl}/uk${cleanPath === '/' ? '' : cleanPath}`;
+
   return (
     <>
       <Head>
@@ -37,14 +42,12 @@ const App = ({ Component, pageProps }: AppProps) => {
           name="viewport"
           content="minimum-scale=1, maximum-scale=5, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
-
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Hearify" />
         <meta key="og:image" property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/main-image.png`} />
         <link rel="icon" href="/favicon.ico" />
-        <CanonicalLink router={router} />
-
-        {/* TODO(Sasha): Add icons */}
+        <link rel="alternate" href={canonicalEnUrl} hrefLang="en" />
+        <link rel="alternate" href={canonicalUkUrl} hrefLang="uk" />; {/* TODO(Sasha): Add icons */}
         {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
         {/* <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /> */}
         {/* <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> */}
@@ -57,7 +60,6 @@ const App = ({ Component, pageProps }: AppProps) => {
         {/* <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" /> */}
         {/* <link rel="shortcut icon" type="image/x-icon" href="/mstile-150x150.png" /> */}
         {/* <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4535ff" /> */}
-
         <meta name="robots" content="index, follow" />
       </Head>
 
