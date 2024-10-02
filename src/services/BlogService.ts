@@ -26,7 +26,7 @@ class BlogService {
 
   public static loadArticleMarkdown = async (slug: string): Promise<string> => {
     const response = await fetch(
-      `https://firebasestorage.googleapis.com/v0/b/hearify-9dd16.appspot.com/o/articles%2F${slug}.md?alt=media`,
+      `https://firebasestorage.googleapis.com/v0/b/hearify-9dd16.appspot.com/o/articles%2F${slug}.mdx?alt=media`,
     );
     return response.text();
   };
