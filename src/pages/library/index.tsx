@@ -8,11 +8,7 @@ import { PAGE_SIZE } from '@/constants/page';
 import type { GetServerSideProps, NextPage } from 'next';
 import type { LibraryProps } from '@/templates/Library/Library';
 
-import CanonicalLink from '@/containers/CanonicalLink/CanonicalLink';
-import { useRouter } from 'next/router';
-
 const LibraryPage: NextPage<LibraryProps> = ({ quizzes, quizOfTheDay, page, count }) => {
-  const router = useRouter();
   const pageTitle = `Quiz Library — Page ${page} of ${count}`;
   const pageDescription = `Learn, Play, and Challenge Yourself! It's a fun place where you can find quizzes on all kinds of topics. Whether you want to learn something new or just have a good time, we've got quizzes for you. You can test your knowledge, challenge yourself, or simply enjoy the experience. It's all about learning and having fun!`;
   const pageKeywords = `hearify blog, ai quizzes, study tips, learning experience, ai tools, personal growth`;
@@ -25,7 +21,6 @@ const LibraryPage: NextPage<LibraryProps> = ({ quizzes, quizOfTheDay, page, coun
         <meta name="keywords" content={pageKeywords} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <CanonicalLink router={router} />
       </Head>
 
       <Library quizzes={quizzes} quizOfTheDay={quizOfTheDay} page={page} count={count} />

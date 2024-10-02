@@ -11,16 +11,12 @@ import type { ArticleProps } from '@/templates/Article/Article';
 import type { GetServerSideProps, NextPage } from 'next';
 import type { MDXRemoteSerializeResult } from 'next-mdx-remote';
 
-import CanonicalLink from '@/containers/CanonicalLink/CanonicalLink';
-import { useRouter } from 'next/router';
-
 type MDXProps = {
   mdxSource: MDXRemoteSerializeResult;
 };
 
 /* eslint-disable react/jsx-props-no-spreading */
 const ArticlePage: NextPage<ArticleProps & MDXProps> = ({ article, headers, mdxSource }) => {
-  const router = useRouter();
   const pageTitle = `${article.title}`;
   const pageDescription = article.description;
 
@@ -32,7 +28,6 @@ const ArticlePage: NextPage<ArticleProps & MDXProps> = ({ article, headers, mdxS
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta key="og:image" property="og:image" content={article.coverUrl} />
-        <CanonicalLink router={router} />
         {article.meta &&
           Object.entries(article.meta).map(([name, content]) => <meta key={name} name={name} content={content} />)}
       </Head>

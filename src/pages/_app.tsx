@@ -8,6 +8,8 @@ import PageLayout from '@/templates/PageLayout/PageLayout';
 import '@/styles/globals.scss';
 
 import type { AppProps } from 'next/app';
+import CanonicalLink from '@/containers/CanonicalLink/CanonicalLink';
+import { useRouter } from 'next/router';
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -27,6 +29,7 @@ if (typeof window === 'undefined') {
 
 /* eslint-disable react/jsx-props-no-spreading */
 const App = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -39,6 +42,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta property="og:site_name" content="Hearify" />
         <meta key="og:image" property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/main-image.png`} />
         <link rel="icon" href="/favicon.ico" />
+        <CanonicalLink router={router} />
 
         {/* TODO(Sasha): Add icons */}
         {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}

@@ -16,11 +16,9 @@ const HomePage: NextPage = () => {
         <meta name="description" content={pageDescription} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <link rel="alternate" hrefLang="en" href="https://hearify.org/" />
         <link rel="alternate" hrefLang="en-GB" href="https://hearify.org/en-gb" />
         <link rel="alternate" hrefLang="en-CA" href="https://hearify.org/en-ca" />
         <link rel="alternate" hrefLang="en-AU" href="https://hearify.org/en-au" />
-        <link rel="alternate" hrefLang="uk" href="https://hearify.org/uk" />
         <link rel="alternate" hrefLang="x-default" href="https://hearify.org/" />
       </Head>
 

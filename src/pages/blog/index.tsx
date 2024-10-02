@@ -8,11 +8,7 @@ import { PAGE_SIZE } from '@/constants/page';
 import type { GetServerSideProps, NextPage } from 'next';
 import type { BlogProps } from '@/templates/Blog/Blog';
 
-import CanonicalLink from '@/containers/CanonicalLink/CanonicalLink';
-import { useRouter } from 'next/router';
-
 const BlogPage: NextPage<BlogProps> = ({ articles, page, count }) => {
-  const router = useRouter();
   const pageTitle = `Blog — Hearify`;
   const pageDescription = `Dive into a world where artificial intelligence meets personal growth. Our blog is dedicated to providing you with engaging AI quizzes that not only test your knowledge but also enhance your learning experience. Discover insightful tips on how to maximize your study sessions, utilize AI tools for smarter learning, and continuously improve yourself.`;
   const pageKeywords = `hearify blog, ai quizzes, study tips, learning experience, ai tools, personal growth`;
@@ -24,7 +20,6 @@ const BlogPage: NextPage<BlogProps> = ({ articles, page, count }) => {
         <meta name="keywords" content={pageKeywords} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <CanonicalLink router={router} />
       </Head>
 
       <Blog articles={articles} page={page} count={count} />
