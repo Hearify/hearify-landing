@@ -35,6 +35,8 @@ const App = ({ Component, pageProps }: AppProps) => {
   const canonicalEnUrl = `${baseUrl}${cleanPath === '/' ? '' : cleanPath}`;
   const canonicalUkUrl = `${baseUrl}/uk${cleanPath === '/' ? '' : cleanPath}`;
 
+  const canonicalUrl = router.locale === 'uk' ? canonicalUkUrl : canonicalEnUrl;
+
   return (
     <>
       <Head>
@@ -47,7 +49,12 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta key="og:image" property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/main-image.png`} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="alternate" href={canonicalEnUrl} hrefLang="en" />
-        <link rel="alternate" href={canonicalUkUrl} hrefLang="uk" />; {/* TODO(Sasha): Add icons */}
+        <link rel="alternate" href={canonicalUkUrl} hrefLang="uk" />
+
+        {/* HomePage has its own canonical url with additional locales */}
+        {cleanPath !== '/' && <link rel="canonical" href={canonicalUrl} />}
+
+        {/* TODO(Sasha): Add icons */}
         {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
         {/* <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /> */}
         {/* <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> */}
