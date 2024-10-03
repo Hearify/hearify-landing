@@ -199,9 +199,9 @@
       "secondary-button": "ПЕРЕГЛЯНУТИ БІЛЬШЕ"
     },
     "BusinessHomeHero": {
-      "title": "Interactive AI Quizzes for BusinessesУКР",
-      "description": "Automate content creation for training, education, and customer engagement. Perfect for any business.",
-      "button": "GET A DEMO"
+      "title": "Інтерактивні AI-вікторини для бізнесу",
+      "description": "Автоматизуйте створення контенту для навчання, освіти та взаємодії з клієнтами. Ідеально підходить для будь-якого бізнесу.",
+      "button": "ОТРИМАТИ ДЕМО"
     }
   },
   "containers": {
