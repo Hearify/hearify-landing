@@ -197,6 +197,11 @@
       "description": "The page you’re looking for may have been moved, deleted, or the URL might be incorrect. While this content isn't available, your next quiz is just a click away.",
       "primary-button": "GENERATE QUIZ",
       "secondary-button": "EXPLORE MORE"
+    },
+    "BusinessHomeHero": {
+      "title": "Interactive AI Quizzes for BusinessesEN",
+      "description": "Automate content creation for training, education, and customer engagement. Perfect for any business.",
+      "button": "GET A DEMO"
     }
   },
   "containers": {
@@ -254,5 +259,6 @@
   "library_description": "Learn, Play, and Challenge Yourself! It's a place where you can find quizzes on all kinds of topics. Whether you want to learn something new or just have a good time, we've got quizzes for you.",
   "articles": "Articles",
   "terms": "Terms",
-  "privacy": "Privacy"
+  "privacy": "Privacy",
+  "business": "Business"
 }
