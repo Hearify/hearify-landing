@@ -1,0 +1,84 @@
+@use 'src/styles/helpers' as *;
+
+.wrapper {
+  position: relative;
+  margin-bottom: 100px;
+  @include lg {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+  }
+
+  &::before {
+    width: 466px;
+    height: 467px;
+    background: radial-gradient(rgba(187, 143, 255, 0.9) 25%, rgba(255, 255, 255, 0) 70%);
+    right: 250px;
+    top: 150px;
+    z-index: -1;
+    opacity: 0.5;
+    @include lg {
+      top: unset;
+      bottom: -150px;
+    }
+  }
+}
+
+.container {
+  position: relative;
+  margin-bottom: 100px;
+  gap: 32px;
+
+  &::before {
+    content: '';
+    position: absolute;
+  }
+
+  &::before {
+    width: 466px;
+    height: 467px;
+    background: radial-gradient(rgba(172, 154, 255, 1) 25%, rgba(255, 255, 255, 1) 70%);
+    right: 250px;
+    top: 150px;
+    z-index: -1;
+    opacity: 0.5;
+    @include lg {
+      top: unset;
+      bottom: -150px;
+    }
+  }
+}
+
+.title {
+  @include text-heading-1;
+  font-size: 64px;
+  font-weight: 800;
+  max-width: 690px;
+  margin-bottom: 68px;
+}
+
+.description {
+  @include text-subtitle-2;
+  font-weight: 400;
+  margin-bottom: 60px;
+  max-width: 384px;
+}
+
+.button {
+  width: 384px;
+  @include text-subtitle-2;
+  font-weight: 700;
+}
+
+.img {
+  position: absolute;
+  top: 30%;
+  right: 0;
+
+  & img {
+    border-radius: 20px;
+  }
+}
