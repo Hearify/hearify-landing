@@ -4,7 +4,7 @@ import remarkAutolinkHeadings from 'remark-autolink-headings';
 
 const config = {
   i18n: {
-    locales: ['en', 'uk', 'en-GB', 'en-CA', 'en-AU'],
+    locales: ['en', 'uk', 'en-gb', 'en-ca', 'en-au'],
     defaultLocale: 'en',
   },
   reactStrictMode: true,

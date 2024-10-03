@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Script from 'next/script';
 import { appWithTranslation } from 'next-i18next';
 import { Nunito, Caveat } from 'next/font/google';
@@ -27,6 +28,15 @@ if (typeof window === 'undefined') {
 
 /* eslint-disable react/jsx-props-no-spreading */
 const App = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
+
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL?.replace(/\/$/, '');
+  const cleanPath = router.asPath.split('#')[0].split('?')[0];
+  const canonicalEnUrl = `${baseUrl}${cleanPath === '/' ? '' : cleanPath}`;
+  const canonicalUkUrl = `${baseUrl}/uk${cleanPath === '/' ? '' : cleanPath}`;
+
+  const canonicalUrl = router.locale === 'uk' ? canonicalUkUrl : canonicalEnUrl;
+
   return (
     <>
       <Head>
@@ -34,19 +44,15 @@ const App = ({ Component, pageProps }: AppProps) => {
           name="viewport"
           content="minimum-scale=1, maximum-scale=5, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
-
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Hearify" />
         <meta key="og:image" property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/main-image.png`} />
-
-        <link rel="alternate" hrefLang="en" href="https://hearify.org/" />
-        <link rel="alternate" hrefLang="en-US" href="https://hearify.org/" />
-        <link rel="alternate" hrefLang="en-GB" href="https://hearify.org/en-gb" />
-        <link rel="alternate" hrefLang="en-CA" href="https://hearify.org/en-ca" />
-        <link rel="alternate" hrefLang="en-AU" href="https://hearify.org/en-au" />
-        <link rel="alternate" hrefLang="uk" href="https://hearify.org/uk" />
-
         <link rel="icon" href="/favicon.ico" />
+        <link rel="alternate" href={canonicalEnUrl} hrefLang="en" />
+        <link rel="alternate" href={canonicalUkUrl} hrefLang="uk" />
+
+        {/* HomePage has its own canonical url with additional locales */}
+        {cleanPath !== '/' && <link rel="canonical" href={canonicalUrl} />}
 
         {/* TODO(Sasha): Add icons */}
         {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
@@ -61,7 +67,6 @@ const App = ({ Component, pageProps }: AppProps) => {
         {/* <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" /> */}
         {/* <link rel="shortcut icon" type="image/x-icon" href="/mstile-150x150.png" /> */}
         {/* <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4535ff" /> */}
-
         <meta name="robots" content="index, follow" />
       </Head>
 
