@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
-import Link from 'next/link';
 
 import { featuredByBlocks } from './HomeFeatured.data';
 import styles from './HomeFeatured.module.scss';
