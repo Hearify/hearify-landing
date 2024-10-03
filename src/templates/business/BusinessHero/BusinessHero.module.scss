@@ -31,6 +31,12 @@
   position: relative;
   margin-bottom: 100px;
   gap: 32px;
+  @include lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
 
   &::before {
     content: '';
@@ -58,6 +64,10 @@
   font-weight: 800;
   max-width: 690px;
   margin-bottom: 68px;
+  @include md {
+    text-align: center;
+    margin-bottom: 0px;
+  }
 }
 
 .description {
@@ -65,12 +75,19 @@
   font-weight: 400;
   margin-bottom: 60px;
   max-width: 384px;
+  @include md {
+    text-align: center;
+    margin-bottom: 0px;
+  }
 }
 
 .button {
   width: 384px;
   @include text-subtitle-2;
   font-weight: 700;
+  @include xs {
+    width: 316px;
+  }
 }
 
 .img {
@@ -78,7 +95,16 @@
   top: 30%;
   right: 0;
 
+  @include lg {
+    position: static;
+  }
+
   & img {
     border-radius: 20px;
+    @include lg {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
   }
 }
