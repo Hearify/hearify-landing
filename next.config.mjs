@@ -26,7 +26,7 @@ const config = {
       },
       {
         source: '/us',
-        destination: '/en',
+        destination: '/',
         permanent: true,
       },
       {
