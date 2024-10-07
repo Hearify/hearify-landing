@@ -202,6 +202,11 @@
       "title": "Interactive AI Quizzes for Businesses",
       "description": "Automate content creation for training, education, and customer engagement. Perfect for any business.",
       "button": "GET A DEMO"
+    },
+    "BusinessBoostAlert": {
+      "title": "Ready to Get Started?",
+      "description": "Try our AI quiz creator now—completely free of charge!",
+      "button": "GET A DEMO"
     }
   },
   "containers": {
