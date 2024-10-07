@@ -2,36 +2,16 @@
 
 .wrapper {
   position: relative;
-  margin-bottom: 100px;
   @include lg {
-    margin-bottom: 0;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-  }
-
-  &::before {
-    width: 466px;
-    height: 467px;
-    background: radial-gradient(rgba(187, 143, 255, 0.9) 25%, rgba(255, 255, 255, 0) 70%);
-    right: 250px;
-    top: 150px;
-    z-index: -1;
-    opacity: 0.5;
-    @include lg {
-      top: unset;
-      bottom: -150px;
-    }
+    margin-bottom: 100px;
   }
 }
 
 .container {
   position: relative;
-  margin-bottom: 100px;
   gap: 32px;
-  @include lg {
+  margin-bottom: 300px;
+  @include md {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,13 +27,20 @@
     width: 466px;
     height: 467px;
     background: radial-gradient(rgba(172, 154, 255, 1) 25%, rgba(255, 255, 255, 1) 70%);
-    right: 250px;
-    top: 150px;
+
+    right: 25%;
+    top: 42%;
     z-index: -1;
     opacity: 0.5;
     @include lg {
-      top: unset;
-      bottom: -150px;
+      top: 60%;
+      left: 5%;
+    }
+    @include md {
+      width: 273.3px;
+      height: 273.88px;
+      top: 40%;
+      left: 50%;
     }
   }
 }
@@ -63,8 +50,9 @@
   font-size: 64px;
   font-weight: 800;
   max-width: 690px;
-  margin-bottom: 68px;
+  margin-bottom: 64px;
   @include md {
+    @include text-heading-4;
     text-align: center;
     margin-bottom: 0px;
   }
@@ -73,9 +61,10 @@
 .description {
   @include text-subtitle-2;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
   max-width: 384px;
   @include md {
+    @include text-main-2;
     text-align: center;
     margin-bottom: 0px;
   }
@@ -83,28 +72,33 @@
 
 .button {
   width: 384px;
-  @include text-subtitle-2;
+  @include text-button-lg;
   font-weight: 700;
   @include xs {
+    @include text-button-md;
     width: 316px;
+    margin-bottom: 40px;
   }
 }
 
 .img {
   position: absolute;
+  border-radius: 20px;
   top: 30%;
   right: 0;
-
   @include lg {
+    width: 440px;
+    height: 280px;
+    right: 5%;
+    top: 40%;
+  }
+  @include md {
+    width: 587px;
+    height: 387px;
     position: static;
   }
-
-  & img {
-    border-radius: 20px;
-    @include lg {
-      position: static;
-      width: 100%;
-      height: auto;
-    }
+  @include sm {
+    width: 100%;
+    height: auto;
   }
 }

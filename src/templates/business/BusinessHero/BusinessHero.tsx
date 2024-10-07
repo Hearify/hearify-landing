@@ -15,13 +15,11 @@ const BusinessHero = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>{t('title')}</h1>
         <p className={styles.description}>{t('description')}</p>
-        <AppButtonLink href="https://app.hearify.org/signup" size="lg" className={styles.button}>
+        <AppButtonLink className={styles.button} href="https://app.hearify.org/signup" size="lg">
           {t('button')}
           <CalendarIcon />
         </AppButtonLink>
-        <div className={styles.img}>
-          <Image src={HeroImage} alt="teamWorking" width={587} height={359} />
-        </div>
+        <Image className={styles.img} src={HeroImage} alt="teamWorking" width={587} height={359} />
       </div>
     </section>
   );
