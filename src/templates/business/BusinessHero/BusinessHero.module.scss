@@ -10,12 +10,13 @@
 .container {
   position: relative;
   gap: 32px;
-  margin-bottom: 300px;
+  margin-bottom: 232px;
   @include md {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    margin-bottom: 0;
   }
 
   &::before {

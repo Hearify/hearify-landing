@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-
 import { useTranslation } from 'next-i18next';
-import styles from './BusinessHero.module.scss';
+import { CalendarIcon } from '@heroicons/react/24/solid';
+
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import HeroImage from '@/assets/images/big-team-working.png';
-import { CalendarIcon } from '@heroicons/react/24/solid';
+import styles from './BusinessHero.module.scss';
 
 const BusinessHero = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessHomeHero' });
