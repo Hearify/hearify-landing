@@ -1,8 +1,8 @@
 {
   "templates": {
     "HomeHero": {
-      "title": "AI Quiz Generator from PDFs, Videos & Text",
-      "description": "Automatically create questions for assignments, tests, and exams from your content with our ultimate AI question generator. Ideal for educators, students, professionals, and lifelong learners.",
+      "title": "Quiz Generator from PDFs, Videos & Text",
+      "description": "Easily create questions for assignments, tests, and exams from your content with our advanced quiz generator powered by AI. Perfect tool for teachers, professionals, students and lifelong learners.",
       "button": "TRY IT NOW",
       "hint": "Loved by students and teachers in 100+ countries"
     },

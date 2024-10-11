@@ -9,10 +9,10 @@ import type { GetStaticProps, NextPage } from 'next';
 const HomePage: NextPage = () => {
   const router = useRouter();
 
-  const pageTitle = `AI Quiz Maker from PDF, Video & Text by Hearify AI Quiz Generator`;
+  const pageTitle = `AI Quiz Maker from PDF, Video & Text by Hearify Quiz Generator`;
   const pageDescription = `Transform your content with our ultimate AI question generator. Convert PDFs, texts and videos into engaging quizzes, customize questions, and provide instant feedback. Ideal for educators, students, professionals, and lifelong learners.`;
 
-  const canonicalUrl = `https://hearify.org/${router.locale}${router.asPath}`;
+  const canonicalUrl = `https://hearify.org${router.locale === 'en' ? '' : `/${router.locale}`}`;
 
   return (
     <>
