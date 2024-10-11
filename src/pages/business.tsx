@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import Business from '@/templates/business/Business';
+import Business from '@/templates/Business/Business';
 
 import type { GetStaticProps, NextPage } from 'next';
 
