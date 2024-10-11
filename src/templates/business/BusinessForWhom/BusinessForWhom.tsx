@@ -42,7 +42,7 @@ const BusinessForWhom: React.FC = () => {
   }));
 
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id="for-whom">
       <div className={styles.container}>
         <h1 className={styles.title}>{t('title')}</h1>
         {isDeviceLarge ? (

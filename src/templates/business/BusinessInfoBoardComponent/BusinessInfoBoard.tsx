@@ -35,7 +35,7 @@ const BusinessInfoBoard: React.FC<BusinessInfoBoardProos> = ({
   image3,
 }) => {
   return (
-    <section className={addStyles ? styles.wrapper2 : styles.wrapper}>
+    <section className={addStyles ? styles.wrapper2 : styles.wrapper} id="info-board">
       <BackImageComponent className={addStyles ? styles.imageBack2 : styles.imageBack} width={554} height={554} />
       <div className={styles.container}>
         <h3 className={styles.title}>{title}</h3>

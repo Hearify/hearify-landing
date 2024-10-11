@@ -4,14 +4,14 @@ import { useTranslation } from 'next-i18next';
 import { CalendarIcon } from '@heroicons/react/24/solid';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
-import HeroImage from '@/assets/images/big-team-working.png';
+import heroImage from '@/assets/images/big-team-working.png';
 import styles from './BusinessHero.module.scss';
 
 const BusinessHero: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessHomeHero' });
 
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id="hero">
       <div className={styles.container}>
         <h1 className={styles.title}>{t('title')}</h1>
         <p className={styles.description}>{t('description')}</p>
@@ -19,7 +19,7 @@ const BusinessHero: React.FC = () => {
           {t('button')}
           <CalendarIcon />
         </AppButtonLink>
-        <Image className={styles.img} src={HeroImage} alt="teamWorking" width={587} height={359} />
+        <Image className={styles.img} src={heroImage} alt="teamWorking" width={587} height={359} />
       </div>
     </section>
   );
