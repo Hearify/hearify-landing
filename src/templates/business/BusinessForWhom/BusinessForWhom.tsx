@@ -21,7 +21,7 @@ type ImagesType = {
   image: React.FC<React.SVGProps<SVGSVGElement>>;
 };
 
-const BusinessForWhom = () => {
+const BusinessForWhom: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessForWhom' });
   const { isDeviceLarge } = useDeviceDetect('md');
 

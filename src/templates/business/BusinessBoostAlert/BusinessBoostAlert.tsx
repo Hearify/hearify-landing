@@ -7,7 +7,7 @@ import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import BusinessGroupImg from '@/assets/images/business-group.png';
 import styles from './BusinessBoostAlert.module.scss';
 
-const BusinessBoostAlert = () => {
+const BusinessBoostAlert: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessBoostAlert' });
 
   return (

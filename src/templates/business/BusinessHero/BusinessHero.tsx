@@ -7,7 +7,7 @@ import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import HeroImage from '@/assets/images/big-team-working.png';
 import styles from './BusinessHero.module.scss';
 
-const BusinessHero = () => {
+const BusinessHero: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessHomeHero' });
 
   return (
