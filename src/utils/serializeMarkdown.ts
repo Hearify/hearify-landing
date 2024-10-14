@@ -3,6 +3,7 @@ import { serialize } from 'next-mdx-remote/serialize';
 
 const options = {
   mdxOptions: {
+    commonMark: true,
     rehypePlugins: [rehypeSlug],
   },
 };
