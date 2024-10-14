@@ -1,14 +1,14 @@
 import React from 'react';
 
-import styles from './AppForWhomCard.module.scss';
+import styles from './BusinessForWhomCard.module.scss';
 
-export type AppForWhomCardProps = {
+export type BusinessForWhomCardProps = {
   title: string;
   description: string;
   image: React.FC<React.SVGProps<SVGSVGElement>>;
 };
 
-const AppForWhomCard: React.FC<AppForWhomCardProps> = ({ title, description, image: ImageComponent }) => {
+const BusinessForWhomCard: React.FC<BusinessForWhomCardProps> = ({ title, description, image: ImageComponent }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageBox}>
@@ -20,4 +20,4 @@ const AppForWhomCard: React.FC<AppForWhomCardProps> = ({ title, description, ima
   );
 };
 
-export default AppForWhomCard;
+export default BusinessForWhomCard;

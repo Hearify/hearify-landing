@@ -1,9 +1,7 @@
 @use 'src/styles/helpers' as *;
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: 70px;
+  padding-top: 80px;
   @include lg {
     padding-top: 40px;
   }

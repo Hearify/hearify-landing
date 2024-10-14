@@ -1,15 +1,6 @@
 @use 'src/styles/helpers' as *;
 
 .wrapper {
-  margin-top: 100px;
-  @include lg {
-    margin: 48px;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-  }
-}
-
-.container {
   margin-bottom: 100px;
   @include lg {
     margin-bottom: 0px;
@@ -19,10 +10,10 @@
 .title {
   @include text-heading-2;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
-.cardsWrapper {
+.list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

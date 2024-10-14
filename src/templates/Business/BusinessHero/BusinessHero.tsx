@@ -12,15 +12,22 @@ const BusinessHero: React.FC = () => {
 
   return (
     <section className={styles.wrapper} id="hero">
-      <div className={styles.container}>
-        <h1 className={styles.title}>{t('title')}</h1>
-        <p className={styles.description}>{t('description')}</p>
-        <AppButtonLink className={styles.button} href="https://app.hearify.org/signup" size="lg">
-          {t('button')}
-          <CalendarIcon />
-        </AppButtonLink>
-        <Image className={styles.img} src={heroImage} alt="teamWorking" width={587} height={359} />
-      </div>
+      <h1 className={styles.title}>{t('title')}</h1>
+      <p className={styles.description}>{t('description')}</p>
+      <AppButtonLink className={styles.button} href="https://app.hearify.org/signup" size="lg">
+        {t('button')}
+        <CalendarIcon />
+      </AppButtonLink>
+
+      <Image
+        className={styles.img}
+        src={heroImage}
+        alt="Team working"
+        width={590}
+        height={360}
+        fetchPriority="high"
+        priority
+      />
     </section>
   );
 };

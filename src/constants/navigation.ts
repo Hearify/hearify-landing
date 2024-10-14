@@ -9,6 +9,10 @@ export const headerNavigation: NavigationItem[] = [
     href: '/#create-quiz',
   },
   {
+    i18nKey: 'business',
+    href: '/business',
+  },
+  {
     i18nKey: 'blog',
     href: '/blog',
   },
@@ -26,6 +30,10 @@ export const footerNavigation: NavigationItem[] = [
   {
     i18nKey: 'how_it_works',
     href: '/#create-quiz',
+  },
+  {
+    i18nKey: 'business',
+    href: '/business',
   },
   {
     i18nKey: 'blog',

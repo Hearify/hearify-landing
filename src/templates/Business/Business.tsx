@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
-import styles from './Business.module.scss';
 
 import BusinessHero from './BusinessHero/BusinessHero';
 import BusinessForWhom from './BusinessForWhom/BusinessForWhom';
@@ -16,16 +15,17 @@ import DocumentTextIcon from '@/assets/business/document-text.svg';
 import CheckCircleIcon from '@/assets/business/check-circle.svg';
 import MegaphoneIcon from '@/assets/business/megaphone.svg';
 import UserPlusIcon from '@/assets/business/user-plus.svg';
-import CurcorIcon from '@/assets/business/cursor-arrow-ripple.svg';
+import CursorIcon from '@/assets/business/cursor-arrow-ripple.svg';
 import HandUpIcon from '@/assets/business/hand-thumb-up.svg';
 import CircleStackIcon from '@/assets/business/circle-stack.svg';
 import DocumentCheckIcon from '@/assets/business/document-check.svg';
 import CheckBadgeIcon from '@/assets/business/check-badge.svg';
 import ChatIcon from '@/assets/business/chat-bubble-left-right.svg';
-import BriedcaseIcon from '@/assets/business/briefcase.svg';
+import BriefcaseIcon from '@/assets/business/briefcase.svg';
 import UserGroupIcon from '@/assets/business/user-group.svg';
 import ScienceIcon from '@/assets/business/science.svg';
 import TeacherIcon from '@/assets/business/teacher.svg';
+import styles from './Business.module.scss';
 
 type DataType = {
   title: string;
@@ -36,7 +36,7 @@ type DataType = {
   text3: string;
 };
 
-type addDataType = {
+type AddDataType = {
   href: string;
   addStyles?: boolean;
   backImg: React.FC<React.SVGProps<SVGSVGElement>>;
@@ -49,8 +49,8 @@ const Business: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessInfoBoard' });
 
   const data: DataType[] = t('data', { returnObjects: true });
-
-  const addData: addDataType[] = [
+  /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+  const addData: AddDataType[] = [
     {
       href: 'https://app.hearify.org/signup',
       backImg: TeacherIcon,
@@ -71,12 +71,12 @@ const Business: React.FC = () => {
       backImg: BoardIcon,
       image1: MegaphoneIcon,
       image2: UserPlusIcon,
-      image3: CurcorIcon,
+      image3: CursorIcon,
     },
     {
       href: 'https://app.hearify.org/signup',
       addStyles: true,
-      backImg: BriedcaseIcon,
+      backImg: BriefcaseIcon,
       image1: ClockIcon,
       image2: HandUpIcon,
       image3: CircleStackIcon,
@@ -103,16 +103,15 @@ const Business: React.FC = () => {
     ...addData[index],
   }));
 
-  console.log(combinedData);
-
   return (
     <main className={styles.wrapper}>
       <BusinessHero />
       <BusinessForWhom />
-      {combinedData.map((item, index) => {
+
+      {combinedData.map(item => {
         return (
           <BusinessInfoBoard
-            key={index}
+            key={item.title}
             title={item.title}
             description={item.description}
             button={item.button}
