@@ -96,6 +96,11 @@
   align-items: center;
   max-width: 260px;
   gap: 4px;
+  transition: $default-transition;
+
+  &:hover {
+    color: var(--brand-purpe-400);
+  }
 }
 
 .hint {

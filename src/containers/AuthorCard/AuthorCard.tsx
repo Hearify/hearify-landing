@@ -23,7 +23,7 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ author, role }) => {
 
       <div className={styles.container}>
         <div className={styles.content}>
-          <p className={styles.name}>{author.name}</p>
+          <span className={styles.name}>{author.name}</span>
 
           <div className={styles.body}>
             <p className={styles.role}>{AuthorRoleEnum[role]}</p>

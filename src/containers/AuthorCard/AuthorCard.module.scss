@@ -35,7 +35,7 @@
 
 .content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   @include sm {
     flex-direction: column;
@@ -52,6 +52,7 @@
 
 .name {
   @include text-field-lg;
+  white-space: nowrap;
 }
 
 .role {

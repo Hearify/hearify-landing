@@ -30,10 +30,10 @@ const HomeHero: React.FC = () => {
             <ArrowIcon />
           </AppButtonLink>
 
-          <div className={styles.content}>
+          <Link href="/#hearify-reviews" className={styles.content}>
             <Image src={avatarsImage} className={styles.avatars} alt="avatars" width={76} height={32} />
             <p className={styles.hint}>{t('hint')}</p>
-          </div>
+          </Link>
         </div>
 
         <Link href="https://app.hearify.org/signup">
