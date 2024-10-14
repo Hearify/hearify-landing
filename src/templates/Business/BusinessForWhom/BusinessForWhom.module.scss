@@ -1,0 +1,36 @@
+@use 'src/styles/helpers' as *;
+
+.wrapper {
+  margin-bottom: 100px;
+  @include lg {
+    margin-bottom: 0px;
+  }
+}
+
+.title {
+  @include text-heading-2;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  gap: 54px;
+}
+
+.carousel {
+  padding-bottom: 34px;
+}
+
+.dots {
+  padding: 0 4px;
+
+  svg {
+    width: 6px;
+    height: 6px;
+    fill: var(--brand-purpe-400);
+  }
+}
