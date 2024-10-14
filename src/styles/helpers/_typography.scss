@@ -1,5 +1,5 @@
-@use "variables" as *;
-@use "breakpoints" as *;
+@use 'variables' as *;
+@use 'breakpoints' as *;
 
 @mixin text-main-1 {
   font-family: $font-nunito;
@@ -186,9 +186,3 @@
   font-size: 16px;
   line-height: 150%;
 }
-
-
-
-
-
-

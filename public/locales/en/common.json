@@ -198,6 +198,97 @@
       "primary-button": "GENERATE QUIZ",
       "secondary-button": "EXPLORE MORE"
     },
+    "BusinessHomeHero": {
+      "title": "Interactive AI Quizzes for Businesses",
+      "description": "Automate content creation for training, education, and customer engagement. Perfect for any business.",
+      "button": "GET A DEMO"
+    },
+    "BusinessBoostAlert": {
+      "title": "Ready to Get Started?",
+      "description": "Try our AI quiz creator now—completely free of charge!",
+      "button": "GET A DEMO"
+    },
+    "BusinessForWhom": {
+      "title": "For whom",
+      "data": [
+        {
+          "title": "HR and Corporate Training",
+          "description": "Automate quiz creation for corporate training, monitor progress, and improve team productivity."
+        },
+        {
+          "title": "Educational Institutions",
+          "description": "AI-powered quizzes tailored for schools, universities, and online courses."
+        },
+        {
+          "title": "Marketing and Customer Engagement",
+          "description": "Use AI quizzes to increase lead generation and engage your customers with interactive content."
+        },
+        {
+          "title": "Small and Medium Businesses",
+          "description": "Affordable, easy-to-use AI quiz tools for small and medium-sized businesses."
+        },
+        {
+          "title": "Partner Programs and Agencies",
+          "description": "Offer AI quiz solutions under your brand through flexible partner programs."
+        },
+        {
+          "title": "Specialized Industries",
+          "description": "AI quizzes designed for specialized fields requiring high-level customization such as medicine, finance, and technology."
+        }
+      ]
+    },
+    "BusinessInfoBoard": {
+      "data": [
+        {
+          "title": "Effective Learning and Corporate Training",
+          "description": "Automate the process of quiz creation for corporate training and track employee progress.",
+          "button": "GET A DEMO",
+          "text1": "Automated quiz creation",
+          "text2": "Integration with LMS",
+          "text3": "Instant progress analytics"
+        },
+        {
+          "title": "AI for Automating Educational Processes",
+          "description": "Create quizzes for schools, universities, or online courses, adapted to students' knowledge levels.",
+          "button": "LEARN MORE",
+          "text1": "Automatic adaptation to knowledge levels",
+          "text2": "Instant feedback to improve learning",
+          "text3": "Quiz generation from PDFs, videos, and texts"
+        },
+        {
+          "title": "Interactive Quizzes for Customer Engagement",
+          "description": "Use AI to create quizzes that attract new customers and boost their engagement.",
+          "button": "CREATE A QUIZ",
+          "text1": "Quizzes for marketing campaigns",
+          "text2": "Increased customer engagement",
+          "text3": "Interaction analytics"
+        },
+        {
+          "title": "Affordable Solution for Small Businesses",
+          "description": "Automate learning and quiz creation, ideal for small teams.",
+          "button": "TRY FOR FREE",
+          "text1": "Quick implementation",
+          "text2": "Ease of use",
+          "text3": "Affordable pricing"
+        },
+        {
+          "title": "Partner Program for Agencies",
+          "description": "Offer automated solutions under your own brand to your clients.",
+          "button": "LEARN MORE",
+          "text1": "Flexible partnership terms",
+          "text2": "Agency-level branding",
+          "text3": "Additional revenue streams"
+        },
+        {
+          "title": "AI Quizzes for Specialized Industries",
+          "description": "Medical education, financial training, technical knowledge — all in one tool.",
+          "button": "GET INDUSTRY SOLUTION",
+          "text1": "Industry-specific training",
+          "text2": "Accurate testing and feedback",
+          "text3": "Support for various industries"
+        }
+      ]
+    },
     "TermsOfUse": {
       "title": "Terms of Use",
       "date": "(Last updated: December 29th, 2023)",
@@ -319,5 +410,6 @@
   "library_description": "Learn, Play, and Challenge Yourself! It's a place where you can find quizzes on all kinds of topics. Whether you want to learn something new or just have a good time, we've got quizzes for you.",
   "articles": "Articles",
   "terms": "Terms",
-  "privacy": "Privacy"
+  "privacy": "Privacy",
+  "business": "Business"
 }
