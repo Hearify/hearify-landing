@@ -35,13 +35,13 @@ const HomeCreateQuiz: React.FC = () => {
   const currentTitle = textSteps[activeStep].title;
   const currentDescription = textSteps[activeStep].description;
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setActiveStep(prevStep => (prevStep + 1) % textSteps.length);
-  //   }, 4000);
-  //
-  //   return () => clearInterval(interval);
-  // }, [textSteps.length]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveStep(prevStep => (prevStep + 1) % textSteps.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [textSteps.length]);
 
   return (
     <section className={styles.wrapper} id="create-quiz">
