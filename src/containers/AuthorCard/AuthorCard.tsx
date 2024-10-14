@@ -15,15 +15,21 @@ export type AuthorCardProps = {
 const AuthorCard: React.FC<AuthorCardProps> = ({ author, role }) => {
   return (
     <div className={styles.wrapper}>
-      <a href={author.linkedInUrl} target="_blank" rel="noreferrer" className={styles.avatar}>
-        <Image src={author.avatarUrl} alt={author.name} width={100} height={100} className={styles.avatarImage} />
-        {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-        <LinkedInIcon width={32} height={32} className={styles.avatarIcon} />
-      </a>
+      {role === 'author' ? (
+        <a href={author.linkedInUrl} target="_blank" rel="noreferrer" className={styles.avatar}>
+          <Image src={author.avatarUrl} alt={author.name} width={100} height={100} className={styles.avatarImage} />
+          {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
+          <LinkedInIcon width={32} height={32} className={styles.avatarIcon} />
+        </a>
+      ) : (
+        <div className={styles.avatar}>
+          <Image src={author.avatarUrl} alt={author.name} width={100} height={100} className={styles.avatarImage} />
+        </div>
+      )}
 
       <div className={styles.container}>
         <div className={styles.content}>
-          <p className={styles.name}>{author.name}</p>
+          <span className={styles.name}>{author.name}</span>
 
           <div className={styles.body}>
             <p className={styles.role}>{AuthorRoleEnum[role]}</p>

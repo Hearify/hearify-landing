@@ -69,11 +69,11 @@ const HomeCreateQuiz: React.FC = () => {
             <h4 className={styles.subtitle}>{currentTitle}</h4>
             <p className={styles.description}>{currentDescription}</p>
             <Link href="https://app.hearify.org" className={styles.images}>
-              {activeStep === 0 && <Image src={createQuizImage1} alt={currentTitle} width={350} height={400} />}
-              {activeStep === 1 && <Image src={createQuizImage2} alt={currentTitle} width={450} height={400} />}
-              {activeStep === 2 && <Image src={createQuizImage3} alt={currentTitle} width={450} height={400} />}
-              {activeStep === 3 && <Image src={createQuizImage4} alt={currentTitle} width={400} height={300} />}
-              {activeStep === 4 && <Image src={createQuizImage5} alt={currentTitle} width={750} height={400} />}
+              {activeStep === 0 && <Image src={createQuizImage1} alt={currentTitle} width={450} height={500} />}
+              {activeStep === 1 && <Image src={createQuizImage2} alt={currentTitle} width={550} height={500} />}
+              {activeStep === 2 && <Image src={createQuizImage3} alt={currentTitle} width={550} height={500} />}
+              {activeStep === 3 && <Image src={createQuizImage4} alt={currentTitle} width={550} height={500} />}
+              {activeStep === 4 && <Image src={createQuizImage5} alt={currentTitle} width={750} height={450} />}
             </Link>
           </div>
         </div>

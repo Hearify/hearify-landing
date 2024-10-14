@@ -75,8 +75,7 @@ const PageFooter: React.FC = () => {
 
         {isDeviceSmall && (
           <p className={styles.privacy}>
-            <Link href="https://terms-of-service.hearify.org/">{t('terms')}</Link> |{' '}
-            <Link href="https://privacy-policy.hearify.org/">{t('privacy')}</Link>
+            <Link href="/terms-of-use">{t('terms')}</Link> | <Link href="/privacy-policy">{t('privacy')}</Link>
           </p>
         )}
 
@@ -127,8 +126,8 @@ const PageFooter: React.FC = () => {
           {isDeviceLarge && (
             <p className={styles.privacy}>
               <Trans i18nKey="terms_of_use_and_privacy_policy">
-                Be sure to take a look at our <Link href="https://terms-of-service.hearify.org/">Terms of Use</Link> and{' '}
-                <Link href="https://privacy-policy.hearify.org/">Privacy Policy</Link>
+                Be sure to take a look at our <Link href="/terms-of-use/">Terms of Use</Link> and{' '}
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </Trans>
             </p>
           )}
