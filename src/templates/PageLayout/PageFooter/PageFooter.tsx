@@ -75,8 +75,7 @@ const PageFooter: React.FC = () => {
 
         {isDeviceSmall && (
           <p className={styles.privacy}>
-            <Link href="/terms-of-use">{t('terms')}</Link> |{' '}
-            <Link href="/privacy-policy">{t('privacy')}</Link>
+            <Link href="/terms-of-use">{t('terms')}</Link> | <Link href="/privacy-policy">{t('privacy')}</Link>
           </p>
         )}
 
