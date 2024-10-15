@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next';
 import BusinessHero from './BusinessHero/BusinessHero';
 import BusinessForWhom from './BusinessForWhom/BusinessForWhom';
 import BusinessBoostAlert from './BusinessBoostAlert/BusinessBoostAlert';
-import BusinessInfoBoard from './BusinessInfoBoardComponent/BusinessInfoBoard';
+import BusinessInfoBoard from '@/templates/Business/BusinessInfoBoard/BusinessInfoBoard';
 import SchoolIcon from '@/assets/business/school.svg';
 import BoardIcon from '@/assets/business/board.svg';
 import ClockIcon from '@/assets/business/clock.svg';
@@ -27,6 +27,8 @@ import ScienceIcon from '@/assets/business/science.svg';
 import TeacherIcon from '@/assets/business/teacher.svg';
 import styles from './Business.module.scss';
 
+import type { BusinessInfoBoardProps } from '@/templates/Business/BusinessInfoBoard/BusinessInfoBoard';
+
 type DataType = {
   title: string;
   description: string;
@@ -39,6 +41,7 @@ type DataType = {
 type AddDataType = {
   href: string;
   addStyles?: boolean;
+  showButtonIcon?: boolean;
   backImg: React.FC<React.SVGProps<SVGSVGElement>>;
   image1: React.FC<React.SVGProps<SVGSVGElement>>;
   image2: React.FC<React.SVGProps<SVGSVGElement>>;
@@ -48,11 +51,13 @@ type AddDataType = {
 const Business: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessInfoBoard' });
 
+  // TODO(Sasha): Refactor this
   const data: DataType[] = t('data', { returnObjects: true });
   /* eslint-disable @typescript-eslint/no-unsafe-assignment */
   const addData: AddDataType[] = [
     {
       href: 'https://app.hearify.org/signup',
+      showButtonIcon: true,
       backImg: TeacherIcon,
       image1: ClockIcon,
       image2: ComputerIcon,
@@ -98,7 +103,7 @@ const Business: React.FC = () => {
     },
   ];
 
-  const combinedData = data.map((item, index) => ({
+  const combinedData: BusinessInfoBoardProps[] = data.map((item, index) => ({
     ...item,
     ...addData[index],
   }));
@@ -108,25 +113,11 @@ const Business: React.FC = () => {
       <BusinessHero />
       <BusinessForWhom />
 
-      {combinedData.map(item => {
-        return (
-          <BusinessInfoBoard
-            key={item.title}
-            title={item.title}
-            description={item.description}
-            button={item.button}
-            href={item.href}
-            addStyles={item.addStyles}
-            backImg={item.backImg}
-            text1={item.text1}
-            text2={item.text2}
-            text3={item.text3}
-            image1={item.image1}
-            image2={item.image2}
-            image3={item.image3}
-          />
-        );
-      })}
+      {combinedData.map(item => (
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        <BusinessInfoBoard key={item.title} {...item} />
+      ))}
+
       <BusinessBoostAlert />
     </main>
   );

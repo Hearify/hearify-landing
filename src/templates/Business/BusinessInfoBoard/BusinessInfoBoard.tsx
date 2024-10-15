@@ -2,13 +2,14 @@ import React from 'react';
 import { CalendarIcon } from '@heroicons/react/24/solid';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
-import AppContentItem from './AppContentItem/AppContentItem';
+import BusinessInfoBoardCard from '../BusinessInfoBoardCard/BusinessInfoBoardCard';
 import styles from './BusinessInfoBoard.module.scss';
 
-export type BusinessInfoBoardProos = {
+export type BusinessInfoBoardProps = {
   title: string;
   description: string;
   button: string;
+  showButtonIcon?: boolean;
   href: string;
   addStyles?: boolean;
   text1: string;
@@ -20,11 +21,12 @@ export type BusinessInfoBoardProos = {
   image3: React.FC<React.SVGProps<SVGSVGElement>>;
 };
 
-const BusinessInfoBoard: React.FC<BusinessInfoBoardProos> = ({
+const BusinessInfoBoard: React.FC<BusinessInfoBoardProps> = ({
   title,
   description,
   button,
   href,
+  showButtonIcon = false,
   addStyles = false,
   text1,
   text2,
@@ -35,19 +37,22 @@ const BusinessInfoBoard: React.FC<BusinessInfoBoardProos> = ({
   image3,
 }) => {
   return (
-    <section className={addStyles ? styles.wrapper2 : styles.wrapper} id="info-board">
+    <section className={addStyles ? styles.wrapper2 : styles.wrapper}>
       <BackImageComponent className={addStyles ? styles.imageBack2 : styles.imageBack} width={554} height={554} />
+
       <div className={styles.container}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
+
         <div className={styles.content}>
-          <AppContentItem text={text1} image={image1} />
-          <AppContentItem text={text2} image={image2} />
-          <AppContentItem text={text3} image={image3} />
+          <BusinessInfoBoardCard text={text1} image={image1} />
+          <BusinessInfoBoardCard text={text2} image={image2} />
+          <BusinessInfoBoardCard text={text3} image={image3} />
         </div>
+
         <AppButtonLink className={styles.button} href={href} size="lg">
           {button}
-          <CalendarIcon />
+          {showButtonIcon && <CalendarIcon />}
         </AppButtonLink>
       </div>
     </section>

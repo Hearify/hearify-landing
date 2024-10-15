@@ -72,7 +72,7 @@ const BusinessForWhom: React.FC = () => {
           autoplay
         >
           {combinedData.map(item => (
-            <div key={item.title} className={styles.list}>
+            <div key={item.title} className={styles.carouselItem}>
               <BusinessForWhomCard //
                 title={item.title}
                 description={item.description}

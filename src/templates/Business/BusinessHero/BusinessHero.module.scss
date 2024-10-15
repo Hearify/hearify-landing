@@ -11,7 +11,7 @@
   @include md {
     align-items: center;
     gap: 16px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 
   &::before {
@@ -26,10 +26,6 @@
     top: 42%;
     z-index: -1;
     opacity: 0.5;
-    @include lg {
-      top: 60%;
-      left: 5%;
-    }
     @include md {
       width: 273.3px;
       height: 273.88px;
