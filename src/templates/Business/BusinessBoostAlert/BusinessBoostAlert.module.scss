@@ -73,7 +73,6 @@
 }
 
 .button {
-  @include text-subtitle-2;
   @include xs {
     width: 100% !important;
   }

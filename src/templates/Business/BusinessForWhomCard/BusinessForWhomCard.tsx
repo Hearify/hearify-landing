@@ -8,13 +8,17 @@ export type BusinessForWhomCardProps = {
   image: React.FC<React.SVGProps<SVGSVGElement>>;
 };
 
-const BusinessForWhomCard: React.FC<BusinessForWhomCardProps> = ({ title, description, image: ImageComponent }) => {
+const BusinessForWhomCard: React.FC<BusinessForWhomCardProps> = ({
+  title, //
+  description,
+  image: ImageComponent,
+}) => {
   return (
-    <div className={styles.card}>
-      <div className={styles.imageBox}>
+    <div className={styles.wrapper}>
+      <div className={styles.imageWrapper}>
         <ImageComponent className={styles.image} width={56} height={56} />
       </div>
-      <h3 className={styles.cardTitle}>{title}</h3>
+      <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
     </div>
   );

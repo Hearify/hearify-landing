@@ -1,13 +1,13 @@
 import React from 'react';
 
-import styles from './AppContentItem.module.scss';
+import styles from './BusinessInfoBoardCard.module.scss';
 
 type AppContentItemProps = {
   text: string;
   image: React.FC<React.SVGProps<SVGSVGElement>>;
 };
 
-const AppContentItem: React.FC<AppContentItemProps> = ({ text, image: ImageComponent }) => {
+const BusinessInfoBoardCard: React.FC<AppContentItemProps> = ({ text, image: ImageComponent }) => {
   return (
     <div className={styles.contentItem}>
       <div className={styles.imageBox}>
@@ -18,4 +18,4 @@ const AppContentItem: React.FC<AppContentItemProps> = ({ text, image: ImageCompo
   );
 };
 
-export default AppContentItem;
+export default BusinessInfoBoardCard;
