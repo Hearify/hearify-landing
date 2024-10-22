@@ -46,7 +46,7 @@ const BusinessForWhom: React.FC = () => {
 
   return (
     <section className={styles.wrapper} id="for-whom">
-      <h1 className={styles.title}>{t('title')}</h1>
+      <h2 className={styles.title}>{t('title')}</h2>
 
       {isDeviceLarge ? (
         <div className={styles.list}>

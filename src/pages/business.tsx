@@ -6,8 +6,8 @@ import Business from '@/templates/Business/Business';
 import type { GetStaticProps, NextPage } from 'next';
 
 const BusinessPage: NextPage = () => {
-  const pageTitle = `Hearify for Business - AI Question Generator`;
-  const pageDescription = `Transform your content with our ultimate AI question generator. Convert PDFs, texts and videos into engaging quizzes, customize questions, and provide instant feedback. Ideal for educators, students, professionals, and lifelong learners.`;
+  const pageTitle = `Interactive Quizzes for Business Driven by AI - Hearify`;
+  const pageDescription = `Tailored AI quiz solutions for HR, education, marketing, small businesses, and specialized industries. Automate learning, track progress, and engage your audience.`;
 
   return (
     <>
