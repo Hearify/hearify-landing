@@ -24,6 +24,10 @@ export const headerNavigation: NavigationItem[] = [
     i18nKey: 'faq',
     href: '/#faq',
   },
+  {
+    i18nKey: 'about_us',
+    href: '/about-us',
+  },
 ];
 
 export const footerNavigation: NavigationItem[] = [
@@ -49,6 +53,6 @@ export const footerNavigation: NavigationItem[] = [
   },
   {
     i18nKey: 'contacts',
-    href: 'https://linktr.ee/hearify.edu',
+    href: '/contact-us',
   },
 ];

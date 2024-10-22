@@ -5,7 +5,7 @@ import ArrowDown from '@/assets/icons/chevron-down.svg';
 import styles from './AppDropdown.module.scss';
 
 export type AppDropdownProps = {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   title: string;
   content: string;
 };
