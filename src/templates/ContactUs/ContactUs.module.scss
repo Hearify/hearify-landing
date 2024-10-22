@@ -91,6 +91,7 @@
 .item-title {
   @include text-heading-2;
   padding-bottom: 24px;
+  text-align: center;
 }
 
 .item-description {
