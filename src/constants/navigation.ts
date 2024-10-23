@@ -5,12 +5,12 @@ export type NavigationItem = {
 
 export const headerNavigation: NavigationItem[] = [
   {
-    i18nKey: 'how_it_works',
-    href: '/#create-quiz',
-  },
-  {
     i18nKey: 'business',
     href: '/business',
+  },
+  {
+    i18nKey: 'how_it_works',
+    href: '/#create-quiz',
   },
   {
     i18nKey: 'blog',

@@ -10,7 +10,6 @@ import HomeReviews from './HomeReviews/HomeReviews';
 import HomeAudience from './HomeAudience/HomeAudience';
 import HomeWhyUs from './HomeWhyUs/HomeWhyUs';
 import HomeFAQ from './HomeFAQ/HomeFAQ';
-import HomeAboutUs from './HomeAboutUs/HomeAboutUs';
 import styles from './Home.module.scss';
 
 // TODO(Sasha): Fix the issue with the icons
@@ -26,7 +25,6 @@ const Home: React.FC = () => {
       <HomeWhyUs />
       <JoinCommunityAlert />
       <HomeFAQ />
-      <HomeAboutUs />
       <BoostAlert />
     </main>
   );
