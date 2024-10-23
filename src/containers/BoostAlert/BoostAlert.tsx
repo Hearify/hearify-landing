@@ -6,20 +6,22 @@ import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import styles from './BoostAlert.module.scss';
 
 type PropssType = {
-  t: TFunction;
+  title: string;
+  text: string;
+  button: string;
   image: StaticImageData;
   width: number;
   height: number;
 };
 
-const BoostAlert: React.FC<PropssType> = ({ t, image, width, height }) => {
+const BoostAlert: React.FC<PropssType> = ({ title, text, button, image, width, height }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <h3 className={styles.title}>{t('title')}</h3>
-        <p className={styles.text}>{t('text')}</p>
+           <h3 className={styles.title}>{title}</h3>
+        <p className={styles.text}>{text}</p>
         <AppButtonLink className={styles.button} href="https://app.hearify.org/signup" width="240px" size="lg">
-          {t('button')}
+          {button}
         </AppButtonLink>
       </div>
 

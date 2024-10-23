@@ -18,7 +18,6 @@ type DataType = {
 
 const ContactUs: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.ContactUs' });
-  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.AboutUsBoostAlert' });
 
   const data: DataType[] = t('data', { returnObjects: true });
 
@@ -41,7 +40,6 @@ const ContactUs: React.FC = () => {
           </li>
         ))}
       </ul>
-      <BoostAlert t={tBoostAlert} image={GroupImg} width={360} height={280} />
     </main>
   );
 };

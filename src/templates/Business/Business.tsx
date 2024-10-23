@@ -51,7 +51,6 @@ type AddDataType = {
 
 const Business: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessInfoBoard' });
-  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.BusinessBoostAlert' });
 
   // TODO(Sasha): Refactor this
   const data: DataType[] = t('data', { returnObjects: true });
@@ -120,7 +119,14 @@ const Business: React.FC = () => {
         <BusinessInfoBoard key={item.title} {...item} />
       ))}
 
-      <BoostAlert t={tBoostAlert} image={GroupImg} width={380} height={250} />
+      <BoostAlert
+        title={t('alert-title')}
+        text={t('alert-text')}
+        button={t('alert-button')}
+        image={GroupImg}
+        width={380}
+        height={250}
+      />
     </main>
   );
 };

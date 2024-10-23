@@ -174,24 +174,6 @@
         }
       ]
     },
-    "HomeAboutUs": {
-      "title": "About us",
-      "description": "We're Hearify, an AI-powered platform that helps you create personalized quizzes effortlessly, improving learning for everyone. Designed for both individuals and B2B users, our smart quiz creation tools make it easy for businesses to create customized assessments that drive engagement and improve learning outcomes. Whether you're an educator, corporate trainer, or an organization looking to optimize learning, Hearify provides the tools to make test creation faster and more efficient.",
-      "blocks": [
-        {
-          "name": "Sofiia Shaposhnikova",
-          "position": "Founder & CEO"
-        },
-        {
-          "name": "Valerii Bandurko",
-          "position": "Co-founder & CMO"
-        },
-        {
-          "name": "Sofiia Luchina",
-          "position": "Product Designer"
-        }
-      ]
-    },
     "PageNotFound": {
       "title": "Page Not Found",
       "description": "The page you’re looking for may have been moved, deleted, or the URL might be incorrect. While this content isn't available, your next quiz is just a click away.",
@@ -201,11 +183,6 @@
     "BusinessHomeHero": {
       "title": "Interactive AI Quizzes for Businesses",
       "description": "Automate content creation for training, education, and customer engagement. Perfect for any business.",
-      "button": "GET A DEMO"
-    },
-    "BusinessBoostAlert": {
-      "title": "Ready to Get Started?",
-      "text": "Try our AI quiz creator now—completely free of charge!",
       "button": "GET A DEMO"
     },
     "BusinessForWhom": {
@@ -287,7 +264,10 @@
           "text2": "Accurate testing and feedback",
           "text3": "Support for various industries"
         }
-      ]
+      ],
+      "alert-title": "Ready to Get Started?",
+      "alert-text": "Try our AI quiz creator now—completely free of charge!",
+      "alert-button": "GET A DEMO"
     },
     "TermsOfUse": {
       "title": "Terms of Use",
@@ -371,7 +351,10 @@
           "title": "Why Hearify?",
           "description": "We understand that time is one of the most valuable resources in today's fast-paced world. Our platform is designed to eliminate the manual work of test development, allowing educators and companies to focus on what really matters - improving learning outcomes. Hearify provides powerful artificial intelligence tools that automatically generate questions from PDFs, videos, and text, ensuring that tests are tailored to the needs of each learner."
         }
-      ]
+      ],
+      "alert-title": "Get in touch",
+      "alert-text": "Interested in learning more about Hearify? Contact us to find out how we can help you optimize your testing and learning processes",
+      "alert-button": "CONTACT US"
     },
     "AboutUsCommitted": {
       "title": "We are committed to",
@@ -491,11 +474,6 @@
           ]
         }
       ]
-    },
-    "AboutUsBoostAlert": {
-      "title": "Get in touch",
-      "text": "Interested in learning more about Hearify? Contact us to find out how we can help you optimize your testing and learning processes",
-      "button": "CONTACT US"
     },
     "HomeBoostAlert": {
       "title": "Boost Your Knowledge: Create Personalized Quizzes with AI!",

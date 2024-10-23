@@ -22,7 +22,6 @@ export type QuizProps = {
 
 const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
   const { t } = useTranslation();
-  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.HomeBoostAlert' });
 
   return (
     <div className={styles.wrapper}>
@@ -67,7 +66,14 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
         </article>
       </div>
 
-      <BoostAlert t={tBoostAlert} image={GroupImg} width={360} height={300} />
+      <BoostAlert
+        title={t('boost_your_knowledge')}
+        text={t('try_out_ai_quiz')}
+        button={t('try_for_free')}
+        image={GroupImg}
+        width={360}
+        height={300}
+      />
 
       <div className={styles.suggestions}>
         <AppHeading variant="h2">{t('related_quizzes')}</AppHeading>

@@ -31,7 +31,6 @@ const Article: React.FC<ArticleProps> = ({
 }) => {
   const router = useRouter();
   const { t } = useTranslation();
-  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.HomeBoostAlert' });
 
   const cleanPath: string = router.asPath.split('#')[0].split('?')[0];
 
@@ -113,7 +112,14 @@ const Article: React.FC<ArticleProps> = ({
         </div>
       )}
 
-      <BoostAlert t={tBoostAlert} image={GroupImg} width={360} height={300} />
+      <BoostAlert
+        title={t('boost_your_knowledge')}
+        text={t('try_out_ai_quiz')}
+        button={t('try_for_free')}
+        image={GroupImg}
+        width={360}
+        height={300}
+      />
 
       <div className={styles.suggestions}>
         <AppHeading variant="h2">{t('related_posts')}</AppHeading>

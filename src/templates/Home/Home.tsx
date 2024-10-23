@@ -16,7 +16,7 @@ import styles from './Home.module.scss';
 
 // TODO(Sasha): Fix the issue with the icons
 const Home: React.FC = () => {
-  const { t } = useTranslation('common', { keyPrefix: 'templates.HomeBoostAlert' });
+  const { t } = useTranslation();
 
   return (
     <main className={styles.wrapper}>
@@ -29,7 +29,14 @@ const Home: React.FC = () => {
       <HomeWhyUs />
       <JoinCommunityAlert />
       <HomeFAQ />
-      <BoostAlert t={t} image={GroupImg} width={360} height={300} />
+      <BoostAlert
+        title={t('boost_your_knowledge')}
+        text={t('try_out_ai_quiz')}
+        button={t('try_for_free')}
+        image={GroupImg}
+        width={360}
+        height={300}
+      />
     </main>
   );
 };

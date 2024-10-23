@@ -26,7 +26,6 @@ const Blog: React.FC<BlogProps> = ({
   count,
 }) => {
   const { t } = useTranslation();
-  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.HomeBoostAlert' });
 
   const router = useRouter();
 
@@ -71,7 +70,14 @@ const Blog: React.FC<BlogProps> = ({
         <AppPagination page={page} count={count} onChange={handlePageChange} />
       </div>
 
-      <BoostAlert t={tBoostAlert} image={GroupImg} width={360} height={300} />
+      <BoostAlert
+        title={t('boost_your_knowledge')}
+        text={t('try_out_ai_quiz')}
+        button={t('try_for_free')}
+        image={GroupImg}
+        width={360}
+        height={300}
+      />
     </div>
   );
 };

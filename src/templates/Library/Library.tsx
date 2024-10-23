@@ -23,7 +23,6 @@ export type LibraryProps = {
 
 const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay, page, count }) => {
   const { t } = useTranslation();
-  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.HomeBoostAlert' });
 
   const router = useRouter();
 
@@ -90,7 +89,14 @@ const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay, page, count })
         <AppPagination page={page} count={count} onChange={handlePageChange} />
       </div>
 
-      <BoostAlert t={tBoostAlert} image={GroupImg} width={360} height={300} />
+      <BoostAlert
+        title={t('boost_your_knowledge')}
+        text={t('try_out_ai_quiz')}
+        button={t('try_for_free')}
+        image={GroupImg}
+        width={360}
+        height={300}
+      />
     </div>
   );
 };
