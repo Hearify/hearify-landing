@@ -41,7 +41,7 @@ const BusinessInfoBoard: React.FC<BusinessInfoBoardProps> = ({
       <BackImageComponent className={addStyles ? styles.imageBack2 : styles.imageBack} width={554} height={554} />
 
       <div className={styles.container}>
-        <h3 className={styles.title}>{title}</h3>
+        <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
 
         <div className={styles.content}>

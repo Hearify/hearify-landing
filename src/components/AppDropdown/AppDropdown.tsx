@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-
+import cn from 'classnames';
 import ArrowUp from '@/assets/icons/chevron-up.svg';
 import ArrowDown from '@/assets/icons/chevron-down.svg';
 import styles from './AppDropdown.module.scss';
 
 export type AppDropdownProps = {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   title: string;
   content: string;
 };
@@ -32,12 +32,11 @@ const AppDropdown: React.FC<AppDropdownProps> = ({
   return (
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/interactive-supports-focus
     <div className={styles.wrapper} role="button" onClick={handleClick}>
-      <div className={styles.header}>
+      <div className={cn(styles.header, [icon && styles.headerIcon])}>
         <span className={styles.icon}>{icon}</span>
         <span className={styles.title}>{title}</span>
         <span className={styles.arrow}>{isOpen ? <ArrowUp /> : <ArrowDown />}</span>
       </div>
-
       <div className={styles.content} ref={contentRef}>
         <p>{content}</p>
       </div>

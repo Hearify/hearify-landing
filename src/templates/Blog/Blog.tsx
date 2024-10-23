@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
+import GroupImg from '@/assets/images/blog-group.png';
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import AppHeading from '@/components/AppHeading/AppHeading';
 import ArticleCard from '@/containers/ArticleCard/ArticleCard';
@@ -25,6 +26,7 @@ const Blog: React.FC<BlogProps> = ({
   count,
 }) => {
   const { t } = useTranslation();
+
   const router = useRouter();
 
   const handlePageChange = async (newPage: number): Promise<void> => {
@@ -68,7 +70,14 @@ const Blog: React.FC<BlogProps> = ({
         <AppPagination page={page} count={count} onChange={handlePageChange} />
       </div>
 
-      <BoostAlert />
+      <BoostAlert
+        title={t('boost_your_knowledge')}
+        text={t('try_out_ai_quiz')}
+        button={t('try_for_free')}
+        image={GroupImg}
+        width={360}
+        height={300}
+      />
     </div>
   );
 };

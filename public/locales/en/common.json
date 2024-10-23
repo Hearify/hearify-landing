@@ -174,24 +174,6 @@
         }
       ]
     },
-    "HomeAboutUs": {
-      "title": "About us",
-      "description": "We're Hearify, an AI-powered platform that helps you create personalized quizzes effortlessly, improving learning for everyone. Designed for both individuals and B2B users, our smart quiz creation tools make it easy for businesses to create customized assessments that drive engagement and improve learning outcomes. Whether you're an educator, corporate trainer, or an organization looking to optimize learning, Hearify provides the tools to make test creation faster and more efficient.",
-      "blocks": [
-        {
-          "name": "Sofiia Shaposhnikova",
-          "position": "Founder & CEO"
-        },
-        {
-          "name": "Valerii Bandurko",
-          "position": "Co-founder & CMO"
-        },
-        {
-          "name": "Sofiia Luchina",
-          "position": "Product Designer"
-        }
-      ]
-    },
     "PageNotFound": {
       "title": "Page Not Found",
       "description": "The page you’re looking for may have been moved, deleted, or the URL might be incorrect. While this content isn't available, your next quiz is just a click away.",
@@ -201,11 +183,6 @@
     "BusinessHomeHero": {
       "title": "Interactive AI Quizzes for Businesses",
       "description": "Automate content creation for training, education, and customer engagement. Perfect for any business.",
-      "button": "GET A DEMO"
-    },
-    "BusinessBoostAlert": {
-      "title": "Ready to Get Started?",
-      "description": "Try our AI quiz creator now—completely free of charge!",
       "button": "GET A DEMO"
     },
     "BusinessForWhom": {
@@ -287,7 +264,10 @@
           "text2": "Accurate testing and feedback",
           "text3": "Support for various industries"
         }
-      ]
+      ],
+      "alert-title": "Ready to Get Started?",
+      "alert-text": "Try our AI quiz creator now—completely free of charge!",
+      "alert-button": "GET A DEMO"
     },
     "TermsOfUse": {
       "title": "Terms of Use",
@@ -353,9 +333,155 @@
       "children": "<h2>Children's Privacy</h2><p>Our Services are not intended for use by children under the age of 13 («Children»).</p><p>We do not knowingly collect personally identifiable information from Children under 13. If you become aware that a Child has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from Children without verification of parental consent, we take steps to remove that information from our servers.</p>",
       "changes": "<h2>Changes to This Privacy Policy</h2><p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p><p>We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update «effective date» at the top of this Privacy Policy.</p><p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>",
       "contact-us": "<h2>Contact Us</h2><p>If you have any questions about this Privacy Policy, please contact us by email: <a href='mailto:info@hearify.org'>info@hearify.org</a>.</p>"
+    },
+    "AboutUs": {
+      "title": "About us",
+      "bottom-title": "Our vision for the future",
+      "description": "We aim to expand Hearify globally, making it the leading solution for creating AI-powered tests in the education and corporate sectors. Our roadmap includes developing new AI functionality, entering new markets, and forming partnerships with educational platforms and businesses. We are excited to continue innovating and growing together with our users.",
+      "data": [
+        {
+          "title": "Our mission",
+          "description": "At Hearify, we believe in simplifying and revolutionizing the learning process through automation. Our mission is to empower educators, students, and businesses by providing an advanced AI-powered platform for creating personalized tests and assessments quickly and efficiently. By automating routine test creation tasks, we aim to save time and resources while increasing the effectiveness of knowledge assessment."
+        },
+        {
+          "title": "Our story",
+          "description": "Hearify was born out of a deep understanding of the challenges that educators and businesses face in developing personalized learning materials. Our CEO, Sofia Shaposhnikova, with her background and research in artificial intelligence, saw a clear need to automate the creation of tests and assessments. Together with a team of professionals, we have created a solution that uses artificial intelligence to make the learning process more flexible, adaptive, and engaging."
+        },
+        {
+          "title": "Why Hearify?",
+          "description": "We understand that time is one of the most valuable resources in today's fast-paced world. Our platform is designed to eliminate the manual work of test development, allowing educators and companies to focus on what really matters - improving learning outcomes. Hearify provides powerful artificial intelligence tools that automatically generate questions from PDFs, videos, and text, ensuring that tests are tailored to the needs of each learner."
+        }
+      ],
+      "alert-title": "Get in touch",
+      "alert-text": "Interested in learning more about Hearify? Contact us to find out how we can help you optimize your testing and learning processes",
+      "alert-button": "CONTACT US"
+    },
+    "AboutUsCommitted": {
+      "title": "We are committed to",
+      "data": [
+        { "title": "Efficiency", "description": "Reducing the time and effort spent on test creation." },
+        {
+          "title": "Personalization",
+          "description": "Provide a personalized learning experience using artificial intelligence-based tools."
+        },
+        {
+          "title": "Innovation",
+          "description": "Continuously improve our platform based on user feedback and the latest advances in artificial intelligence."
+        }
+      ]
+    },
+    "AboutUsTeam": {
+      "title": "Meet our team",
+      "description": "We are a team of passionate professionals with diverse knowledge and experience",
+      "data": [
+        {
+          "title": "Sofiia Shaposhnikova",
+          "text": "CEO & Founder",
+          "description": "Sofiia has extensive experience in artificial intelligence and IT product management. She has worked as an AI engineer at startups and research institutions, including the University of Toronto. She leads the strategic direction and development of Hearify."
+        },
+        {
+          "title": "Valerii Bandurko",
+          "text": "CMO and co-founder",
+          "description": "With 12 years of experience in digital marketing and 8 years in EdTech, Valeriy is responsible for marketing strategy and customer acquisition at Hearify."
+        },
+        {
+          "title": "Sofiia Luchina",
+          "text": "Lead Designer",
+          "description": "Sofia is an expert in UX/UI design and prototyping, ensuring that our platform offers an intuitive and seamless user experience."
+        },
+        {
+          "title": "Sasha Humeniuk",
+          "text": "Frontend Developer",
+          "description": "A former front-end developer at SKELAR and AQA engineer, Sasha leads the development and technical support of the Hearify platform."
+        }
+      ]
+    },
+    "AboutUsValues": {
+      "title": "Our values",
+      "data": [
+        {
+          "title": "User-centricity",
+          "description": "Our platform is built around the needs of our users. We constantly listen to feedback and quickly implement improvements to ensure the best possible experience."
+        },
+        {
+          "title": "Adaptability",
+          "description": "In an ever-evolving education and technology landscape, we strive to remain flexible and responsive to new trends and challenges."
+        },
+        {
+          "title": "Ethical innovation",
+          "description": "We believe in ethical business practices and transparency in everything we do. Our platform is designed to improve learning and development in an inclusive and accessible way."
+        }
+      ]
+    },
+    "ContactUs": {
+      "title": "Contact us",
+      "description": "We'd love to hear from you! We value communication and are always ready to help you. Whether you want to learn more about our platform, need support, or want to explore partnership opportunities, our team is always just a message away. Let us know how we can help you!",
+      "data": [
+        {
+          "title": "General inquiries",
+          "description": "Have a question about Hearify or how we can help you streamline your testing and learning processes? Reach out to us at:",
+          "links": [
+            {
+              "name": "Email: [info@hearify.org]",
+              "link": "mailto:info@hearify.org"
+            }
+          ]
+        },
+        {
+          "title": "Business inquiries",
+          "description": "Interested in partnering with us, or exploring B2B solutions for your organization? Contact our business team to discuss how Hearify can meet your needs.",
+          "links": [
+            {
+              "name": "Business Email: [business@hearify.org]",
+              "link": "mailto:business@hearify.org"
+            }
+          ]
+        },
+        {
+          "title": "Business inquiriesmedia & press",
+          "description": "For media inquiries, interviews, or press releases, please contact:",
+          "links": [
+            {
+              "name": "Press Email: [partnership@hearify.org]",
+              "link": "mailto:partnership@hearify.org"
+            }
+          ]
+        },
+        {
+          "title": "Follow us",
+          "description": "Stay connected and follow us on social media for the latest updates, news, and tips:",
+          "links": [
+            {
+              "name": "LinkedIn: [LinkedIn link]",
+              "link": "https://www.linkedin.com/company/hearify/"
+            },
+            {
+              "name": "Facebook: [Facebook link]",
+              "link": "https://www.facebook.com/people/Hearify/61552644703836/"
+            },
+            {
+              "name": "Instagram: [Instagram link]",
+              "link": "https://www.instagram.com/hearify.tech/"
+            },
+            {
+              "name": "YouTube: [YouTube link]",
+              "link": "https://hearify.org/en"
+            },
+            {
+              "name": "TikTok: [TikTok link]",
+              "link": "https://hearify.org/en"
+            }
+          ]
+        }
+      ]
+    },
+    "HomeBoostAlert": {
+      "title": "Boost Your Knowledge: Create Personalized Quizzes with AI!",
+      "text": "Try our AI quiz creator now—completely free of charge!",
+      "button": "TRY IT NOW"
     }
   },
-    "containers": {
+  "containers": {
     "JoinCommunityAlert": {
       "title": "Join our community!",
       "description": "Hearify is here to help you learn faster and more efficiently. Join our Facebook community to get fast feedback on your questions and talk with people who have the same interests.",
@@ -411,5 +537,7 @@
   "articles": "Articles",
   "terms": "Terms",
   "privacy": "Privacy",
-  "business": "Business"
+  "business": "Business",
+
+  "about_us": "About Us"
 }

@@ -5,12 +5,12 @@ export type NavigationItem = {
 
 export const headerNavigation: NavigationItem[] = [
   {
-    i18nKey: 'how_it_works',
-    href: '/#create-quiz',
-  },
-  {
     i18nKey: 'business',
     href: '/business',
+  },
+  {
+    i18nKey: 'how_it_works',
+    href: '/#create-quiz',
   },
   {
     i18nKey: 'blog',
@@ -21,8 +21,12 @@ export const headerNavigation: NavigationItem[] = [
     href: '/library',
   },
   {
-    i18nKey: 'faq',
-    href: '/#faq',
+    i18nKey: 'about_us',
+    href: '/about-us',
+  },
+  {
+    i18nKey: 'contacts',
+    href: '/contact-us',
   },
 ];
 
@@ -49,6 +53,6 @@ export const footerNavigation: NavigationItem[] = [
   },
   {
     i18nKey: 'contacts',
-    href: 'https://linktr.ee/hearify.edu',
+    href: '/contact-us',
   },
 ];

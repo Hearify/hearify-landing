@@ -1,5 +1,7 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 
+import GroupImg from '@/assets/images/blog-group.png';
 import JoinCommunityAlert from '@/containers/JoinCommunityAlert/JoinCommunityAlert';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import HomeHero from './HomeHero/HomeHero';
@@ -10,11 +12,12 @@ import HomeReviews from './HomeReviews/HomeReviews';
 import HomeAudience from './HomeAudience/HomeAudience';
 import HomeWhyUs from './HomeWhyUs/HomeWhyUs';
 import HomeFAQ from './HomeFAQ/HomeFAQ';
-import HomeAboutUs from './HomeAboutUs/HomeAboutUs';
 import styles from './Home.module.scss';
 
 // TODO(Sasha): Fix the issue with the icons
 const Home: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <main className={styles.wrapper}>
       <HomeHero />
@@ -26,8 +29,14 @@ const Home: React.FC = () => {
       <HomeWhyUs />
       <JoinCommunityAlert />
       <HomeFAQ />
-      <HomeAboutUs />
-      <BoostAlert />
+      <BoostAlert
+        title={t('boost_your_knowledge')}
+        text={t('try_out_ai_quiz')}
+        button={t('try_for_free')}
+        image={GroupImg}
+        width={360}
+        height={300}
+      />
     </main>
   );
 };

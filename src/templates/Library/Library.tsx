@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 
+import GroupImg from '@/assets/images/blog-group.png';
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import AppHeading from '@/components/AppHeading/AppHeading';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
@@ -22,6 +23,7 @@ export type LibraryProps = {
 
 const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay, page, count }) => {
   const { t } = useTranslation();
+
   const router = useRouter();
 
   const handlePageChange = async (newPage: number): Promise<void> => {
@@ -87,7 +89,14 @@ const Library: React.FC<LibraryProps> = ({ quizzes, quizOfTheDay, page, count })
         <AppPagination page={page} count={count} onChange={handlePageChange} />
       </div>
 
-      <BoostAlert />
+      <BoostAlert
+        title={t('boost_your_knowledge')}
+        text={t('try_out_ai_quiz')}
+        button={t('try_for_free')}
+        image={GroupImg}
+        width={360}
+        height={300}
+      />
     </div>
   );
 };
