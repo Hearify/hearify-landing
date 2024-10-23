@@ -21,12 +21,12 @@ export const headerNavigation: NavigationItem[] = [
     href: '/library',
   },
   {
-    i18nKey: 'faq',
-    href: '/#faq',
-  },
-  {
     i18nKey: 'about_us',
     href: '/about-us',
+  },
+  {
+    i18nKey: 'contacts',
+    href: '/contact-us',
   },
 ];
 

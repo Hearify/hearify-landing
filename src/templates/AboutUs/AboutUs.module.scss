@@ -98,6 +98,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   margin-bottom: 160px;
   gap: 19px;
   @include md {
@@ -112,5 +113,4 @@
 .box-description {
   @include text-subtitle-2;
   max-width: 610px;
-  text-align: center;
 }
