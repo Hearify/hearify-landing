@@ -1,25 +1,29 @@
 import React from 'react';
-import Image from 'next/image';
-import { useTranslation } from 'next-i18next';
+import { TFunction } from 'next-i18next';
+import Image, { StaticImageData } from 'next/image';
 
-import BlogGroupImg from '@/assets/images/blog-group.png';
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import styles from './BoostAlert.module.scss';
 
-const BoostAlert: React.FC = () => {
-  const { t } = useTranslation();
+type PropssType = {
+  t: TFunction;
+  image: StaticImageData;
+  width: number;
+  height: number;
+};
 
+const BoostAlert: React.FC<PropssType> = ({ t, image, width, height }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <h3 className={styles.title}>{t('boost_your_knowledge')}</h3>
-        <p className={styles.text}>{t('try_out_ai_quiz')}</p>
+        <h3 className={styles.title}>{t('title')}</h3>
+        <p className={styles.text}>{t('text')}</p>
         <AppButtonLink className={styles.button} href="https://app.hearify.org/signup" width="240px" size="lg">
-          {t('try_for_free')}
+          {t('button')}
         </AppButtonLink>
       </div>
 
-      <Image src={BlogGroupImg} alt="AI group of people" width={350} height={300} className={styles.image} />
+      <Image src={image} alt="AI group of people" width={width} height={height} className={styles.image} />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 
+import GroupImg from '@/assets/images/business-group.png';
 import BusinessHero from './BusinessHero/BusinessHero';
 import BusinessForWhom from './BusinessForWhom/BusinessForWhom';
-import BusinessBoostAlert from './BusinessBoostAlert/BusinessBoostAlert';
 import BusinessInfoBoard from '@/templates/Business/BusinessInfoBoard/BusinessInfoBoard';
 import SchoolIcon from '@/assets/business/school.svg';
 import BoardIcon from '@/assets/business/board.svg';
@@ -28,6 +28,7 @@ import TeacherIcon from '@/assets/business/teacher.svg';
 import styles from './Business.module.scss';
 
 import type { BusinessInfoBoardProps } from '@/templates/Business/BusinessInfoBoard/BusinessInfoBoard';
+import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 
 type DataType = {
   title: string;
@@ -50,6 +51,7 @@ type AddDataType = {
 
 const Business: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessInfoBoard' });
+  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.BusinessBoostAlert' });
 
   // TODO(Sasha): Refactor this
   const data: DataType[] = t('data', { returnObjects: true });
@@ -118,7 +120,7 @@ const Business: React.FC = () => {
         <BusinessInfoBoard key={item.title} {...item} />
       ))}
 
-      <BusinessBoostAlert />
+      <BoostAlert t={tBoostAlert} image={GroupImg} width={380} height={250} />
     </main>
   );
 };

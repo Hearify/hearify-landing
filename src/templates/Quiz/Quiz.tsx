@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 
+import GroupImg from '@/assets/images/blog-group.png';
 import AppBreadcrumbs from '@/components/AppBreadcrumbs/AppBreadcrumbs';
 import AuthorCard from '@/containers/AuthorCard/AuthorCard';
 import styles from './Quiz.module.scss';
@@ -21,6 +22,7 @@ export type QuizProps = {
 
 const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
   const { t } = useTranslation();
+  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.HomeBoostAlert' });
 
   return (
     <div className={styles.wrapper}>
@@ -65,7 +67,7 @@ const Quiz: React.FC<QuizProps> = ({ quiz, children }) => {
         </article>
       </div>
 
-      <BoostAlert />
+      <BoostAlert t={tBoostAlert} image={GroupImg} width={360} height={300} />
 
       <div className={styles.suggestions}>
         <AppHeading variant="h2">{t('related_quizzes')}</AppHeading>

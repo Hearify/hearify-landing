@@ -1,7 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 
-import AboutUsBoostAlert from '@/containers/AboutUsBoostAlert/AboutUsBoostAlert';
+import GroupImg from '@/assets/images/about-us/group-about-us.png';
+import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import styles from './ContactUs.module.scss';
 
 type LinkType = {
@@ -17,6 +18,8 @@ type DataType = {
 
 const ContactUs: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.ContactUs' });
+  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.AboutUsBoostAlert' });
+
   const data: DataType[] = t('data', { returnObjects: true });
 
   return (
@@ -38,7 +41,7 @@ const ContactUs: React.FC = () => {
           </li>
         ))}
       </ul>
-      <AboutUsBoostAlert />
+      <BoostAlert t={tBoostAlert} image={GroupImg} width={360} height={280} />
     </main>
   );
 };

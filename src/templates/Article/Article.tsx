@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
+import GroupImg from '@/assets/images/blog-group.png';
 import AppBreadcrumbs from '@/components/AppBreadcrumbs/AppBreadcrumbs';
 import AuthorCard from '@/containers/AuthorCard/AuthorCard';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
@@ -30,6 +31,7 @@ const Article: React.FC<ArticleProps> = ({
 }) => {
   const router = useRouter();
   const { t } = useTranslation();
+  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.HomeBoostAlert' });
 
   const cleanPath: string = router.asPath.split('#')[0].split('?')[0];
 
@@ -111,7 +113,7 @@ const Article: React.FC<ArticleProps> = ({
         </div>
       )}
 
-      <BoostAlert />
+      <BoostAlert t={tBoostAlert} image={GroupImg} width={360} height={300} />
 
       <div className={styles.suggestions}>
         <AppHeading variant="h2">{t('related_posts')}</AppHeading>

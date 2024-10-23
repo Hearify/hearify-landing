@@ -1,5 +1,7 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 
+import GroupImg from '@/assets/images/blog-group.png';
 import JoinCommunityAlert from '@/containers/JoinCommunityAlert/JoinCommunityAlert';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import HomeHero from './HomeHero/HomeHero';
@@ -14,6 +16,8 @@ import styles from './Home.module.scss';
 
 // TODO(Sasha): Fix the issue with the icons
 const Home: React.FC = () => {
+  const { t } = useTranslation('common', { keyPrefix: 'templates.HomeBoostAlert' });
+
   return (
     <main className={styles.wrapper}>
       <HomeHero />
@@ -25,7 +29,7 @@ const Home: React.FC = () => {
       <HomeWhyUs />
       <JoinCommunityAlert />
       <HomeFAQ />
-      <BoostAlert />
+      <BoostAlert t={t} image={GroupImg} width={360} height={300} />
     </main>
   );
 };

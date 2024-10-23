@@ -205,7 +205,7 @@
     },
     "BusinessBoostAlert": {
       "title": "Ready to Get Started?",
-      "description": "Try our AI quiz creator now—completely free of charge!",
+      "text": "Try our AI quiz creator now—completely free of charge!",
       "button": "GET A DEMO"
     },
     "BusinessForWhom": {
@@ -491,6 +491,16 @@
           ]
         }
       ]
+    },
+    "AboutUsBoostAlert": {
+      "title": "Get in touch",
+      "text": "Interested in learning more about Hearify? Contact us to find out how we can help you optimize your testing and learning processes",
+      "button": "CONTACT US"
+    },
+    "HomeBoostAlert": {
+      "title": "Boost Your Knowledge: Create Personalized Quizzes with AI!",
+      "text": "Try our AI quiz creator now—completely free of charge!",
+      "button": "TRY IT NOW"
     }
   },
   "containers": {
@@ -550,8 +560,6 @@
   "terms": "Terms",
   "privacy": "Privacy",
   "business": "Business",
-  "get_in_touch": "Get in touch",
-  "interested_in_learning": "Interested in learning more about Hearify? Contact us to find out how we can help you optimize your testing and learning processes",
-  "contact_us_alert": "CONTACT US",
+
   "about_us": "About Us"
 }

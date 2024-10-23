@@ -1,7 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 
-import AboutUsBoostAlert from '@/containers/AboutUsBoostAlert/AboutUsBoostAlert';
+import GroupImg from '@/assets/images/about-us/group-about-us.png';
+import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import AboutUsCommitted from './AboutUsCommitted/AboutUsCommitted';
 import AboutUsValues from './AboutUsValues/AboutUsValues';
 import AboutUsTeam from './AboutUsTeam/AboutUsTeam';
@@ -14,6 +15,7 @@ type DataType = {
 
 const AboutUs: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.AboutUs' });
+  const { t: tBoostAlert } = useTranslation('common', { keyPrefix: 'templates.AboutUsBoostAlert' });
 
   const data: DataType[] = t('data', { returnObjects: true });
 
@@ -35,7 +37,7 @@ const AboutUs: React.FC = () => {
         <h2 className={styles.boxTitle}>{t('bottom-title')}</h2>
         <p className={styles.boxDescription}>{t('description')}</p>
       </div>
-      <AboutUsBoostAlert />
+      <BoostAlert t={tBoostAlert} image={GroupImg} width={360} height={280} />
     </main>
   );
 };
