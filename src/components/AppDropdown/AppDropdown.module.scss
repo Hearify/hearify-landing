@@ -1,4 +1,4 @@
-@use "src/styles/helpers" as *;
+@use 'src/styles/helpers' as *;
 
 .wrapper {
   overflow: hidden;
@@ -20,8 +20,12 @@
 .header {
   @include text-subtitle-3;
   display: flex;
-  gap: 16px;
+  gap: 0;
   align-items: center;
+
+  &--icon {
+    gap: 16px;
+  }
 }
 
 .content {
@@ -31,8 +35,8 @@
   overflow: hidden;
   color: var(--general-black);
   transition:
-          max-height 0.3s ease-out,
-          padding 0.3s ease-out;
+    max-height 0.3s ease-out,
+    padding 0.3s ease-out;
 }
 
 .arrow {
@@ -44,4 +48,3 @@
     transition: 0.5s;
   }
 }
-
