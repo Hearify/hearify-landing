@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import ContactUs from '@/templates/ContactUs/ContactUs';
+
 import type { GetStaticProps, NextPage } from 'next';
 
 const ContactUsPage: NextPage = () => {

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
+
 import ArrowUp from '@/assets/icons/chevron-up.svg';
 import ArrowDown from '@/assets/icons/chevron-down.svg';
 import styles from './AppDropdown.module.scss';

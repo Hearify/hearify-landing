@@ -36,13 +36,14 @@ const AboutUs: React.FC = () => {
         <h2 className={styles.boxTitle}>{t('bottom-title')}</h2>
         <p className={styles.boxDescription}>{t('description')}</p>
       </div>
-        <BoostAlert
-           title={t('alert-title')}
-           text={t('alert-text')}
-           button={t('alert-button')}
-           image={GroupImg}
-           width={360}
-           height={280} />
+      <BoostAlert
+        title={t('alert-title')}
+        text={t('alert-text')}
+        button={t('alert-button')}
+        image={GroupImg}
+        width={360}
+        height={280}
+      />
     </main>
   );
 };

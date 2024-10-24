@@ -1,8 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 
-import GroupImg from '@/assets/images/about-us/group-about-us.png';
-import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import styles from './ContactUs.module.scss';
 
 type LinkType = {

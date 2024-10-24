@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'next-i18next';
 
 import GroupImg from '@/assets/images/business-group.png';
+import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import BusinessHero from './BusinessHero/BusinessHero';
 import BusinessForWhom from './BusinessForWhom/BusinessForWhom';
 import BusinessInfoBoard from '@/templates/Business/BusinessInfoBoard/BusinessInfoBoard';
@@ -28,7 +29,6 @@ import TeacherIcon from '@/assets/business/teacher.svg';
 import styles from './Business.module.scss';
 
 import type { BusinessInfoBoardProps } from '@/templates/Business/BusinessInfoBoard/BusinessInfoBoard';
-import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 
 type DataType = {
   title: string;
