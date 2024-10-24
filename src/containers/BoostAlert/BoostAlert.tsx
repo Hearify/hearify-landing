@@ -1,11 +1,12 @@
 import React from 'react';
-import { TFunction } from 'next-i18next';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import styles from './BoostAlert.module.scss';
 
-type PropssType = {
+import type { StaticImageData } from 'next/image';
+
+type BoostAlertProps = {
   title: string;
   text: string;
   button: string;
@@ -14,11 +15,11 @@ type PropssType = {
   height: number;
 };
 
-const BoostAlert: React.FC<PropssType> = ({ title, text, button, image, width, height }) => {
+const BoostAlert: React.FC<BoostAlertProps> = ({ title, text, button, image, width, height }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-           <h3 className={styles.title}>{title}</h3>
+        <h3 className={styles.title}>{title}</h3>
         <p className={styles.text}>{text}</p>
         <AppButtonLink className={styles.button} href="https://app.hearify.org/signup" width="240px" size="lg">
           {button}
