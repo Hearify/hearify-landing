@@ -418,22 +418,22 @@
       "description": "We'd love to hear from you! We value communication and are always ready to help you. Whether you want to learn more about our platform, need support, or want to explore partnership opportunities, our team is always just a message away. Let us know how we can help you!",
       "data": [
         {
-          "title": "General inquiries",
-          "description": "Have a question about Hearify or how we can help you streamline your testing and learning processes? Reach out to us at:",
+          "title": "Business inquiries",
+          "description": "Interested in partnering with us, or exploring B2B solutions for your organization? Contact our business team to discuss how Hearify can meet your needs.",
           "links": [
             {
-              "name": "Email: [info@hearify.org]",
+              "name": "Email: info@hearify.org",
               "link": "mailto:info@hearify.org"
             }
           ]
         },
         {
-          "title": "Business inquiries",
-          "description": "Interested in partnering with us, or exploring B2B solutions for your organization? Contact our business team to discuss how Hearify can meet your needs.",
+          "title": "General inquiries",
+          "description": "Have a question about Hearify or how we can help you streamline your testing and learning processes? Reach out to us at:",
           "links": [
             {
-              "name": "Business Email: [business@hearify.org]",
-              "link": "mailto:business@hearify.org"
+              "name": "Email: hearify.tech@gmail.com",
+              "link": "mailto:hearify.tech@gmail.com"
             }
           ]
         },
@@ -442,34 +442,8 @@
           "description": "For media inquiries, interviews, or press releases, please contact:",
           "links": [
             {
-              "name": "Press Email: [partnership@hearify.org]",
+              "name": "Email: partnership@hearify.org",
               "link": "mailto:partnership@hearify.org"
-            }
-          ]
-        },
-        {
-          "title": "Follow us",
-          "description": "Stay connected and follow us on social media for the latest updates, news, and tips:",
-          "links": [
-            {
-              "name": "LinkedIn: [LinkedIn link]",
-              "link": "https://www.linkedin.com/company/hearify/"
-            },
-            {
-              "name": "Facebook: [Facebook link]",
-              "link": "https://www.facebook.com/people/Hearify/61552644703836/"
-            },
-            {
-              "name": "Instagram: [Instagram link]",
-              "link": "https://www.instagram.com/hearify.tech/"
-            },
-            {
-              "name": "YouTube: [YouTube link]",
-              "link": "https://hearify.org/en"
-            },
-            {
-              "name": "TikTok: [TikTok link]",
-              "link": "https://hearify.org/en"
             }
           ]
         }
