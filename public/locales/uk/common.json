@@ -436,58 +436,32 @@
       "description": "Ми завжди раді почути вас! Ми цінуємо спілкування і завжди готові допомогти. Якщо ви хочете дізнатися більше про нашу платформу, потребуєте підтримки або бажаєте розглянути можливості співпраці, наша команда завжди на зв’язку. Дайте нам знати, як ми можемо вам допомогти!",
       "data": [
         {
-          "title": "Загальні питання",
-          "description": "Є питання щодо Hearify або як ми можемо допомогти оптимізувати ваші процеси тестування та навчання? Зв'яжіться з нами за адресою:",
+          "title": "Бізнес-питання",
+          "description": "Цікавитесь партнерством або досліджуєте B2B рішення для вашої організації? Зв'яжіться з нашою бізнес-командою, щоб обговорити, як Hearify може задовольнити ваші потреби.",
           "links": [
             {
-              "name": "Email: [info@hearify.org]",
+              "name": "Email: info@hearify.org",
               "link": "mailto:info@hearify.org"
             }
           ]
         },
         {
-          "title": "Бізнес-питання",
-          "description": "Цікавитесь партнерством або досліджуєте B2B рішення для вашої організації? Зв'яжіться з нашою бізнес-командою, щоб обговорити, як Hearify може задовольнити ваші потреби.",
+          "title": "Загальні питання",
+          "description": "Є питання до команди продукту Hearify? Ідеї щодо оптимізації ваших процесів тестування та навчання? Зв'яжіться з нами.",
           "links": [
             {
-              "name": "Бізнес Email: [business@hearify.org]",
-              "link": "mailto:business@hearify.org"
+              "name": "Email: hearify.tech@gmail.com",
+              "link": "mailto:hearify.tech@gmail.com"
             }
           ]
         },
         {
           "title": "Медіа та преса",
-          "description": "Для запитів від медіа, інтерв'ю або прес-релізів, будь ласка, зв'яжіться з нами:",
+          "description": "Для запитів від медіа, інтерв'ю або прес-релізів, будь ласка, зв'яжіться з нами.",
           "links": [
             {
-              "name": "Прес Email: [partnership@hearify.org]",
+              "name": "Email: partnership@hearify.org",
               "link": "mailto:partnership@hearify.org"
-            }
-          ]
-        },
-        {
-          "title": "Слідкуйте за нами",
-          "description": "Залишайтеся на зв’язку та слідкуйте за нами в соціальних мережах, щоб отримувати останні оновлення, новини та поради:",
-          "links": [
-            {
-              "name": "LinkedIn: [LinkedIn посилання]",
-              "link": "https://www.linkedin.com/company/hearify/"
-            },
-            {
-              "name": "Facebook: [Facebook посилання]",
-              "link": "https://www.facebook.com/people/Hearify/61552644703836/"
-            },
-            {
-              "name": "Instagram: [Instagram посилання]",
-              "link": "https://www.instagram.com/hearify.tech/"
-            },
-            {
-              "name": "YouTube: [YouTube посилання]",
-              "link": "https://hearify.org/ua"
-            },
-            {
-              "name": "TikTok: [TikTok посилання]",
-              "link": "https://hearify.org/ua"
             }
           ]
         }
