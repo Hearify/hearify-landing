@@ -13,6 +13,7 @@ type DataType = {
   title: string;
   text: string;
   description: string;
+  link: string;
 };
 
 const AboutUsTeam: React.FC = () => {
@@ -28,13 +29,13 @@ const AboutUsTeam: React.FC = () => {
         {data.map((item, index) => (
           <li key={item.title} className={styles.item}>
             <div className={styles.content}>
-              <div className={styles.image}>
+              <a href={item.link} target="_blank" className={styles.image}>
                 {index === 0 && <Image alt="Person" src={AboutUs1} width={100} height={100} />}
                 {index === 1 && <Image alt="Person" src={AboutUs2} width={100} height={100} />}
                 {index === 2 && <Image alt="Person" src={AboutUs3} width={100} height={100} />}
                 {index === 3 && <Image alt="Person" src={AboutUs4} width={100} height={100} />}
                 <LinkedinIcon />
-              </div>
+              </a>
               <div>
                 <h4 className={styles.itemTitle}>{item.title}</h4>
                 <p className={styles.text}>{item.text}</p>
