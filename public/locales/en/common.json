@@ -377,22 +377,26 @@
         {
           "title": "Sofiia Shaposhnikova",
           "text": "CEO & Founder",
-          "description": "Sofiia has extensive experience in artificial intelligence and IT product management. She has worked as an AI engineer at startups and research institutions, including the University of Toronto. She leads the strategic direction and development of Hearify."
+          "description": "Sofiia has extensive experience in artificial intelligence and IT product management. She has worked as an AI engineer at startups and research institutions, including the University of Toronto. She leads the strategic direction and development of Hearify.",
+          "link": "https://www.linkedin.com/in/sofiia-shaposhnikova/"
         },
         {
           "title": "Valerii Bandurko",
           "text": "CMO and co-founder",
-          "description": "With 12 years of experience in digital marketing and 8 years in EdTech, Valeriy is responsible for marketing strategy and customer acquisition at Hearify."
+          "description": "With 12 years of experience in digital marketing and 8 years in EdTech, Valeriy is responsible for marketing strategy and customer acquisition at Hearify.",
+          "link": "https://www.linkedin.com/in/valerii-bandurko/"
         },
         {
           "title": "Sofiia Luchina",
           "text": "Lead Designer",
-          "description": "Sofia is an expert in UX/UI design and prototyping, ensuring that our platform offers an intuitive and seamless user experience."
+          "description": "Sofia is an expert in UX/UI design and prototyping, ensuring that our platform offers an intuitive and seamless user experience.",
+          "link": "https://www.linkedin.com/in/sofiia-luchina/"
         },
         {
           "title": "Sasha Humeniuk",
           "text": "Frontend Developer",
-          "description": "A former front-end developer at SKELAR and AQA engineer, Sasha leads the development and technical support of the Hearify platform."
+          "description": "A former front-end developer at SKELAR and AQA engineer, Sasha leads the development and technical support of the Hearify platform.",
+          "link": "https://www.linkedin.com/in/oleksandrhumeniuk/"
         }
       ]
     },
