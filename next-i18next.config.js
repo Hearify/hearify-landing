@@ -1,30 +1,35 @@
 module.exports = {
+  debug: process.env.NODE_ENV === 'development',
   i18n: {
-    debug: process.env.NODE_ENV === 'development',
     locales: ['en', 'uk', 'en-GB', 'en-CA', 'en-AU'],
     defaultLocale: 'en',
-    localeDetection: false,
+    localeDetection: true,
     domains: [
       {
-        domain: 'ca.example',
+        domain: 'ca.hearify.org',
         defaultLocale: 'en-CA',
       },
       {
-        domain: 'au.example',
+        domain: 'au.hearify.org',
         defaultLocale: 'en-AU',
       },
       {
-        domain: 'ua.example',
+        domain: 'ua.hearify.org',
         defaultLocale: 'uk',
       },
       {
-        domain: 'uk.example',
+        domain: 'uk.hearify.org',
         defaultLocale: 'en-GB',
       },
       {
-        domain: 'example',
+        domain: 'hearify.org',
         defaultLocale: 'en',
       },
     ],
   },
 };
+
+// uk.hearify.org (Британія)
+// ca.hearify.org (Канада)
+// au.hearify.org (Австралія)
+// ua.hearify.org (Україна)
