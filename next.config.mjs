@@ -1,12 +1,16 @@
 import withMDX from '@next/mdx';
 import remarkSlug from 'remark-slug';
 import remarkAutolinkHeadings from 'remark-autolink-headings';
+import i18nConf from './next-i18next.config.js';
+
+const addLangSubdomainUrl = (baseUrl, lang) => {
+  const url = new URL(baseUrl);
+  url.hostname = `${lang}.${url.hostname.split('.').slice(1).join('.')}`;
+  return url.toString();
+};
 
 const config = {
-  i18n: {
-    locales: ['en', 'uk', 'en-gb', 'en-ca', 'en-au'],
-    defaultLocale: 'en',
-  },
+  i18n: i18nConf.i18n,
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   images: {
@@ -18,32 +22,35 @@ const config = {
     ],
   },
   async redirects() {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
     return [
+      {
+        source: '/en-gb',
+        destination: addLangSubdomainUrl(baseUrl, 'uk'),
+        permanent: true,
+      },
+      {
+        source: '/en-ca',
+        destination: addLangSubdomainUrl(baseUrl, 'ca'),
+        permanent: true,
+      },
+      {
+        source: '/en-au',
+        destination: addLangSubdomainUrl(baseUrl, 'au'),
+        permanent: true,
+      },
+      {
+        source: '/uk',
+        destination: addLangSubdomainUrl(baseUrl, 'ua'),
+        permanent: true,
+      },
       {
         source: '/blog/articles/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
         destination: '/library/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
         permanent: true,
       },
-      {
-        source: '/us',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/ca',
-        destination: '/en-ca',
-        permanent: true,
-      },
-      {
-        source: '/au',
-        destination: '/en-au',
-        permanent: true,
-      },
-      {
-        source: '/gb',
-        destination: '/en-gb',
-        permanent: true,
-      },
+
       {
         source: '/blog/articles/world-war-2-quiz-test-your-knowledge-of-history',
         destination: '/library/world-war-2-quiz-test-your-knowledge-of-history',
