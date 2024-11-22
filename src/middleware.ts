@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server';
+
 import type { NextRequest } from 'next/server';
 
+// eslint-disable-next-line import/prefer-default-export
 export function middleware(request: NextRequest) {
   const host = request.headers.get('host') || '';
   const subdomain = host.split('.')[0];
-  const pathname = request.nextUrl.pathname;
+  const { pathname } = request.nextUrl;
 
   const subdomainLocaleMap: Record<string, string> = {
     ua: 'uk',
