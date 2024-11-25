@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useMemo } from 'react';
 
 import Home from '@/templates/Home/Home';
 
@@ -12,7 +13,13 @@ const HomePage: NextPage = () => {
   const pageTitle = `AI Quiz Maker from PDF, Video & Text by Hearify Quiz Generator`;
   const pageDescription = `Transform your content with our ultimate AI question generator. Convert PDFs, texts and videos into engaging quizzes, customize questions, and provide instant feedback. Ideal for educators, students, professionals, and lifelong learners.`;
 
-  const canonicalUrl = `https://hearify.org${router.locale === 'en' ? '' : `/${router.locale}`}`;
+  const canonicalUrl = useMemo<string>(() => {
+    if (router.locale === 'en-CA') return 'https://ca.hearify.org';
+    if (router.locale === 'en-AU') return 'https://au.hearify.org';
+    if (router.locale === 'en-GB') return 'https://uk.hearify.org';
+    if (router.locale === 'uk') return 'https://ua.hearify.org';
+    return 'https://hearify.org';
+  }, [router.locale]);
 
   return (
     <>
@@ -21,10 +28,6 @@ const HomePage: NextPage = () => {
         <meta name="description" content={pageDescription} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <link rel="alternate" hrefLang="en-GB" href="https://hearify.org/en-gb" />
-        <link rel="alternate" hrefLang="en-CA" href="https://hearify.org/en-ca" />
-        <link rel="alternate" hrefLang="en-AU" href="https://hearify.org/en-au" />
-        <link rel="alternate" hrefLang="x-default" href="https://hearify.org" />
         <link rel="canonical" href={canonicalUrl} />
       </Head>
 
