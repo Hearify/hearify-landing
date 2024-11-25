@@ -30,10 +30,9 @@ if (typeof window === 'undefined') {
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL?.replace(/\/$/, '');
   const cleanPath = router.asPath.split('#')[0].split('?')[0];
-  const canonicalEnUrl = `${baseUrl}${cleanPath === '/' ? '' : cleanPath}`;
-  const canonicalUkUrl = `${baseUrl}/uk${cleanPath === '/' ? '' : cleanPath}`;
+  const canonicalEnUrl = `https://hearify.org${cleanPath === '/' ? '' : cleanPath}`;
+  const canonicalUkUrl = `https://ua.hearify.org${cleanPath === '/' ? '' : cleanPath}`;
 
   const canonicalUrl = router.locale === 'uk' ? canonicalUkUrl : canonicalEnUrl;
 
