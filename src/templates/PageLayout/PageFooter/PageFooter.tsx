@@ -7,9 +7,22 @@ import logoImg from '@/assets/images/logo.png';
 import FacebookIcon from '@/assets/icons/facebook.svg';
 import LinkedInIcon from '@/assets/icons/linkedin.svg';
 import InstagramIcon from '@/assets/icons/instagram.svg';
+import Australia from '@/assets/flags/australia.svg';
+import UK from '@/assets/flags/uk.svg';
+import Ukraine from '@/assets/flags/ukraine.svg';
+import USA from '@/assets/flags/usa.svg';
+import Canada from '@/assets/flags/сanada.svg';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import { footerNavigation } from '@/constants/navigation';
 import styles from './PageFooter.module.scss';
+
+const localLinks = [
+  { country: 'Canada', icon: <Canada />, domain: 'ca.hearify.org' },
+  { country: 'Australia', icon: <Australia />, domain: 'au.hearify.org' },
+  { country: 'United Kingdom', icon: <UK />, domain: 'uk.hearify.org' },
+  { country: 'United States', icon: <USA />, domain: 'hearify.org' },
+  { country: 'Ukraine', icon: <Ukraine />, domain: 'ua.hearify.org' },
+];
 
 const PageFooter: React.FC = () => {
   const { t } = useTranslation();
@@ -21,13 +34,22 @@ const PageFooter: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.phoneFooter}>
           {isDeviceSmall && (
-            <nav className={styles.navigation}>
-              {footerNavigation.map(item => (
-                <Link key={item.href} href={item.href} className={styles.link}>
-                  {t(item.i18nKey)}
-                </Link>
-              ))}
-            </nav>
+            <div className={styles.navLinksWrapper}>
+              <nav className={styles.navigation}>
+                {footerNavigation.map(item => (
+                  <Link key={item.href} href={item.href} className={styles.link}>
+                    {t(item.i18nKey)}
+                  </Link>
+                ))}
+              </nav>
+              <ul className={styles.localLinks}>
+                {localLinks.map(link => (
+                  <li>
+                    <a href={link.domain}>{link.icon}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
 
           {isDeviceSmall && (
@@ -133,15 +155,27 @@ const PageFooter: React.FC = () => {
           )}
         </div>
 
-        {isDeviceLarge && (
-          <nav className={styles.navigation}>
-            {footerNavigation.map(item => (
-              <Link key={item.href} href={item.href} className={styles.link}>
-                {t(item.i18nKey)}
-              </Link>
-            ))}
-          </nav>
-        )}
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+          {isDeviceLarge && (
+            <nav className={styles.navigation}>
+              {footerNavigation.map(item => (
+                <Link key={item.href} href={item.href} className={styles.link}>
+                  {t(item.i18nKey)}
+                </Link>
+              ))}
+            </nav>
+          )}
+
+          {isDeviceLarge && (
+            <ul className={styles.localLinks}>
+              {localLinks.map(link => (
+                <li>
+                  <a href={`https://${link.domain}`}>{link.icon}</a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
     </div>
   );

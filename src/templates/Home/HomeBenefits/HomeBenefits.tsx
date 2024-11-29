@@ -5,7 +5,12 @@ import AppHeading from '@/components/AppHeading/AppHeading';
 import ClockIcon from '@/assets/icons/clock.svg';
 import LanguageIcon from '@/assets/icons/language.svg';
 import MenuIcon from '@/assets/icons/menu.svg';
-import BoardIcon from '@/assets/icons/board.svg';
+
+import CustomizationIcon from '@/assets/icons/customize.svg';
+import MediaIcon from '@/assets/icons/media.svg';
+import AnalyticsIcon from '@/assets/icons/analytics.svg';
+import InteractiveIcon from '@/assets/icons/interactive.svg';
+import IntegrationIcon from '@/assets/icons/integration.svg';
 import styles from './HomeBenefits.module.scss';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import AppDropdown from '@/components/AppDropdown/AppDropdown';
@@ -37,7 +42,11 @@ const HomeBenefits: React.FC = () => {
                 {index === 0 && <ClockIcon />}
                 {index === 1 && <MenuIcon />}
                 {index === 2 && <LanguageIcon />}
-                {index === 3 && <BoardIcon />}
+                {index === 3 && <CustomizationIcon />}
+                {index === 4 && <MediaIcon />}
+                {index === 5 && <AnalyticsIcon />}
+                {index === 6 && <InteractiveIcon />}
+                {index === 7 && <IntegrationIcon />}
               </div>
 
               <div className={styles.content}>
@@ -57,7 +66,11 @@ const HomeBenefits: React.FC = () => {
                   {index === 0 && <ClockIcon />}
                   {index === 1 && <MenuIcon />}
                   {index === 2 && <LanguageIcon />}
-                  {index === 3 && <BoardIcon />}
+                  {index === 3 && <CustomizationIcon />}
+                  {index === 4 && <MediaIcon />}
+                  {index === 5 && <AnalyticsIcon />}
+                  {index === 6 && <InteractiveIcon />}
+                  {index === 7 && <IntegrationIcon />}
                 </div>
               }
               title={block.title}

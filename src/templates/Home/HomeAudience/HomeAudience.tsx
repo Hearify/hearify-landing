@@ -9,6 +9,7 @@ import SchoolIcon from '@/assets/icons/school.svg';
 import styles from './HomeAudience.module.scss';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import AppDropdown from '@/components/AppDropdown/AppDropdown';
+import cn from 'classnames';
 
 type AudienceBlock = {
   title: string;
@@ -33,16 +34,15 @@ const HomeAudience: React.FC = () => {
       {isDeviceLarge ? (
         <ul className={styles.list}>
           {audienceBlocks.map((item, index) => (
-            <li key={item.title} className={styles.item}>
-              <div className={styles.image}>
-                {index === 0 && <TeacherIcon />}
-                {index === 1 && <StudentIcon />}
-                {index === 2 && <OfficeIcon />}
-                {index === 3 && <SchoolIcon />}
-              </div>
-
+            <li
+              key={item.title}
+              className={cn(styles.item, index === audienceBlocks.length - 1 && styles.itemHighlight)}
+            >
               <div className={styles.content}>
-                <h3 className={styles.subtitle}>{item.title}</h3>
+                <div className={styles.titleWrapper}>
+                  <div className={styles.bullet}></div>
+                  <h3 className={styles.subtitle}>{item.title}</h3>
+                </div>
                 <p className={styles.text}>{item.text}</p>
               </div>
             </li>

@@ -14,16 +14,22 @@
   }
 }
 
-.list {
+.slider {
+  animation: scroll 40s linear infinite;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1000px;
-  row-gap: 56px;
-  column-gap: 32px;
+  width: 100vw;
+  gap: 56px;
   @include md {
     margin-bottom: 24px;
   }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.slide {
+  cursor: pointer;
 }
 
 .image {
@@ -33,5 +39,14 @@
   }
   @include sm {
     height: 30px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(var(--total-width) * 2));
   }
 }

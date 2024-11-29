@@ -1,47 +1,38 @@
-import React, { useState, useMemo } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 
 import { featuredByBlocks } from './HomeFeatured.data';
 import styles from './HomeFeatured.module.scss';
-import useDeviceDetect from '@/hooks/useDeviceDetect';
-import AppButton from '@/components/AppButton/AppButton';
-
-import type { FeaturedBlock } from './HomeFeatured.data';
 
 const HomeFeatured: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.HomeFeatured' });
 
-  const { isDeviceLarge } = useDeviceDetect('md');
-  const [isLoadMore, setIsLoadMore] = useState<boolean>(false);
+  const sliderRef = useRef<HTMLDivElement | null>(null);
 
-  const blocks = useMemo<FeaturedBlock[]>(() => {
-    if (isDeviceLarge) return featuredByBlocks;
-    if (isLoadMore) return featuredByBlocks;
-    return featuredByBlocks.slice(0, 7);
-  }, [isDeviceLarge, isLoadMore]);
+  useEffect(() => {
+    if (sliderRef.current) {
+      const slideWidth = sliderRef.current.offsetWidth;
+      sliderRef.current.style.setProperty('--total-width', `-${slideWidth}px`);
+    }
+  }, []);
 
   return (
     <section className={styles.wrapper} id="featured-by">
       <h2 className={styles.title}>{t('title')}</h2>
-
-      <div className={styles.list}>
-        {blocks.map(item => (
-          <Image
-            key={item.title} //
-            src={item.imageUrl}
-            alt={item.title}
-            height={60}
-            className={styles.image}
-          />
+      <div className={styles.slider} ref={sliderRef}>
+        {[...featuredByBlocks, ...featuredByBlocks].map((item, index) => (
+          <div className={styles.slide}>
+            <Image
+              key={`${index}`} //
+              src={item.imageUrl}
+              alt={item.title}
+              height={60}
+              className={styles.image}
+            />
+          </div>
         ))}
       </div>
-
-      {!isDeviceLarge && !isLoadMore && (
-        <AppButton variant="secondary" width="200px" onClick={() => setIsLoadMore(true)}>
-          {t('button')}
-        </AppButton>
-      )}
     </section>
   );
 };

@@ -1,10 +1,10 @@
 {
   "templates": {
     "HomeHero": {
-      "title": "Quiz Generator from PDFs, Videos & Text",
-      "description": "Easily create questions for assignments, tests, and exams from your content with our advanced quiz generator powered by AI. Perfect tool for teachers, professionals, students and lifelong learners.",
-      "button": "TRY IT NOW",
-      "hint": "Loved by students and teachers in 100+ countries"
+      "title": "AI-Powered Tool for Tests, Surveys, and Interactive Content Creation",
+      "description": "Transform any text, PDF, or video into interactive quizzes, surveys, or assessments. Ideal for educators, HR teams, event planners, and professionals looking to engage audiences, gather insights, or gamify experiences across multiple industries.",
+      "button": "TRY FOR FREE",
+      "hint": "Loved by users in 100+ countries"
     },
     "HomeFeatured": {
       "title": "Featured by:",
@@ -41,20 +41,36 @@
       "description": "Our AI quiz maker offers a wide range of benefits for first-time and skilled users. The key advantages include but not limited to:",
       "benefits": [
         {
-          "title": "Quick Creation in One Click!",
-          "description": "Students, scholars, and business owners usually struggle to balance personal, academic, and work commitments. At Hearify, we offer a fast AI quiz generator that can create a detailed quiz within minutes. Save time usually needed to prepare a quiz manually."
+          "title": "Create in one click",
+          "description": "Our AI test creation tool lets you generate a complete test in minutes. It's the perfect solution for those who are pressed for time, whether they're students, business leaders, or teachers who need to get quality results quickly"
         },
         {
-          "title": "Adaptive content",
-          "description": "We offer the best AI for multiple choice questions that can produce quizzes up to your proficiency level and educational experience. The platform will adjust both the type and difficulty level of questions instantly. Adaptive learning enables us to address your unique goals and needs."
+          "title": "Adaptive content at any level",
+          "description": "Hearify automatically selects the type and difficulty of questions depending on the user's level. This allows you to create customized tasks that meet learning, skill development, or team engagement goals."
         },
         {
-          "title": "Multilingual Support",
-          "description": "Online AI quiz maker can create quizzes in different languages, making study sessions less hectic and educational content more accessible to users from all over the globe. Educators can cater to different learners, making educational programs more diverse, effective, and accessible."
+          "title": "Multilingual support",
+          "description": "Our platform supports multiple languages, ensuring accessibility to a global audience. You can create content in the right language to suit different cultural and educational environments."
         },
         {
-          "title": "Advanced Analytics",
-          "description": "AI quiz creator can analyze your answers in order to provide you with detailed insights into your performance. Thus, you can clearly see both your strengths and gaps in your knowledge. Teachers and professors can use it to improve curriculum, understand the effectiveness of teaching methods."
+          "title": "Customization with White-Label options",
+          "description": "Hearify allows you to brand your tests and surveys with custom logos, colors, and styles. This is an ideal choice for companies that want to integrate testing into their corporate identity."
+        },
+        {
+          "title": "Support for multimedia content",
+          "description": "Add images, videos, and charts to your tests to make them more visual and engaging for users. This is especially useful for teaching complex topics and increasing engagement."
+        },
+        {
+          "title": "Advanced analytics",
+          "description": "Our system analyzes answers and provides insights into users' knowledge levels, gaps, and strengths. Educators and HR professionals can use this information to adapt approaches and improve learning and teamwork."
+        },
+        {
+          "title": "Interactive formats for different purposes",
+          "description": "In addition to educational tasks, our tool is suitable for HR surveys, team psychological tests, and gamified events, which increases engagement and interactivity."
+        },
+        {
+          "title": "Seamless integration with platforms",
+          "description": "We integrate seamlessly with popular learning and enterprise platforms, such as LMS systems and team collaboration tools, ensuring a seamless engagement process with content and users."
         }
       ]
     },
@@ -86,23 +102,51 @@
     },
     "HomeAudience": {
       "title": "For whom",
-      "description": "Hearify is designed for educators, business owners, educational institutions, and students. Whether you're enhancing classroom learning, optimizing business training, or conducting self-assessments, Hearify's AI-powered platform makes it quick and easy to create personalized, interactive quizzes. It's the perfect tool to improve engagement and results in a variety of educational and professional environments.",
+      "description": "Hearify helps solve specific tasks and problems in various fields. Our platform is ideal for:",
       "blocks": [
         {
-          "title": "Scholars and Teachers",
-          "text": "Our AI quiz generator will quickly create 100% customized tests for specific lesson plans in order to achieve your goals."
+          "title": "HR managers and recruiters:",
+          "text": "Conduct cultural fit tests when hiring new employees to ensure harmony in the team."
         },
         {
-          "title": "Students",
-          "text": "Our platform helps institutions assess student’s learning and performance, as well as detect the key arras needed extra support."
+          "title": "Organizers of corporate events:",
+          "text": "Encouraging employees to get to know each other and interact more at corporate events through interactive quizzes."
         },
         {
-          "title": "Business Owners",
-          "text": "Whether it’s employee training, onboarding process, or skill assessment, our AI quiz creator helps company owners evaluate the skills of new hires and help them understand the company’s policies."
+          "title": "Sales managers:",
+          "text": "Onboard new sales managers and check their readiness to start and understand the product or service."
         },
         {
-          "title": "Educational Institutions",
-          "text": "AI test maker creates personalized quizzes that promote effective self-assessment, helping learners identify gaps in their knowledge and progress at their own pace"
+          "title": "Community managers:",
+          "text": "Engaging community members to fill out gamified forms to collect information and increase engagement and interaction."
+        },
+        {
+          "title": "Marketers and business owners:",
+          "text": "Creating marketing quiz funnels from landing pages to personalize the user experience and increase conversions."
+        },
+        {
+          "title": "Trainers and consultants:",
+          "text": "Preparing clients for sustainability certifications or other professional qualifications."
+        },
+        {
+          "title": "Teachers and educators:",
+          "text": "Enhance courses with quizzes to identify and close gaps in student knowledge."
+        },
+        {
+          "title": "Students and professionals:",
+          "text": "Preparing for international exams such as medical or language exams."
+        },
+        {
+          "title": "Parents and educators:",
+          "text": "Conducting learning quests for children to encourage them to learn more about space or other interesting topics."
+        },
+        {
+          "title": "Friends and social groups:",
+          "text": " Organizing fun quizzes to see who knows the most world capitals or other interesting facts."
+        },
+        {
+          "title": "You?",
+          "text": "If you somehow teach people we could find solution for your own case"
         }
       ]
     },
@@ -132,24 +176,24 @@
       "title": "FAQs",
       "blocks": [
         {
-          "question": "Is Hearify free?",
-          "answer": "At Hearify, we offer a free version that allows you to create 5 quizzes with 5 single-choice questions. For more advanced features and higher quiz limits, paid plans are available starting from $7.99 per month."
+          "question": "Is there a limit to the number of quizzes or questions I can create?",
+          "answer": "This depends on the plan you choose. With our free quiz generator, you can create up to 5 quizzes. For more flexibility, you can upgrade to a plan that meets your needs: Basic, Premium, or Max. Find more information here."
         },
         {
-          "question": "Who can use AI quiz generator?",
-          "answer": "AI quiz maker can be used by a wide range of individuals and organizations in many niches, including self-learners, college and high school students, HR professionals, corporate trainers, college professors and high school teachers, private instructors, parents, guardians, etc. This makes our quiz maker for teachers, educators, students, content creators a universal tool."
+          "question": "Can I customize the questions in the quizzes?",
+          "answer": "Absolutely! Our question generator allows you to create a base set of questions, and once you've created your quiz, you can fully customize it by editing, adding, or deleting questions. This flexibility will help you create the perfect quiz tailored to your specific needs, ensuring that every question meets your objectives."
         },
         {
-          "question": "What types of questions can I create?",
-          "answer": "You are welcome to generate various types of questions, such as multiple-choice questions (multiple choice test maker requires you to give 1 or more correct answers), single choice questions (1 correct answer), matching questions (connect items from one column with issue in the other), open questions (you’re required to provide a response), and fill in questions (fill in the blanks in the sentence with the correct words)."
+          "question": "Does the platform provide analytics based on test results?",
+          "answer": "Yes, Hearify offers comprehensive analytics to help you track participant progress and measure the effectiveness of your quizzes. With our quiz builder tools, you can get detailed information about completion rates, question performance, and individual scores. This data will allow you to fine-tune your quizzes for better engagement and retention, making it easier to measure success and identify areas for improvement."
         },
         {
-          "question": "How can I export my quiz questions?",
-          "answer": "When you create online quiz, go to the Quizzes section and click your quiz. Once it is there, click the Export button. You will see 4 options available: Copy Link, Copy Code (copy the quiz’s code, paste it into the search bar, and join the quiz!), Share Access (let other users edit, share, and remove your quiz), and Google Forms (export the quiz to Google Forms)."
+          "question": "What are the advantages of your test maker over other tools?",
+          "answer": "Our quiz creator stands out because it automates the quiz creation process with advanced artificial intelligence, saving you time and effort. It supports various types of content, including text, PDF, and video, allowing you to create quizzes from various sources. It also provides extensive customization tools that allow you to fully edit questions, add multimedia, and customize question types. Such flexibility ensures that your quizzes are perfectly tailored to your audience and goals, making it a versatile solution for any field of activity."
         },
         {
-          "question": "What is the quality of the quizzes?",
-          "answer": "The quality of quizzes created by our AI question answer generator is quite high due to several factors. First of all, our generator uses vast and regularly updated databases. Second, it adjusts the difficulty of questions based on your (unique!) performance and goals. Third, it creates multiple types of questions. Finally, it guarantees a solid consistency in both – the structure and format of questions. This is especially useful and effective when you have to deal with large-scale assessments."
+          "question": " Does Hearify support multiple languages for creating tests?",
+          "answer": "Definitely! Our quiz maker supports creating quizzes in multiple languages, allowing you to reach a wider audience. Whether you're creating quizzes for international teams, multilingual classes, or diverse communities, Hearify's quiz creator ensures that language is not a barrier. This flexibility makes it easy to engage users with different language backgrounds, ensuring a truly inclusive and accessible quiz experience."
         }
       ]
     },
