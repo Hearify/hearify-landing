@@ -3,7 +3,6 @@ module.exports = {
   i18n: {
     locales: ['en', 'uk', 'en-GB', 'en-CA', 'en-AU'],
     defaultLocale: 'en',
-    localeDetection: true,
     domains: [
       {
         domain: 'ca.hearify.org',
