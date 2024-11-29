@@ -34,22 +34,13 @@ const PageFooter: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.phoneFooter}>
           {isDeviceSmall && (
-            <div className={styles.navLinksWrapper}>
-              <nav className={styles.navigation}>
-                {footerNavigation.map(item => (
-                  <Link key={item.href} href={item.href} className={styles.link}>
-                    {t(item.i18nKey)}
-                  </Link>
-                ))}
-              </nav>
-              <ul className={styles.localLinks}>
-                {localLinks.map(link => (
-                  <li>
-                    <a href={link.domain}>{link.icon}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <nav className={styles.navigation}>
+              {footerNavigation.map(item => (
+                <Link key={item.href} href={item.href} className={styles.link}>
+                  {t(item.i18nKey)}
+                </Link>
+              ))}
+            </nav>
           )}
 
           {isDeviceSmall && (
@@ -91,6 +82,13 @@ const PageFooter: React.FC = () => {
                   </a>
                 </div>
               </div>
+              <ul className={styles.localLinks}>
+                {localLinks.map(link => (
+                  <li>
+                    <a href={link.domain}>{link.icon}</a>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
         </div>

@@ -53,14 +53,7 @@ const HomeAudience: React.FC = () => {
           {audienceBlocks.map((item, index) => (
             <AppDropdown
               key={item.title}
-              icon={
-                <div className={styles.image}>
-                  {index === 0 && <TeacherIcon />}
-                  {index === 1 && <StudentIcon />}
-                  {index === 2 && <OfficeIcon />}
-                  {index === 3 && <SchoolIcon />}
-                </div>
-              }
+              icon={<div className={styles.image}></div>}
               title={item.title}
               content={item.text}
             />
