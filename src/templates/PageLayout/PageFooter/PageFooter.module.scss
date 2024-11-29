@@ -176,3 +176,20 @@
     color: var(--brand-purpe-400);
   }
 }
+
+.nav-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.local-links {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+  flex-wrap: wrap;
+
+  @include md {
+    margin-top: 20px;
+  }
+}

@@ -47,7 +47,8 @@
 .list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 33px;
   padding: 64px;
   @include md {
     grid-template-columns: repeat(1, 1fr);

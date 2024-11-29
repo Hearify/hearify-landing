@@ -1,11 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
+import cn from 'classnames';
 
 import AppHeading from '@/components/AppHeading/AppHeading';
-import TeacherIcon from '@/assets/icons/teacher.svg';
-import StudentIcon from '@/assets/icons/student.svg';
-import OfficeIcon from '@/assets/icons/office.svg';
-import SchoolIcon from '@/assets/icons/school.svg';
 import styles from './HomeAudience.module.scss';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import AppDropdown from '@/components/AppDropdown/AppDropdown';
@@ -33,16 +30,15 @@ const HomeAudience: React.FC = () => {
       {isDeviceLarge ? (
         <ul className={styles.list}>
           {audienceBlocks.map((item, index) => (
-            <li key={item.title} className={styles.item}>
-              <div className={styles.image}>
-                {index === 0 && <TeacherIcon />}
-                {index === 1 && <StudentIcon />}
-                {index === 2 && <OfficeIcon />}
-                {index === 3 && <SchoolIcon />}
-              </div>
-
+            <li
+              key={item.title}
+              className={cn(styles.item, index === audienceBlocks.length - 1 && styles.itemHighlight)}
+            >
               <div className={styles.content}>
-                <h3 className={styles.subtitle}>{item.title}</h3>
+                <div className={styles.titleWrapper}>
+                  <div className={styles.bullet} />
+                  <h3 className={styles.subtitle}>{item.title}</h3>
+                </div>
                 <p className={styles.text}>{item.text}</p>
               </div>
             </li>
@@ -50,17 +46,10 @@ const HomeAudience: React.FC = () => {
         </ul>
       ) : (
         <ul className={styles.list}>
-          {audienceBlocks.map((item, index) => (
+          {audienceBlocks.map(item => (
             <AppDropdown
               key={item.title}
-              icon={
-                <div className={styles.image}>
-                  {index === 0 && <TeacherIcon />}
-                  {index === 1 && <StudentIcon />}
-                  {index === 2 && <OfficeIcon />}
-                  {index === 3 && <SchoolIcon />}
-                </div>
-              }
+              icon={<div className={styles.image} />}
               title={item.title}
               content={item.text}
             />
