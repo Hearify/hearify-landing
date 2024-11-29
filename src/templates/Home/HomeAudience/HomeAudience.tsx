@@ -1,15 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
+import cn from 'classnames';
 
 import AppHeading from '@/components/AppHeading/AppHeading';
-import TeacherIcon from '@/assets/icons/teacher.svg';
-import StudentIcon from '@/assets/icons/student.svg';
-import OfficeIcon from '@/assets/icons/office.svg';
-import SchoolIcon from '@/assets/icons/school.svg';
 import styles from './HomeAudience.module.scss';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import AppDropdown from '@/components/AppDropdown/AppDropdown';
-import cn from 'classnames';
 
 type AudienceBlock = {
   title: string;
@@ -40,7 +36,7 @@ const HomeAudience: React.FC = () => {
             >
               <div className={styles.content}>
                 <div className={styles.titleWrapper}>
-                  <div className={styles.bullet}></div>
+                  <div className={styles.bullet} />
                   <h3 className={styles.subtitle}>{item.title}</h3>
                 </div>
                 <p className={styles.text}>{item.text}</p>
@@ -50,10 +46,10 @@ const HomeAudience: React.FC = () => {
         </ul>
       ) : (
         <ul className={styles.list}>
-          {audienceBlocks.map((item, index) => (
+          {audienceBlocks.map(item => (
             <AppDropdown
               key={item.title}
-              icon={<div className={styles.image}></div>}
+              icon={<div className={styles.image} />}
               title={item.title}
               content={item.text}
             />

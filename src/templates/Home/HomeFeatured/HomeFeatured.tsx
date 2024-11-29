@@ -5,6 +5,7 @@ import { useTranslation } from 'next-i18next';
 import { featuredByBlocks } from './HomeFeatured.data';
 import styles from './HomeFeatured.module.scss';
 
+/* eslint-disable react/no-array-index-key */
 const HomeFeatured: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.HomeFeatured' });
 
@@ -22,9 +23,8 @@ const HomeFeatured: React.FC = () => {
       <h2 className={styles.title}>{t('title')}</h2>
       <div className={styles.slider} ref={sliderRef}>
         {[...featuredByBlocks, ...featuredByBlocks].map((item, index) => (
-          <div className={styles.slide}>
-            <Image
-              key={`${index}`} //
+          <div key={index} className={styles.slide}>
+            <Image //
               src={item.imageUrl}
               alt={item.title}
               height={60}

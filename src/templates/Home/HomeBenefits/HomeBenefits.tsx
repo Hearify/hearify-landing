@@ -5,7 +5,6 @@ import AppHeading from '@/components/AppHeading/AppHeading';
 import ClockIcon from '@/assets/icons/clock.svg';
 import LanguageIcon from '@/assets/icons/language.svg';
 import MenuIcon from '@/assets/icons/menu.svg';
-
 import CustomizationIcon from '@/assets/icons/customize.svg';
 import MediaIcon from '@/assets/icons/media.svg';
 import AnalyticsIcon from '@/assets/icons/analytics.svg';

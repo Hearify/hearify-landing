@@ -17,11 +17,11 @@ import { footerNavigation } from '@/constants/navigation';
 import styles from './PageFooter.module.scss';
 
 const localLinks = [
-  { country: 'Canada', icon: <Canada />, domain: 'ca.hearify.org' },
-  { country: 'Australia', icon: <Australia />, domain: 'au.hearify.org' },
-  { country: 'United Kingdom', icon: <UK />, domain: 'uk.hearify.org' },
-  { country: 'United States', icon: <USA />, domain: 'hearify.org' },
-  { country: 'Ukraine', icon: <Ukraine />, domain: 'ua.hearify.org' },
+  { country: 'Canada', icon: <Canada />, link: 'https://ca.hearify.org' },
+  { country: 'Australia', icon: <Australia />, link: 'https://au.hearify.org' },
+  { country: 'United Kingdom', icon: <UK />, link: 'https://uk.hearify.org' },
+  { country: 'United States', icon: <USA />, link: 'https://hearify.org' },
+  { country: 'Ukraine', icon: <Ukraine />, link: 'https://ua.hearify.org' },
 ];
 
 const PageFooter: React.FC = () => {
@@ -83,9 +83,9 @@ const PageFooter: React.FC = () => {
                 </div>
               </div>
               <ul className={styles.localLinks}>
-                {localLinks.map(link => (
-                  <li>
-                    <a href={link.domain}>{link.icon}</a>
+                {localLinks.map(item => (
+                  <li key={item.link}>
+                    <a href={item.link}>{item.icon}</a>
                   </li>
                 ))}
               </ul>
@@ -166,9 +166,9 @@ const PageFooter: React.FC = () => {
 
           {isDeviceLarge && (
             <ul className={styles.localLinks}>
-              {localLinks.map(link => (
-                <li>
-                  <a href={`https://${link.domain}`}>{link.icon}</a>
+              {localLinks.map(item => (
+                <li key={item.link}>
+                  <a href={item.link}>{item.icon}</a>
                 </li>
               ))}
             </ul>

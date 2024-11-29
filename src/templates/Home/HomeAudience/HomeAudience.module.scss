@@ -17,8 +17,8 @@
     width: 900px;
     height: 800px;
     background: radial-gradient(rgba(172, 154, 255, 0.9) 25%, rgba(255, 255, 255, 0) 70%);
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     z-index: -1;
   }
 
@@ -70,7 +70,7 @@
 .item-highlight {
   background-color: var(--brand-purpe-50);
 
-  & .bullet {
+  .bullet {
     background-color: var(--brand-purpe-400);
   }
 }
