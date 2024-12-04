@@ -30,7 +30,7 @@ export function middleware(request: NextRequest) {
     const newUrl = new URL(request.url);
     newUrl.hostname = `${redirectSubdomain}.${host.split('.').slice(1).join('.')}`;
     newUrl.pathname = pathname.replace(`/${pathnameLocale}`, '');
-    return NextResponse.redirect(newUrl.toString(), 302);
+    return NextResponse.redirect(newUrl.toString());
   }
 
   const locale = localeFromSubdomain || 'en';
