@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+
 import type { NextRequest } from 'next/server';
 
 // eslint-disable-next-line import/prefer-default-export
