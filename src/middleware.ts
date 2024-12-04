@@ -25,12 +25,20 @@ export function middleware(request: NextRequest) {
   const hrefChunks = href.split('/');
   const pathnameLocale = hrefChunks[hrefChunks.length - 1];
 
-  if (Object.values(subdomainLocaleMap).some(locale => locale === pathnameLocale)) {
-    const redirectSubdomain = Object.keys(subdomainLocaleMap).find(key => subdomainLocaleMap[key] === pathnameLocale);
-    const newUrl = new URL(request.url);
-    newUrl.hostname = `${redirectSubdomain}.${host.split('.').slice(1).join('.')}`;
-    newUrl.pathname = pathname.replace(`/${pathnameLocale}`, '');
-    return NextResponse.redirect(newUrl.toString());
+  if (pathnameLocale === 'uk') {
+    return NextResponse.redirect('https://ua.hearify.org');
+  }
+
+  if (pathnameLocale === 'en-CA') {
+    return NextResponse.redirect('https://ca.hearify.org');
+  }
+
+  if (pathnameLocale === 'en-AU') {
+    return NextResponse.redirect('https://au.hearify.org');
+  }
+
+  if (pathnameLocale === 'en-GB') {
+    return NextResponse.redirect('https://au.hearify.org');
   }
 
   const locale = localeFromSubdomain || 'en';
