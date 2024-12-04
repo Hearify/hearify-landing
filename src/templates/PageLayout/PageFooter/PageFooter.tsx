@@ -38,7 +38,7 @@ const PageFooter: React.FC = () => {
           {isDeviceSmall && (
             <nav className={styles.navigation}>
               {footerNavigation.map(item => {
-                const href = locale === 'ua' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+                const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
                 return (
                   <Link key={item.href} href={href} className={styles.link}>
@@ -163,7 +163,7 @@ const PageFooter: React.FC = () => {
           {isDeviceLarge && (
             <nav className={styles.navigation}>
               {footerNavigation.map(item => {
-                const href = locale === 'ua' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+                const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
                 return (
                   <Link href={href} key={item.href} className={styles.link}>

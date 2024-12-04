@@ -47,7 +47,7 @@ const PageHeader: React.FC = () => {
         <>
           <nav className={styles.navigation}>
             {headerNavigation.map(item => {
-              const href = locale === 'ua' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+              const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
               return (
                 <Link
@@ -89,7 +89,7 @@ const PageHeader: React.FC = () => {
 
               <nav className={styles.navigation}>
                 {headerNavigation.map(item => {
-                  const href = locale === 'ua' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+                  const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
                   return (
                     <Link
