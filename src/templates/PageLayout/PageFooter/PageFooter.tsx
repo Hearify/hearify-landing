@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 
 import logoImg from '@/assets/images/logo.png';
 import FacebookIcon from '@/assets/icons/facebook.svg';
@@ -14,8 +15,6 @@ import USA from '@/assets/flags/usa.svg';
 import Canada from '@/assets/flags/сanada.svg';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import { footerNavigation } from '@/constants/navigation';
-import { useRouter } from 'next/router';
-
 import styles from './PageFooter.module.scss';
 
 const localeLinks = [
