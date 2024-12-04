@@ -178,7 +178,7 @@ const PageFooter: React.FC = () => {
             <ul className={styles.localLinks}>
               {localeLinks.map(link => (
                 <li key={link.link}>
-                  <a href={`https://${link.link}`}>{link.icon}</a>
+                  <a href={link.link}>{link.icon}</a>
                 </li>
               ))}
             </ul>
