@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 
 import logoImg from '@/assets/images/logo.png';
 import FacebookIcon from '@/assets/icons/facebook.svg';
@@ -15,7 +16,6 @@ import Canada from '@/assets/flags/сanada.svg';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import { footerNavigation } from '@/constants/navigation';
 import styles from './PageFooter.module.scss';
-import { useRouter } from 'next/router';
 
 const localeLinks = [
   { country: 'Canada', icon: <Canada />, link: 'https://ca.hearify.org' },
@@ -90,8 +90,8 @@ const PageFooter: React.FC = () => {
               </div>
               <ul className={styles.localLinks}>
                 {localeLinks.map(link => (
-                  <li>
-                    <a href={link.domain}>{link.icon}</a>
+                  <li key={link.link}>
+                    <a href={link.link}>{link.icon}</a>
                   </li>
                 ))}
               </ul>
@@ -177,8 +177,8 @@ const PageFooter: React.FC = () => {
           {isDeviceLarge && (
             <ul className={styles.localLinks}>
               {localeLinks.map(link => (
-                <li>
-                  <a href={`https://${link.domain}`}>{link.icon}</a>
+                <li key={link.link}>
+                  <a href={`https://${link.link}`}>{link.icon}</a>
                 </li>
               ))}
             </ul>

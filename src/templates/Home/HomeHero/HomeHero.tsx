@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import ArrowIcon from '@/assets/icons/chevron-right.svg';
@@ -12,7 +13,6 @@ import avatarsImage from '@/assets/images/avatars.png';
 import createQuizImage from '@/assets/images/create-your-quiz.png';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import styles from './HomeHero.module.scss';
-import { useRouter } from 'next/router';
 
 const HomeHero: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.HomeHero' });
