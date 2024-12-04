@@ -25,8 +25,6 @@ const PageHeader: React.FC = () => {
 
   const { locale } = useRouter();
 
-  const isUa = locale === 'ua';
-
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add('no-scroll');
@@ -49,16 +47,16 @@ const PageHeader: React.FC = () => {
         <>
           <nav className={styles.navigation}>
             {headerNavigation.map(item => {
-              const href = isUa || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+              const href = locale === 'ua' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
               return (
-                <a
+                <Link
                   href={href}
                   key={item.i18nKey}
                   className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
                 >
                   {t(item.i18nKey)}
-                </a>
+                </Link>
               );
             })}
           </nav>
@@ -91,16 +89,16 @@ const PageHeader: React.FC = () => {
 
               <nav className={styles.navigation}>
                 {headerNavigation.map(item => {
-                  const href = isUa || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+                  const href = locale === 'ua' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
                   return (
-                    <a
+                    <Link
                       href={href}
                       key={item.i18nKey}
                       className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
                     >
                       {t(item.i18nKey)}
-                    </a>
+                    </Link>
                   );
                 })}
               </nav>

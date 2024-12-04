@@ -21,8 +21,8 @@ const HomeHero: React.FC = () => {
 
   const { locale } = useRouter();
 
-  const title = locale === 'en' ? t('title') : t('title-old');
-  const description = locale === 'en' ? t('description') : t("description-old")
+  const title = locale === 'en' || 'ua' ? t('title') : t('title-old');
+  const description = locale === 'en' || 'ua' ? t('description') : t('description-old');
 
   return (
     <section className={styles.wrapper} id="hero">

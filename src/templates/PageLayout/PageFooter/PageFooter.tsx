@@ -18,11 +18,11 @@ import styles from './PageFooter.module.scss';
 import { useRouter } from 'next/router';
 
 const localeLinks = [
-  { country: 'Canada', icon: <Canada />, domain: 'ca.hearify.org' },
-  { country: 'Australia', icon: <Australia />, domain: 'au.hearify.org' },
-  { country: 'United Kingdom', icon: <UK />, domain: 'uk.hearify.org' },
-  { country: 'United States', icon: <USA />, domain: 'hearify.org' },
-  { country: 'Ukraine', icon: <Ukraine />, domain: 'ua.hearify.org' },
+  { country: 'Canada', icon: <Canada />, link: 'https://ca.hearify.org' },
+  { country: 'Australia', icon: <Australia />, link: 'https://au.hearify.org' },
+  { country: 'United Kingdom', icon: <UK />, link: 'https://uk.hearify.org' },
+  { country: 'United States', icon: <USA />, link: 'https://hearify.org' },
+  { country: 'Ukraine', icon: <Ukraine />, link: 'https://ua.hearify.org' },
 ];
 
 const PageFooter: React.FC = () => {
@@ -31,18 +31,21 @@ const PageFooter: React.FC = () => {
   const { isDeviceLarge, isDeviceSmall } = useDeviceDetect('sm');
   const { locale } = useRouter();
 
-  const isUa = locale === 'ua';
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.phoneFooter}>
           {isDeviceSmall && (
             <nav className={styles.navigation}>
-              {footerNavigation.map(item => (
-                <Link key={item.href} href={item.href} className={styles.link}>
-                  {t(item.i18nKey)}
-                </Link>
-              ))}
+              {footerNavigation.map(item => {
+                const href = locale === 'ua' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+
+                return (
+                  <Link key={item.href} href={href} className={styles.link}>
+                    {t(item.i18nKey)}
+                  </Link>
+                );
+              })}
             </nav>
           )}
 
@@ -160,12 +163,12 @@ const PageFooter: React.FC = () => {
           {isDeviceLarge && (
             <nav className={styles.navigation}>
               {footerNavigation.map(item => {
-                const href = isUa || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+                const href = locale === 'ua' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
                 return (
-                  <a href={href} key={item.href} className={styles.link}>
+                  <Link href={href} key={item.href} className={styles.link}>
                     {t(item.i18nKey)}
-                  </a>
+                  </Link>
                 );
               })}
             </nav>
