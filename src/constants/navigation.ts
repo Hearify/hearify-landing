@@ -1,6 +1,7 @@
 export type NavigationItem = {
   i18nKey: string;
   href: string;
+  isAnchor?: boolean;
 };
 
 export const headerNavigation: NavigationItem[] = [
@@ -11,6 +12,7 @@ export const headerNavigation: NavigationItem[] = [
   {
     i18nKey: 'how_it_works',
     href: '/#create-quiz',
+    isAnchor: true,
   },
   {
     i18nKey: 'blog',
@@ -34,6 +36,7 @@ export const footerNavigation: NavigationItem[] = [
   {
     i18nKey: 'how_it_works',
     href: '/#create-quiz',
+    isAnchor: true,
   },
   {
     i18nKey: 'business',

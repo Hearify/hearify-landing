@@ -17,18 +17,19 @@ export function middleware(request: NextRequest) {
 
   const localeFromSubdomain = subdomainLocaleMap[subdomain];
 
-  const pathnameLocale = pathname.split('/')[1];
-
   if (pathname.includes('/static') || pathname.includes('/favicon.ico')) {
     return NextResponse.next();
   }
 
-  if (Object.values(subdomainLocaleMap).includes(pathnameLocale)) {
-    const redirectSubdomain = subdomainLocaleMap[pathnameLocale];
+  const href = request.nextUrl.href;
+  const hrefChunks = href.split('/');
+  const pathnameLocale = hrefChunks[hrefChunks.length - 1];
+
+  if (Object.values(subdomainLocaleMap).some(locale => (locale = pathnameLocale))) {
+    const redirectSubdomain = Object.keys(subdomainLocaleMap).find(key => subdomainLocaleMap[key] === pathnameLocale);
     const newUrl = new URL(request.url);
     newUrl.hostname = `${redirectSubdomain}.${host.split('.').slice(1).join('.')}`;
     newUrl.pathname = pathname.replace(`/${pathnameLocale}`, '');
-    console.log(newUrl.toString(), 'newUrl');
     return NextResponse.redirect(newUrl.toString());
   }
 
