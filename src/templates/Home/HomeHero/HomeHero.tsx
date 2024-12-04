@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
@@ -11,8 +11,9 @@ import homeHeroImage from '@/assets/images/home-hero.png';
 import avatarsImage from '@/assets/images/avatars.png';
 import createQuizImage from '@/assets/images/create-your-quiz.png';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
-import styles from './HomeHero.module.scss';
 import { useRouter } from 'next/router';
+
+import styles from './HomeHero.module.scss';
 
 const HomeHero: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.HomeHero' });

@@ -21,11 +21,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const href = request.nextUrl.href;
+  const { href } = request.nextUrl;
   const hrefChunks = href.split('/');
   const pathnameLocale = hrefChunks[hrefChunks.length - 1];
 
-  if (Object.values(subdomainLocaleMap).some(locale => (locale = pathnameLocale))) {
+  if (Object.values(subdomainLocaleMap).some(locale => locale === pathnameLocale)) {
     const redirectSubdomain = Object.keys(subdomainLocaleMap).find(key => subdomainLocaleMap[key] === pathnameLocale);
     const newUrl = new URL(request.url);
     newUrl.hostname = `${redirectSubdomain}.${host.split('.').slice(1).join('.')}`;
