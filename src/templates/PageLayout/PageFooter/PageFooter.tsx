@@ -15,20 +15,23 @@ import Canada from '@/assets/flags/сanada.svg';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import { footerNavigation } from '@/constants/navigation';
 import styles from './PageFooter.module.scss';
+import { useRouter } from 'next/router';
 
-const localLinks = [
-  { country: 'Canada', icon: <Canada />, link: 'https://ca.hearify.org' },
-  { country: 'Australia', icon: <Australia />, link: 'https://au.hearify.org' },
-  { country: 'United Kingdom', icon: <UK />, link: 'https://uk.hearify.org' },
-  { country: 'United States', icon: <USA />, link: 'https://hearify.org' },
-  { country: 'Ukraine', icon: <Ukraine />, link: 'https://ua.hearify.org' },
+const localeLinks = [
+  { country: 'Canada', icon: <Canada />, domain: 'ca.hearify.org' },
+  { country: 'Australia', icon: <Australia />, domain: 'au.hearify.org' },
+  { country: 'United Kingdom', icon: <UK />, domain: 'uk.hearify.org' },
+  { country: 'United States', icon: <USA />, domain: 'hearify.org' },
+  { country: 'Ukraine', icon: <Ukraine />, domain: 'ua.hearify.org' },
 ];
 
 const PageFooter: React.FC = () => {
   const { t } = useTranslation();
 
   const { isDeviceLarge, isDeviceSmall } = useDeviceDetect('sm');
+  const { locale } = useRouter();
 
+  const isUa = locale === 'ua';
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -83,9 +86,9 @@ const PageFooter: React.FC = () => {
                 </div>
               </div>
               <ul className={styles.localLinks}>
-                {localLinks.map(item => (
-                  <li key={item.link}>
-                    <a href={item.link}>{item.icon}</a>
+                {localeLinks.map(link => (
+                  <li>
+                    <a href={link.domain}>{link.icon}</a>
                   </li>
                 ))}
               </ul>
@@ -156,19 +159,23 @@ const PageFooter: React.FC = () => {
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
           {isDeviceLarge && (
             <nav className={styles.navigation}>
-              {footerNavigation.map(item => (
-                <Link key={item.href} href={item.href} className={styles.link}>
-                  {t(item.i18nKey)}
-                </Link>
-              ))}
+              {footerNavigation.map(item => {
+                const href = isUa || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+
+                return (
+                  <a href={href} key={item.href} className={styles.link}>
+                    {t(item.i18nKey)}
+                  </a>
+                );
+              })}
             </nav>
           )}
 
           {isDeviceLarge && (
             <ul className={styles.localLinks}>
-              {localLinks.map(item => (
-                <li key={item.link}>
-                  <a href={item.link}>{item.icon}</a>
+              {localeLinks.map(link => (
+                <li>
+                  <a href={`https://${link.domain}`}>{link.icon}</a>
                 </li>
               ))}
             </ul>

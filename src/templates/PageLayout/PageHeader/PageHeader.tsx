@@ -23,6 +23,10 @@ const PageHeader: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const { locale } = useRouter();
+
+  const isUa = locale === 'ua';
+
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add('no-scroll');
@@ -44,15 +48,19 @@ const PageHeader: React.FC = () => {
       {!isServer && isDeviceLarge ? (
         <>
           <nav className={styles.navigation}>
-            {headerNavigation.map(item => (
-              <Link
-                key={item.i18nKey}
-                href={item.href}
-                className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
-              >
-                {t(item.i18nKey)}
-              </Link>
-            ))}
+            {headerNavigation.map(item => {
+              const href = isUa || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+
+              return (
+                <a
+                  href={href}
+                  key={item.i18nKey}
+                  className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
+                >
+                  {t(item.i18nKey)}
+                </a>
+              );
+            })}
           </nav>
 
           <div className={styles.actions}>
@@ -82,11 +90,19 @@ const PageHeader: React.FC = () => {
               </Link>
 
               <nav className={styles.navigation}>
-                {headerNavigation.map(item => (
-                  <Link key={item.i18nKey} href={item.href} className={styles.link} onClick={toggleMenu}>
-                    {t(item.i18nKey)}
-                  </Link>
-                ))}
+                {headerNavigation.map(item => {
+                  const href = isUa || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
+
+                  return (
+                    <a
+                      href={href}
+                      key={item.i18nKey}
+                      className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
+                    >
+                      {t(item.i18nKey)}
+                    </a>
+                  );
+                })}
               </nav>
 
               <div className={styles.actions}>

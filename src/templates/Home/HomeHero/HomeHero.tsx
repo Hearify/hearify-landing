@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
@@ -12,18 +12,24 @@ import avatarsImage from '@/assets/images/avatars.png';
 import createQuizImage from '@/assets/images/create-your-quiz.png';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import styles from './HomeHero.module.scss';
+import { useRouter } from 'next/router';
 
 const HomeHero: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.HomeHero' });
 
   const { isDeviceLarge } = useDeviceDetect('md');
 
+  const { locale } = useRouter();
+
+  const title = locale === 'en' ? t('title') : t('title-old');
+  const description = locale === 'en' ? t('description') : t("description-old")
+
   return (
     <section className={styles.wrapper} id="hero">
       <div className={styles.container}>
         <div className={styles.body}>
-          <h1 className={styles.title}>{t('title')}</h1>
-          <p className={styles.description}>{t('description')}</p>
+          <h1 className={styles.title}>{title}</h1>
+          <p className={styles.description}>{description}</p>
 
           <AppButtonLink href="https://app.hearify.org/signup" size="lg" className={styles.button}>
             {t('button')}
