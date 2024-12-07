@@ -1,9 +1,12 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 import { useTranslation } from 'next-i18next';
 
 import GroupImg from '@/assets/images/business-group.png';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
-import BusinessHero from './BusinessHero/BusinessHero';
+const BusinessHero = dynamic(() => import('./BusinessHero/BusinessHero').then(module => module.default), {
+  ssr: false,
+});
 import BusinessForWhom from './BusinessForWhom/BusinessForWhom';
 import BusinessInfoBoard from '@/templates/Business/BusinessInfoBoard/BusinessInfoBoard';
 import SchoolIcon from '@/assets/business/school.svg';
