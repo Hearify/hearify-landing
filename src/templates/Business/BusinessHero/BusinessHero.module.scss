@@ -36,10 +36,9 @@
 }
 
 .animation {
-  max-width: 440px;
-  max-height: 200px;
+  width: 440px;
+  min-height: 210px;
   margin-left: 45%;
-
   @include md {
     margin: auto;
     transform: translateY(-50%);
@@ -72,7 +71,7 @@
   @include md {
     @include text-main-2;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
