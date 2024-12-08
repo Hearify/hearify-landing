@@ -3,30 +3,43 @@ import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import { CalendarIcon } from '@heroicons/react/24/solid';
 
-import lottie from 'lottie-web';
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import heroImage from '@/assets/images/big-team-working.png';
 import styles from './BusinessHero.module.scss';
 
+import type { AnimationItem } from 'lottie-web';
+
 const BusinessHero: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessHomeHero' });
-  const animation = useRef(null);
+  const animationRef = useRef<HTMLDivElement>(null);
+  const lottieInstance = useRef<AnimationItem>();
+
+  const loadLottie = async () => {
+    const lottie = (await import('lottie-web')).default;
+
+    if (animationRef.current && !lottieInstance.current) {
+      lottieInstance.current = lottie.loadAnimation({
+        container: animationRef.current,
+        renderer: 'svg',
+        loop: true,
+        autoplay: false,
+        path: '/animations/animation.json',
+      });
+
+      lottieInstance.current.play();
+    }
+
+    return () => {
+      lottieInstance.current?.destroy();
+    };
+  };
 
   useEffect(() => {
-    if (!animation.current) return;
+    loadLottie();
 
-    lottie.destroy('animation');
-
-    lottie.loadAnimation({
-      container: animation.current,
-      renderer: 'svg',
-      loop: true,
-      autoplay: false,
-      path: '/animations/animation.json',
-      name: 'animation',
-    });
-
-    lottie.play('animation');
+    return () => {
+      lottieInstance.current?.destroy();
+    };
   }, []);
 
   return (
@@ -47,7 +60,7 @@ const BusinessHero: React.FC = () => {
           fetchPriority="high"
           priority
         />
-        <div ref={animation} className={styles.animation}></div>
+        <div ref={animationRef} className={styles.animation} />
       </div>
     </section>
   );
