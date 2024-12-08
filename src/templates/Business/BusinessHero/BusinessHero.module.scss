@@ -35,6 +35,24 @@
   }
 }
 
+.animation {
+  max-width: 440px;
+  max-height: 200px;
+  margin-left: 45%;
+
+  @include md {
+    margin: auto;
+    transform: translateY(-50%);
+  }
+  @include sm {
+    max-width: 75%;
+  }
+  @include xs {
+    max-width: 85%;
+    max-height: 140px;
+  }
+}
+
 .title {
   @include text-heading-1;
   max-width: 690px;

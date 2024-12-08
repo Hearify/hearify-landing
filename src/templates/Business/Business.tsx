@@ -3,9 +3,9 @@ import { useTranslation } from 'next-i18next';
 
 import GroupImg from '@/assets/images/business-group.png';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
-import BusinessHero from './BusinessHero/BusinessHero';
 import BusinessForWhom from './BusinessForWhom/BusinessForWhom';
 import BusinessInfoBoard from '@/templates/Business/BusinessInfoBoard/BusinessInfoBoard';
+import BusinessHero from '@/templates/Business/BusinessHero/BusinessHero';
 import SchoolIcon from '@/assets/business/school.svg';
 import BoardIcon from '@/assets/business/board.svg';
 import ClockIcon from '@/assets/business/clock.svg';
