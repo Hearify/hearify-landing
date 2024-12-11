@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
-import { useRouter } from 'next/router';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import ArrowIcon from '@/assets/icons/chevron-right.svg';
@@ -19,17 +18,12 @@ const HomeHero: React.FC = () => {
 
   const { isDeviceLarge } = useDeviceDetect('md');
 
-  const { locale } = useRouter();
-
-  const title = locale === 'en' || locale === 'uk' ? t('title') : t('title-old');
-  const description = locale === 'en' || locale === 'uk' ? t('description') : t('description-old');
-
   return (
     <section className={styles.wrapper} id="hero">
       <div className={styles.container}>
         <div className={styles.body}>
-          <h1 className={styles.title}>{title}</h1>
-          <p className={styles.description}>{description}</p>
+          <h1 className={styles.title}>{t('title')}</h1>
+          <p className={styles.description}>{t('description')}</p>
 
           <AppButtonLink href="https://app.hearify.org/signup" size="lg" className={styles.button}>
             {t('button')}
