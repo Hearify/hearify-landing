@@ -2,6 +2,7 @@ import withMDX from '@next/mdx';
 import remarkSlug from 'remark-slug';
 import remarkAutolinkHeadings from 'remark-autolink-headings';
 import i18nConf from './next-i18next.config.js';
+import { withSentryConfig } from '@sentry/nextjs';
 
 const addLangSubdomainUrl = (baseUrl, lang) => {
   const url = new URL(baseUrl);
@@ -162,6 +163,18 @@ const config = {
   },
 };
 
-export default withMDX({
-  options: { remarkPlugins: [remarkSlug, remarkAutolinkHeadings] },
-})(config);
+export default withSentryConfig(
+  withMDX({
+    options: { remarkPlugins: [remarkSlug, remarkAutolinkHeadings] },
+  })(config),
+  {
+    org: 'hearify',
+    project: 'hearify-landing',
+    silent: !process.env.CI, // Only log uploads in CI
+    widenClientFileUpload: true, // Upload a larger set of source maps
+    tunnelRoute: '/monitoring', // Sentry tunnel route
+    hideSourceMaps: true, // Hide source maps in generated client bundles
+    disableLogger: true, // Disable Sentry logger to reduce bundle size
+    automaticVercelMonitors: true, // Automatic instrumentation for Vercel Cron Monitors
+  },
+);
