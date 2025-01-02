@@ -5,8 +5,9 @@ import GroupImg from '@/assets/images/about-us/group-about-us.png';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import AboutUsCommitted from './AboutUsCommitted/AboutUsCommitted';
 import AboutUsValues from './AboutUsValues/AboutUsValues';
-import AboutUsTeam from './AboutUsTeam/AboutUsTeam';
 import styles from './AboutUs.module.scss';
+
+// import AboutUsTeam from './AboutUsTeam/AboutUsTeam';
 
 type DataType = {
   title: string;
