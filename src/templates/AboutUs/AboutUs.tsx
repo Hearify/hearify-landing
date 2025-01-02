@@ -6,8 +6,7 @@ import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import AboutUsCommitted from './AboutUsCommitted/AboutUsCommitted';
 import AboutUsValues from './AboutUsValues/AboutUsValues';
 import styles from './AboutUs.module.scss';
-
-// import AboutUsTeam from './AboutUsTeam/AboutUsTeam';
+import AboutUsTeam from './AboutUsTeam/AboutUsTeam';
 
 type DataType = {
   title: string;
@@ -31,7 +30,7 @@ const AboutUs: React.FC = () => {
         ))}
       </ul>
       <AboutUsCommitted />
-{/*       <AboutUsTeam /> */}
+      <AboutUsTeam />
       <AboutUsValues />
       <div className={styles.box}>
         <h2 className={styles.boxTitle}>{t('bottom-title')}</h2>
