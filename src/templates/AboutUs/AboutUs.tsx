@@ -30,7 +30,7 @@ const AboutUs: React.FC = () => {
         ))}
       </ul>
       <AboutUsCommitted />
-      <AboutUsTeam />
+{/*       <AboutUsTeam /> */}
       <AboutUsValues />
       <div className={styles.box}>
         <h2 className={styles.boxTitle}>{t('bottom-title')}</h2>
