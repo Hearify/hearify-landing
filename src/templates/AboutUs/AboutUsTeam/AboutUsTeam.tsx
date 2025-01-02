@@ -4,8 +4,7 @@ import Image from 'next/image';
 
 import AboutUs1 from '@/assets/images/about-us/about-us-1.png';
 import AboutUs2 from '@/assets/images/about-us/about-us-2.png';
-import AboutUs3 from '@/assets/images/about-us/about-us-3.png';
-import AboutUs4 from '@/assets/images/about-us/about-us-4.png';
+import AboutUs3 from '@/assets/images/about-us/about-us-4.png';
 import LinkedinIcon from '@/assets/icons/linkedin.svg';
 import styles from './AboutUsTeam.module.scss';
 
@@ -33,7 +32,6 @@ const AboutUsTeam: React.FC = () => {
                 {index === 0 && <Image alt="Person" src={AboutUs1} width={100} height={100} />}
                 {index === 1 && <Image alt="Person" src={AboutUs2} width={100} height={100} />}
                 {index === 2 && <Image alt="Person" src={AboutUs3} width={100} height={100} />}
-                {index === 3 && <Image alt="Person" src={AboutUs4} width={100} height={100} />}
                 <LinkedinIcon />
               </a>
               <div>
