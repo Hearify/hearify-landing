@@ -2,15 +2,15 @@
   "pages": {
     "HomePage": {
       "title": "AI Quiz Maker from PDF, Video & Text by Hearify Quiz Generator",
-      "description": "Transform your content (any text, PDF, or video) effortlessly with our AI-powered tool for creating quizzes, surveys, and interactive content. Easily customize questions, track performance, and improve learning and training outcomes."
+      "description": "Transform your content (any text, PDF, or video) effortlessly with our AI quiz generator for creating quizzes, surveys, and interactive content. Easily customize questions, track performance, and improve learning and training outcomes."
     }
   },
   "templates": {
     "HomeHero": {
-      "title": "AI-Powered Tool for Tests, Surveys, and Interactive Content Creation",
-      "description": "Transform any text, PDF, or video into interactive quizzes, surveys, or assessments. Ideal for educators, HR teams, event planners, and professionals looking to engage audiences, gather insights, or gamify experiences across multiple industries.",
+      "title": "AI Quiz Generator for Tests, Surveys, and Interactive Content Creation",
+      "description": "Transform any text, PDF, or video into interactive quizzes, surveys, or assessments by AI quiz maker. Ideal for educators, HR teams, event planners, and professionals looking to engage audiences, gather insights, or gamify experiences across multiple industries.",
       "button": "TRY FOR FREE",
-      "hint": "Loved by users in 100+ countries"
+      "hint": "Loved by users in 113+ countries"
     },
     "HomeFeatured": {
       "title": "Featured by:",
