@@ -319,6 +319,36 @@
       "alert-text": "Try our AI quiz creator now—completely free of charge!",
       "alert-button": "GET A DEMO"
     },
+    "CorporateTrainingHero": {
+      "title": "Revolutionize Corporate Training with AI Quizzes",
+      "description": "Transform your employee training programs with AI-powered quizzes from Hearify. Automate learning, track progress and deliver engaging content that boosts team productivity and improves memorization.",
+      "button": "GET A DEMO"
+    },
+    "EduInstitutionsHero": {
+      "title": "Transform Education with AI-powered Quizzes",
+      "description": "Simplify learning, engage students, and improve results with AI-powered quizzes for schools, universities, and online courses.",
+      "button": "GET A DEMO"
+    },
+    "MarketingHero": {
+      "title": "Quizzes for Marketing and Customer Engagement",
+      "description": "Transform your marketing strategy with interactive quizzes that capture leads, boost engagement, and personalize the customer journey. Hearify’s AI quiz generator helps businesses create customized, data-driven experiences that attract new customers and strengthen brand loyalty.",
+      "button": "CREATE A QUIZ"
+    },
+    "SMBHero": {
+      "title": "Cost-Effective AI Quiz Solution for Small Businesses",
+      "description": "Give your small team a simple, fast, cost-effective AI-powered quiz solution. Whether you're training employees, enhancing team collaboration, or engaging customers, Hearify provides an intuitive and affordable platform designed to help small businesses thrive. Easily customizable and scalable, Hearify grows with your business.",
+      "button": "TRY FOR FREE"
+    },
+    "PartnerProgramsHero": {
+      "title": "White-Label AI Quiz Solutions for Agencies",
+      "description": "Expand your agency's service offerings with AI-powered quizzes that you can brand as your own. Deliver powerful training, engagement, and marketing solutions to your clients while unlocking new revenue streams. With Hearify’s white-label partner program, you gain a scalable, fully customizable quiz platform to offer under your own brand.",
+      "button": "LEARN MORE"
+    },
+    "IndustriesHero": {
+      "title": "Industry-Specific AI Training & Assessment",
+      "description": "Simplify learning and assessment in specialized fields with AI-powered tests designed to meet the unique demands of your industry. Whether you’re in medical education, financial training, IT, manufacturing, or technical skill development, Hearify provides a flexible, data-driven tool to ensure accurate and effective learning outcomes.",
+      "button": "GET INDUSTRY SOLUTION"
+    },
     "TermsOfUse": {
       "title": "Terms of Use",
       "date": "(Last updated: December 29th, 2023)",
@@ -409,7 +439,10 @@
     "AboutUsCommitted": {
       "title": "We are committed to",
       "data": [
-        { "title": "Efficiency", "description": "Reducing the time and effort spent on test creation." },
+        {
+          "title": "Efficiency",
+          "description": "Reducing the time and effort spent on test creation."
+        },
         {
           "title": "Personalization",
           "description": "Provide a personalized learning experience using artificial intelligence-based tools."
@@ -560,6 +593,5 @@
   "terms": "Terms",
   "privacy": "Privacy",
   "business": "Business",
-
   "about_us": "About Us"
 }
