@@ -8,6 +8,7 @@
   max-width: $max-page-width;
   height: $header-height;
   padding: 0 32px;
+
   @include sm {
     height: $header-height-sm;
     padding: 0 24px;
@@ -20,6 +21,7 @@
   &__image {
     width: 180px;
     height: 68px;
+
     @include sm {
       width: 106px;
       height: 43px;
@@ -30,6 +32,8 @@
 .navigation {
   display: flex;
   gap: 32px;
+  position: relative;
+
   @include lg {
     width: 270px;
     flex-direction: column;
@@ -41,13 +45,20 @@
   }
 }
 
+
 .link {
   @include text-subtitle-2;
   color: var(--general-black);
   transition: $default-transition;
+  cursor: pointer;
+  position: relative;
 
   &:hover {
     color: var(--brand-purpe-400);
+
+    +.dropdownMenu {
+      display: flex;
+    }
   }
 
   &--active {
@@ -55,11 +66,85 @@
   }
 }
 
+.dropdownMenu {
+  position: absolute;
+  top: 130%;
+  left: 400%;
+  transform: translateX(-50%);
+  width: fit-content;
+  min-width: 500px;
+  max-width: 2000px;
+  width: 100vw;
+  background: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  min-height: 244px;
+  min-width: 380px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+
+  flex-direction: column;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+
+.dropdownMenuActive {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdownList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  row-gap: 12px;
+  padding: 10px 400px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.dropdownItem {
+  font-family: 'nunito';
+  font-size: 18px;
+  font-weight: 500; // Semi-bold
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: var(--general-black);
+  transition: $default-transition;
+  cursor: pointer;
+  min-width: 240px;
+  justify-content: flex-start;
+
+  &:hover {
+    background-color: var(--brand-purpe-50);
+  }
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
 .actions {
   flex: 1;
   justify-content: flex-end;
   display: flex;
   gap: 16px;
+
   @include lg {
     flex-grow: 0;
     gap: 24px;
@@ -75,8 +160,10 @@
   transition: $default-transition;
 }
 
+
 .hamburger {
   display: none;
+
   @include lg {
     display: block;
     z-index: $z-index-hamburger;
@@ -124,6 +211,35 @@
   height: 100%;
 }
 
+.dropdownMenuMobile {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+
+  &--active {
+    display: flex;
+  }
+
+  .dropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    color: var(--general-black);
+    text-align: center;
+
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      background-color: var(--brand-purpe-50);
+      color: var(--brand-purpe-400);
+    }
+  }
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -141,5 +257,3 @@
     visibility: visible;
   }
 }
-
-

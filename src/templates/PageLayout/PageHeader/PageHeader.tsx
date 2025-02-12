@@ -14,16 +14,16 @@ import styles from './PageHeader.module.scss';
 const PageHeader: React.FC = () => {
   const { t } = useTranslation();
   const router = useRouter();
-
   const { isDeviceLarge, isServer } = useDeviceDetect('lg');
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const { locale } = useRouter();
+  const { locale } = router;
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -31,10 +31,7 @@ const PageHeader: React.FC = () => {
     } else {
       document.body.classList.remove('no-scroll');
     }
-
-    return () => {
-      document.body.classList.remove('no-scroll');
-    };
+    return () => document.body.classList.remove('no-scroll');
   }, [isMenuOpen]);
 
   return (
@@ -45,21 +42,49 @@ const PageHeader: React.FC = () => {
 
       {!isServer && isDeviceLarge ? (
         <>
-          <nav className={styles.navigation}>
-            {headerNavigation.map(item => {
+          <div className={styles.navigation}>
+            {headerNavigation.map((item) => {
               const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
               return (
-                <Link
-                  href={href}
+                <div
                   key={item.i18nKey}
-                  className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
+                  className={styles.dropdownWrapper}
+                  onMouseEnter={() => setOpenDropdown(item.i18nKey)}
+                  onMouseLeave={() => setOpenDropdown(null)}
                 >
-                  {t(item.i18nKey)}
-                </Link>
+                  <Link
+                    href={href}
+                    className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
+                  >
+                    {t(item.i18nKey)}
+                  </Link>
+
+                  {item.subItems && (
+                    <div
+                      className={cn(styles.dropdownMenu, {
+                        [styles.dropdownMenuActive]: openDropdown === item.i18nKey,
+                      })}
+                    >
+                      <div className={styles.dropdownList}>
+                        {item.subItems.map((subItem) => (
+                          <Link
+                            key={subItem.i18nKey}
+                            href={subItem.href}
+                            className={styles.dropdownItem}
+                            onClick={() => setOpenDropdown(null)}
+                          >
+                            {subItem.icon && <subItem.icon className={styles.icon} />}
+                            <span>{t(subItem.i18nKey)}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
               );
             })}
-          </nav>
+          </div>
 
           <div className={styles.actions}>
             <AppButtonLink variant="secondary" width="110px" href="https://app.hearify.org/login">
@@ -88,17 +113,33 @@ const PageHeader: React.FC = () => {
               </Link>
 
               <nav className={styles.navigation}>
-                {headerNavigation.map(item => {
+                {headerNavigation.map((item) => {
                   const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
                   return (
-                    <Link
-                      href={href}
-                      key={item.i18nKey}
-                      className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
-                    >
-                      {t(item.i18nKey)}
-                    </Link>
+                    <div key={item.i18nKey}>
+                      <Link
+                        href={href}
+                        className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
+                      >
+                        {t(item.i18nKey)}
+                      </Link>
+
+                      {item.subItems && (
+                        <div className={styles.dropdownMenuMobile}>
+                          {item.subItems.map((subItem) => (
+                            <Link
+                              key={subItem.i18nKey}
+                              href={subItem.href}
+                              className={styles.dropdownItem}
+                            >
+                              {subItem.icon && <subItem.icon className={styles.icon} />}
+                              <span>{t(subItem.i18nKey)}</span>
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   );
                 })}
               </nav>
