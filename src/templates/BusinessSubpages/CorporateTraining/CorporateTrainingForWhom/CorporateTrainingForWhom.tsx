@@ -11,11 +11,7 @@ import styles from './CorporateTrainingForWhom.module.scss';
 
 import type { ForWhomCardProps } from '@/containers/ForWhomCard/ForWhomCard';
 
-const links = [
-  "https://app.hearify.org/signup",
-  "https://app.hearify.org/signup",
-  "https://app.hearify.org/signup",
-];
+const links = ['https://app.hearify.org/signup', 'https://app.hearify.org/signup', 'https://app.hearify.org/signup'];
 
 type DataType = {
   title: string;
@@ -32,11 +28,7 @@ const BusinessForWhom: React.FC = () => {
 
   const data: DataType[] = t('data', { returnObjects: true });
   /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-  const images: ImagesType[] = [
-    { image: TeacherIcon },
-    { image: UserPlusIcon },
-    { image: UserIcon },
-  ];
+  const images: ImagesType[] = [{ image: TeacherIcon }, { image: UserPlusIcon }, { image: UserIcon }];
 
   const combinedData: Array<ForWhomCardProps> = data.map((item, index) => ({
     title: item.title,

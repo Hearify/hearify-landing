@@ -21,7 +21,6 @@ const CorporateTrainingFAQ: React.FC = () => {
         {faqBlocks.map(item => (
           <FAQBlock key={item.question} question={item.question} answer={item.answer} />
         ))}
-
       </div>
     </section>
   );
