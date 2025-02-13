@@ -2,7 +2,7 @@ import React from 'react';
 import { CalendarIcon } from '@heroicons/react/24/solid';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
-import BusinessInfoBoardCard from '../BusinessInfoBoardCard/BusinessInfoBoardCard';
+import InfoBoardCard from '@/containers/InfoBoardCard/InfoBoardCard';
 import styles from './BusinessInfoBoard.module.scss';
 
 export type BusinessInfoBoardProps = {
@@ -43,10 +43,10 @@ const BusinessInfoBoard: React.FC<BusinessInfoBoardProps> = ({
         <p className={styles.description}>{description}</p>
 
         <div className={styles.content}>
-          <BusinessInfoBoardCard text={text1} image={image} />
-          <BusinessInfoBoardCard text={text2} image={image} />
-          <BusinessInfoBoardCard text={text3} image={image} />
-          <BusinessInfoBoardCard text={text4} image={image} />
+          <InfoBoardCard text={text1} image={image} />
+          <InfoBoardCard text={text2} image={image} />
+          <InfoBoardCard text={text3} image={image} />
+          <InfoBoardCard text={text4} image={image} />
         </div>
 
         <AppButtonLink className={styles.button} href={href} size="lg">

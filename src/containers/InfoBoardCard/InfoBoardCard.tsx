@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './BusinessInfoBoardCard.module.scss';
+import styles from './InfoBoardCard.module.scss';
 
 type AppContentItemProps = {
   text: string;

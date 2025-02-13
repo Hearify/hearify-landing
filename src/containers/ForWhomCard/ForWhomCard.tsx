@@ -1,16 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 
-import styles from './BusinessForWhomCard.module.scss';
+import styles from './ForWhomCard.module.scss';
 
-export type BusinessForWhomCardProps = {
+export type ForWhomCardProps = {
   title: string;
   description: string;
   image: React.FC<React.SVGProps<SVGSVGElement>>;
   link: string;
 };
 
-const BusinessForWhomCard: React.FC<BusinessForWhomCardProps> = ({
+const ForWhomCard: React.FC<ForWhomCardProps> = ({
   title, //
   description,
   image: ImageComponent,
@@ -27,4 +27,4 @@ const BusinessForWhomCard: React.FC<BusinessForWhomCardProps> = ({
   );
 };
 
-export default BusinessForWhomCard;
+export default ForWhomCard;
