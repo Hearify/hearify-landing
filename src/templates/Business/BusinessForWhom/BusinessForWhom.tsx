@@ -14,6 +14,15 @@ import styles from './BusinessForWhom.module.scss';
 
 import type { BusinessForWhomCardProps } from '@/templates/Business/BusinessForWhomCard/BusinessForWhomCard';
 
+const links = [
+  '/business/ai-corporate-training-for-employees',
+  '/business/ai-test-generator-for-teachers',
+  '/business/lead-generation-quizzes',
+  '/business/ai-quizzes-for-small-businesses',
+  '/business/partner-program-white-label-quizzes-for-agencies',
+  '/business/ai-quizzes-for-specialized-industries',
+];
+
 type DataType = {
   title: string;
   description: string;
@@ -42,6 +51,7 @@ const BusinessForWhom: React.FC = () => {
     title: item.title,
     description: item.description,
     image: images[index].image,
+    link: links[index],
   }));
 
   return (
@@ -56,6 +66,7 @@ const BusinessForWhom: React.FC = () => {
               title={item.title}
               description={item.description}
               image={item.image}
+              link={item.link}
             />
           ))}
         </div>
@@ -77,6 +88,7 @@ const BusinessForWhom: React.FC = () => {
                 title={item.title}
                 description={item.description}
                 image={item.image}
+                link={item.link}
               />
             </div>
           ))}

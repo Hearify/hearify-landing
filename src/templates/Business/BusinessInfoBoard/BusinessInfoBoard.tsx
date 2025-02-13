@@ -15,10 +15,9 @@ export type BusinessInfoBoardProps = {
   text1: string;
   text2: string;
   text3: string;
+  text4: string;
   backImg: React.FC<React.SVGProps<SVGSVGElement>>;
-  image1: React.FC<React.SVGProps<SVGSVGElement>>;
-  image2: React.FC<React.SVGProps<SVGSVGElement>>;
-  image3: React.FC<React.SVGProps<SVGSVGElement>>;
+  image: React.FC<React.SVGProps<SVGSVGElement>>;
 };
 
 const BusinessInfoBoard: React.FC<BusinessInfoBoardProps> = ({
@@ -31,10 +30,9 @@ const BusinessInfoBoard: React.FC<BusinessInfoBoardProps> = ({
   text1,
   text2,
   text3,
+  text4,
   backImg: BackImageComponent,
-  image1,
-  image2,
-  image3,
+  image,
 }) => {
   return (
     <section className={addStyles ? styles.wrapper2 : styles.wrapper}>
@@ -45,9 +43,10 @@ const BusinessInfoBoard: React.FC<BusinessInfoBoardProps> = ({
         <p className={styles.description}>{description}</p>
 
         <div className={styles.content}>
-          <BusinessInfoBoardCard text={text1} image={image1} />
-          <BusinessInfoBoardCard text={text2} image={image2} />
-          <BusinessInfoBoardCard text={text3} image={image3} />
+          <BusinessInfoBoardCard text={text1} image={image} />
+          <BusinessInfoBoardCard text={text2} image={image} />
+          <BusinessInfoBoardCard text={text3} image={image} />
+          <BusinessInfoBoardCard text={text4} image={image} />
         </div>
 
         <AppButtonLink className={styles.button} href={href} size="lg">

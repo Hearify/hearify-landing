@@ -24,9 +24,11 @@
   position: absolute;
   z-index: 1;
   left: 65%;
+
   @include md {
     display: none;
   }
+
   opacity: 10%;
 }
 
@@ -34,9 +36,11 @@
   position: absolute;
   z-index: 1;
   right: 65%;
+
   @include md {
     display: none;
   }
+
   opacity: 10%;
 }
 
@@ -48,6 +52,7 @@
   flex-direction: column;
   margin: 100px 0;
   gap: 24px;
+
   @include sm {
     margin: 48px 0;
   }
@@ -56,9 +61,11 @@
 .title {
   @include text-heading-2;
   text-align: center;
+
   @include lg {
     max-width: 600px;
   }
+
   @include xs {
     @include text-subtitle-1;
     max-width: 300px;
@@ -67,26 +74,26 @@
 
 .description {
   @include text-subtitle-2;
-  max-width: 600px;
+  max-width: 950px;
   text-align: center;
-  margin-bottom: 72px;
+  margin-bottom: 32px;
+
   @include xs {
     @include text-main-3;
-    text-align: center;
-    max-width: 300px;
-    margin-bottom: 0;
   }
 }
 
 .content {
-  width: 850px;
+  width: 900px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
   margin-bottom: 80px;
+
   @include md {
     width: 100%;
   }
+
   @include sm {
     margin-bottom: 0;
   }
@@ -95,6 +102,7 @@
 .button {
   width: 380px;
   font-weight: 700;
+
   @include xs {
     width: 100%;
   }
