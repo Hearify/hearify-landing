@@ -1,4 +1,4 @@
-@use "src/styles/helpers" as *;
+@use 'src/styles/helpers' as *;
 
 .wrapper {
   overflow: hidden;
@@ -34,8 +34,8 @@
   overflow: hidden;
   color: var(--general-black);
   transition:
-          max-height 0.3s ease-out,
-          padding 0.3s ease-out;
+    max-height 0.3s ease-out,
+    padding 0.3s ease-out;
   @include md {
     @include text-main-2;
   }
@@ -49,4 +49,3 @@
     transition: 0.5s;
   }
 }
-

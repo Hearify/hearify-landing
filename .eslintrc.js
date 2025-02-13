@@ -20,23 +20,18 @@ module.exports = {
     'plugin:prettier/recommended',
     'next',
   ],
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'react-hooks',
-    'prettier',
-  ],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'],
   parserOptions: {
     project: ['./tsconfig.json'],
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
-    }
+    },
   },
   rules: {
     'no-console': 'off',
-    'radix': 'off',
+    radix: 'off',
     'prettier/prettier': ['error'],
     'class-methods-use-this': 'off',
     'react/react-in-jsx-scope': 'off',
@@ -50,13 +45,18 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'off',
     '@typescript-eslint/consistent-type-imports': 'error',
     'react/require-default-props': 'off',
-    'import/no-extraneous-dependencies': ['error', {
-      devDependencies: true,
-    }],
-    'import/order': ['error', {
-      'newlines-between': 'always',
-      groups: ['builtin', 'external', ['internal', 'parent', 'sibling', 'index'], 'object', 'type'],
-    }],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+      },
+    ],
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'always',
+        groups: ['builtin', 'external', ['internal', 'parent', 'sibling', 'index'], 'object', 'type'],
+      },
+    ],
   },
 };
-

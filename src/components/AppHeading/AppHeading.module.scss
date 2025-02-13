@@ -1,4 +1,4 @@
-@use "src/styles/helpers" as *;
+@use 'src/styles/helpers' as *;
 
 .wrapper {
   position: relative;
@@ -6,15 +6,15 @@
   color: var(--general-black);
 
   &--h1 {
-    @include text-heading-1
+    @include text-heading-1;
   }
 
   &--h2 {
-    @include text-heading-2
+    @include text-heading-2;
   }
 
   &--h3 {
-    @include text-heading-3
+    @include text-heading-3;
   }
 }
 
