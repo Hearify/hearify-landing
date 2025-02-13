@@ -1,10 +1,9 @@
-import HRIcon from "@/assets/icons/teacher-2.svg";
-import EduInstIcon from "@/assets/icons/school2.svg";
-import MarketIcon from "@/assets/icons/presentation-chart-line.svg";
-import SmallBizIcon from "@/assets/icons/briefcase.svg";
-import PartnerIcon from "@/assets/icons/user-group.svg";
-import SpecializedIcon from "@/assets/icons/science-2.svg";
-
+import HRIcon from '@/assets/icons/teacher-2.svg';
+import EduInstIcon from '@/assets/icons/school2.svg';
+import MarketIcon from '@/assets/icons/presentation-chart-line.svg';
+import SmallBizIcon from '@/assets/icons/briefcase.svg';
+import PartnerIcon from '@/assets/icons/user-group.svg';
+import SpecializedIcon from '@/assets/icons/science-2.svg';
 
 export type NavigationItem = {
   i18nKey: string;
@@ -22,32 +21,32 @@ export const headerNavigation: NavigationItem[] = [
       {
         i18nKey: 'HR and Corporate Training',
         href: '/business/ai-corporate-training-for-employees',
-        icon: HRIcon,
+        icon: HRIcon as React.FC<React.SVGProps<SVGSVGElement>>,
       },
       {
         i18nKey: 'Small and Medium Businesses',
         href: '/business/ai-quizzes-for-small-businesses',
-        icon: SmallBizIcon,
+        icon: SmallBizIcon as React.FC<React.SVGProps<SVGSVGElement>>,
       },
       {
         i18nKey: 'Educational Institutions',
         href: '/business/ai-test-generator-for-teachers',
-        icon: EduInstIcon,
+        icon: EduInstIcon as React.FC<React.SVGProps<SVGSVGElement>>,
       },
       {
         i18nKey: 'Partner Programs and Agencies',
         href: '/business/partner-program-white-label-quizzes-for-agencies',
-        icon: PartnerIcon,
-      },
-      {
-        i18nKey: 'Marketing and Customer Engagement',
-        href: '/business/lead-generation-quizzes',
-        icon: MarketIcon,
+        icon: PartnerIcon as React.FC<React.SVGProps<SVGSVGElement>>,
       },
       {
         i18nKey: 'Specialized Industries',
         href: '/business/ai-quizzes-for-specialized-industries',
-        icon: SpecializedIcon,
+        icon: SpecializedIcon as React.FC<React.SVGProps<SVGSVGElement>>,
+      },
+      {
+        i18nKey: 'Marketing and Customer Engagement',
+        href: '/business/lead-generation-quizzes',
+        icon: MarketIcon as React.FC<React.SVGProps<SVGSVGElement>>,
       },
     ],
   },

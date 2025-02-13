@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import { CalendarIcon } from '@heroicons/react/24/solid';
@@ -9,7 +8,6 @@ import styles from './EduInstitutionsHero.module.scss';
 
 const EduInstitutionsHero: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.EduInstitutionsHero' });
-  const animationRef = useRef<HTMLDivElement>(null);
 
   return (
     <section className={styles.wrapper} id="hero">

@@ -43,7 +43,7 @@ const PageHeader: React.FC = () => {
       {!isServer && isDeviceLarge ? (
         <>
           <div className={styles.navigation}>
-            {headerNavigation.map((item) => {
+            {headerNavigation.map(item => {
               const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
               return (
@@ -53,10 +53,7 @@ const PageHeader: React.FC = () => {
                   onMouseEnter={() => setOpenDropdown(item.i18nKey)}
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
-                  <Link
-                    href={href}
-                    className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
-                  >
+                  <Link href={href} className={cn(styles.link, router.asPath === item.href && styles.linkActive)}>
                     {t(item.i18nKey)}
                   </Link>
 
@@ -67,7 +64,7 @@ const PageHeader: React.FC = () => {
                       })}
                     >
                       <div className={styles.dropdownList}>
-                        {item.subItems.map((subItem) => (
+                        {item.subItems.map(subItem => (
                           <Link
                             key={subItem.i18nKey}
                             href={subItem.href}
@@ -113,26 +110,19 @@ const PageHeader: React.FC = () => {
               </Link>
 
               <nav className={styles.navigation}>
-                {headerNavigation.map((item) => {
+                {headerNavigation.map(item => {
                   const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
                   return (
                     <div key={item.i18nKey}>
-                      <Link
-                        href={href}
-                        className={cn(styles.link, router.asPath === item.href && styles.linkActive)}
-                      >
+                      <Link href={href} className={cn(styles.link, router.asPath === item.href && styles.linkActive)}>
                         {t(item.i18nKey)}
                       </Link>
 
                       {item.subItems && (
                         <div className={styles.dropdownMenuMobile}>
-                          {item.subItems.map((subItem) => (
-                            <Link
-                              key={subItem.i18nKey}
-                              href={subItem.href}
-                              className={styles.dropdownItem}
-                            >
+                          {item.subItems.map(subItem => (
+                            <Link key={subItem.i18nKey} href={subItem.href} className={styles.dropdownItem}>
                               {subItem.icon && <subItem.icon className={styles.icon} />}
                               <span>{t(subItem.i18nKey)}</span>
                             </Link>

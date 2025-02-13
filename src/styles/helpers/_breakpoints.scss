@@ -1,5 +1,11 @@
 $breakpoints: sm, md, lg, xl, xxl;
-$screens: (xs: 575.98, sm: 767.98, md: 991.98, lg: 1199.98, xl: 1399.98);
+$screens: (
+  xs: 575.98,
+  sm: 767.98,
+  md: 991.98,
+  lg: 1199.98,
+  xl: 1399.98,
+);
 
 // X-Small devices (portrait phones, less than 576px)
 @mixin xs {

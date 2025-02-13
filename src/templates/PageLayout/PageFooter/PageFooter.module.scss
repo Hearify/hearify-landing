@@ -1,4 +1,4 @@
-@use "src/styles/helpers" as *;
+@use 'src/styles/helpers' as *;
 
 .wrapper {
   display: flex;
@@ -144,7 +144,6 @@
     text-decoration: underline;
   }
 }
-
 
 .navigation {
   display: grid;
