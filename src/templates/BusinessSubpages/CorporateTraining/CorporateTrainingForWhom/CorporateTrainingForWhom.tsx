@@ -4,23 +4,17 @@ import { useTranslation } from 'next-i18next';
 
 import ForWhomCard from '@/containers/ForWhomCard/ForWhomCard';
 import TeacherIcon from '@/assets/business/teacher.svg';
-import SchoolIcon from '@/assets/business/school.svg';
-import BoardIcon from '@/assets/business/board.svg';
-import BriefcaseIcon from '@/assets/business/briefcase.svg';
-import UserGroupIcon from '@/assets/business/user-group.svg';
-import ScienceIcon from '@/assets/business/science.svg';
+import UserPlusIcon from '@/assets/business/user-plus.svg';
+import UserIcon from '@/assets/business/user-group.svg';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
-import styles from './BusinessForWhom.module.scss';
+import styles from './CorporateTrainingForWhom.module.scss';
 
 import type { ForWhomCardProps } from '@/containers/ForWhomCard/ForWhomCard';
 
 const links = [
-  '/business/ai-corporate-training-for-employees',
-  '/business/ai-test-generator-for-teachers',
-  '/business/lead-generation-quizzes',
-  '/business/ai-quizzes-for-small-businesses',
-  '/business/partner-program-white-label-quizzes-for-agencies',
-  '/business/ai-quizzes-for-specialized-industries',
+  "https://app.hearify.org/signup",
+  "https://app.hearify.org/signup",
+  "https://app.hearify.org/signup",
 ];
 
 type DataType = {
@@ -33,18 +27,15 @@ type ImagesType = {
 };
 
 const BusinessForWhom: React.FC = () => {
-  const { t } = useTranslation('common', { keyPrefix: 'templates.BusinessForWhom' });
+  const { t } = useTranslation('common', { keyPrefix: 'templates.CorporateTrainingForWhom' });
   const { isDeviceLarge } = useDeviceDetect('md');
 
   const data: DataType[] = t('data', { returnObjects: true });
   /* eslint-disable @typescript-eslint/no-unsafe-assignment */
   const images: ImagesType[] = [
     { image: TeacherIcon },
-    { image: SchoolIcon },
-    { image: BoardIcon },
-    { image: BriefcaseIcon },
-    { image: UserGroupIcon },
-    { image: ScienceIcon },
+    { image: UserPlusIcon },
+    { image: UserIcon },
   ];
 
   const combinedData: Array<ForWhomCardProps> = data.map((item, index) => ({

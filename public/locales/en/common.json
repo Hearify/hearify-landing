@@ -330,6 +330,72 @@
       "description": "Transform your employee training programs with AI-powered quizzes from Hearify. Automate learning, track progress and deliver engaging content that boosts team productivity and improves memorization.",
       "button": "GET A DEMO"
     },
+    "WhyCorporateTraining": {
+      "title": "Why Choose Hearify for Employee Training?",
+      "benefits": [
+        {
+          "title": "Automated quiz creation",
+          "description": "Instantly create customized quizzes from PDFs, videos, or text materials with just a few clicks. Save time and focus on your strategic learning goals."
+        },
+        {
+          "title": "Real-time analytics",
+          "description": "Get instant insights into employee performance. Track progress, identify skill gaps, and ensure every team member is on the right track."
+        },
+        {
+          "title": "Seamless integration with LMS",
+          "description": "Hearify seamlessly integrates with your existing learning management system, making quiz deployment and management simple and efficient."
+        },
+        {
+          "title": "Adaptive training courses",
+          "description": "Provide a personalized learning experience by adapting quizzes to each employee's knowledge level."
+        }
+      ]
+    },
+    "CorporateTrainingFAQ": {
+      "title": "Frequently Asked Questions",
+      "blocks": [
+        {
+          "question": "What is AI Employee Training?",
+          "answer": "Hearify uses artificial intelligence to automate and improve employee training processes. This includes creating personalized learning modules, automating tests, tracking progress, and providing real-time feedback to increase employee productivity and engagement."
+        },
+        {
+          "question": "How can I start using AI for corporate training?",
+          "answer": "Start by defining your learning objectives. Upload your existing content (PDFs, videos, or text), use AI to create interactive quizzes, and integrate the platform with your learning management system (LMS) for a seamless deployment."
+        },
+        {
+          "question": "How is AI transforming corporate training?",
+          "answer": "AI is revolutionizing corporate training by automating the creation of learning materials, personalizing the learning experience, tracking employee progress, and providing data-driven insights to improve learning outcomes."
+        }
+      ]
+    },
+    "CorporateTrainingInfoBoard": {
+      "title": "AI Skills Training for a Smarter Workforce",
+      "description": "Hearify's AI tools simplify enterprise learning by automating repetitive tasks and delivering interactive content that resonates with your team. Whether you're training new employees, ensuring regulatory compliance, or upskilling staff, our platform provides your organization with scalable solutions.",
+      "button": "GET A DEMO",
+      "text1": "Accelerate onboarding with tests designed to familiarize employees with company policies.",
+      "text2": "Simplify compliance training to keep teams up to date with regulatory requirements.",
+      "text3": "Simplify skill development and training programs for continuous professional development.",
+      "alert-title": "Ready to transform corporate learning?",
+      "alert-text": "Empower your employees with smarter learning tools that get results. Get started today with Hearify and see how effective AI quizzes can be.",
+      "alert-button": "GET A DEMO"
+    },
+    "CorporateTrainingForWhom": {
+      "title": "How Businesses Use Hearify",
+      "data": [
+        {
+          "title": "Compliance training",
+          "description": "Ensure your team complies with industry standards with quizzes that reinforce important information."
+        },
+        {
+          "title": "Onboarding new employees",
+          "description": "Help new employees quickly adapt to their roles with interactive quizzes that test their understanding of company values and policies."
+        },
+        {
+          "title": "Team development",
+          "description": "Identify knowledge gaps and offer targeted training programs to help employees learn new skills."
+        }
+      ]
+    },
     "EduInstitutionsHero": {
       "title": "Transform Education with AI-powered Quizzes",
       "description": "Simplify learning, engage students, and improve results with AI-powered quizzes for schools, universities, and online courses.",
