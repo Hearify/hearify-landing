@@ -7,7 +7,6 @@ import CorporateTrainingBenefits from './CorporateTrainingBenefits/CorporateTrai
 import CorporateTrainingFAQ from './CorporateTrainingFAQ/CorporateTrainingFAQ';
 import CorporateTrainingInfoBoard from './CorporateTrainingInfoBoard/CorporateTrainingInfoBoard';
 import CorporateTrainingForWhom from './CorporateTrainingForWhom/CorporateTrainingForWhom';
-
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import GroupImg from '@/assets/images/corporate_training_cta.png';
 
