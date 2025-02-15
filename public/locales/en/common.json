@@ -377,6 +377,10 @@
         {
           "question": "How is AI transforming corporate training?",
           "answer": "AI is revolutionizing corporate training by automating the creation of learning materials, personalizing the learning experience, tracking employee progress, and providing data-driven insights to improve learning outcomes."
+        },
+        {
+          "question": "How can AI quizzes improve employee engagement?",
+          "answer": "AI quizzes make learning interactive, engaging, and fun. By providing personalized learning experiences, real-time feedback, and adaptive training modules, AI quizzes keep employees motivated and focused on their learning goals."
         }
       ]
     },
@@ -480,6 +484,10 @@
         {
           "question": "What content formats does Hearify support for quiz creation?",
           "answer": "You can use text documents, PDFs, videos, and lecture notes to create quizzes effortlessly."
+        },
+        {
+          "question": "Can Hearify integrate with existing learning management systems?",
+          "answer": "Yes, Hearify seamlessly integrates with popular LMS platforms to ensure a smooth learning experience."
         }
       ]
     },
@@ -565,6 +573,10 @@
         {
           "question": "Can I integrate quizzes with my CRM?",
           "answer": "Yes! Hearify supports CRM integrations, allowing you to automate lead collection and follow-up strategies."
+        },
+        {
+          "question": "Can I track quiz performance and ROI?",
+          "answer": "Hearify provides detailed analytics to help you measure quiz performance, track conversions, and optimize your marketing strategy."
         }
       ]
     },
@@ -651,6 +663,10 @@
         {
           "question": "How can AI quizzes help with customer engagement?",
           "answer": "AI quizzes allow businesses to collect insights, recommend products, and create interactive experiences that drive conversions."
+        },
+        {
+          "question": "Can I customize quizzes to match my brand?",
+          "answer": "Yes! Hearify offers customization options to match your brand colors, logo, and messaging for a seamless user experience."
         }
       ]
     },
@@ -737,6 +753,10 @@
         {
           "question": "How does revenue sharing work?",
           "answer": "As a partner, you earn commissions on client subscriptions, with flexible models to maximize profitability."
+        },
+        {
+          "question": "What support do you offer to partners?",
+          "answer": "We provide dedicated resources and support to help you grow your business and maximize the value of our partnership."
         }
       ]
     },
@@ -823,6 +843,10 @@
         {
           "question": "How does AI improve industry-specific training?",
           "answer": "AI ensures precision testing, real-time analytics, and adaptive learning paths to optimize skill development."
+        },
+        {
+          "question": "Is Hearify suitable for large organizations with complex training needs?",
+          "answer": "Yes! Our scalable solutions are designed to meet the demands of large organizations with diverse training requirements."
         }
       ]
     },

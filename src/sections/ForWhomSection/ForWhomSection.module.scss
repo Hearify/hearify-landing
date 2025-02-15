@@ -12,6 +12,12 @@
   @include text-heading-2;
   text-align: center;
   margin-bottom: 64px;
+
+  @include md {
+    @include text-heading-4;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 
 .list {
@@ -44,6 +50,5 @@
   svg {
     width: 6px;
     height: 6px;
-    // fill: var(--brand-purpe-400);
   }
 }

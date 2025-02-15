@@ -141,7 +141,10 @@
   }
 
   @include md {
-    @include text-heading-3;
+    @include text-heading-4;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 0;
   }
 
   @include xs {
@@ -164,6 +167,8 @@
   @include md {
     @include text-subtitle-3;
     margin-bottom: 24px;
+    max-width: 600px;
+    font-size: clamp(14px, 2vw, 16px);
   }
 
   @include xs {
@@ -204,8 +209,11 @@
   margin-top: 24px;
 
   @include md {
-    width: 300px;
-    margin-top: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 32px;
+    font-size: 16px;
+    padding: 16px 24px;
   }
 
   @include xs {
