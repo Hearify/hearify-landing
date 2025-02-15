@@ -1,26 +1,22 @@
 import React from 'react';
-import { useTranslation } from 'next-i18next';
 
-import styles from './HomeFAQ.module.scss';
+import styles from './FAQSection.module.scss';
 import FAQBlock from '@/containers/FAQBlock/FAQBlock';
-import AppHeading from '@/components/AppHeading/AppHeading';
 import FAQSchema from '@/containers/FAQSchema/FAQSchema';
 
 import type { FAQItem } from '@/types/article';
 
-const HomeFAQ: React.FC = () => {
-  const { t } = useTranslation('common', { keyPrefix: 'templates.HomeFAQ' });
+type FAQProps = {
+  title: string;
+  faqBlocks: FAQItem[];
+};
 
-  const faqBlocks: FAQItem[] = t('blocks', { returnObjects: true });
-
+const FAQSection: React.FC<FAQProps> = ({ title, faqBlocks }) => {
   return (
     <section className={styles.wrapper} id="faq">
       <FAQSchema items={faqBlocks} />
 
-      <AppHeading variant="h2" className={styles.title}>
-        {t('title')}
-      </AppHeading>
-
+      <h2 className={styles.title}>{title}</h2>
       <div className={styles.list}>
         {faqBlocks.map(item => (
           <FAQBlock key={item.question} question={item.question} answer={item.answer} />
@@ -30,4 +26,4 @@ const HomeFAQ: React.FC = () => {
   );
 };
 
-export default HomeFAQ;
+export default FAQSection;

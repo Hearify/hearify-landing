@@ -7,14 +7,14 @@ export type ForWhomCardProps = {
   title: string;
   description: string;
   image: React.FC<React.SVGProps<SVGSVGElement>>;
-  link: string;
+  link?: string;
 };
 
 const ForWhomCard: React.FC<ForWhomCardProps> = ({
-  title, //
+  title,
   description,
   image: ImageComponent,
-  link,
+  link = 'https://app.hearify.org/signup',
 }) => {
   return (
     <Link href={link} className={styles.wrapper}>

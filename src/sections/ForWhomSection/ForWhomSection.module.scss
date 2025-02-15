@@ -1,7 +1,8 @@
 @use 'src/styles/helpers' as *;
 
 .wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+
   @include lg {
     margin-bottom: 40px;
   }
@@ -10,7 +11,7 @@
 .title {
   @include text-heading-2;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 64px;
 }
 
 .list {
@@ -19,6 +20,7 @@
   justify-content: center;
   padding: 30px 0;
   gap: 54px;
+
   @include lg {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -42,6 +44,6 @@
   svg {
     width: 6px;
     height: 6px;
-    fill: var(--brand-purpe-400);
+    // fill: var(--brand-purpe-400);
   }
 }
