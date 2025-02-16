@@ -53,9 +53,10 @@ const SpecializedIndustries: React.FC = () => {
         icons={[HeartIcon, BanknotesIcon, WrenchIcon, ComputerDesktopIcon, ScaleIcon, PuzzlePieceIcon]}
       />
 
+      <div style={{ marginBottom: '100px' }} />
       <FAQSection title={t('IndustriesFAQ.title')} faqBlocks={t('IndustriesFAQ.blocks', { returnObjects: true })} />
 
-      <div style={{ marginBottom: '200px' }} />
+      <div style={{ marginBottom: '100px' }} />
       <BoostAlert
         title={t('IndustriesInfoBoard.alert-title')}
         text={t('IndustriesInfoBoard.alert-text')}

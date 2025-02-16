@@ -50,12 +50,13 @@ const EduInstitutions: React.FC = () => {
         icons={[BookOpenIcon, ComputerDesktopIcon, UserCircleIcon]}
       />
 
+      <div style={{ marginBottom: '100px' }} />
       <FAQSection
         title={t('EduInstitutionsFAQ.title')}
         faqBlocks={t('EduInstitutionsFAQ.blocks', { returnObjects: true })}
       />
 
-      <div style={{ marginBottom: '200px' }} />
+      <div style={{ marginBottom: '100px' }} />
       <BoostAlert
         title={t('EduInstitutionsInfoBoard.alert-title')}
         text={t('EduInstitutionsInfoBoard.alert-text')}

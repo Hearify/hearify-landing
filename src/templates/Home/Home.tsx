@@ -54,6 +54,8 @@ const Home: React.FC = () => {
         title={t('templates.HomeFAQ.title')}
         faqBlocks={t('templates.HomeFAQ.blocks', { returnObjects: true })}
       />
+
+      <div style={{ marginBottom: '25px' }} />
       <BoostAlert
         title={t('boost_your_knowledge')}
         text={t('try_out_ai_quiz')}

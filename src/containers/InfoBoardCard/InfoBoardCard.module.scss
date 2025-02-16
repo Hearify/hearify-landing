@@ -25,9 +25,9 @@
   }
 
   @include sm {
-    width: 45px; // Add mobile breakpoint with same size
+    width: 45px;
     height: 45px;
-    margin-top: -25px; // Keep consistent margin if needed
+    margin-top: -25px;
   }
 }
 

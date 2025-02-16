@@ -48,12 +48,13 @@ const CorporateTraining: React.FC = () => {
         icons={[TeacherIcon, UserPlusIcon, UserIcon]}
       />
 
+      <div style={{ marginBottom: '100px' }} />
       <FAQSection
         title={t('CorporateTrainingFAQ.title')}
         faqBlocks={t('CorporateTrainingFAQ.blocks', { returnObjects: true })}
       />
 
-      <div style={{ marginBottom: '200px' }} />
+      <div style={{ marginBottom: '100px' }} />
       <BoostAlert
         title={t('CorporateTrainingInfoBoard.alert-title')}
         text={t('CorporateTrainingInfoBoard.alert-text')}

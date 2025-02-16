@@ -59,10 +59,11 @@ const SMBSolutions: React.FC = () => {
           RocketLaunchIcon,
         ]}
       />
+      <div style={{ marginBottom: '100px' }} />
 
       <FAQSection title={t('SMBFAQ.title')} faqBlocks={t('SMBFAQ.blocks', { returnObjects: true })} />
 
-      <div style={{ marginBottom: '200px' }} />
+      <div style={{ marginBottom: '100px' }} />
       <BoostAlert
         title={t('SMBInfoBoard.alert-title')}
         text={t('SMBInfoBoard.alert-text')}

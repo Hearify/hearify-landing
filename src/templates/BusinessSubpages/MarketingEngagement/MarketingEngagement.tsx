@@ -52,10 +52,11 @@ const MarketingEngagement: React.FC = () => {
         infoBlocks={t('MarketingForWhom.data', { returnObjects: true })}
         icons={[CursorArrowRaysIcon, CalendarIcon, MegaphoneIcon, WindowIcon, GiftIcon, ShoppingCartIcon]}
       />
+      <div style={{ marginBottom: '100px' }} />
 
       <FAQSection title={t('MarketingFAQ.title')} faqBlocks={t('MarketingFAQ.blocks', { returnObjects: true })} />
 
-      <div style={{ marginBottom: '200px' }} />
+      <div style={{ marginBottom: '100px' }} />
       <BoostAlert
         title={t('MarketingInfoBoard.alert-title')}
         text={t('MarketingInfoBoard.alert-text')}

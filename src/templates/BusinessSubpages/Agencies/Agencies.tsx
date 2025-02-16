@@ -53,12 +53,13 @@ const Agencies: React.FC = () => {
         icons={[EnvelopeOpenIcon, BookOpenIcon, UsersIcon, WindowIcon, AcademicCapIcon, QuestionMarkCircleIcon]}
       />
 
+      <div style={{ marginBottom: '100px' }} />
       <FAQSection
         title={t('PartnerProgramsFAQ.title')}
         faqBlocks={t('PartnerProgramsFAQ.blocks', { returnObjects: true })}
       />
 
-      <div style={{ marginBottom: '200px' }} />
+      <div style={{ marginBottom: '100px' }} />
       <BoostAlert
         title={t('PartnerProgramsInfoBoard.alert-title')}
         text={t('PartnerProgramsInfoBoard.alert-text')}
