@@ -10,11 +10,6 @@
     align-items: center;
     justify-content: center;
   }
-
-  @include sm {
-    flex: 1 1 50%;
-    padding-bottom: 24px;
-  }
 }
 
 .image-box {
@@ -27,6 +22,12 @@
 
   @include md {
     margin-top: -25px;
+  }
+
+  @include sm {
+    width: 45px; // Add mobile breakpoint with same size
+    height: 45px;
+    margin-top: -25px; // Keep consistent margin if needed
   }
 }
 

@@ -16,6 +16,17 @@
     margin-bottom: 40px;
   }
 
+  @include sm {
+    display: grid;
+    grid-template-areas:
+      'title'
+      'description'
+      'img'
+      'button'
+      'animation';
+    gap: 24px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -35,26 +46,16 @@
       top: 40%;
       left: 50%;
     }
-  }
-}
 
-.animation {
-  width: 440px;
-  min-height: 210px;
-  margin-left: 45%;
+    @include sm {
+      width: 520px;
+      height: 280px;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
 
-  @include md {
-    margin: auto;
-    transform: translateY(-50%);
-  }
-
-  @include sm {
-    max-width: 75%;
-  }
-
-  @include xs {
-    max-width: 85%;
-    max-height: 140px;
+      opacity: 0.65;
+    }
   }
 }
 
@@ -67,6 +68,10 @@
     @include text-heading-4;
     text-align: center;
     margin-bottom: 0;
+  }
+
+  @include sm {
+    grid-area: title;
   }
 }
 
@@ -81,6 +86,10 @@
     text-align: center;
     margin-bottom: 0;
   }
+
+  @include sm {
+    grid-area: description;
+  }
 }
 
 .button {
@@ -94,6 +103,11 @@
     padding: 16px 24px;
   }
 
+  @include sm {
+    grid-area: button;
+    margin-top: -35px;
+  }
+
   @include xs {
     width: 100%;
   }
@@ -104,6 +118,8 @@
   border-radius: 20px;
   top: 30%;
   right: 0;
+  width: 590px;
+  height: 360px;
 
   @include lg {
     width: 440px;
@@ -113,13 +129,48 @@
   }
 
   @include md {
-    width: 590px;
-    height: 390px;
     position: static;
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    margin: 24px 0 0;
   }
 
   @include sm {
-    width: 100%;
+    // display: none;
+    grid-area: img;
+    width: 70%;
     height: auto;
+    margin: 24px auto 0;
+    display: block;
+  }
+}
+
+.animation {
+  width: 440px;
+  min-height: 210px;
+  margin-left: 45%;
+
+  @include md {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    min-height: 210px;
+    margin: -40px -100px 0;
+    right: initial;
+    top: initial;
+  }
+
+  @include sm {
+    grid-area: animation;
+    width: 100%;
+    max-width: 260px;
+    min-height: 140px;
+    margin: -25px auto 50px;
+  }
+
+  @include xs {
+    max-width: 100%;
+    max-height: 200px;
   }
 }
