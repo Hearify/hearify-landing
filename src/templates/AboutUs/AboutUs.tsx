@@ -16,13 +16,13 @@ type DataType = {
 const AboutUs: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.AboutUs' });
 
-  const data: DataType[] = t('data', { returnObjects: true });
+  const data = t('data', { returnObjects: true });
 
   return (
     <main className={styles.wrapper}>
       <h1 className={styles.title}>{t('title')}</h1>
       <ul className={styles.list}>
-        {data.map(item => (
+        {(data as DataType[]).map(item => (
           <li key={item.title} className={styles.item}>
             <h2 className={styles.itemTitle}>{item.title}</h2>
             <p className={styles.description}>{item.description}</p>
