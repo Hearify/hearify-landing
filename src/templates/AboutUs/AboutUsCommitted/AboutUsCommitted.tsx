@@ -15,7 +15,7 @@ type DataType = {
 
 const AboutUsCommitted: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.AboutUsCommitted' });
-  const data: DataType[] = t('data', { returnObjects: true });
+  const data = t('data', { returnObjects: true });
 
   const { isDeviceLarge } = useDeviceDetect('md');
 
@@ -24,7 +24,8 @@ const AboutUsCommitted: React.FC = () => {
       <h2 className={styles.title}>{t('title')}</h2>
       {isDeviceLarge ? (
         <ul className={styles.list}>
-          {data.map((item, index) => (
+
+          {(data as DataType[]).map((item, index) => (
             <li key={item.title} className={styles.item}>
               <div className={styles.image}>
                 {index === 0 && <TeacherIcon />}
@@ -38,7 +39,7 @@ const AboutUsCommitted: React.FC = () => {
         </ul>
       ) : (
         <ul className={styles.list}>
-          {data.map((item, index) => (
+          {(data as DataType[]).map((item, index) => (
             <AppDropdown
               key={item.title}
               icon={
