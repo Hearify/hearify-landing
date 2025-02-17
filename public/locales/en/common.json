@@ -270,55 +270,67 @@
           "title": "Effective Learning and Corporate Training",
           "description": "Optimize your corporate training programs with AI-powered quizzes that effectively save time, improve learning, and track progress. Hearify is ideal for onboarding, compliance training, and employee development, as well as for creating interactive learning content effortlessly.",
           "button": "GET A DEMO",
-          "text1": "Automated quiz creation: Quickly create engaging quizzes from your training materials.",
-          "text2": "Seamless integration with LMS: Easily integrate with existing platforms to ensure a seamless learning experience.",
-          "text3": "Instant analytics: Track progress and identify knowledge gaps in real-time.",
-          "text4": "Gamified learning: Increase engagement with interactive and fun learning methods."
+          "text_list": [
+            "Automated quiz creation: Quickly create engaging quizzes from your training materials.",
+            "Seamless integration with LMS: Easily integrate with existing platforms to ensure a seamless learning experience.",
+            "Instant analytics: Track progress and identify knowledge gaps in real-time.",
+            "Gamified learning: Increase engagement with interactive and fun learning methods."
+          ]
         },
         {
           "title": "AI for Automating Educational Processes",
           "description": "Simplify the learning process with AI tools designed to create engaging quizzes for schools, universities, and online courses. Tailor content to meet the unique needs of each student, improving retention and overall performance.",
           "button": "LEARN MORE",
-          "text1": "Automatic adaptation to the level of knowledge: Personalize tests according to each learner's ability.",
-          "text2": "Instant feedback: Help students improve by providing instant feedback on their performance.",
-          "text3": "Create quizzes from PDFs, videos, and texts: Quickly turn your materials into interactive assessments.",
-          "text4": "Improve learning outcomes: Track progress and ensure a deeper understanding of key concepts."
+          "text_list": [
+            "Automatic adaptation to the level of knowledge: Personalize tests according to each learner's ability.",
+            "Instant feedback: Help students improve by providing instant feedback on their performance.",
+            "Create quizzes from PDFs, videos, and texts: Quickly turn your materials into interactive assessments.",
+            "Improve learning outcomes: Track progress and ensure a deeper understanding of key concepts."
+          ]
         },
         {
           "title": "Interactive Quizzes for Customer Engagement",
           "description": "Use AI quizzes to engage your audience, attract new customers, and deepen engagement. Turn your marketing campaigns into interactive experiences that drive results and build stronger connections.",
           "button": "CREATE A QUIZ",
-          "text1": "Quizzes for marketing campaigns: Create customized quizzes that resonate with your audience.",
-          "text2": "Increase customer engagement: Increase participation and engagement with engaging, interactive content.",
-          "text3": "Interaction analytics: Gain valuable insights into customer behavior and preferences.",
-          "text4": "Lead generation: Turn engagement into real leads by collecting customer data."
+          "text_list": [
+            "Quizzes for marketing campaigns: Create customized quizzes that resonate with your audience.",
+            "Increase customer engagement: Increase participation and engagement with engaging, interactive content.",
+            "Interaction analytics: Gain valuable insights into customer behavior and preferences.",
+            "Lead generation: Turn engagement into real leads by collecting customer data."
+          ]
         },
         {
           "title": "Affordable Solution for Small Businesses",
           "description": "Give your small team a simple, fast, cost-effective AI-powered quiz solution. Hearify is ideal for training, team building, or customer engagement, ensuring you can do more with less. Plus, it's easy to customize and scale to meet your needs.",
           "button": "TRY FOR FREE",
-          "text1": "Fast implementation: Get set up and start creating quizzes in minutes.",
-          "text2": "Easy to use: The intuitive and user-friendly interface requires no technical knowledge.",
-          "text3": "Affordable price: Designed with small and medium-sized businesses in mind.",
-          "text4": "Scalable for growth: Start small and expand the use of quizzes as your business grows."
+          "text_list": [
+            "Fast implementation: Get set up and start creating quizzes in minutes.",
+            "Easy to use: The intuitive and user-friendly interface requires no technical knowledge.",
+            "Affordable price: Designed with small and medium-sized businesses in mind.",
+            "Scalable for growth: Start small and expand the use of quizzes as your business grows."
+          ]
         },
         {
           "title": "Partner Program for Agencies",
           "description": "Expand your agency's service offerings with AI-powered quiz solutions that you can brand as your own. Help your clients optimize their training, engagement, or marketing campaigns while opening up new revenue streams for your business.",
           "button": "LEARN MORE",
-          "text1": "Flexible partnership terms: Customized agreements to meet your agency's goals and client needs.",
-          "text2": "Agency-level branding: Offer white-label solutions that showcase your brand, not ours.",
-          "text3": "Additional revenue streams: Earn recurring revenue by offering automated quiz solutions to your clients.",
-          "text4": "Comprehensive support: Access to tools, resources, and expert assistance to ensure your success."
+          "text_list": [
+            "Flexible partnership terms: Customized agreements to meet your agency's goals and client needs.",
+            "Agency-level branding: Offer white-label solutions that showcase your brand, not ours.",
+            "Additional revenue streams: Earn recurring revenue by offering automated quiz solutions to your clients.",
+            "Comprehensive support: Access to tools, resources, and expert assistance to ensure your success."
+          ]
         },
         {
           "title": "AI Quizzes for Specialized Industries",
           "description": "Simplify learning and assessment in specialized fields with AI-powered tests tailored to the needs of a specific industry. Whether it's medical education, financial training, or technical skill development, Hearify provides a flexible tool to ensure accurate and effective learning outcomes.",
           "button": "GET INDUSTRY SOLUTION",
-          "text1": "Industry-specific learning: Design quizzes that meet the unique requirements of your industry.",
-          "text2": "Accurate testing and feedback: Provide accurate assessments with actionable insights for improvement.",
-          "text3": "Support for various industries: From healthcare to IT, finance, and manufacturing, we have a solution for every industry.",
-          "text4": "Scalable and adaptable solutions: Ideal for teams of all sizes, with the flexibility to grow with your needs."
+          "text_list": [
+            "Industry-specific learning: Design quizzes that meet the unique requirements of your industry.",
+            "Accurate testing and feedback: Provide accurate assessments with actionable insights for improvement.",
+            "Support for various industries: From healthcare to IT, finance, and manufacturing, we have a solution for every industry.",
+            "Scalable and adaptable solutions: Ideal for teams of all sizes, with the flexibility to grow with your needs."
+          ]
         }
       ],
       "alert-title": "Ready to Get Started?",
@@ -327,7 +339,7 @@
     },
     "CorporateTrainingHero": {
       "title": "Revolutionize Corporate Training with AI Quizzes",
-      "description": "Transform your employee training programs with AI-powered quizzes from Hearify. Automate learning, track progress and deliver engaging content that boosts team productivity and improves memorization.",
+      "description": "Transform your employee training programs with AI quizzes from Hearify. Automate learning, track progress and deliver engaging content that boosts team productivity and improves memorization.",
       "button": "GET A DEMO"
     },
     "WhyCorporateTraining": {
@@ -365,6 +377,10 @@
         {
           "question": "How is AI transforming corporate training?",
           "answer": "AI is revolutionizing corporate training by automating the creation of learning materials, personalizing the learning experience, tracking employee progress, and providing data-driven insights to improve learning outcomes."
+        },
+        {
+          "question": "How can AI quizzes improve employee engagement?",
+          "answer": "AI quizzes make learning interactive, engaging, and fun. By providing personalized learning experiences, real-time feedback, and adaptive training modules, AI quizzes keep employees motivated and focused on their learning goals."
         }
       ]
     },
@@ -372,9 +388,11 @@
       "title": "AI Skills Training for a Smarter Workforce",
       "description": "Hearify's AI tools simplify enterprise learning by automating repetitive tasks and delivering interactive content that resonates with your team. Whether you're training new employees, ensuring regulatory compliance, or upskilling staff, our platform provides your organization with scalable solutions.",
       "button": "GET A DEMO",
-      "text1": "Accelerate onboarding with tests designed to familiarize employees with company policies.",
-      "text2": "Simplify compliance training to keep teams up to date with regulatory requirements.",
-      "text3": "Simplify skill development and training programs for continuous professional development.",
+      "text_list": [
+        "Accelerate onboarding with tests designed to familiarize employees with company policies.",
+        "Simplify compliance training to keep teams up to date with regulatory requirements.",
+        "Simplify skill development and training programs for continuous professional development."
+      ],
       "alert-title": "Ready to transform corporate learning?",
       "alert-text": "Empower your employees with smarter learning tools that get results. Get started today with Hearify and see how effective AI quizzes can be.",
       "alert-button": "GET A DEMO"
@@ -401,25 +419,436 @@
       "description": "Simplify learning, engage students, and improve results with AI-powered quizzes for schools, universities, and online courses.",
       "button": "GET A DEMO"
     },
+    "WhyEduInstitutions": {
+      "title": "Why Choose Hearify for Educational Institutions?",
+      "benefits": [
+        {
+          "title": "Simplified quiz creation",
+          "description": "Create quizzes in seconds using existing content such as textbooks, lecture notes, PDFs, or videos."
+        },
+        {
+          "title": "Adaptive learning",
+          "description": "Tailor quizzes to each student's knowledge level, providing a personalized learning experience."
+        },
+        {
+          "title": "Instant feedback",
+          "description": "Provide students with instant feedback on their performance to help them identify and address gaps in their understanding."
+        },
+        {
+          "title": "Enhanced student engagement",
+          "description": "Use interactive and gamified quizzes to keep students motivated and focused on their studies."
+        }
+      ]
+    },
+    "EduInstitutionsInfoBoard": {
+      "title": "Revolutionize Education with AI Test Creator for Teachers",
+      "description": "Hearify's AI-powered platform enables educators to save time and improve learning outcomes by automating repetitive tasks and delivering personalized learning experiences.",
+      "button": "LEARN MORE",
+      "text_list": [
+        "For schools: Create quizzes that align with the curriculum and reinforce classroom learning.",
+        "For universities: Automate assessments and offer adaptive testing for different groups of students.",
+        "For online courses: Create interactive quizzes to keep students engaged and track their progress effectively."
+      ],
+      "alert-title": "Ready to Transform Your Institution?",
+      "alert-text": "Save time, improve outcomes, and engage your students with Hearify's AI quiz platform.",
+      "alert-button": "LEARN MORE"
+    },
+    "EduInstitutionsForWhom": {
+      "title": "How AI Quiz Maker for Educators Helps to Transform Learning",
+      "data": [
+        {
+          "title": "Create quizzes based on the curriculum",
+          "description": "Create quizzes based on national or regional educational standards to test how students have mastered the material they've learned."
+        },
+        {
+          "title": "Enhance online learning",
+          "description": "Use interactive quizzes to encourage students to participate in distance or hybrid learning."
+        },
+        {
+          "title": "Support personalized learning",
+          "description": "Tailor quizzes to individual student levels to provide differentiated learning and improve outcomes."
+        }
+      ]
+    },
+    "EduInstitutionsFAQ": {
+      "title": "Frequently Asked Questions",
+      "blocks": [
+        {
+          "question": "Can Hearify support large institutions with multiple classes?",
+          "answer": "Yes, Hearify's scalable solutions are perfect for schools and universities with diverse student groups."
+        },
+        {
+          "question": "Does Hearify provide real-time performance tracking?",
+          "answer": "Absolutely! Our platform offers detailed analytics to track student progress and identify learning gaps."
+        },
+        {
+          "question": "What content formats does Hearify support for quiz creation?",
+          "answer": "You can use text documents, PDFs, videos, and lecture notes to create quizzes effortlessly."
+        },
+        {
+          "question": "Can Hearify integrate with existing learning management systems?",
+          "answer": "Yes, Hearify seamlessly integrates with popular LMS platforms to ensure a smooth learning experience."
+        }
+      ]
+    },
     "MarketingHero": {
       "title": "Quizzes for Marketing and Customer Engagement",
-      "description": "Transform your marketing strategy with interactive quizzes that capture leads, boost engagement, and personalize the customer journey. Hearify’s AI quiz generator helps businesses create customized, data-driven experiences that attract new customers and strengthen brand loyalty.",
+      "description": "Transform your marketing strategy with quizzes that capture leads and personalize the customer journey. Hearify’s AI quiz generator helps businesses attract new customers and strengthen brand loyalty.",
       "button": "CREATE A QUIZ"
     },
+    "WhyMarketing": {
+      "title": "Why Use Interactive Quizzes in Marketing?",
+      "benefits": [
+        {
+          "title": "Lead Generation & Data Collection",
+          "description": "Capture high-quality leads by engaging users with fun, interactive quizzes that collect valuable insights."
+        },
+        {
+          "title": "Engagement & Brand Awareness",
+          "description": "Quizzes keep your audience engaged longer, increasing website interaction and social media shares."
+        },
+        {
+          "title": "Personalized Customer Journeys",
+          "description": "AI-generated quizzes help you deliver tailored recommendations and content to potential customers."
+        },
+        {
+          "title": "Higher Conversion Rates",
+          "description": "Users interacting with quizzes are more likely to convert into paying customers or subscribers."
+        }
+      ]
+    },
+    "MarketingInfoBoard": {
+      "title": "How AI-Powered Quizzes Improve Customer Engagement",
+      "description": "Hearify's AI quiz platform helps businesses create meaningful interactions that drive real results. Whether you're launching a new product, building brand awareness, or improving customer retention, interactive quizzes make every engagement count.",
+      "button": "CREATE A QUIZ",
+      "text_list": [
+        "Create AI-driven quizzes based on customer behavior and preferences to drive engagement.",
+        "Embed quizzes on websites, emails, or social media to maximize reach and interaction.",
+        "Analyze real-time data to refine your marketing strategy and boost conversions and ROI."
+      ],
+      "alert-title": "Turn Engagement into Conversions!",
+      "alert-text": "Make your marketing campaigns more interactive, data-driven, and conversion-focused with Hearify's AI quiz generator.",
+      "alert-button": "CREATE A QUIZ"
+    },
+    "MarketingForWhom": {
+      "title": "Use Cases: How Businesses Are Winning with AI Quizzes",
+      "data": [
+        {
+          "title": "Content Marketing & Lead Generation",
+          "description": "Use quizzes to capture leads, segment audiences, and deliver targeted content."
+        },
+        {
+          "title": "Events & Webinars",
+          "description": "Engage attendees with pre-event quizzes and post-event feedback surveys."
+        },
+        {
+          "title": "Brand Awareness Campaigns",
+          "description": "Gamify your content to create viral, shareable marketing experiences."
+        },
+        {
+          "title": "SaaS & Tech",
+          "description": "Use quizzes to educate potential clients and guide them toward the right solution."
+        },
+        {
+          "title": "Customer Loyalty & Retention",
+          "description": "Reward users with personalized content, offers, and discounts based on quiz responses."
+        },
+        {
+          "title": "E-Commerce & Retail",
+          "description": "Help customers find the perfect product with quiz-based recommendations."
+        }
+      ]
+    },
+    "MarketingFAQ": {
+      "title": "Frequently Asked Questions",
+      "blocks": [
+        {
+          "question": "How can quizzes help with lead generation?",
+          "answer": "Quizzes collect user responses and emails, helping businesses generate qualified leads and personalize follow-ups."
+        },
+        {
+          "question": "Where can I share my quizzes?",
+          "answer": "You can embed quizzes on websites, share them via email marketing, or post them on social media to reach a wider audience."
+        },
+        {
+          "question": "Can I integrate quizzes with my CRM?",
+          "answer": "Yes! Hearify supports CRM integrations, allowing you to automate lead collection and follow-up strategies."
+        },
+        {
+          "question": "Can I track quiz performance and ROI?",
+          "answer": "Hearify provides detailed analytics to help you measure quiz performance, track conversions, and optimize your marketing strategy."
+        }
+      ]
+    },
     "SMBHero": {
-      "title": "Cost-Effective AI Quiz Solution for Small Businesses",
-      "description": "Give your small team a simple, fast, cost-effective AI-powered quiz solution. Whether you're training employees, enhancing team collaboration, or engaging customers, Hearify provides an intuitive and affordable platform designed to help small businesses thrive. Easily customizable and scalable, Hearify grows with your business.",
+      "title": "Cost-Effective AI Quiz Solution for Businesses",
+      "description": "Give your team a simple, cost-effective AI quiz solution. Whether you're training employees or engaging customers, Hearify provides an affordable platform designed to help businesses thrive.",
       "button": "TRY FOR FREE"
     },
+    "WhySMB": {
+      "title": "Why Businesses Choose Hearify?",
+      "benefits": [
+        {
+          "title": "Quick Setup & Easy to Use",
+          "description": "Get started in minutes—no technical skills required! Our intuitive interface ensures seamless quiz creation."
+        },
+        {
+          "title": "Cost-Effective Solution",
+          "description": "Designed to fit small business budgets, offering powerful AI-driven features without high costs."
+        },
+        {
+          "title": "Training & Team Building",
+          "description": "Create engaging quizzes to onboard new employees, reinforce company knowledge, and boost collaboration."
+        },
+        {
+          "title": "Lead Generation & Engagement",
+          "description": "Use AI-generated quizzes to attract new customers, collect insights, and increase engagement."
+        }
+      ]
+    },
+    "SMBInfoBoard": {
+      "title": "Streamline Learning & Engagement for Teams",
+      "description": "Hearify helps small businesses maximize efficiency without adding complexity. Whether you need a tool for employee training, customer engagement, or team-building activities, our AI quiz platform delivers results with minimal effort.",
+      "button": "TRY FOR FREE",
+      "text_list": [
+        "Train employees faster with automated quizzes. No coding or technical skills required.",
+        "Improve teamwork with fun and interactive knowledge tests. Boost engagement and collaboration.",
+        "Boost customer retention with personalized engagement quizzes. Collect valuable insights and feedback.",
+        "Scale effortlessly as your business grows. Our platform grows with you, offering more features and capabilities."
+      ],
+      "alert-title": "Get Started with AI Quizzes Today!",
+      "alert-text": "Affordable, scalable, and easy to use AI quiz solution for small businesses looking to train teams and engage customers.",
+      "alert-button": "TRY FOR FREE"
+    },
+    "SMBForWhom": {
+      "title": "How Businesses Are Using AI Quizzes",
+      "data": [
+        {
+          "title": "Onboarding & Training",
+          "description": "Quickly get new employees up to speed with structured training quizzes."
+        },
+        {
+          "title": "Team Collaboration",
+          "description": "Strengthen internal communication and knowledge-sharing through interactive quizzes."
+        },
+        {
+          "title": "Customer Feedback & Surveys",
+          "description": "Use AI-powered quizzes to understand customer needs and preferences."
+        },
+        {
+          "title": "Product Recommendations",
+          "description": "Help customers find the right product or service with AI-driven quiz interactions."
+        },
+        {
+          "title": "Lead Generation",
+          "description": "Attract new leads and collect valuable data through engaging quizzes."
+        },
+        {
+          "title": "Brand Awareness",
+          "description": "Increase brand visibility and engagement with interactive quizzes."
+        }
+      ]
+    },
+    "SMBFAQ": {
+      "title": "Frequently Asked Questions",
+      "blocks": [
+        {
+          "question": "Is Hearify suitable for small businesses with no technical expertise?",
+          "answer": "Yes! Hearify is designed for ease of use—anyone can create and manage quizzes without coding or advanced skills."
+        },
+        {
+          "question": "Can I use quizzes to improve team productivity?",
+          "answer": "Absolutely! Use quizzes for knowledge sharing, onboarding, and training to enhance teamwork and efficiency."
+        },
+        {
+          "question": "How can AI quizzes help with customer engagement?",
+          "answer": "AI quizzes allow businesses to collect insights, recommend products, and create interactive experiences that drive conversions."
+        },
+        {
+          "question": "Can I customize quizzes to match my brand?",
+          "answer": "Yes! Hearify offers customization options to match your brand colors, logo, and messaging for a seamless user experience."
+        }
+      ]
+    },
     "PartnerProgramsHero": {
-      "title": "White-Label AI Quiz Solutions for Agencies",
-      "description": "Expand your agency's service offerings with AI-powered quizzes that you can brand as your own. Deliver powerful training, engagement, and marketing solutions to your clients while unlocking new revenue streams. With Hearify’s white-label partner program, you gain a scalable, fully customizable quiz platform to offer under your own brand.",
+      "title": "White-Label AI Quiz Solutions for Partners and Agencies",
+      "description": "Expand your agency's service offerings with white-label AI quizzes that you can brand as your own. Deliver powerful training, engagement, and marketing solutions to your clients while unlocking new revenue streams. ",
       "button": "LEARN MORE"
     },
+    "WhyPartnerPrograms": {
+      "title": "Why Partner with Hearify?",
+      "benefits": [
+        {
+          "title": "White-Label Branding",
+          "description": "Offer AI quiz solutions under your own brand, strengthening your service portfolio without additional development costs."
+        },
+        {
+          "title": "Flexible Partnership Models",
+          "description": "Choose the partnership level that fits your business—reseller, affiliate, or full white-label solution."
+        },
+        {
+          "title": "Recurring Revenue Streams",
+          "description": "Earn from subscriptions, custom solutions, and premium feature offerings for your clients."
+        },
+        {
+          "title": "AI-Powered Automation",
+          "description": "Provide clients with an intelligent quiz generator that saves time, enhances engagement, and delivers real-time analytics."
+        }
+      ]
+    },
+    "PartnerProgramsInfoBoard": {
+      "title": "How Our Partner Program Works",
+      "description": "Partnering with Hearify is easy—whether you're a digital agency, marketing firm, or e-learning provider, we help you scale your services with AI-powered quiz solutions.",
+      "button": "BECOME A PARTNER",
+      "text_list": [
+        "Customize the platform with your branding – Logo, colors, and domain personalization.",
+        "Offer quiz automation to your clients – Training, lead generation, and customer engagement.",
+        "Earn recurring revenue – Get commissions on every client subscription.",
+        "Access premium partner support – Dedicated resources to help you grow."
+      ],
+      "alert-title": "Start Growing Your Agency Today!",
+      "alert-text": "Join Hearify's Partner Program and offer our AI solutions under your own brand. Increase revenue and provide engagement tools to your clients.",
+      "alert-button": "BECOME A PARTNER"
+    },
+    "PartnerProgramsForWhom": {
+      "title": "Who Can Benefit from Our Partner Program?",
+      "data": [
+        {
+          "title": "Marketing Agencies",
+          "description": "Provide interactive quizzes for lead generation, customer engagement, and brand awareness."
+        },
+        {
+          "title": "Training & e-Learning Providers",
+          "description": "Automate corporate training, onboarding, and knowledge assessment for businesses."
+        },
+        {
+          "title": "HR & Recruitment Agencies",
+          "description": "Help companies streamline hiring processes and employee assessments with AI-driven quizzes."
+        },
+        {
+          "title": "Tech & SaaS Companies",
+          "description": "Offer AI-powered quiz solutions as an additional service or integration for your clients."
+        },
+        {
+          "title": "Educational Institutions",
+          "description": "Enhance learning experiences with interactive quizzes tailored to students' needs."
+        },
+        {
+          "title": "You?",
+          "description": "If you have clients who could benefit from AI quizzes, we have a solution for you."
+        }
+      ]
+    },
+    "PartnerProgramsFAQ": {
+      "title": "Frequently Asked Questions",
+      "blocks": [
+        {
+          "question": "Can I fully brand Hearify's platform as my own?",
+          "answer": "Yes! Our white-label solution allows full customization, including branding, domain integration, and personalized UI."
+        },
+        {
+          "question": "What industries can benefit from AI quizzes?",
+          "answer": "Marketing, education, corporate training, HR, SaaS, and many more industries can use AI-powered quizzes for engagement and learning."
+        },
+        {
+          "question": "How does revenue sharing work?",
+          "answer": "As a partner, you earn commissions on client subscriptions, with flexible models to maximize profitability."
+        },
+        {
+          "question": "What support do you offer to partners?",
+          "answer": "We provide dedicated resources and support to help you grow your business and maximize the value of our partnership."
+        }
+      ]
+    },
     "IndustriesHero": {
-      "title": "Industry-Specific AI Training & Assessment",
-      "description": "Simplify learning and assessment in specialized fields with AI-powered tests designed to meet the unique demands of your industry. Whether you’re in medical education, financial training, IT, manufacturing, or technical skill development, Hearify provides a flexible, data-driven tool to ensure accurate and effective learning outcomes.",
+      "title": "Industry-Specific AI Training",
+      "description": "Simplify learning and assessment in specialized fields with AI tests tailored to your industry’s unique demands. Whether in medical education, financial training, IT, or manufacturing, Hearify ensures effective learning outcomes.",
       "button": "GET INDUSTRY SOLUTION"
+    },
+    "WhyIndustries": {
+      "title": "Why Use AI Quizzes for Specialized Training?",
+      "benefits": [
+        {
+          "title": "Industry-Specific Content",
+          "description": "Create quizzes tailored to your field, ensuring relevance and high-quality assessments."
+        },
+        {
+          "title": "Precision Testing & Feedback",
+          "description": "AI-driven analytics provide accurate evaluation and personalized feedback to enhance learning."
+        },
+        {
+          "title": "Compliance & Certification Support",
+          "description": "Ensure employees and trainees meet industry standards with automated assessments."
+        },
+        {
+          "title": "Adaptive Learning & Skill Tracking",
+          "description": "Customize quizzes to match learners' levels and track their progress over time."
+        }
+      ]
+    },
+    "IndustriesInfoBoard": {
+      "title": "How AI-Powered Quizzes Enhance Industry Training",
+      "description": "Hearify's AI-driven quiz platform allows organizations in healthcare, finance, engineering, technology, and other industries to streamline training and certification processes with automated, customizable assessments.",
+      "button": "GET INDUSTRY SOLUTION",
+      "text_list": [
+        "Automate complex assessments for technical knowledge, certifications, and skills testing.",
+        "Ensure compliance by integrating industry-specific regulations into quiz content.",
+        "Deliver precise feedback with AI-driven performance tracking and personalized learning paths.",
+        "Boost engagement with interactive learning experiences tailored to your workforce."
+      ],
+      "alert-title": "Optimize Learning & Compliance !",
+      "alert-text": "Take training and certification to the next level with industry-specific AI quizzes. Automate assessments, track progress and ensure compliance.",
+      "alert-button": "GET SOLUTION"
+    },
+    "IndustriesForWhom": {
+      "title": "AI Quizzes for Industry-Specific Learning",
+      "data": [
+        {
+          "title": "Medical & Healthcare Training",
+          "description": "Create knowledge assessments for medical students, healthcare professionals, and compliance training."
+        },
+        {
+          "title": "Financial Services & Banking",
+          "description": "Evaluate financial literacy, risk assessment skills, and regulatory compliance."
+        },
+        {
+          "title": "Engineering & Manufacturing",
+          "description": "Train employees on safety standards, technical protocols, and operational efficiency."
+        },
+        {
+          "title": "IT & Software Development",
+          "description": "Test coding skills, cybersecurity knowledge, and technical certifications."
+        },
+        {
+          "title": "Legal & Compliance",
+          "description": "Ensure adherence to industry laws and ethical guidelines through AI-powered quizzes."
+        },
+        {
+          "title": "Other Specialized Fields",
+          "description": "Customize quizzes for any industry, from aviation to hospitality, to meet unique training needs."
+        }
+      ]
+    },
+    "IndustriesFAQ": {
+      "title": "Frequently Asked Questions",
+      "blocks": [
+        {
+          "question": "Can Hearify create quizzes specific to my industry?",
+          "answer": "Yes! Our AI quiz generator is designed to customize assessments based on industry requirements, from healthcare to finance."
+        },
+        {
+          "question": "Does Hearify support compliance and certification quizzes?",
+          "answer": "Absolutely. Our platform helps industries meet regulatory standards with accurate and automated certification assessments."
+        },
+        {
+          "question": "How does AI improve industry-specific training?",
+          "answer": "AI ensures precision testing, real-time analytics, and adaptive learning paths to optimize skill development."
+        },
+        {
+          "question": "Is Hearify suitable for large organizations with complex training needs?",
+          "answer": "Yes! Our scalable solutions are designed to meet the demands of large organizations with diverse training requirements."
+        }
+      ]
     },
     "TermsOfUse": {
       "title": "Terms of Use",

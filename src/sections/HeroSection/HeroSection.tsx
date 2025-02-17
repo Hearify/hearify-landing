@@ -1,26 +1,32 @@
 import Image from 'next/image';
-import { useTranslation } from 'next-i18next';
 import { CalendarIcon } from '@heroicons/react/24/solid';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
-import heroImage from '@/assets/images/marketing_hero_image.png';
-import styles from './MarketingEngagementHero.module.scss';
+import styles from './HeroSection.module.scss';
 
-const MarketingEngagementHero: React.FC = () => {
-  const { t } = useTranslation('common', { keyPrefix: 'templates.MarketingHero' });
+import type { StaticImageData } from 'next/image';
+
+type HeroProps = {
+  title: string;
+  description: string;
+  button: string;
+  image: StaticImageData;
+};
+
+const HeroSection: React.FC<HeroProps> = ({ title, description, button, image }) => {
   return (
     <section className={styles.wrapper} id="hero">
-      <h1 className={styles.title}>{t('title')}</h1>
-      <p className={styles.description}>{t('description')}</p>
+      <h1 className={styles.title}>{title}</h1>
+      <p className={styles.description}>{description}</p>
       <AppButtonLink className={styles.button} href="https://app.hearify.org/signup" size="lg">
-        {t('button')}
+        {button}
         <CalendarIcon />
       </AppButtonLink>
       <div>
         <Image
           className={styles.img}
-          src={heroImage}
-          alt="Marketing and Customer Engagement"
+          src={image}
+          alt="Hero image"
           width={590}
           height={360}
           fetchPriority="high"
@@ -31,4 +37,4 @@ const MarketingEngagementHero: React.FC = () => {
   );
 };
 
-export default MarketingEngagementHero;
+export default HeroSection;

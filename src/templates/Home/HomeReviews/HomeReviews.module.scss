@@ -34,6 +34,13 @@
 
 .title {
   margin-bottom: 24px;
+
+  @include md {
+    @include text-heading-4;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 32px;
+  }
 }
 
 .description {
@@ -41,8 +48,12 @@
   margin-bottom: 64px;
   max-width: 800px;
   text-align: center;
+
   @include md {
+    @include text-subtitle-3;
     margin-bottom: 32px;
+    max-width: 600px;
+    font-size: clamp(14px, 2vw, 16px);
   }
 }
 
@@ -62,6 +73,7 @@
 .image {
   width: 100px;
   height: 100px;
+
   @include md {
     width: 56px;
     height: 56px;
@@ -110,6 +122,7 @@
   padding: 48px;
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.125) 68.53%);
+
   @include md {
     padding: 24px;
   }
@@ -133,4 +146,9 @@
 .content {
   @include text-subtitle-2;
   white-space: pre-wrap;
+
+  @include md {
+    @include text-subtitle-3;
+    font-size: clamp(14px, 2vw, 16px);
+  }
 }

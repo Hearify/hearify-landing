@@ -39,14 +39,14 @@ export const headerNavigation: NavigationItem[] = [
         icon: PartnerIcon as React.FC<React.SVGProps<SVGSVGElement>>,
       },
       {
-        i18nKey: 'Specialized Industries',
-        href: '/business/ai-quizzes-for-specialized-industries',
-        icon: SpecializedIcon as React.FC<React.SVGProps<SVGSVGElement>>,
-      },
-      {
         i18nKey: 'Marketing and Customer Engagement',
         href: '/business/lead-generation-quizzes',
         icon: MarketIcon as React.FC<React.SVGProps<SVGSVGElement>>,
+      },
+      {
+        i18nKey: 'Specialized Industries',
+        href: '/business/ai-quizzes-for-specialized-industries',
+        icon: SpecializedIcon as React.FC<React.SVGProps<SVGSVGElement>>,
       },
     ],
   },

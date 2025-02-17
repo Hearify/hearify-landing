@@ -16,6 +16,16 @@
     margin-bottom: 40px;
   }
 
+  @include sm {
+    display: grid;
+    grid-template-areas:
+      'title'
+      'description'
+      'img'
+      'button';
+    gap: 24px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -77,9 +87,10 @@
   max-width: 380px;
 
   @include md {
-    @include text-main-2;
+    font-size: clamp(1rem, 2vw, 1.25rem);
     text-align: center;
-    margin-bottom: 0;
+    max-width: 600px;
+    margin-bottom: 24px;
   }
 }
 
@@ -87,11 +98,16 @@
   width: 384px;
 
   @include md {
-    margin-bottom: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: -10px;
+    font-size: 16px;
+    padding: 16px 24px;
   }
 
-  @include xs {
-    width: 100%;
+  @include sm {
+    grid-area: button;
+    margin-top: 25px;
   }
 }
 
@@ -112,10 +128,13 @@
     width: 590px;
     height: 390px;
     position: static;
+    margin: 24px 0 0;
   }
 
   @include sm {
+    grid-area: img;
     width: 100%;
     height: auto;
+    margin-top: -10px;
   }
 }

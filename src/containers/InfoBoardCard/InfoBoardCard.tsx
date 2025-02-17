@@ -10,9 +10,7 @@ type AppContentItemProps = {
 const BusinessInfoBoardCard: React.FC<AppContentItemProps> = ({ text, image: ImageComponent }) => {
   return (
     <div className={styles.contentItem}>
-      <div className={styles.imageBox}>
-        <ImageComponent className={styles.image} />
-      </div>
+      <ImageComponent className={styles.image} />
       <p className={styles.itemText}>{text}</p>
     </div>
   );

@@ -35,6 +35,13 @@
 
 .title {
   margin-bottom: 24px;
+
+  @include md {
+    @include text-heading-4;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 32px;
+  }
 }
 
 .main-description {
@@ -42,6 +49,7 @@
   margin-bottom: 32px;
   max-width: 800px;
   text-align: center;
+
   @include md {
     margin-bottom: 24px;
   }
@@ -53,6 +61,7 @@
   padding: 32px;
   border-radius: 12px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.125) 51.98%);
+
   @include lg {
     display: block;
     padding: 32px 16px;
@@ -98,11 +107,13 @@
   padding: 32px;
   border-radius: 12px;
   background-color: var(--brand-purpe-10);
+
   @include lg {
     min-height: unset;
     background-color: transparent;
     padding: 8px;
   }
+
   @include xs {
     justify-content: flex-start;
     align-items: flex-start;
@@ -114,6 +125,7 @@
   @include text-heading-4;
   color: var(--brand-purpe-400);
   margin-bottom: 8px;
+
   @include lg {
     font-weight: 400;
   }

@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
   @include md {
     display: none;
   }
@@ -39,6 +40,13 @@
 
 .title {
   margin-bottom: 24px;
+
+  @include md {
+    @include text-heading-4;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 32px;
+  }
 }
 
 .description {

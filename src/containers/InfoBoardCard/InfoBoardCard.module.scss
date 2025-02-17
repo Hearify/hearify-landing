@@ -6,9 +6,9 @@
   flex-direction: row;
   gap: 16px;
 
-  @include sm {
-    flex: 1 1 50%;
-    padding-bottom: 24px;
+  @include md {
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -16,29 +16,19 @@
   display: flex;
 }
 
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 80px;
-//   height: 80px;
-//   border-radius: 12px;
-//   background-color: var(--brand-purpe-10);
-//   box-shadow:
-//     0px 5px 11px 0px rgba(134, 159, 172, 0.1),
-//     0px 20px 20px 0px rgba(134, 159, 172, 0.09),
-//     0px 44px 27px 0px rgba(134, 159, 172, 0.05),
-//     0px 79px 32px 0px rgba(134, 159, 172, 0.01),
-//     0px 123px 35px 0px rgba(134, 159, 172, 0);
-
-//   @include xs {
-//     width: 64px;
-//     height: 64px;
-//   }
-// }
-
 .image {
   width: 19px;
   height: 20px;
+
+  @include md {
+    margin-top: -25px;
+  }
+
+  @include sm {
+    width: 45px;
+    height: 45px;
+    margin-top: -25px;
+  }
 }
 
 .item-text {
@@ -46,6 +36,15 @@
   text-align: left;
   max-width: 900px;
   font-weight: normal;
+
+  @include md {
+    @include text-subtitle-3;
+    margin-bottom: 24px;
+    margin-left: 10px;
+    max-width: 500px;
+    font-size: clamp(14px, 2vw, 16px);
+    text-align: left;
+  }
 
   @include xs {
     @include text-main-3;
