@@ -24,7 +24,6 @@ const AboutUsTeam: React.FC = () => {
       <h2 className={styles.title}>{t('title')}</h2>
       <p className={styles.description}>{t('description')}</p>
       <ul className={styles.list}>
-
         {(data as DataType[]).map((item, index) => (
           <li key={item.title} className={styles.item}>
             <div className={styles.content}>

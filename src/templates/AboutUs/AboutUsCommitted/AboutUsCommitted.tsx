@@ -24,7 +24,6 @@ const AboutUsCommitted: React.FC = () => {
       <h2 className={styles.title}>{t('title')}</h2>
       {isDeviceLarge ? (
         <ul className={styles.list}>
-
           {(data as DataType[]).map((item, index) => (
             <li key={item.title} className={styles.item}>
               <div className={styles.image}>
