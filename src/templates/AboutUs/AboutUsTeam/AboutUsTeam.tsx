@@ -18,14 +18,14 @@ type DataType = {
 const AboutUsTeam: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.AboutUsTeam' });
 
-  const data: DataType[] = t('data', { returnObjects: true });
-
+  const data = t('data', { returnObjects: true });
   return (
     <section className={styles.wrapper} id="team">
       <h2 className={styles.title}>{t('title')}</h2>
       <p className={styles.description}>{t('description')}</p>
       <ul className={styles.list}>
-        {data.map((item, index) => (
+
+        {(data as DataType[]).map((item, index) => (
           <li key={item.title} className={styles.item}>
             <div className={styles.content}>
               <a href={item.link} target="_blank" className={styles.image}>
