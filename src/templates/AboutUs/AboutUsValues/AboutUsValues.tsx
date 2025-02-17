@@ -16,7 +16,7 @@ type DataType = {
 
 const AboutUsValues: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.AboutUsValues' });
-  const data: DataType[] = t('data', { returnObjects: true });
+  const data = t('data', { returnObjects: true });
 
   const { isDeviceLarge } = useDeviceDetect('lg');
 
@@ -26,7 +26,7 @@ const AboutUsValues: React.FC = () => {
       <div className={styles.container}>
         {isDeviceLarge ? (
           <ul className={styles.list}>
-            {data.map(item => (
+            {(data as DataType[]).map(item => (
               <li key={item.title} className={styles.item}>
                 <h3 className={styles.itemTitle}>{item.title}</h3>
                 <p className={styles.description}>{item.description}</p>
@@ -35,7 +35,7 @@ const AboutUsValues: React.FC = () => {
           </ul>
         ) : (
           <ul className={styles.list}>
-            {data.map(item => (
+            {(data as DataType[]).map(item => (
               <AppDropdown key={item.title} title={item.title} content={item.description} />
             ))}
           </ul>
