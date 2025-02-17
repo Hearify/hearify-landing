@@ -64,7 +64,6 @@
   @include md {
     @include text-heading-4;
     text-align: left;
-    margin-bottom: 24px;
   }
 }
 
@@ -83,6 +82,8 @@
 .image {
   width: 420px;
   height: auto;
+  object-fit: cover;
+  align-self: flex-start;
 
   @include lg {
     width: 380px;
@@ -90,7 +91,10 @@
 
   @include md {
     width: 360px;
-    height: auto;
+    height: 260px;
+    margin-top: -32px;
+    margin-right: -32px;
+    object-position: center top;
   }
 
   @include xs {
@@ -102,7 +106,8 @@
 
 .button {
   @include md {
-    width: 220px !important;
+    width: 100%;
+    max-width: 400px;
     font-size: 16px;
     padding: 16px 24px;
   }
