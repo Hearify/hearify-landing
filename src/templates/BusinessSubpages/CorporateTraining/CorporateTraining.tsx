@@ -18,8 +18,15 @@ import TeacherIcon from '@/assets/business/teacher.svg';
 import UserPlusIcon from '@/assets/business/user-plus.svg';
 import UserIcon from '@/assets/business/user-group.svg';
 
+type BenefitBlock = {
+  title: string;
+  description: string;
+};
+
 const CorporateTraining: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates' });
+
+  const benefitData = t('WhyCorporateTraining.benefits', { returnObjects: true });
 
   return (
     <main className={styles.wrapper}>
@@ -32,7 +39,7 @@ const CorporateTraining: React.FC = () => {
 
       <BenefitsSection
         title={t('WhyCorporateTraining.title')}
-        benefitBlocks={t('WhyCorporateTraining.benefits', { returnObjects: true })}
+        benefitBlocks={benefitData as BenefitBlock[]}
         icons={[ClockIcon, AnalyticsIcon, SettingsIcon, CoursesIcon]}
       />
 

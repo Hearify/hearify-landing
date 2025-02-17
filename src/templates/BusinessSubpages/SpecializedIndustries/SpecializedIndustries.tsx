@@ -23,8 +23,15 @@ import InfoBoardSection from '@/sections/InfoBoardSection/InfoBoardSection';
 import ForWhomSection from '@/sections/ForWhomSection/ForWhomSection';
 import GroupImg from '@/assets/images/industry_cta_image.png';
 
+type BenefitBlock = {
+  title: string;
+  description: string;
+};
+
 const SpecializedIndustries: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates' });
+
+  const benefitData = t('WhyIndustries.benefits', { returnObjects: true });
 
   return (
     <main className={styles.wrapper}>
@@ -37,7 +44,7 @@ const SpecializedIndustries: React.FC = () => {
 
       <BenefitsSection
         title={t('WhyIndustries.title')}
-        benefitBlocks={t('WhyIndustries.benefits', { returnObjects: true })}
+        benefitBlocks={benefitData as BenefitBlock[]}
         icons={[ClipboardDocumentListIcon, MagnifyingGlassCircleIcon, ShieldCheckIcon, BookOpenIcon]}
       />
 

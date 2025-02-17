@@ -23,9 +23,15 @@ import InfoBoardSection from '@/sections/InfoBoardSection/InfoBoardSection';
 import ForWhomSection from '@/sections/ForWhomSection/ForWhomSection';
 import GroupImg from '@/assets/images/marketing_cta_image.png';
 
+type BenefitBlock = {
+  title: string;
+  description: string;
+};
+
 const MarketingEngagement: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates' });
 
+  const benefitData = t('WhyMarketing.benefits', { returnObjects: true });
   return (
     <main className={styles.wrapper}>
       <HeroSection
@@ -37,7 +43,7 @@ const MarketingEngagement: React.FC = () => {
 
       <BenefitsSection
         title={t('WhyMarketing.title')}
-        benefitBlocks={t('WhyMarketing.benefits', { returnObjects: true })}
+        benefitBlocks={benefitData as BenefitBlock[]}
         icons={[InboxArrowDownIcon, FireIcon, MapIcon, ChartBarIcon]}
       />
 

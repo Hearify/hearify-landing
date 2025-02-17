@@ -23,8 +23,15 @@ import InfoBoardSection from '@/sections/InfoBoardSection/InfoBoardSection';
 import ForWhomSection from '@/sections/ForWhomSection/ForWhomSection';
 import GroupImg from '@/assets/images/smb_cta_image.png';
 
+type BenefitBlock = {
+  title: string;
+  description: string;
+};
+
 const SMBSolutions: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates' });
+
+  const benefitData = t('WhySMB.benefits', { returnObjects: true });
 
   return (
     <main className={styles.wrapper}>
@@ -37,7 +44,7 @@ const SMBSolutions: React.FC = () => {
 
       <BenefitsSection
         title={t('WhySMB.title')}
-        benefitBlocks={t('WhySMB.benefits', { returnObjects: true })}
+        benefitBlocks={benefitData as BenefitBlock[]}
         icons={[WrenchIcon, BuildingLibraryIcon, UsersIcon, MegaphoneIcon]}
       />
 
