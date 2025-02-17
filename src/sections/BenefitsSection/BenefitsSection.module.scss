@@ -120,34 +120,27 @@
 
 .list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  padding: 16px;
-  // grid-template-columns: repeat(2, 1fr);
-  // column-gap: 24px;
-  // row-gap: 32px;
-  // padding: 64px;
-  // width: 100%;
-  // max-width: 1200px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 32px;
+  padding: 64px;
+  width: 100%;
+  max-width: 1200px;
 
   @include lg {
     padding: 32px;
     gap: 24px;
   }
 
-  // @include md {
-  //   grid-template-columns: repeat(2, 1fr);
-  //   padding: 16px;
-  //   gap: 16px;
-  //   width: 100%;
-  // }
   @include md {
-    width: 100%;
-    max-width: none;
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   @include sm {
-    grid-template-columns: 1fr;
     padding: 8px;
     gap: 12px;
     min-width: 300px;
@@ -156,26 +149,15 @@
 }
 
 .item {
-  aspect-ratio: 1;
   display: flex;
-  display: flex;
-  flex-direction: column;
-  // gap: 20px;
-  // align-items: flex-start;
-  // padding: 16px;
-
-  // @include md {
-  //   flex-direction: column;
-  //   gap: 16px;
-  //   padding: 16px;
-  //   align-items: center;
-  //   text-align: center;
-  //   min-height: 250px;
-  // }
+  gap: 20px;
+  align-items: flex-start;
+  padding: 16px;
 
   @include md {
-    width: 100%;
-    min-height: unset; // Remove fixed height
+    gap: 16px;
+    padding: 12px 16px;
+    align-items: center;
   }
 
   @include sm {
