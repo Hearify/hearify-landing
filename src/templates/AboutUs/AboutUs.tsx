@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
+import { BoltIcon, AdjustmentsHorizontalIcon, LightBulbIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
 
 import GroupImg from '@/assets/images/about-us/group-about-us.png';
 import BoostAlert from '@/containers/BoostAlert/BoostAlert';
-import AboutUsCommitted from './AboutUsCommitted/AboutUsCommitted';
+import BenefitsSection from '@/sections/BenefitsSection/BenefitsSection';
 import AboutUsValues from './AboutUsValues/AboutUsValues';
 import styles from './AboutUs.module.scss';
 import AboutUsTeam from './AboutUsTeam/AboutUsTeam';
@@ -14,13 +15,13 @@ type DataType = {
 };
 
 const AboutUs: React.FC = () => {
-  const { t } = useTranslation('common', { keyPrefix: 'templates.AboutUs' });
+  const { t } = useTranslation('common', { keyPrefix: 'templates' });
 
-  const data = t('data', { returnObjects: true });
+  const data = t('AboutUs.data', { returnObjects: true });
 
   return (
     <main className={styles.wrapper}>
-      <h1 className={styles.title}>{t('title')}</h1>
+      <h1 className={styles.title}>{t('AboutUs.title')}</h1>
       <ul className={styles.list}>
         {(data as DataType[]).map(item => (
           <li key={item.title} className={styles.item}>
@@ -29,17 +30,23 @@ const AboutUs: React.FC = () => {
           </li>
         ))}
       </ul>
-      <AboutUsCommitted />
+      <BenefitsSection
+        title={t('AboutUsCommitted.title')}
+        benefitBlocks={t('AboutUsCommitted.data', { returnObjects: true })}
+        icons={[BoltIcon, AdjustmentsHorizontalIcon, LightBulbIcon, GlobeAltIcon]}
+      />
+
+      <div style={{ marginBottom: '100px' }} />
       <AboutUsTeam />
       <AboutUsValues />
       <div className={styles.box}>
-        <h2 className={styles.boxTitle}>{t('bottom-title')}</h2>
-        <p className={styles.boxDescription}>{t('description')}</p>
+        <h2 className={styles.boxTitle}>{t('AboutUs.bottom-title')}</h2>
+        <p className={styles.boxDescription}>{t('AboutUs.description')}</p>
       </div>
       <BoostAlert
-        title={t('alert-title')}
-        text={t('alert-text')}
-        button={t('alert-button')}
+        title={t('AboutUs.alert-title')}
+        text={t('AboutUs.alert-text')}
+        button={t('AboutUs.alert-button')}
         image={GroupImg}
         width={360}
         height={280}
