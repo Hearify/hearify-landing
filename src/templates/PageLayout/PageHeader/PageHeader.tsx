@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import cn from 'classnames';
 import { useTranslation } from 'next-i18next';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 import AppButtonLink from '@/components/AppButtonLink/AppButtonLink';
 import logoImg from '@/assets/images/logo.png';
@@ -53,9 +54,27 @@ const PageHeader: React.FC = () => {
                   onMouseEnter={() => setOpenDropdown(item.i18nKey)}
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
-                  <Link href={href} className={cn(styles.link, router.asPath === item.href && styles.linkActive)}>
-                    {t(item.i18nKey)}
-                  </Link>
+                  <div className={styles.dropdownHeader}>
+                    <Link href={href} className={cn(styles.link, router.asPath === item.href && styles.linkActive)}>
+                      {t(item.i18nKey)}
+                    </Link>
+                    {item.subItems &&
+                      (openDropdown === item.i18nKey ? (
+                        <ChevronUp
+                          className={cn(
+                            styles.dropdownIcon,
+                            openDropdown === item.i18nKey && styles.dropdownIconActive,
+                          )}
+                        />
+                      ) : (
+                        <ChevronDown
+                          className={cn(
+                            styles.dropdownIcon,
+                            openDropdown === item.i18nKey && styles.dropdownIconActive,
+                          )}
+                        />
+                      ))}
+                  </div>
 
                   {item.subItems && (
                     <div

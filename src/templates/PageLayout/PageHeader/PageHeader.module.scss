@@ -93,6 +93,27 @@
   justify-content: center;
 }
 
+.dropdownHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.dropdownIcon {
+  width: 24px;
+  height: 24px;
+  transition:
+    color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  color: var(--general-black);
+}
+
+.dropdownWrapper:hover .dropdownIcon,
+.dropdownMenuActive + .dropdownHeader .dropdownIcon {
+  color: var(--brand-purpe-300);
+}
+
 .dropdownMenuActive {
   visibility: visible;
   opacity: 1;

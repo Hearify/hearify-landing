@@ -23,15 +23,8 @@ import InfoBoardSection from '@/sections/InfoBoardSection/InfoBoardSection';
 import ForWhomSection from '@/sections/ForWhomSection/ForWhomSection';
 import GroupImg from '@/assets/images/agencies_cta_image.png';
 
-type BenefitBlock = {
-  title: string;
-  description: string;
-};
-
 const Agencies: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates' });
-
-  const benefitData = t('WhyPartnerPrograms.benefits', { returnObjects: true });
 
   return (
     <main className={styles.wrapper}>
@@ -44,7 +37,7 @@ const Agencies: React.FC = () => {
 
       <BenefitsSection
         title={t('WhyPartnerPrograms.title')}
-        benefitBlocks={benefitData as BenefitBlock[]}
+        benefitBlocks={t('WhyPartnerPrograms.benefits', { returnObjects: true })}
         icons={[PaintBrushIcon, ArrowsRightLeftIcon, ChartPieIcon, Cog6ToothIcon]}
       />
 

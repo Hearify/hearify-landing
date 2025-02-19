@@ -36,16 +36,10 @@ type DataBlock = {
   text_list: string[];
 };
 
-type InfoItem = {
-  title: string;
-  description: string;
-};
-
 const Business: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates' });
 
   const sections = t('BusinessInfoBoard.data', { returnObjects: true });
-  const forWhomData = t('BusinessForWhom.data', { returnObjects: true });
 
   return (
     <main className={styles.wrapper}>
@@ -53,7 +47,7 @@ const Business: React.FC = () => {
 
       <ForWhomSection
         title={t('BusinessForWhom.title')}
-        infoBlocks={forWhomData as InfoItem[]}
+        infoBlocks={t('BusinessForWhom.data', { returnObjects: true })}
         icons={SECTION_ICONS}
         links={links}
       />

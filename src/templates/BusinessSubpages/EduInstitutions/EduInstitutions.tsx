@@ -20,15 +20,8 @@ import InfoBoardSection from '@/sections/InfoBoardSection/InfoBoardSection';
 import ForWhomSection from '@/sections/ForWhomSection/ForWhomSection';
 import GroupImg from '@/assets/images/edu_cta_image.png';
 
-type BenefitBlock = {
-  title: string;
-  description: string;
-};
-
 const EduInstitutions: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates' });
-
-  const benefitData = t('WhyEduInstitutions.benefits', { returnObjects: true });
 
   return (
     <main className={styles.wrapper}>
@@ -41,7 +34,7 @@ const EduInstitutions: React.FC = () => {
 
       <BenefitsSection
         title={t('WhyEduInstitutions.title')}
-        benefitBlocks={benefitData as BenefitBlock[]}
+        benefitBlocks={t('WhyEduInstitutions.benefits', { returnObjects: true })}
         icons={[DocumentPlusIcon, AcademicCapIcon, BoltIcon, SparklesIcon]}
       />
 
