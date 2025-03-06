@@ -34,6 +34,10 @@
   gap: 32px;
   position: relative;
 
+  .hideMenuItem {
+    display: none;
+  }
+
   @include lg {
     width: 270px;
     flex-direction: column;
@@ -55,7 +59,7 @@
   &:hover {
     color: var(--brand-purpe-400);
 
-    + .dropdownMenu {
+    +.dropdownMenu {
       display: flex;
     }
   }
@@ -63,12 +67,17 @@
   &--active {
     color: var(--brand-purpe-400);
   }
+
+  @include lg {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .dropdownMenu {
   position: absolute;
   top: 130%;
-  left: 400%;
+  left: 300%;
   transform: translateX(-50%);
   width: fit-content;
   min-width: 500px;
@@ -97,7 +106,27 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  cursor: pointer;
+
+  &:hover {
+
+    .link,
+    .dropdownIcon,
+    .dropdownIconButton {
+      color: var(--brand-purpe-400);
+    }
+  }
+
+
+  @include lg {
+    &.dropdownActive {
+
+      .link,
+      .dropdownIcon,
+      .dropdownIconButton {
+        color: var(--brand-purpe-400);
+      }
+    }
+  }
 }
 
 .dropdownIcon {
@@ -107,11 +136,25 @@
     color 0.3s ease-in-out,
     transform 0.3s ease-in-out;
   color: var(--general-black);
+
+  @include lg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .dropdownWrapper:hover .dropdownIcon,
-.dropdownMenuActive + .dropdownHeader .dropdownIcon {
-  color: var(--brand-purpe-300);
+.dropdownMenuActive+.dropdownHeader .dropdownIcon {
+  color: var(--brand-purpe-400);
+}
+
+.dropdownIconButton {
+  color: var(--general-black);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--brand-purpe-400);
+  }
 }
 
 .dropdownMenuActive {
@@ -151,6 +194,14 @@
 
   &:hover {
     background-color: var(--brand-purpe-50);
+  }
+
+  @include lg {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 8px;
+    min-width: 320px; // Increased width for tablet
+    white-space: nowrap; // Prevents text wrapping
   }
 }
 
@@ -231,31 +282,35 @@
   height: 100%;
 }
 
+
 .dropdownMenuMobile {
   display: none;
-  flex-direction: column;
-  gap: 12px;
+  padding-left: 16px;
+  margin-top: 8px;
 
-  &--active {
-    display: flex;
+  &Active {
+    display: block;
   }
 
   .dropdownItem {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 10px 0;
+    gap: 8px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.4;
     color: var(--general-black);
-    text-align: center;
-
-    &__icon {
-      width: 20px;
-      height: 20px;
-    }
+    text-decoration: none;
+    transition: color 0.3s ease;
 
     &:hover {
-      background-color: var(--brand-purpe-50);
       color: var(--brand-purpe-400);
+      background-color: var(--brand-purpe-50);
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
     }
   }
 }
