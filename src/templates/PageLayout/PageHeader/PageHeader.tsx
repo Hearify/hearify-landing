@@ -134,19 +134,24 @@ const PageHeader: React.FC = () => {
                   const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
                   return (
-                    <div key={item.i18nKey}
+                    <div
+                      key={item.i18nKey}
                       className={cn({
-                        [styles.hideMenuItem]: openMobileDropdown && openMobileDropdown !== item.i18nKey
-                      })}>
-                      <div className={cn(styles.dropdownHeader, {
-                        [styles.dropdownActive]: openMobileDropdown === item.i18nKey
-                      })}>
+                        [styles.hideMenuItem]: openMobileDropdown && openMobileDropdown !== item.i18nKey,
+                      })}
+                    >
+                      <div
+                        className={cn(styles.dropdownHeader, {
+                          [styles.dropdownActive]: openMobileDropdown === item.i18nKey,
+                        })}
+                      >
                         <Link href={href} className={cn(styles.link, router.asPath === item.href && styles.linkActive)}>
                           {t(item.i18nKey)}
                         </Link>
                         {item.subItems && (
                           <button
-                            onClick={() => setOpenMobileDropdown(prev => prev === item.i18nKey ? null : item.i18nKey)}
+                            type="button"
+                            onClick={() => setOpenMobileDropdown(prev => (prev === item.i18nKey ? null : item.i18nKey))}
                             className={styles.dropdownIconButton}
                           >
                             {openMobileDropdown === item.i18nKey ? (
@@ -161,7 +166,7 @@ const PageHeader: React.FC = () => {
                       {item.subItems && (
                         <div
                           className={cn(styles.dropdownMenuMobile, {
-                            [styles.dropdownMenuMobileActive]: openMobileDropdown === item.i18nKey
+                            [styles.dropdownMenuMobileActive]: openMobileDropdown === item.i18nKey,
                           })}
                         >
                           {item.subItems.map(subItem => (
