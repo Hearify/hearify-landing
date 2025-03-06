@@ -19,6 +19,7 @@ const PageHeader: React.FC = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
 
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
@@ -133,15 +134,46 @@ const PageHeader: React.FC = () => {
                   const href = locale === 'uk' || item.isAnchor ? item.href : `https://hearify.org${item.href}`;
 
                   return (
-                    <div key={item.i18nKey}>
-                      <Link href={href} className={cn(styles.link, router.asPath === item.href && styles.linkActive)}>
-                        {t(item.i18nKey)}
-                      </Link>
+                    <div key={item.i18nKey}
+                      className={cn({
+                        [styles.hideMenuItem]: openMobileDropdown && openMobileDropdown !== item.i18nKey
+                      })}>
+                      <div className={cn(styles.dropdownHeader, {
+                        [styles.dropdownActive]: openMobileDropdown === item.i18nKey
+                      })}>
+                        <Link href={href} className={cn(styles.link, router.asPath === item.href && styles.linkActive)}>
+                          {t(item.i18nKey)}
+                        </Link>
+                        {item.subItems && (
+                          <button
+                            onClick={() => setOpenMobileDropdown(prev => prev === item.i18nKey ? null : item.i18nKey)}
+                            className={styles.dropdownIconButton}
+                          >
+                            {openMobileDropdown === item.i18nKey ? (
+                              <ChevronUp className={styles.dropdownIcon} />
+                            ) : (
+                              <ChevronDown className={styles.dropdownIcon} />
+                            )}
+                          </button>
+                        )}
+                      </div>
 
                       {item.subItems && (
-                        <div className={styles.dropdownMenuMobile}>
+                        <div
+                          className={cn(styles.dropdownMenuMobile, {
+                            [styles.dropdownMenuMobileActive]: openMobileDropdown === item.i18nKey
+                          })}
+                        >
                           {item.subItems.map(subItem => (
-                            <Link key={subItem.i18nKey} href={subItem.href} className={styles.dropdownItem}>
+                            <Link
+                              key={subItem.i18nKey}
+                              href={subItem.href}
+                              className={styles.dropdownItem}
+                              onClick={() => {
+                                setOpenMobileDropdown(null);
+                                setIsMenuOpen(false);
+                              }}
+                            >
                               {subItem.icon && <subItem.icon className={styles.icon} />}
                               <span>{t(subItem.i18nKey)}</span>
                             </Link>
