@@ -87,7 +87,7 @@
         {
           "name": "Yuliia Gorbatenko",
           "position": "English teacher",
-          "text": "I tried Hearify several times, and I must say it's much better than ChatGPT, especially taking into account the number of mistakes and redundancy in questions, when I asked ChatGPT to create some quizzes for me. Hearify creates really interesting questions, that make sense - I admired it. I tried it with the difficult topics my student asked me to help with and I am happy with the results ❤\uFE0F"
+          "text": "I tried Hearify several times, and I must say it's much better than ChatGPT, especially taking into account the number of mistakes and redundancy in questions, when I asked ChatGPT to create some quizzes for me. Hearify creates really interesting questions, that make sense - I admired it. I tried it with the difficult topics my student asked me to help with and I am happy with the results ❤\uFE0F\n\nI like the option to correct ready-made quizzes if necessary right in the draft - I don't need to copy everything in the document and edit it afterwards.\n\nThank you so much for providing an opportunity to use this wonderful tool! It saved me a lot of time indeed, because I drastically lack time to get ready for the lessons properly. I'll buy the subscription since the next month\uD83D\uDE4F"
         },
         {
           "name": "Artem Oharkov",
@@ -1039,8 +1039,110 @@
       "title": "Boost Your Knowledge: Create Personalized Quizzes with AI!",
       "text": "Try our AI quiz creator now—completely free of charge!",
       "button": "TRY IT NOW"
+    },
+    "Pricing": {
+      "title": "Pick Your Subscription Plan!"
+    },
+    "PricingFAQ": {
+      "title": "Frequently Asked Questions",
+      "blocks": [
+        {
+          "question": "Can I upgrade or downgrade my plan at any time?",
+          "answer": "Yes! Our AI quiz generator is designed to customize assessments based on industry requirements, from healthcare to finance."
+        },
+        {
+          "question": "Do you offer discounts for non-profit organizations?",
+          "answer": "Absolutely. Our platform helps industries meet regulatory standards with accurate and automated certification assessments."
+        },
+        {
+          "question": "What payment methods do you accept?",
+          "answer": "AI ensures precision testing, real-time analytics, and adaptive learning paths to optimize skill development."
+        },
+        {
+          "question": "How do I cancel my subscription?",
+          "answer": "Yes! Our scalable solutions are designed to meet the demands of large organizations with diverse training requirements."
+        },
+        {
+          "question": "Do you offer a money-back guarantee?",
+          "answer": "Yes! Our AI quiz generator is designed to customize assessments based on industry requirements, from healthcare to finance."
+        },
+        {
+          "question": "Is there a limit on the number of users on a plan?",
+          "answer": "Absolutely. Our platform helps industries meet regulatory standards with accurate and automated certification assessments."
+        },
+        {
+          "question": "Can I switch from a monthly to an annual plan?",
+          "answer": "AI ensures precision testing, real-time analytics, and adaptive learning paths to optimize skill development."
+        },
+        {
+          "question": "How is my data protected?",
+          "answer": "Yes! Our scalable solutions are designed to meet the demands of large organizations with diverse training requirements."
+        },
+        {
+          "question": "Do you offer customer support?",
+          "answer": "Yes! Our scalable solutions are designed to meet the demands of large organizations with diverse training requirements."
+        }
+      ]
+    },
+    "freePlan": {
+      "title": "Free Plan",
+      "price": "Free",
+      "annualPrice": "Free - billed yearly",
+      "description": "Perfect for new users who want to explore and experience our platform with ease.",
+      "buttonText": "START NOW FOR 1$",
+      "features": [
+        { "feature": "Credits:", "value": "30" },
+        { "feature": "Questions per Quiz:", "value": "5" },
+        { "feature": "Advanced Quality Settings:", "value": "cross" },
+        { "feature": "Custom Domain and Branding:", "value": "cross" },
+        { "feature": "Dedicated Outcomes Manager:", "value": "cross" }
+      ],
+      "isPremium": false
+    },
+    "premiumPlan": {
+      "title": "Premium Plan",
+      "price": "$29.99/month",
+      "annualPrice": "$179.99 - billed yearly",
+      "description": "Ideal for self-learners or teachers who use our platform occasionally.",
+      "buttonText": "START NOW FOR 1$",
+      "dealLabel": "Best deal",
+      "features": [
+        { "feature": "Credits:", "value": "1000/month" },
+        { "feature": "Questions per Quiz:", "value": "30" },
+        { "feature": "Advanced Quality Settings:", "value": "check" },
+        { "feature": "Custom Domain and Branding:", "value": "cross" },
+        { "feature": "Dedicated Outcomes Manager:", "value": "cross" }
+      ]
+    },
+    "maxPlan": {
+      "title": "Max Plan",
+      "price": "$99.99/month",
+      "annualPrice": "$599.99 - billed yearly",
+      "description": "Designed for heavy users, educators, or institutions.",
+      "buttonText": "START NOW FOR 1$",
+      "features": [
+        { "feature": "Credits:", "value": "Unlimited" },
+        { "feature": "Questions per Quiz:", "value": "50" },
+        { "feature": "Advanced Quality Settings:", "value": "check" },
+        { "feature": "Custom Domain and Branding:", "value": "check" },
+        { "feature": "Dedicated Outcomes Manager:", "value": "check" }
+      ],
+      "isPremium": false
+    },
+    "customPlan": {
+      "title": "Custom Plan",
+      "price": "Custom/month",
+      "description": "For organizations or individuals with unique requirements",
+      "nameLabel": "Organization/Individual name",
+      "namePlaceholder": "Enter organization/individual name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "requirementsLabel": "Description of requirements",
+      "requirementsPlaceholder": "Enter your description of requirements",
+      "button": "CONTACT US"
     }
   },
+
   "containers": {
     "JoinCommunityAlert": {
       "title": "Join our community!",
@@ -1052,6 +1154,7 @@
   "ai_generate_custom_quiz": "AI Quiz Generator from PDFs, Videos & Text",
   "ai_automatically_create_questions": "Automatically create questions for assignments, tests, and exams from your content with our ultimate AI question generator. Ideal for educators, students, professionals, and lifelong learners.",
   "how_it_works": "How it works",
+  "pricing": "Pricing",
   "contacts": "Contacts",
   "contact_us": "Contact Us:",
   "follow_us": "Follow us on social networks:",
