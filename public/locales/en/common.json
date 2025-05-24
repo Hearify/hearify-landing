@@ -87,7 +87,7 @@
         {
           "name": "Yuliia Gorbatenko",
           "position": "English teacher",
-          "text": "I tried Hearify several times, and I must say it's much better than ChatGPT, especially taking into account the number of mistakes and redundancy in questions, when I asked ChatGPT to create some quizzes for me. Hearify creates really interesting questions, that make sense - I admired it. I tried it with the difficult topics my student asked me to help with and I am happy with the results ❤\uFE0F\n\nI like the option to correct ready-made quizzes if necessary right in the draft - I don't need to copy everything in the document and edit it afterwards.\n\nThank you so much for providing an opportunity to use this wonderful tool! It saved me a lot of time indeed, because I drastically lack time to get ready for the lessons properly. I'll buy the subscription since the next month\uD83D\uDE4F"
+          "text": "I tried Hearify several times, and I must say it's much better than ChatGPT, especially taking into account the number of mistakes and redundancy in questions, when I asked ChatGPT to create some quizzes for me. Hearify creates really interesting questions, that make sense - I admired it. I tried it with the difficult topics my student asked me to help with and I am happy with the results ❤\uFE0F"
         },
         {
           "name": "Artem Oharkov",
@@ -1140,6 +1140,59 @@
       "requirementsLabel": "Description of requirements",
       "requirementsPlaceholder": "Enter your description of requirements",
       "button": "CONTACT US"
+    },
+    "comparison": {
+      "title": "Comparison",
+      "billedAnnually": "Billed annually",
+      "saveUpTo33": "Save up to 33% with yearly billing"
+    },
+    "pricingTable": {
+      "featureHeader": "Feature",
+      "planNames": {
+        "free": "Free",
+        "premium": "Premium",
+        "max": "Max",
+        "custom": "Custom"
+      },
+      "features": [
+        "Price",
+        "Credits",
+        "Question Types",
+        "Quiz Complexity",
+        "Early Access to New Features",
+        "Advanced Quality Settings",
+        "Questions per Quiz",
+        "Support",
+        "Analytics and Reporting",
+        "Custom Domain and Branding",
+        "Dedicated Outcomes Manager"
+      ],
+      "prices": {
+        "free": "Free",
+        "premium": {
+          "monthly": "$29/month",
+          "annual": "$179.99 - billed yearly"
+        },
+        "max": {
+          "monthly": "$99/month",
+          "annual": "$599.99 - billed yearly"
+        },
+        "custom": "Custom"
+      },
+      "contactUs": "CONTACT US",
+      "startNow": "START NOW FOR $1",
+      "featureAvailability": [
+        ["30/month", "1000/month", "Unlimited", "Unlimited"],
+        ["Single choice", "All", "All", "All"],
+        ["cross", "check", "check", "check"],
+        ["cross", "check", "check", "check"],
+        ["cross", "check", "check", "check"],
+        ["5", "30", "50", "50"],
+        ["Standard", "Priority", "Priority", "VIP"],
+        ["cross", "check", "check", "check"],
+        ["cross", "cross", "check", "check"],
+        ["cross", "cross", "check", "check"]
+      ]
     }
   },
 

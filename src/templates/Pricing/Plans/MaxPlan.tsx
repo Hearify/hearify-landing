@@ -58,9 +58,9 @@ const MaxPlan: React.FC = () => {
           ))}
         </div>
         <div className={styles['btn-container']}>
-          <button className={styles.btn} type="button">
+          <a href="#pricing-table" className={styles.btn} type="button">
             SEE ALL FEATURES <ChevronRight />
-          </button>
+          </a>
         </div>
       </div>
     </div>

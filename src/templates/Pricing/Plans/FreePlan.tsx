@@ -42,7 +42,6 @@ const FreePlan: React.FC = () => {
         <div className={styles['general-info']}>
           <p className={styles.title}>{planInfo.title}</p>
           <p className={styles.price}>{planInfo.price}</p>
-          <p className={styles['annual-price']}>{planInfo.annualPrice}</p>
           <p className={styles.description}>{planInfo.description}</p>
         </div>
         <button className={styles['start-button']} type="button">

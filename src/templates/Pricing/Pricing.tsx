@@ -9,6 +9,7 @@ import BoostAlert from '@/containers/BoostAlert/BoostAlert';
 import DesktopPlans from '@/templates/Pricing/Plans/DesktopPlans';
 import useDeviceDetect from '@/hooks/useDeviceDetect';
 import TabletPlans from '@/templates/Pricing/Plans/TabletPlans';
+import Comparison from '@/templates/Pricing/ComparisonSection/Comparison';
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation('common');
@@ -21,11 +22,16 @@ const Pricing: React.FC = () => {
 
       {isDeviceLarge ? <DesktopPlans /> : <TabletPlans />}
 
+      <span id="pricing-table" />
+      <Comparison />
+
       <HomeReviews />
+
       <FAQSection
         title={t('templates.PricingFAQ.title')}
         faqBlocks={t('templates.PricingFAQ.blocks', { returnObjects: true })}
       />
+
       <BoostAlert
         title={t('boost_your_knowledge')}
         text={t('try_out_ai_quiz')}

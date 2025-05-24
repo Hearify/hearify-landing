@@ -6,14 +6,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  max-width: $max-page-width;
+  max-width: 1200px;
   padding: 60px 0 32px 0;
   font-family: $font-nunito;
   color: var(--general-black);
   gap: 100px;
 
   @include lg {
-    width: 980px;
+    width: 960px;
   }
 
   @include md {
