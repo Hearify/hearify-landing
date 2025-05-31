@@ -1043,47 +1043,47 @@
     "Pricing": {
       "title": "Pick Your Subscription Plan!"
     },
-    "PricingFAQ": {
-      "title": "Frequently Asked Questions",
-      "blocks": [
-        {
-          "question": "Can I upgrade or downgrade my plan at any time?",
-          "answer": "Yes! Our AI quiz generator is designed to customize assessments based on industry requirements, from healthcare to finance."
-        },
-        {
-          "question": "Do you offer discounts for non-profit organizations?",
-          "answer": "Absolutely. Our platform helps industries meet regulatory standards with accurate and automated certification assessments."
-        },
-        {
-          "question": "What payment methods do you accept?",
-          "answer": "AI ensures precision testing, real-time analytics, and adaptive learning paths to optimize skill development."
-        },
-        {
-          "question": "How do I cancel my subscription?",
-          "answer": "Yes! Our scalable solutions are designed to meet the demands of large organizations with diverse training requirements."
-        },
-        {
-          "question": "Do you offer a money-back guarantee?",
-          "answer": "Yes! Our AI quiz generator is designed to customize assessments based on industry requirements, from healthcare to finance."
-        },
-        {
-          "question": "Is there a limit on the number of users on a plan?",
-          "answer": "Absolutely. Our platform helps industries meet regulatory standards with accurate and automated certification assessments."
-        },
-        {
-          "question": "Can I switch from a monthly to an annual plan?",
-          "answer": "AI ensures precision testing, real-time analytics, and adaptive learning paths to optimize skill development."
-        },
-        {
-          "question": "How is my data protected?",
-          "answer": "Yes! Our scalable solutions are designed to meet the demands of large organizations with diverse training requirements."
-        },
-        {
-          "question": "Do you offer customer support?",
-          "answer": "Yes! Our scalable solutions are designed to meet the demands of large organizations with diverse training requirements."
-        }
-      ]
-    },
+     "PricingFAQ": {
+    "title": "Frequently Asked Questions",
+    "blocks": [
+      {
+        "question": "Can I upgrade or downgrade my plan at any time?",
+        "answer": "Yes, you can upgrade or downgrade your plan at any time from your account settings. Changes will be prorated based on your billing cycle."
+      },
+      {
+        "question": "Do you offer discounts for non-profit organizations?",
+        "answer": "Yes, we offer special discounted pricing for non-profit organizations. Please contact our support team to learn more and apply."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept major credit cards including Visa, Mastercard, American Express, as well as PayPal for annual plans."
+      },
+      {
+        "question": "How do I cancel my subscription?",
+        "answer": "You can cancel your subscription anytime through your account dashboard. Your plan will remain active until the end of the current billing period."
+      },
+      {
+        "question": "Do you offer a money-back guarantee?",
+        "answer": "Yes, we offer a 14-day money-back guarantee for new customers. If you're not satisfied, simply contact us within the first two weeks."
+      },
+      {
+        "question": "Is there a limit on the number of users on a plan?",
+        "answer": "Each plan includes a defined number of users. You can view user limits on our pricing page or contact us for custom enterprise options."
+      },
+      {
+        "question": "Can I switch from a monthly to an annual plan?",
+        "answer": "Yes, you can switch from a monthly to an annual plan at any time. You'll receive a discount when you upgrade to annual billing."
+      },
+      {
+        "question": "How is my data protected?",
+        "answer": "We use industry-standard encryption, secure data storage, and regular security audits to ensure your data is protected and GDPR-compliant."
+      },
+      {
+        "question": "Do you offer customer support?",
+        "answer": "Yes, we provide customer support via email and live chat. Enterprise and Pro users receive priority support with faster response times."
+      }
+    ]
+  },
     "freePlan": {
       "title": "Free Plan",
       "price": "Free",
