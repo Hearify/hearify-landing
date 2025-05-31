@@ -51,11 +51,6 @@ export const headerNavigation: NavigationItem[] = [
     ],
   },
   {
-    i18nKey: 'how_it_works',
-    href: '/#create-quiz',
-    isAnchor: true,
-  },
-  {
     i18nKey: 'blog',
     href: '/blog',
   },
@@ -71,14 +66,13 @@ export const headerNavigation: NavigationItem[] = [
     i18nKey: 'contacts',
     href: '/contact-us',
   },
+  {
+    i18nKey: 'pricing',
+    href: '/pricing',
+  },
 ];
 
 export const footerNavigation: NavigationItem[] = [
-  {
-    i18nKey: 'how_it_works',
-    href: '/#create-quiz',
-    isAnchor: true,
-  },
   {
     i18nKey: 'business',
     href: '/business',
@@ -98,5 +92,9 @@ export const footerNavigation: NavigationItem[] = [
   {
     i18nKey: 'contacts',
     href: '/contact-us',
+  },
+  {
+    i18nKey: 'pricing',
+    href: '/pricing',
   },
 ];

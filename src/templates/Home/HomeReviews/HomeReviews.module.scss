@@ -30,6 +30,28 @@
     right: -50px;
     z-index: -1;
   }
+
+  @include lg {
+    width: 960px;
+  }
+
+  @include md {
+    width: 710px;
+    padding: 40px 0 32px 0;
+    gap: 20px;
+  }
+
+  @include sm {
+    width: 380px;
+  }
+
+  @include rwd(375) {
+    width: 330px;
+  }
+
+  @include rwd(320) {
+    width: 300px;
+  }
 }
 
 .title {
