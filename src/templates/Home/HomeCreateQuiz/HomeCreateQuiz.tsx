@@ -12,27 +12,31 @@ const HomeCreateQuiz: React.FC = () => {
       <AppHeading variant="h2" className={styles.title}>
         {t('title')}
       </AppHeading>
-      
-      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-      {/* <video src="/how_it_works.mp4" width="100%" controls /> */}
 
-      <div style={{ position: 'relative', paddingBottom: '62.5%', height: 0 }}>
-      <iframe
-  src="https://www.loom.com/embed/06e96bcd3b2e4a90b0a884e54d905d51?sid=69b1638d-4a2f-4983-ad39-67094c476f70"
-  title="How it works video"
-  frameBorder="0"
-  allowFullScreen
-  style={{
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-  }}
-    />
+      <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+        <iframe
+          src="https://www.loom.com/embed/06e96bcd3b2e4a90b0a884e54d905d51"
+          title="How it works video"
+          allowFullScreen
+          frameBorder="0"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            border: 'none',
+          }}
+        />
+        <p style={{ color: 'black' }}>
+          This video provides a quick walkthrough of how to create a quiz using our platform, showcasing the intuitive interface, customizable question options, and seamless publishing process to help you get started effortlessly.
+        </p>
       </div>
     </section>
   );
 };
 
 export default HomeCreateQuiz;
+
+{/* eslint-disable-next-line jsx-a11y/media-has-caption */ }
+{/* <video src="/how_it_works.mp4" width="100%" controls /> */ }
