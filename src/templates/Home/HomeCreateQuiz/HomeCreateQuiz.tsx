@@ -14,6 +14,7 @@ const HomeCreateQuiz: React.FC = () => {
       </AppHeading>
 
       <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+        {/* <video src="/how_it_works.mp4" width="100%" controls /> */ }
         <iframe
           src="https://www.loom.com/embed/06e96bcd3b2e4a90b0a884e54d905d51"
           title="How it works video"
@@ -37,6 +38,3 @@ const HomeCreateQuiz: React.FC = () => {
 };
 
 export default HomeCreateQuiz;
-
-{/* eslint-disable-next-line jsx-a11y/media-has-caption */ }
-{/* <video src="/how_it_works.mp4" width="100%" controls /> */ }
