@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Script from 'next/script';
 import { appWithTranslation } from 'next-i18next';
 import { Nunito, Caveat } from 'next/font/google';
+import { ToastContainer } from 'react-toastify';
 
 import PageLayout from '@/templates/PageLayout/PageLayout';
 import '@/styles/globals.scss';
@@ -109,6 +110,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
         <PageLayout>
           <Component {...pageProps} />
+          <ToastContainer position="top-center" autoClose={5000} />
         </PageLayout>
       </div>
     </>
