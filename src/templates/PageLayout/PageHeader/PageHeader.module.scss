@@ -7,6 +7,7 @@
   justify-content: space-between;
   max-width: $max-page-width;
   height: $header-height;
+  font-family: $font-nunito;
   padding: 0 32px;
 
   @include sm {
@@ -175,7 +176,7 @@
 }
 
 .dropdownItem {
-  font-family: 'nunito';
+  font-family: $font-nunito;
   font-size: 18px;
   font-weight: 500; // Semi-bold
   height: 64px;
