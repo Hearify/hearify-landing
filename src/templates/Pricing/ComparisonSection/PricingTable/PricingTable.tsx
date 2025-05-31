@@ -79,7 +79,7 @@ const PricingTable: React.FC = () => {
                   </div>
                 ))
               : featureAvailability[rowIndex - 1].map((value, colIndex) => (
-                  <div key={colIndex} className={styles.cell}>
+                  <div key={`${features[rowIndex]}-${plans[colIndex]}`} className={styles.cell}>
                     {renderValue(value)}
                   </div>
                 ))}
