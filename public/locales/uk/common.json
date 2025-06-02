@@ -702,7 +702,10 @@
       "emailPlaceholder": "Введіть вашу електронну пошту",
       "requirementsLabel": "Опис вимог",
       "requirementsPlaceholder": "Опишіть ваші вимоги",
-      "button": "ЗВ’ЯЖІТЬСЯ З НАМИ"
+      "button": "ЗВ’ЯЖІТЬСЯ З НАМИ",
+      "successMessage": "Ваш електронний лист успішно надіслано",
+      "errorMessage": "Виникла проблема з відправленням вашого електронного листа"
+
     },
     "comparison": {
       "title": "Порівняння",

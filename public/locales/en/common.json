@@ -1139,7 +1139,9 @@
       "emailPlaceholder": "Enter your email",
       "requirementsLabel": "Description of requirements",
       "requirementsPlaceholder": "Enter your description of requirements",
-      "button": "CONTACT US"
+      "button": "CONTACT US",
+      "successMessage": "Your email was sent successfully",
+      "errorMessage": "There was a problem with sending your email"
     },
     "comparison": {
       "title": "Comparison",
