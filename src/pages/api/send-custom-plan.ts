@@ -46,12 +46,9 @@ ${description}
     await transporter.sendMail(mailOptions);
 
     return res.status(200).json({ message: 'Email sent successfully' });
-  } catch (error: unknown) {
-    if (error instanceof Error) {
-      console.error('Email error:', error.message);
-    } else {
-      console.error('Email error:', error);
-    }
+  } catch (err: unknown) {
+    const error = err as Error;
+    console.error('Email error:', error.message ?? error);
     return res.status(500).json({ error: 'Failed to send email' });
   }
 }
