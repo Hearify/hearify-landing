@@ -5,6 +5,7 @@ import GreenCheckmark from '@/assets/icons/check.svg';
 import styles from '@/templates/Pricing/Plans/DesktopPlans.module.scss';
 import ChevronRight from '@/assets/icons/chevron-right.svg';
 import RedXMark from '@/assets/icons/x-mark.svg';
+import useDeviceDetect from '@/hooks/useDeviceDetect';
 
 type PlanInfo = {
   title: string;
@@ -22,6 +23,7 @@ type PlanInfo = {
 
 const MaxPlan: React.FC = () => {
   const { t } = useTranslation('common');
+  const { isDeviceLarge } = useDeviceDetect('lg');
 
   const planInfo: PlanInfo = t('templates.maxPlan', { returnObjects: true });
 
@@ -33,7 +35,7 @@ const MaxPlan: React.FC = () => {
 
   return (
     <div className={`${styles.plan} ${planInfo.isPremium ? styles.premium : ''}`}>
-      {planInfo.isPremium && planInfo.dealLabel && (
+      {planInfo.dealLabel && (
         <div className={styles.deal}>
           <p>{planInfo.dealLabel}</p>
         </div>
@@ -44,10 +46,11 @@ const MaxPlan: React.FC = () => {
           <p className={styles.price}>{planInfo.price}</p>
           <p className={styles['annual-price']}>{planInfo.annualPrice}</p>
           <p className={styles.description}>{planInfo.description}</p>
+          {isDeviceLarge && <br />}
         </div>
-        <button className={styles['start-button']} type="button">
+        <a href="https://app.hearify.org/pricing" target="_blank" className={styles['start-button']}>
           {planInfo.buttonText}
-        </button>
+        </a>
         <div className={styles.features}>
           <p className={styles.title}>Features:</p>
           {planInfo.features.map(({ feature, value }) => (

@@ -63,26 +63,29 @@ const PricingTable: React.FC = () => {
                       <div className={styles.monthly}>{plan.monthly}</div>
                       <div className={styles.annual}>{plan.annual || <br />}</div>
                       {plan.monthly === t('templates.pricingTable.prices.custom') ? (
-                        <button type="button" className={styles.priceButton}>
+                        <a href="https://app.hearify.org/pricing" className={styles.priceButton}>
                           <EnvelopeIcon width={22} height={22} />
                           {t('templates.pricingTable.contactUs')}
-                        </button>
+                        </a>
                       ) : (
-                        <button
-                          type="button"
+                        <a
+                          href="https://app.hearify.org/pricing"
                           className={`${styles.priceButton} ${index === 1 ? styles.priceButtonPremium : ''}`}
                         >
                           {t('templates.pricingTable.startNow')}
-                        </button>
+                        </a>
                       )}
                     </div>
                   </div>
                 ))
-              : featureAvailability[rowIndex - 1].map((value, colIndex) => (
-                  <div key={`${features[rowIndex]}-${plans[colIndex]}`} className={styles.cell}>
-                    {renderValue(value)}
-                  </div>
-                ))}
+              : featureAvailability[rowIndex - 1].map((value, colIndex) => {
+                  const key = `${feature}-${plans[colIndex]}`;
+                  return (
+                    <div key={key} className={styles.cell}>
+                      {renderValue(value)}
+                    </div>
+                  );
+                })}
           </React.Fragment>
         ))}
       </div>
