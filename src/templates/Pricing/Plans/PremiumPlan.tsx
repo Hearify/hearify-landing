@@ -44,9 +44,9 @@ const PremiumPlan: React.FC = () => {
           <p className={styles['annual-price']}>{planInfo.annualPrice}</p>
           <p className={styles.description}>{planInfo.description}</p>
         </div>
-        <button className={styles['start-button']} type="button">
+        <a href="https://app.hearify.org/pricing" target="_blank" className={styles['start-button']}>
           {planInfo.buttonText}
-        </button>
+        </a>
         <div className={styles.features}>
           <p className={styles.title}>Features:</p>
           {planInfo.features.map(({ feature, value }) => (

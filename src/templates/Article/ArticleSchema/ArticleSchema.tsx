@@ -14,6 +14,7 @@ const ArticleSchema: React.FC<ArticleSchemaProps> = ({ article }) => {
       <script
         key={article.slug}
         type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
