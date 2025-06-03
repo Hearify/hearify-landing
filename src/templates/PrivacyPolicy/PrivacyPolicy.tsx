@@ -7,33 +7,40 @@ import styles from './PrivacyPolicy.module.scss';
 const PrivacyPolicy: React.FC = () => {
   const { t } = useTranslation('common', { keyPrefix: 'templates.PrivacyPolicy' });
 
+  const sections = [
+    'introduction',
+    'definitions',
+    'information-collection',
+    'types-data',
+    'use-data',
+    'data-retention',
+    'data-transfer',
+    'data-disclosure',
+    'data-security',
+    'gdpr-rights',
+    'caloppa-rights',
+    'do-not-track',
+    'ccpa-rights',
+    'service-providers',
+    'analytics',
+    'ci-cd',
+    'payments',
+    'links',
+    'children',
+    'changes',
+    'introduction',
+    'contact-us',
+  ];
+
   return (
     <main className={styles.wrapper}>
       <AppHeading variant="h1">{t('title')}</AppHeading>
       <p className={styles.date}>{t('date')}</p>
 
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`introduction`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`definitions`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`information-collection`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`types-data`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`use-data`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`data-retention`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`data-transfer`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`data-disclosure`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`data-security`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`gdpr-rights`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`caloppa-rights`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`do-not-track`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`ccpa-rights`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`service-providers`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`analytics`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`ci-cd`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`payments`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`links`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`children`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`changes`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`introduction`) }} />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: t(`contact-us`) }} />
+      {sections.map(key => (
+        // eslint-disable-next-line react/no-danger
+        <div key={key} className={styles.content} dangerouslySetInnerHTML={{ __html: t(key) }} />
+      ))}
     </main>
   );
 };

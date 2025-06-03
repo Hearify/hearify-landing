@@ -25,7 +25,7 @@ const CustomPlan: React.FC = () => {
       setName('');
       setEmail('');
       setDescription('');
-    } catch (error) {
+    } catch (error: unknown) {
       console.error(error);
       toast.error(t('errorMessage'));
     }

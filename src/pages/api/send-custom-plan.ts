@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
 
+import type { Transporter } from 'nodemailer';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 type RequestBody = {
@@ -18,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
-    const transporter = nodemailer.createTransport({
+    const transporter: Transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER,
