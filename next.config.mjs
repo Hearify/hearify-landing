@@ -9,10 +9,12 @@ const addLangSubdomainUrl = (baseUrl, lang) => {
   return url.toString();
 };
 
+/** @type {import('next').NextConfig} */
 const config = {
   i18n: i18nConf.i18n,
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+
   images: {
     remotePatterns: [
       {
@@ -21,8 +23,11 @@ const config = {
       },
     ],
   },
+
   async redirects() {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    // ✅ SAFE fallback so build never crashes on Vercel
+    const baseUrl =
+      process.env.NEXT_PUBLIC_BASE_URL || 'https://hearify.com';
 
     return [
       {
@@ -45,12 +50,12 @@ const config = {
         destination: addLangSubdomainUrl(baseUrl, 'ua'),
         permanent: true,
       },
+
       {
         source: '/blog/articles/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
         destination: '/library/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
         permanent: true,
       },
-
       {
         source: '/blog/articles/world-war-2-quiz-test-your-knowledge-of-history',
         destination: '/library/world-war-2-quiz-test-your-knowledge-of-history',
@@ -69,11 +74,6 @@ const config = {
       {
         source: '/blog/articles/all-american-history-quiz-test-your-knowledge-of-us-history',
         destination: '/library/all-american-history-quiz-test-your-knowledge-of-us-history',
-        permanent: true,
-      },
-      {
-        source: '/blog/articles/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
-        destination: '/library/astronomy-and-space-quiz-test-your-knowledge-of-the-cosmos',
         permanent: true,
       },
       {
@@ -111,6 +111,7 @@ const config = {
         destination: '/library/us-state-capitals-quiz-how-well-do-you-know-your-state-capitals',
         permanent: true,
       },
+
       {
         source: '/blog/articles/:slug(.*[^md])',
         destination: '/blog/:slug',
@@ -123,14 +124,15 @@ const config = {
       },
     ];
   },
-  webpack: config => {
-    // camel-case style names from css modules
+
+  webpack: (config) => {
+    // camelCase CSS module exports
     config.module.rules
       .find(({ oneOf }) => !!oneOf)
       .oneOf.filter(({ use }) => JSON.stringify(use)?.includes('css-loader'))
       .reduce((acc, { use }) => acc.concat(use), [])
       .forEach(({ options }) => {
-        if (options.modules) {
+        if (options?.modules) {
           options.modules.exportLocalsConvention = 'camelCase';
         }
       });
@@ -154,7 +156,7 @@ const config = {
       issuer: /\.[jt]sx?$/,
       loader: '@svgr/webpack',
       options: {
-        svgoConfig: svgoConfig,
+        svgoConfig,
       },
     });
 
@@ -163,5 +165,7 @@ const config = {
 };
 
 export default withMDX({
-  options: { remarkPlugins: [remarkSlug, remarkAutolinkHeadings] },
+  options: {
+    remarkPlugins: [remarkSlug, remarkAutolinkHeadings],
+  },
 })(config);
